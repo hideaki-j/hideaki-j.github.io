@@ -1,12 +1,12 @@
 ## Short bio
 
-## Work Experience:
+## Work Experience
 
-## Education:
+## Education
 
-## Award and Notable Achievement:
+## Award and Notable Achievement
 
-## Publications:
+## Publications
 
 - TEST
 You can use the [editor on GitHub](https://github.com/hideaki-j/hideaki-j.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
