@@ -84,5 +84,5 @@ Received five awards including:
 - LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, Hideaki Joko, WO/2019/106758, Pending Patent. (A related application also pending).
 
 # Test Score
-**Japanese Higher Civil Service Examination (国家公務員総合職試験)** - Class: Engineering
+**Japanese Higher Civil Service Examination (国家公務員総合職試験)** - Field: Engineering
 - Passed one of the most difficult examinations in Japan with 91 percentile among all the candidates, proving his high ability in mathematics and engineering.
