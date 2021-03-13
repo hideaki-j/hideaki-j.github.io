@@ -15,12 +15,12 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 # Work Experience
 
-**Radboud University,  Netherlands - Research Staff**
+**Radboud University,  Netherlands**  - Research Staff\
 MONTH 20XX - PRESENT
 - Project: conversational search
 - Created the dataset for the research using Amazon Mechanical Turk, and published it to SIGIR 2021 conference.
 
-**Mitsubishi Electric, Japan - Research Engineer**
+**Mitsubishi Electric, Japan**  - Research Engineer\
 MONTH 20XX - MONTH 20XX
 - Researched and developed deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
 - Researched and developed an algorithm of deep-learning-based question answering system
@@ -30,15 +30,15 @@ MONTH 20XX - MONTH 20XX
 
 # Education
 
-**Radboud University, Netherlands - PhD, Data Science**
+**Radboud University, Netherlands** - PhD, Data Science\
 September 2020 - August 2024
 - Fully-funded PhD program, focusing on conversational search and dialogue system. 
 
-**University of Tokyo, Japan - MSc, Computing System, Multidisciplinary Science**
+**University of Tokyo, Japan** - MSc, Computing System, Multidisciplinary Science\
 March 2016
 - Master's thesis: Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model
 
-**Waseda University, Japan - BEng. Applied Mathematics**
+**Waseda University, Japan** - BEng. Applied Mathematics\
 March 2014
 
 
