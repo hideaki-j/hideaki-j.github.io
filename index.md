@@ -15,48 +15,49 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 # Work Experience
 
+## Radboud University,  Netherlands - Research Staff
+MONTH 20XX - PRESENT
+- Project: conversational search
+- Created the dataset for the research using Amazon Mechanical Turk, and published it to SIGIR 2021 conference.
 
+## Mitsubishi Electric, Japan - Research Engineer
+MONTH 20XX - MONTH 20XX
+- Researched and developed deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
+- Researched and developed an algorithm of deep-learning-based question answering system
+- Developed a text-based automatic error diagnosis algorithm and software
+- Led an R&D project in collaboration with a manufacturing division, and developed a C#-based information retrieval software to make a design process efficient
 
 
 # Education
 
-# Award and Notable Achievement
+## Radboud University, Netherlands - PhD, Data Science
+September 2020 - August 2024
+- Fully-funded PhD program, focusing on conversational search and dialogue system. 
+
+## University of Tokyo, Japan - MSc, Computing System, Multidisciplinary Science
+March 2016
+- Master's thesis: Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model
+
+## Waseda University, Japan - BEng. Applied Mathematics
+March 2014
+
+
+# Professional Development
+Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.
+
+# Awards
+Received five awards including:
+- Incentive Research Award, The Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
+Our research paper "Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning" was selected as one of the best two out of more than 20 papers.
+- Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software, 2019.
+
 
 # Publications
 
-- TEST
-You can use the [editor on GitHub](https://github.com/hideaki-j/hideaki-j.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Published 10+ papers including:
+- (Refereed International Conference) Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., IEEE International Conference on System, Man, and Cybernetics, 2019.
+- (Journal Paper) Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, Hideaki Joko, et. al., IEICE Transactions on Information and Systems, 2020. (in Japanese)
+- (Journal Paper) Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model,  Hideaki Joko, et. al., Journal of Natural Language Processing, 2017. (in Japanese)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-## Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-# Header 2
-## Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-## Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hideaki-j/hideaki-j.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-## Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Patents
+- LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, Hideaki Joko, WO/2019/106758, Pending Patent. (Two related applications also pending).
