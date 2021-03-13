@@ -73,12 +73,22 @@ Our research paper "Intention Understanding with Small Training Data Sets by Uti
 - Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software, 2019.
 
 
-# Publications
+# First Author Publications
 
-Published 10+ papers including:
-- (Refereed International Conference) Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., IEEE International Conference on System, Man, and Cybernetics, 2019.
-- (Journal Paper) Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, Hideaki Joko, et. al., IEICE Transactions on Information and Systems, 2020. (in Japanese)
-- (Journal Paper) Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model,  Hideaki Joko, et. al., Journal of Natural Language Processing, 2017. (in Japanese)
+**Refereed Journal Paper (In Japanese)**
+- Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, Hideaki Joko, et. al., IEICE Transactions on Information and Systems, 2020.
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model,  Hideaki Joko, et. al., Journal of Natural Language Processing, 2017.
+
+**Refereed Paper for International Conference**
+- Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., IEEE International Conference on System, Man, and Cybernetics, 2019.
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, Hideaki Joko, et. al., Proceedings of The 11th International Conference on Mobile Computing and Ubiquitous Networking, 2018.
+
+**Domestic Conference (In Japanese)**
+- Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2018. Incentive Research Award.
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, Hideaki Joko, et. al., Proceedings of the 2018 IEICE General Conference, 2018.
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, Hideaki Joko, et. al., Proceedings of the Annual Meeting of The Association for Natural Language Processing, 2016.
+- Evaluation of Word Vectors by Synonym Identification, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2015.
 
 # Patents
 - INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND INFORMATION PROCESSING PROGRAM, Hideaki Joko, WO/2020/095373, Patent description, Pending Patent.
