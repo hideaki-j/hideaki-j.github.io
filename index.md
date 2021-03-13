@@ -43,20 +43,17 @@ March 2014
 - Bachelor's thesis: Accent Detection based on Optimality Theory
 
 # Professional Development
-Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of business education from several institutes including Wharton Online on Coursera.
+Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.
 
-**MARKETING:**
-- Entrepreneurship 1: Developing the Opportunity by Wharton Online
-- Financial Markets by Yale University on Coursera
-- Introduction to Marketing by Wharton Online
-
-**DATA ANALYSIS:**
+# Certifications
+**Data Analysis**
 - A Crash Course in Causality: Inferring Causal Effects from Observational Data by University of Pennsylvania on Coursera
 - Bayesian Statistics: From Concept to Data Analysis by University of California on Coursera
 
-**PROJECT MANAGEMENT:**
-- Three project management related courses on Coursera including Fundamentals of Project Planning and Management by University of Virginia (as an audit)
-- Entry-Level Software Engineering by Mitsubishi Electric (70+ hours software development and project management course)
+**Marketing**
+- Entrepreneurship 1: Developing the Opportunity by Wharton Online
+- Financial Markets by Yale University on Coursera
+- Introduction to Marketing by Wharton Online
 
 # Awards
 Received five awards including:
