@@ -46,7 +46,6 @@ March 2014
 Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of business education from several institutes including Wharton Online on Coursera.
 
 **MARKETING:**
-- Technology Entrepreneurship: Lab to Market by HarvardX (in progress)
 - Entrepreneurship 1: Developing the Opportunity by Wharton Online
 - Financial Markets by Yale University on Coursera
 - Introduction to Marketing by Wharton Online
@@ -58,13 +57,6 @@ Other than research, his interest is in solving business challenges using his ex
 **PROJECT MANAGEMENT:**
 - Three project management related courses on Coursera including Fundamentals of Project Planning and Management by University of Virginia (as an audit)
 - Entry-Level Software Engineering by Mitsubishi Electric (70+ hours software development and project management course)
-
-# Certifications
-- (Data Analysis) A Crash Course in Causality: Inferring Causal Effects from Observational Data by University of Pennsylvania on Coursera
-- (Data Analysis) Bayesian Statistics: From Concept to Data Analysis by University of California on Coursera
-- (Marketing) Entrepreneurship 1: Developing the Opportunity by Wharton Online
-- (Marketing) Financial Markets by Yale University on Coursera
-- (Marketing) Introduction to Marketing by Wharton Online
 
 # Awards
 Received five awards including:
@@ -95,7 +87,4 @@ Our research paper "Intention Understanding with Small Training Data Sets by Uti
 - LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, Hideaki Joko, WO/2019/106758, Pending Patent. (A related application also pending).
 
 # Test Score
-**The Japanese Higher Civil Service Examination (国家公務員総合職試験)**
-- Score: Passed (最終合格)
-- Class: Engineering (区分: 大卒工学)
-- Subject: Physics (選択科目: 物理)
+- Passed **Japanese Higher Civil Service Examination (国家公務員総合職試験)**, which is one of the most difficult Japanese Examination, with 91 percentile out of all applicants, and proved his strong mathematics and engineering skills.
