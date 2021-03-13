@@ -84,4 +84,5 @@ Our research paper "Intention Understanding with Small Training Data Sets by Uti
 - LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, Hideaki Joko, WO/2019/106758, Pending Patent. (A related application also pending).
 
 # Test Score
-- Passed **Japanese Higher Civil Service Examination (国家公務員総合職試験)**, which is one of the most difficult Japanese Examination, with 91 percentile out of all applicants, and proved his strong mathematics and engineering skills.
+**Japanese Higher Civil Service Examination (国家公務員総合職試験)** - Class: Engineering
+- Passed one of the most difficult examinations in Japan with 91 percentile among all the candidates, proving his high ability in mathematics and engineering.
