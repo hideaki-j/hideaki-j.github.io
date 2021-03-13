@@ -16,12 +16,12 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 # Work Experience
 
 **Radboud University,  Netherlands**  - Research Staff\
-MONTH 20XX - PRESENT
+September 2020 - PRESENT
 - Project: conversational search
 - Created the dataset for the research using Amazon Mechanical Turk, and published it to SIGIR 2021 conference.
 
 **Mitsubishi Electric, Japan**  - Research Engineer\
-MONTH 20XX - MONTH 20XX
+April 2016 - August 2020
 - Researched and developed deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
 - Researched and developed an algorithm of deep-learning-based question answering system
 - Developed a text-based automatic error diagnosis algorithm and software
