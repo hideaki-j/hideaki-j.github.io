@@ -9,7 +9,7 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 # Resume
 
-His short resume is [here](https://docs.google.com/document/d/1ne1nWiz4MKw0HYYnHctJ04H2TWU0PXVAoHoaW3VuWXA/edit?usp=sharing) (updated 13-04-2021)
+His short resume can be found [here](https://docs.google.com/document/d/1ne1nWiz4MKw0HYYnHctJ04H2TWU0PXVAoHoaW3VuWXA/edit?usp=sharing) (updated 13-04-2021)
 
 
 # Skills
