@@ -1,5 +1,3 @@
-Hideaki Joko
-=========
 # Short bio
 
 Hideaki Joko is a research staff and PhD candidate at the Institute for Computer and Information Science, Radboud University, Netherlands. He received his MSc from the University of Tokyo for his research on natural language processing (NLP), and BEng in applied mathematics from Waseda University. He was a research engineer at Mitsubishi Electric Information and Technology R&D Center, Japan, from 2016 to 2020.
@@ -17,12 +15,12 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 # Work Experience
 
-## Radboud University,  Netherlands - Research Staff
+**Radboud University,  Netherlands - Research Staff**
 MONTH 20XX - PRESENT
 - Project: conversational search
 - Created the dataset for the research using Amazon Mechanical Turk, and published it to SIGIR 2021 conference.
 
-## Mitsubishi Electric, Japan - Research Engineer
+**Mitsubishi Electric, Japan - Research Engineer**
 MONTH 20XX - MONTH 20XX
 - Researched and developed deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
 - Researched and developed an algorithm of deep-learning-based question answering system
@@ -32,15 +30,15 @@ MONTH 20XX - MONTH 20XX
 
 # Education
 
-## Radboud University, Netherlands - PhD, Data Science
+**Radboud University, Netherlands - PhD, Data Science**
 September 2020 - August 2024
 - Fully-funded PhD program, focusing on conversational search and dialogue system. 
 
-## University of Tokyo, Japan - MSc, Computing System, Multidisciplinary Science
+**University of Tokyo, Japan - MSc, Computing System, Multidisciplinary Science**
 March 2016
 - Master's thesis: Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model
 
-## Waseda University, Japan - BEng. Applied Mathematics
+**Waseda University, Japan - BEng. Applied Mathematics**
 March 2014
 
 
