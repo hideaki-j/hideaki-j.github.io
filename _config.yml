@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 title: Hideaki Joko
 description: NLP and IR research engineer
-show_downloads: true
+show_downloads: "true"
