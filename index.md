@@ -19,7 +19,7 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 **Radboud University,  Netherlands**  - Research Staff\
 September 2020 - PRESENT
 - Project: conversational search
-- Created the conversational entity linking dataset, and published it to SIGIR 2021 conference.
+- Created the conversational search dataset using crowdsourcing, and published it at the SIGIR 2021 conference.
 
 **Mitsubishi Electric, Japan**  - Research Engineer\
 April 2016 - August 2020
