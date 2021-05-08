@@ -19,6 +19,7 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 **Radboud University,  Netherlands**  - Research Staff\
 September 2020 - PRESENT
 - Project: conversational search
+- Created the conversational entity linking dataset, and published it to SIGIR 2021 conference.
 
 **Mitsubishi Electric, Japan**  - Research Engineer\
 April 2016 - August 2020
@@ -64,13 +65,14 @@ Received five awards including:
 
 # First Author Publications
 
+**Refereed Paper for International Conference**
+- Conversational Entity Linking: Problem Definition and Datasets, Hideaki Joko, et. al., The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2021.
+- Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., IEEE International Conference on System, Man, and Cybernetics, 2019.
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, Hideaki Joko, et. al., Proceedings of The 11th International Conference on Mobile Computing and Ubiquitous Networking, 2018.
+
 **Refereed Journal Paper (In Japanese)**
 - Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, Hideaki Joko, et. al., IEICE Transactions on Information and Systems, 2020.
 - Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model,  Hideaki Joko, et. al., Journal of Natural Language Processing, 2017.
-
-**Refereed Paper for International Conference**
-- Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., IEEE International Conference on System, Man, and Cybernetics, 2019.
-- Intention Understanding in Small Training Data Sets by Using Transfer Learning, Hideaki Joko, et. al., Proceedings of The 11th International Conference on Mobile Computing and Ubiquitous Networking, 2018.
 
 **Domestic Conference (In Japanese)**
 - Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
