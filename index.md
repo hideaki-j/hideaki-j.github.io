@@ -87,4 +87,4 @@ Received five awards including:
 
 # Test Score
 **Japanese Higher Civil Service Examination (国家公務員総合職試験)** - Field: Engineering
-- Passed the qualifying exam and interview for technocrat, one of the most difficult exams in Japan, with 91st percentile among all the candidates. This proves his high ability in mathematics and engineering.
+- Passed the exam and interview for technocrat, one of the most difficult exams in Japan, with 91st percentile among all the candidates. This proves his high ability in mathematics and engineering.
