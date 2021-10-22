@@ -88,4 +88,4 @@ Received five awards including:
 
 # Test Score
 **The Japanese Government Official Examination** - Category: Engineering
-- Passed the technocrat exam and interview, one of the most competitive exams in Japan with a pass rate of about 6% in total, proving his high ability in mathematics and engineering.
+- Passed the technocrat exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his high ability in mathematics and engineering.
