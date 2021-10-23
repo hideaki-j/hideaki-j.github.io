@@ -60,7 +60,7 @@ Other than research, his interest is in solving business challenges using his ex
 # Awards
 Received five awards including:
 - Incentive Research Award, The Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
-  - His research paper that proposed an intention understanding method based on transfer learning before the emergence of BERT was selected as one of the best two out of more than 20 papers.
+  - His research paper that proposed an intention understanding method based on multi-task transfer learning before the emergence of BERT was selected as one of the best two out of more than 20 papers.
 - Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software, 2019.
 
 
