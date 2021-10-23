@@ -60,7 +60,7 @@ Other than research, his interest is in solving business challenges using his ex
 # Awards
 Received five awards including:
 - Incentive Research Award, The Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
-  - Our research paper "Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning" was selected as one of the best two out of more than 20 papers.
+  - His research paper that proposed an intention understanding method based on transfer learning before the emergence of BERT was selected as one of the best two out of more than 20 papers.
 - Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software, 2019.
 
 
@@ -77,7 +77,7 @@ Received five awards including:
 
 **Domestic Conference (In Japanese)**
 - Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
-- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2018. Incentive Research Award.
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2018. *Incentive Research Award*.
 - Intention Understanding in Small Training Data Sets by Using Transfer Learning, Hideaki Joko, et. al., Proceedings of the 2018 IEICE General Conference, 2018.
 - Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, Hideaki Joko, et. al., Proceedings of the Annual Meeting of The Association for Natural Language Processing, 2016.
 - Evaluation of Word Vectors by Synonym Identification, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2015.
