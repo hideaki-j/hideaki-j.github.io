@@ -87,8 +87,9 @@ Received five awards including:
 - Conversational Entity Linking: Problem Definition and Datasets, H. Joko, The 20th Dutch-Belgian Information Retrieval Workshop (DIR), 2022.
 
 # Patents
-- INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND INFORMATION PROCESSING PROGRAM, H. Joko, WO/2020/095373, Patent description, Pending Patent.
-- LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, H. Joko, WO/2019/106758, Pending Patent. (A related application also pending).
+- LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, H. Joko, US20210192139.
+- INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND STORAGE MEDIUM STORING INFORMATION PROCESSING PROGRAM, H. Joko, et. al., US20210224475.
+
 
 # Test Score
 **The Japanese Government Official Examination** - Category: Engineering
