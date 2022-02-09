@@ -2,7 +2,7 @@
 
 Hideaki Joko is a research staff and PhD candidate at the Institute for Computer and Information Science, Radboud University, Netherlands. He received his MSc from the University of Tokyo for his research on natural language processing (NLP), and BEng in applied mathematics from Waseda University. He was a research engineer at Mitsubishi Electric Information and Technology R&D Center, Japan, from 2016 to 2020.
 
-His research interests include information retrieval (IR) and NLP, and he has 6+ years research and 4+ years of hands-on experience in these fields.
+His research interests include information retrieval (IR) and NLP, and he has 7+ years research and 4+ years of hands-on experience in these fields.
 
 He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received five awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software. 
 
@@ -65,26 +65,30 @@ Received five awards including:
 
 # First Author Publications
 
-**Refereed Paper for International Conference**
-- Conversational Entity Linking: Problem Definition and Datasets, Hideaki Joko, et. al., The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2021.
-- Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., IEEE International Conference on System, Man, and Cybernetics, 2019.
-- Intention Understanding in Small Training Data Sets by Using Transfer Learning, Hideaki Joko, et. al., Proceedings of The 11th International Conference on Mobile Computing and Ubiquitous Networking, 2018.
+**International Conferences**
+- Radboud University at TREC CAsT 2021, H. Joko, et. al., TREC, 2021.
+- Conversational Entity Linking: Problem Definition and Datasets, H. Joko, et. al., The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2021.
+- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., IEEE International Conference on System, Man, and Cybernetics, 2019.
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., Proceedings of The 11th International Conference on Mobile Computing and Ubiquitous Networking, 2018.
 
-**Refereed Journal Paper (In Japanese)**
-- Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, Hideaki Joko, et. al., IEICE Transactions on Information and Systems, 2020.
-- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model,  Hideaki Joko, et. al., Journal of Natural Language Processing, 2017.
+**Refereed Journal Papers (In Japanese)**
+- Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, H. Joko, et. al., IEICE Transactions on Information and Systems, 2020.
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model,  H. Joko, et. al., Journal of Natural Language Processing, 2017.
 
-**Domestic Conference (In Japanese)**
-- Learning Word Embeddings Using Spatial Information, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
-- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2018. Incentive Research Award.
-- Intention Understanding in Small Training Data Sets by Using Transfer Learning, Hideaki Joko, et. al., Proceedings of the 2018 IEICE General Conference, 2018.
-- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, Hideaki Joko, et. al., Proceedings of the Annual Meeting of The Association for Natural Language Processing, 2016.
-- Evaluation of Word Vectors by Synonym Identification, Hideaki Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2015.
+**Domestic Conferences (In Japanese)**
+- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2018. Incentive Research Award.
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., Proceedings of the 2018 IEICE General Conference, 2018.
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., Proceedings of the Annual Meeting of The Association for Natural Language Processing, 2016.
+- Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2015.
+
+**Presentations**
+- Conversational Entity Linking: Problem Definition and Datasets, H. Joko, The 20th Dutch-Belgian Information Retrieval Workshop (DIR), 2021.
 
 # Patents
-- INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND INFORMATION PROCESSING PROGRAM, Hideaki Joko, WO/2020/095373, Patent description, Pending Patent.
-- LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, Hideaki Joko, WO/2019/106758, Pending Patent. (A related application also pending).
+- INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND INFORMATION PROCESSING PROGRAM, H. Joko, WO/2020/095373, Patent description, Pending Patent.
+- LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, H. Joko, WO/2019/106758, Pending Patent. (A related application also pending).
 
 # Test Score
 **Japanese Higher Civil Service Examination (国家公務員総合職試験)** - Field: Engineering
-- Passed one of the most difficult examinations in Japan with 91 percentile among all the candidates, proving his high ability in mathematics and engineering.
+- Passed the technocrat exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his high ability in mathematics and engineering.
