@@ -84,7 +84,7 @@ Received five awards including:
 - Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2015.
 
 **Presentations**
-- Conversational Entity Linking: Problem Definition and Datasets, H. Joko, The 20th Dutch-Belgian Information Retrieval Workshop (DIR), 2021.
+- Conversational Entity Linking: Problem Definition and Datasets, H. Joko, The 20th Dutch-Belgian Information Retrieval Workshop (DIR), 2022.
 
 # Patents
 - INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND INFORMATION PROCESSING PROGRAM, H. Joko, WO/2020/095373, Patent description, Pending Patent.
