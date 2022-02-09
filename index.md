@@ -1,10 +1,11 @@
+<!-- H. Joko -->
 # Short Bio
 
 Hideaki Joko is a research staff and PhD candidate at the Institute for Computer and Information Science, Radboud University, Netherlands. He received his MSc from the University of Tokyo for his research on natural language processing (NLP), and BEng in applied mathematics from Waseda University. He was a research engineer at Mitsubishi Electric Information and Technology R&D Center, Japan, from 2016 to 2020.
 
 His research interests include information retrieval (IR) and NLP, and he has 7+ years research and 4+ years of hands-on experience in these fields.
 
-He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received five awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software. 
+He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received five awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software. 
 
 
 # Skills
@@ -58,8 +59,8 @@ Other than research, his interest is in solving business challenges using his ex
 
 # Awards
 Received five awards including:
-- Incentive Research Award, The Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
-  - Our research paper "Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning" was selected as one of the best two out of more than 20 papers.
+- Incentive Research Award, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019.
+  - His research paper that proposed an intention understanding method based on multi-task transfer learning before the emergence of BERT was selected as one of the best two out of more than 20 papers.
 - Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software, 2019.
 
 
@@ -90,5 +91,5 @@ Received five awards including:
 - LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, H. Joko, WO/2019/106758, Pending Patent. (A related application also pending).
 
 # Test Score
-**Japanese Higher Civil Service Examination (国家公務員総合職試験)** - Field: Engineering
+**The Japanese Government Official Examination** - Category: Engineering
 - Passed the technocrat exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his high ability in mathematics and engineering.
