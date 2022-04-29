@@ -19,8 +19,8 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 **Radboud University,  Netherlands**  - Research Staff\
 September 2020 - PRESENT
-- Project: conversational search
-- Created the conversational search dataset using crowdsourcing, and published it at the SIGIR 2021 conference.
+- Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021
+- Researched effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021
 
 **Mitsubishi Electric, Japan**  - Research Engineer\
 April 2016 - August 2020
@@ -93,4 +93,4 @@ Received five awards including:
 
 # Test Score
 **The Japanese Government Official Examination** - Category: Engineering
-- Passed the technocrat exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his high ability in mathematics and engineering.
+- Passed the Japanese technocrat candidate selection exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his advanced knowledge of mathematics and engineering.
