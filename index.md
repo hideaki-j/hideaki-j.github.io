@@ -105,7 +105,7 @@ Received six awards and grants including:
 - Passed the Japanese technocrat candidate selection exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his advanced knowledge of mathematics and engineering.
 
 # 🌏 Links
-- [LinkedIn](https://www.linkedin.com/in/hide7531b1143/)
-- [Twitter](https://twitter.com/hideaki_joko)
-- [GitHub](https://github.com/hideaki-j)
+- [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/)
+- [🐦 Twitter](https://twitter.com/hideaki_joko)
+- [💻 GitHub](https://github.com/hideaki-j)
 
