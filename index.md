@@ -17,7 +17,9 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 # Work Experience
 
-**Signal AI, London, UK**
+**Signal AI, London, UK** - Visiting Researcher\
+June 2022 - October 2022
+- Responsible for NLP-related research and development
 
 **Radboud University, Nijmegen, Netherlands**  - Research Staff\
 September 2020 - PRESENT
