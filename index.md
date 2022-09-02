@@ -19,6 +19,7 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 **Signal AI, London, UK** - Visiting Researcher\
 June 2022 - October 2022
+- Signal AI is one of the fastest-growing UK startups (ranked 23rd in Tech Track 100) with a strong focus on NLP and IR technology.
 - Responsible for NLP-related research and development
 
 **Radboud University, Nijmegen, Netherlands**  - Research Staff\
