@@ -1,6 +1,6 @@
 <!-- H. Joko -->
 
-[ [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/) | [🐦 Twitter](https://twitter.com/hideaki_joko) | [💻 GitHub](https://github.com/hideaki-j) ]
+| [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/) | [🐦 Twitter](https://twitter.com/hideaki_joko) | [💻 GitHub](https://github.com/hideaki-j) |
 
 # 📙 Short Bio
 
