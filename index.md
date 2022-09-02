@@ -1,5 +1,7 @@
 <!-- H. Joko -->
 
+[ [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/) | [🐦 Twitter](https://twitter.com/hideaki_joko) | [💻 GitHub](https://github.com/hideaki-j) ]
+
 # 📙 Short Bio
 
 Hideaki Joko is a research staff and PhD candidate at the Institute for Computer and Information Science, Radboud University, Netherlands. He received his MSc from the University of Tokyo for his research on natural language processing (NLP), and BEng in applied mathematics from Waseda University. He was a research engineer at Mitsubishi Electric Information and Technology R&D Center, Japan, from 2016 to 2020.
@@ -103,9 +105,4 @@ Received six awards and grants including:
 # 💯 Test Score
 **The Japanese Government Official Examination** - Category: Engineering
 - Passed the Japanese technocrat candidate selection exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his advanced knowledge of mathematics and engineering.
-
-# 🌏 Links
-- [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/)
-- [🐦 Twitter](https://twitter.com/hideaki_joko)
-- [💻 GitHub](https://github.com/hideaki-j)
 
