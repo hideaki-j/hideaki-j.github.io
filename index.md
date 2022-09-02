@@ -85,6 +85,7 @@ Received five awards including:
 
 **Presentations**
 - Conversational Entity Linking: Problem Definition and Datasets, H. Joko, The 20th Dutch-Belgian Information Retrieval Workshop (DIR), 2022.
+- Entity Linking in Conversations, H. Joko, Search-Oriented Conversational AI (SCAI) Workshop at SIGIR, 2022.
 
 # Patents
 - LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, H. Joko, US20210192139.
