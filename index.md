@@ -17,12 +17,14 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 # Work Experience
 
-**Radboud University,  Netherlands**  - Research Staff\
+**Signal AI, London, UK**
+
+**Radboud University, Nijmegen, Netherlands**  - Research Staff\
 September 2020 - PRESENT
 - Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021
 - Researched effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021
 
-**Mitsubishi Electric, Japan**  - Research Engineer\
+**Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
 April 2016 - August 2020
 - Researched and developed deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
 - Researched and developed an algorithm of deep-learning-based question answering system
@@ -32,15 +34,15 @@ April 2016 - August 2020
 
 # Education
 
-**Radboud University, Netherlands** - PhD, Data Science\
+**Radboud University, Nijmegen, Netherlands** - PhD, Data Science\
 September 2020 - August 2024
 - Fully-funded PhD program, focusing on conversational search and dialogue system. 
 
-**University of Tokyo, Japan** - MSc, Computing System, Multidisciplinary Science\
+**University of Tokyo, Tokyo, Japan** - MSc, Computing System, Multidisciplinary Science\
 March 2016
 - Master's thesis: Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model
 
-**Waseda University, Japan** - BEng. Applied Mathematics\
+**Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
 - Bachelor's thesis: Accent Detection based on Optimality Theory
 
@@ -57,12 +59,15 @@ Other than research, his interest is in solving business challenges using his ex
 - Financial Markets by Yale University on Coursera
 - Introduction to Marketing by Wharton Online
 
-# Awards
-Received five awards including:
+# Awards and Grants
+Received six awards and grants including:
+- Travel Grants for SIGIR 2021 conference
 - Incentive Research Award, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019.
   - His research paper that proposed an intention understanding method based on multi-task transfer learning before the emergence of BERT was selected as one of the best two out of more than 20 papers.
 - Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software, 2019.
 
+# Volunteers
+- SIGIR 2022 Conference Volunteer, Association for Computing Machinery (ACM).
 
 # First Author Publications
 
@@ -90,7 +95,6 @@ Received five awards including:
 # Patents
 - LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, H. Joko, US20210192139.
 - INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND STORAGE MEDIUM STORING INFORMATION PROCESSING PROGRAM, H. Joko, et. al., US20210224475.
-
 
 # Test Score
 **The Japanese Government Official Examination** - Category: Engineering
