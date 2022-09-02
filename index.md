@@ -74,9 +74,10 @@ Received six awards and grants including:
 # First Author Publications
 
 **International Conferences**
+- Personal Entity, Concept, and Named Entity Linking in Conversations, H. Joko, et. al., ACM CIKM 2022.
 - Radboud University at TREC CAsT 2021, H. Joko, et. al., TREC, 2021.
-- Conversational Entity Linking: Problem Definition and Datasets, H. Joko, et. al., The 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2021.
-- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., IEEE International Conference on System, Man, and Cybernetics, 2019.
+- Conversational Entity Linking: Problem Definition and Datasets, H. Joko, et. al., ACM SIGIR, 2021.
+- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., IEEE International Conference on System, Man, and Cybernetics (SMC), 2019.
 - Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., Proceedings of The 11th International Conference on Mobile Computing and Ubiquitous Networking, 2018.
 
 **Refereed Journal Papers (In Japanese)**
