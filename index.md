@@ -1,5 +1,5 @@
 <!-- H. Joko -->
-# Short Bio
+# 📙 Short Bio
 
 Hideaki Joko is a research staff and PhD candidate at the Institute for Computer and Information Science, Radboud University, Netherlands. He received his MSc from the University of Tokyo for his research on natural language processing (NLP), and BEng in applied mathematics from Waseda University. He was a research engineer at Mitsubishi Electric Information and Technology R&D Center, Japan, from 2016 to 2020.
 
@@ -8,14 +8,14 @@ His research interests include information retrieval (IR) and NLP, and he has 7+
 He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received five awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software. 
 
 
-# Skills
-- Programming Languages: Python, C#, Java, SPARQL, etc.
-- Software Libraries: PyTorch, Keras, Scikit-learn, Pandas, MySQL, Numpy, Elasticsearch, etc.
+# 💪 Skills
+- Programming Languages: Python, C#, Java, etc.
+- Software Libraries: HuggingFace, PyTorch, Elasticsearch, etc.
 - Operating Systems: Linux, Mac OS, Windows
 - Languages: English and Japanese
 
 
-# Work Experience
+# 💼 Work Experience
 
 **Signal AI, London, UK** - Visiting Researcher\
 June 2022 - October 2022
@@ -35,7 +35,7 @@ April 2016 - August 2020
 - Led an R&D project in collaboration with a manufacturing division, and developed a C#-based information retrieval software to make a design process efficient
 
 
-# Education
+# ‍🎓 Education
 
 **Radboud University, Nijmegen, Netherlands** - PhD, Data Science\
 September 2020 - August 2024
@@ -49,10 +49,10 @@ March 2016
 March 2014
 - Bachelor's thesis: Accent Detection based on Optimality Theory
 
-# Professional Development
+# 📚 Professional Development
 Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.
 
-# Certifications
+# 📜 Certifications
 **Data Analysis**
 - A Crash Course in Causality: Inferring Causal Effects from Observational Data by University of Pennsylvania on Coursera
 - Bayesian Statistics: From Concept to Data Analysis by University of California on Coursera
@@ -62,17 +62,17 @@ Other than research, his interest is in solving business challenges using his ex
 - Financial Markets by Yale University on Coursera
 - Introduction to Marketing by Wharton Online
 
-# Awards and Grants
+# 🏆 Awards and Grants
 Received six awards and grants including:
 - Travel Grants for SIGIR 2021 conference
 - Incentive Research Award, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019.
   - His research paper that proposed an intention understanding method based on multi-task transfer learning before the emergence of BERT was selected as one of the best two out of more than 20 papers.
 - Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software, 2019.
 
-# Volunteering
+# 🙋 Volunteering
 - SIGIR 2022 Conference Volunteer, Association for Computing Machinery (ACM).
 
-# First Author Publications
+# 📄 First Author Publications
 
 **International Conferences**
 - Personal Entity, Concept, and Named Entity Linking in Conversations, H. Joko, et. al., ACM CIKM 2022.
@@ -96,10 +96,10 @@ Received six awards and grants including:
 - Conversational Entity Linking: Problem Definition and Datasets, H. Joko, The 20th Dutch-Belgian Information Retrieval Workshop (DIR), 2022.
 - Entity Linking in Conversations, H. Joko, Search-Oriented Conversational AI (SCAI) Workshop at SIGIR, 2022.
 
-# Patents
+# 💡 Patents
 - LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, H. Joko, US20210192139.
 - INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND STORAGE MEDIUM STORING INFORMATION PROCESSING PROGRAM, H. Joko, et. al., US20210224475.
 
-# Test Score
+# 💯 Test Score
 **The Japanese Government Official Examination** - Category: Engineering
 - Passed the Japanese technocrat candidate selection exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his advanced knowledge of mathematics and engineering.
