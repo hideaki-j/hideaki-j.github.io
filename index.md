@@ -29,17 +29,17 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 # 💼 Work Experience
 
-**Signal AI, London, UK** - Visiting Researcher\
+**🇬🇧 Signal AI, London, UK** - Visiting Researcher\
 June 2022 - October 2022
 - Signal AI is one of the fastest-growing UK startups (ranked 23rd in Tech Track 100) with a strong focus on NLP and IR technology.
 - As a visiting researcher, I was responsible for NLP-related research and development
 
-**Radboud University, Nijmegen, Netherlands**  - Research Staff\
+**🇳🇱 Radboud University, Nijmegen, Netherlands**  - Research Staff\
 September 2020 - PRESENT
 - Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021
 - Researched effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021
 
-**Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
+**🇯🇵 Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
 April 2016 - August 2020
 - Researched and developed deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
 - Researched and developed an algorithm of deep-learning-based question answering system
@@ -49,15 +49,15 @@ April 2016 - August 2020
 
 # ‍🎓 Education
 
-**Radboud University, Nijmegen, Netherlands** - PhD, Data Science\
+**🇳🇱 Radboud University, Nijmegen, Netherlands** - PhD, Data Science\
 September 2020 - August 2024
 - Fully-funded PhD program, focusing on conversational search and dialogue system. 
 
-**University of Tokyo, Tokyo, Japan** - MSc, Computing System, Multidisciplinary Science\
+**🇯🇵 University of Tokyo, Tokyo, Japan** - MSc, Computing System, Multidisciplinary Science\
 March 2016
 - Master's thesis: Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model
 
-**Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
+**🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
 - Bachelor's thesis: Accent Detection based on Optimality Theory
 
