@@ -1,18 +1,8 @@
 <!-- H. Joko -->
-<center>
-  <a href="https://www.linkedin.com/in/hide7531b1143/">🔗 LinkedIn</a>
-</center>
 
-
-<center>
-  <table style="width:100%">
-  <tr>
-    <td><a href="https://www.linkedin.com/in/hide7531b1143/">🔗 LinkedIn</a></td>
-    <td><a href="https://twitter.com/hideaki_joko">🐦 Twitter</a></td>
-    <td><a href="https://github.com/hideaki-j">💻 GitHub</a></td>
-  </tr>
-  </table>
-</center>
+<p align="center">
+  <td><a href="https://www.linkedin.com/in/hide7531b1143/">🔗 LinkedIn</a></td> | <td><a href="https://twitter.com/hideaki_joko">🐦 Twitter</a></td> | <td><a href="https://github.com/hideaki-j">💻 GitHub</a></td>
+</p>
 
 <!--
 | [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/) | [🐦 Twitter](https://twitter.com/hideaki_joko) | [💻 GitHub](https://github.com/hideaki-j) |
