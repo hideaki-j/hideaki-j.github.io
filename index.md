@@ -1,4 +1,8 @@
 <!-- H. Joko -->
+<center>
+  <a href="https://www.linkedin.com/in/hide7531b1143/">🔗 LinkedIn</a>
+</center>
+
 
 <center>
   <table style="width:100%">
@@ -8,7 +12,7 @@
     <td><a href="https://github.com/hideaki-j">💻 GitHub</a></td>
   </tr>
   </table>
-</center>  
+</center>
 
 <!--
 | [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/) | [🐦 Twitter](https://twitter.com/hideaki_joko) | [💻 GitHub](https://github.com/hideaki-j) |
