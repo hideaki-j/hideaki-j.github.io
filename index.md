@@ -16,9 +16,9 @@
 
 Hideaki Joko is a research staff and PhD candidate at the Institute for Computer and Information Science, Radboud University, Netherlands. He received his MSc from the University of Tokyo for his research on natural language processing (NLP), and BEng in applied mathematics from Waseda University. He was a research engineer at Mitsubishi Electric Information and Technology R&D Center, Japan, from 2016 to 2020.
 
-His research interests include information retrieval (IR) and NLP, and he has 7+ years research and 4+ years of hands-on experience in these fields.
+His research interests include information retrieval (IR) and NLP, and he has 7+ years of research and 4+ years of hands-on experience in these fields.
 
-He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received six awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making a mechanical device design process efficient by developing an IR algorithm and software. 
+He has published 10+ papers in conferences and peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received six awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making a mechanical device design process efficient by developing an IR algorithm and software. 
 
 # 💪 Skills
 - Programming Languages: Python, C#, Java, etc.
@@ -36,14 +36,14 @@ June 2022 - October 2022
 
 **🇳🇱 Radboud University, Nijmegen, Netherlands**  - Research Staff\
 September 2020 - PRESENT
-- Developed conversational entity linking method and tool, and will publish it at the CIKM 2022
+- Developed conversational entity linking method and tool, and will publish it at CIKM 2022
 - Researched effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021
-- Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021
+- Developed the method for creating conversational entity linking datasets, and published it at SIGIR 2021
 
 **🇯🇵 Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
 April 2016 - August 2020
-- Researched and developed deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
-- Researched and developed an algorithm of deep-learning-based question answering system
+- Researched and developed a deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
+- Researched and developed an algorithm for deep-learning-based question answering system
 - Developed a text-based automatic error diagnosis algorithm and software
 - Led an R&D project in collaboration with a manufacturing division, and developed a C#-based information retrieval software to make a design process efficient
 
