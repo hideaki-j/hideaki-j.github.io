@@ -63,10 +63,10 @@ March 2014
 
 # 🏆 Awards and Grants
 Received six awards and grants including:
-- Travel Grant for SIGIR 2021 conference
-- Incentive Research Award, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019.
-  - His research paper that proposed an intention understanding method based on multi-task transfer learning before the emergence of BERT was selected as one of the best two out of more than 20 papers.
-- Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software, 2019.
+- **SIGIR Student Travel Grant** covering SIGIR 2021 conference registration fee
+- **Incentive Research Award**, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019.
+  - His research that proposes an intention understanding method utilizing multi-task transfer learning was selected as one of the best two out of more than 20 papers.
+- **Mitsubishi Electric R&D Center President Award** for making the design process efficient by developing an IR algorithm and software, 2019.
 
 # 🙋 Volunteering
 - SIGIR 2022 Conference Volunteer, Association for Computing Machinery (ACM).
