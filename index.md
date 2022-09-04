@@ -64,9 +64,9 @@ March 2014
 # 🏆 Awards
 Received six awards and grants including:
 - **SIGIR Student Travel Grant** covering the SIGIR 2021 conference registration fee
-- **Incentive Research Award**, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019.
+- **Incentive Research Award** from the JSAI Workshop on Interactive Information Access and Visual Mining for his research on intention understanding utilizing multi-task transfer learning, 2019.
 - **Mitsubishi Electric R&D Center President Award** for making the design process efficient by developing an IR algorithm and software, 2019.
-- 
+
 <!--
   - His research that proposes an intention understanding method utilizing multi-task transfer learning was selected as one of the best two out of more than 20 papers.
 -->
@@ -88,11 +88,11 @@ Received six awards and grants including:
 - Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., Journal of Natural Language Processing, 2017.
 
 **Domestic Conferences (In Japanese)**
-- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., The Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
-- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., The Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2018. Incentive Research Award (Success rate: 10%).
+- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., JSAI Workshop on Information Access and Visual Mining, 2019.
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., JSAI Workshop on Information Access and Visual Mining, 2018. Incentive Research Award (Success rate: 10%).
 - Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., IEICE General Conference, 2018.
 - Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., The Association for Natural Language Processing, 2016.
-- Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., The Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2015.
+- Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., JSAI Workshop on Information Access and Visual Mining, 2015.
 
 **Presentations**
 - Entity Linking in Conversations, H. Joko, Search-Oriented Conversational AI (SCAI) Workshop at SIGIR, 2022.
