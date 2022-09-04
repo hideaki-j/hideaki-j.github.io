@@ -78,18 +78,18 @@ Received six awards and grants including:
 - Radboud University at TREC CAsT 2021, H. Joko, et. al., TREC, 2021.
 - Conversational Entity Linking: Problem Definition and Datasets, H. Joko, et. al., ACM SIGIR, 2021.
 - Learning Word Embeddings Using Spatial Information, H. Joko, et. al., IEEE International Conference on System, Man, and Cybernetics (SMC), 2019.
-- Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., Proceedings of The 11th International Conference on Mobile Computing and Ubiquitous Networking, 2018.
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., International Conference on Mobile Computing and Ubiquitous Networking, 2018.
 
 **Refereed Journal Papers (In Japanese)**
 - Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, H. Joko, et. al., IEICE Transactions on Information and Systems, 2020.
-- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model,  H. Joko, et. al., Journal of Natural Language Processing, 2017.
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., Journal of Natural Language Processing, 2017.
 
 **Domestic Conferences (In Japanese)**
-- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
-- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2018. Incentive Research Award.
-- Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., Proceedings of the 2018 IEICE General Conference, 2018.
-- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., Proceedings of the Annual Meeting of The Association for Natural Language Processing, 2016.
-- Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., Proceedings of the Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2015.
+- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2019.
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2018. Incentive Research Award.
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., IEICE General Conference, 2018.
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., Association for Natural Language Processing, 2016.
+- Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., Japanese Society for Artificial Intelligence Workshop on Access and Visual Mining, 2015.
 
 **Presentations**
 - Entity Linking in Conversations, H. Joko, Search-Oriented Conversational AI (SCAI) Workshop at SIGIR, 2022.
