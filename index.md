@@ -18,7 +18,7 @@ Hideaki Joko is a research staff and PhD candidate at the Institute for Computer
 
 His research interests include information retrieval (IR) and NLP, and he has 7+ years research and 4+ years of hands-on experience in these fields.
 
-He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received five awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software. 
+He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received six awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software. 
 
 # 💪 Skills
 - Programming Languages: Python, C#, Java, etc.
