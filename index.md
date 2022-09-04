@@ -88,11 +88,11 @@ Received six awards and grants including:
 - Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., Journal of Natural Language Processing, 2017.
 
 **Domestic Conferences (In Japanese)**
-- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., JSAI Workshop on Information Access and Visual Mining, 2019.
-- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., JSAI Workshop on Information Access and Visual Mining, 2018. Incentive Research Award (Success rate: 10%).
+- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2019.
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2018. Incentive Research Award (Success rate: 10%).
 - Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., IEICE General Conference, 2018.
 - Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., The Association for Natural Language Processing, 2016.
-- Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., JSAI Workshop on Information Access and Visual Mining, 2015.
+- Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2015.
 
 **Presentations**
 - Entity Linking in Conversations, H. Joko, Search-Oriented Conversational AI (SCAI) Workshop at SIGIR, 2022.
