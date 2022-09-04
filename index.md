@@ -57,6 +57,10 @@ September 2020 - August 2024
 March 2016
 - Master's thesis: Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model
 
+<!--
+Researched Word2vec-based automatic synonym acquisition method for his MSc thesis project and published it to Journal of Natural Language Processing (as well as two conferences)
+-->
+
 **🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
 - Bachelor's thesis: Accent Detection based on Optimality Theory
