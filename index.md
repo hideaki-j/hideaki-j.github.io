@@ -31,7 +31,7 @@ He has published 10+ papers in conferences and the peer-reviewed journals, and f
 
 **🇬🇧 Signal AI, London, UK** - Visiting Researcher\
 June 2022 - October 2022
-- Signal AI is one of the fastest-growing UK startups (ranked 23rd in Tech Track 100) with a strong focus on NLP and IR technology.
+- Signal AI is one of the fastest-growing UK startups (ranked 23rd in Tech Track 100) with a strong focus on NLP and IR technology
 - As a visiting researcher, I was responsible for NLP-related research and development
 
 **🇳🇱 Radboud University, Nijmegen, Netherlands**  - Research Staff\
@@ -63,7 +63,7 @@ March 2014
 
 # 🏆 Awards
 Received six awards and grants including:
-- **SIGIR Student Travel Grant** covering the SIGIR 2021 conference registration fee
+- **SIGIR Student Travel Grant** covering the SIGIR 2021 conference registration fee, 2021.
 - **Incentive Research Award** from the JSAI Workshop on Interactive Information Access and Visual Mining for his research on intention understanding utilizing multi-task transfer learning, 2019.
 - **Mitsubishi Electric R&D Center President Award** for making the design process efficient by developing an IR algorithm and software, 2019.
 
