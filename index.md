@@ -18,7 +18,7 @@ Hideaki Joko is a research staff and PhD candidate at the Institute for Computer
 
 His research interests include information retrieval (IR) and NLP, and he has 7+ years research and 4+ years of hands-on experience in these fields.
 
-He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received six awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making the design process efficient by developing an IR algorithm and software. 
+He has published 10+ papers in conferences and the peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received six awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence (JSAI) Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making a mechanical device design process efficient by developing an IR algorithm and software. 
 
 # 💪 Skills
 - Programming Languages: Python, C#, Java, etc.
@@ -65,7 +65,7 @@ March 2014
 Received six awards and grants including:
 - **SIGIR Student Travel Grant** covering the SIGIR 2021 conference registration fee, 2021.
 - **Incentive Research Award** from the JSAI Workshop on Interactive Information Access and Visual Mining for his research on intention understanding utilizing multi-task transfer learning, 2019.
-- **Mitsubishi Electric R&D Center President Award** for making the design process efficient by developing an IR algorithm and software, 2019.
+- **Mitsubishi Electric R&D Center President Award** for making a mechanical device design process efficient by developing an IR algorithm and software, 2019.
 
 <!--
   - His research that proposes an intention understanding method utilizing multi-task transfer learning was selected as one of the best two out of more than 20 papers.
