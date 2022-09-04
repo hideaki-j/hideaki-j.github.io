@@ -47,7 +47,6 @@ April 2016 - August 2020
 - Developed a text-based automatic error diagnosis algorithm and software
 - Led an R&D project in collaboration with a manufacturing division, and developed a C#-based information retrieval software to make a design process efficient
 
-
 # ‍🎓 Education
 
 **🇳🇱 Radboud University, Nijmegen, Netherlands** - PhD, Data Science\
@@ -64,10 +63,13 @@ March 2014
 
 # 🏆 Awards
 Received six awards and grants including:
-- **SIGIR Student Travel Grant** covering SIGIR 2021 conference registration fee
-- **Incentive Research Award**, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019.
-  - His research that proposes an intention understanding method utilizing multi-task transfer learning was selected as one of the best two out of more than 20 papers.
+- **SIGIR Student Travel Grant** covering the SIGIR 2021 conference registration fee
+- **Incentive Research Award**, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019. (Success rate: 10%)
 - **Mitsubishi Electric R&D Center President Award** for making the design process efficient by developing an IR algorithm and software, 2019.
+<!-- For Incentive Research Award
+
+  - His research that proposes an intention understanding method utilizing multi-task transfer learning was selected as one of the best two out of more than 20 papers.
+-->
 
 # 🙋 Volunteering
 - SIGIR 2022 Conference Volunteer, Association for Computing Machinery (ACM).
