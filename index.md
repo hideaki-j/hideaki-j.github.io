@@ -61,22 +61,6 @@ March 2016
 March 2014
 - Bachelor's thesis: Accent Detection based on Optimality Theory
 
-# 📚 Professional Development
-Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.
-
-**📊 Data Analysis** Course Certificates
-- A Crash Course in Causality: Inferring Causal Effects from Observational Data by University of Pennsylvania on Coursera
-- Bayesian Statistics: From Concept to Data Analysis by University of California on Coursera
-
-**👔 Marketing** Course Certificates
-- Entrepreneurship 1: Developing the Opportunity by Wharton Online
-- Financial Markets by Yale University on Coursera
-- Introduction to Marketing by Wharton Online
-
-<!--
-# 📜 Certifications
--->
-
 # 🏆 Awards and Grants
 Received six awards and grants including:
 - Travel Grants for SIGIR 2021 conference
@@ -114,6 +98,22 @@ Received six awards and grants including:
 # 💡 Patents
 - LANGUAGE PROCESSING DEVICE, LANGUAGE PROCESSING SYSTEM AND LANGUAGE PROCESSING METHOD, H. Joko, US20210192139.
 - INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND STORAGE MEDIUM STORING INFORMATION PROCESSING PROGRAM, H. Joko, et. al., US20210224475.
+
+# 🧑‍🏫 Teaching
+- Information Retrieval MSc Thesis Project at Radboud University, 2022 - Daily Supervisor
+- Information Retrieval Course at Radboud University, 2021 - Teaching Assistant
+
+# 📚 Professional Development
+Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.
+
+**📊 Data Analysis** Course Certificates
+- A Crash Course in Causality: Inferring Causal Effects from Observational Data by University of Pennsylvania on Coursera
+- Bayesian Statistics: From Concept to Data Analysis by University of California on Coursera
+
+**👔 Marketing** Course Certificates
+- Entrepreneurship 1: Developing the Opportunity by Wharton Online
+- Financial Markets by Yale University on Coursera
+- Introduction to Marketing by Wharton Online
 
 # 💯 Test Score
 **The Japanese Government Official Examination** - Category: Engineering
