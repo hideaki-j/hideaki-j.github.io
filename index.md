@@ -61,7 +61,7 @@ March 2016
 March 2014
 - Bachelor's thesis: Accent Detection based on Optimality Theory
 
-# 🏆 Awards and Grants
+# 🏆 Awards
 Received six awards and grants including:
 - **SIGIR Student Travel Grant** covering SIGIR 2021 conference registration fee
 - **Incentive Research Award**, The Japanese Society for Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, 2019.
