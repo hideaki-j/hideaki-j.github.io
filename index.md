@@ -36,8 +36,9 @@ June 2022 - October 2022
 
 **🇳🇱 Radboud University, Nijmegen, Netherlands**  - Research Staff\
 September 2020 - PRESENT
-- Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021
+- Developed conversational entity linking method and tool, and will publish it at the CIKM 2022
 - Researched effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021
+- Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021
 
 **🇯🇵 Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
 April 2016 - August 2020
