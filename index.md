@@ -100,8 +100,8 @@ Received six awards and grants including:
 - INFORMATION PROCESSING DEVICE, INFORMATION PROCESSING METHOD, AND STORAGE MEDIUM STORING INFORMATION PROCESSING PROGRAM, H. Joko, et. al., US20210224475.
 
 # 🧑‍🏫 Teaching
-- Information Retrieval MSc Thesis Project at Radboud University, 2022 - Daily Supervisor
-- Information Retrieval Course at Radboud University, 2021 - Teaching Assistant
+- **Information Retrieval MSc Thesis Project** at Radboud University, 2022 - Daily Supervisor
+- **Information Retrieval Course** at Radboud University, 2021 - Teaching Assistant
 
 # 📚 Professional Development
 Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.
