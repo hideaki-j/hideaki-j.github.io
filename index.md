@@ -67,6 +67,7 @@ March 2014
 
 # 🏆 Awards
 Received six awards and grants including:
+- **CIKM National Science Foundation Travel Grant** covering the cost of attending CIKM up to $1000, 2022.
 - **SIGIR Student Travel Grant** covering the SIGIR 2021 conference registration fee, 2021.
 - **Incentive Research Award** from the JSAI Workshop on Interactive Information Access and Visual Mining for his research on intention understanding utilizing multi-task transfer learning, 2019.
 - **Mitsubishi Electric R&D Center President Award** for making a mechanical device design process efficient by developing an IR algorithm and software, 2019.
