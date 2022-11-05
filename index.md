@@ -100,6 +100,7 @@ Received six awards and grants including:
 - Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2015.
 
 **Presentations**
+- Personal Entity, Concept, and Named Entity Linking in Conversations, H. Joko, MICROS Workshop at CIKM, 2022. (Invited)
 - Entity Linking in Conversations, H. Joko, Search-Oriented Conversational AI (SCAI) Workshop at SIGIR, 2022.
 - Conversational Entity Linking: Problem Definition and Datasets, H. Joko, The 20th Dutch-Belgian Information Retrieval Workshop (DIR), 2022.
 
