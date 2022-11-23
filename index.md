@@ -28,17 +28,16 @@ He has published 10+ papers in conferences and peer-reviewed journals, and filed
 
 
 # 💼 Work Experience
+**🇳🇱 Radboud University, Nijmegen, Netherlands**  - Researcher\
+September 2020 - PRESENT
+- Developed conversational entity linking method and tool, and will publish it at CIKM 2022
+- Researched effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021
+- Developed the method for creating conversational entity linking datasets, and published it at SIGIR 2021
 
 **🇬🇧 Signal AI, London, UK** - Visiting Researcher\
 June 2022 - October 2022
 - Signal AI is one of the fastest-growing UK startups (ranked 23rd in Tech Track 100) with a strong focus on NLP and IR technology
 - As a visiting researcher, I was responsible for NLP-related research and development
-
-**🇳🇱 Radboud University, Nijmegen, Netherlands**  - Research Staff\
-September 2020 - PRESENT
-- Developed conversational entity linking method and tool, and will publish it at CIKM 2022
-- Researched effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021
-- Developed the method for creating conversational entity linking datasets, and published it at SIGIR 2021
 
 **🇯🇵 Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
 April 2016 - August 2020
