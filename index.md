@@ -30,9 +30,10 @@ He has published 10+ papers in conferences and peer-reviewed journals, and filed
 # 💼 Work Experience
 **🇳🇱 Radboud University, Nijmegen, Netherlands**  - Researcher\
 September 2020 - PRESENT
-- Developed conversational entity linking method and tool, and will publish it at CIKM 2022
-- Researched effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021
-- Developed the method for creating conversational entity linking datasets, and published it at SIGIR 2021
+- Responsible for researching and developing NLP and IR, as a fully-employed researcher from the university and PhD candidate.
+- Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021.
+- Researched the effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021.
+- Developed conversational entity linking method and tool, and published it at the CIKM 2022.
 
 **🇬🇧 Signal AI, London, UK** - Visiting Researcher\
 June 2022 - October 2022
@@ -52,9 +53,10 @@ April 2016 - August 2020
 September 2020 - August 2024
 - Fully-funded PhD program, focusing on conversational search and dialogue system. 
 
-**🇯🇵 University of Tokyo, Tokyo, Japan** - MSc, Computing System, Multidisciplinary Science\
+**🇯🇵 University of Tokyo, Tokyo, Japan** - MSc, Natural Language Processing\
 March 2016
-- Master's thesis: Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model
+- Received his research master's degree from Computing System Group, Multidisciplinary Science Department, through his research on natural language processing (NLP).
+- His thesis focuses on synonym detection utilizing the skip-gram model, which resulted in a publication in the Journal of Natural Language Processing.
 
 <!--
 Researched Word2vec-based automatic synonym acquisition method for his MSc thesis project and published it to Journal of Natural Language Processing (as well as two conferences)
