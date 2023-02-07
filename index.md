@@ -28,9 +28,9 @@ He has published 10+ papers in conferences and peer-reviewed journals, and filed
 
 
 # 💼 Work Experience
-**🇳🇱 Radboud University, Nijmegen, Netherlands**  - Researcher\
+**🇳🇱 Radboud University, Nijmegen, Netherlands** - Doctoral Researcher\
 September 2020 - PRESENT
-- Responsible for researching and developing NLP and IR, as a fully-employed researcher from the university and PhD candidate.
+- Responsible for researching and developing NLP and IR, as a fully-employed researcher at the university and PhD candidate.
 - Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021.
 - Researched the effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021.
 - Developed conversational entity linking method and tool, and published it at the CIKM 2022.
