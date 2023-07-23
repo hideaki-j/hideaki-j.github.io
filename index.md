@@ -78,7 +78,8 @@ Received six awards and grants including:
 -->
 
 # 🙋 Volunteering
-- SIGIR 2022 Conference Volunteer, Association for Computing Machinery (ACM).
+- Conversational User Interface (CUI) Conference Volunteer, Association for Computing Machinery (ACM), 2023.
+- SIGIR Conference Volunteer, Association for Computing Machinery (ACM), 2022.
 
 # 📄 First Author Publications
 
