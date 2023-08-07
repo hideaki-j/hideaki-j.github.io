@@ -78,8 +78,8 @@ Received six awards and grants including:
 -->
 
 # 🙋 Volunteering
-- Conversational User Interface (CUI) Conference Volunteer, Association for Computing Machinery (ACM), 2023.
-- SIGIR Conference Volunteer, Association for Computing Machinery (ACM), 2022.
+- ACM Conversational User Interface (CUI) Conference Volunteer, 2023.
+- ACM SIGIR Conference Volunteer, 2022.
 
 # 📄 First Author Publications
 
@@ -129,8 +129,8 @@ Other than research, his interest is in solving business challenges using his ex
 - Introduction to Marketing by Wharton Online
 
 # 💯 Test Score
-**The Japanese Government Official Examination** - Category: Engineering
-- Passed the Japanese technocrat candidate selection exam and interview, one of the most difficult exams in Japan with a pass rate of about 6% in total, proving his advanced knowledge of mathematics and engineering.
+**Japanese Higher Civil Service Examination** - Category: Engineering
+- Successfully passed the highly selective Japanese governmental examination and interview for high-level administrative positions, with a pass rate of about 6%, demonstrating advanced knowledge of mathematics and engineering. Although honored by the opportunity, he ultimately chose to pursue his career as an industry researcher.
 
 <!--
 # 🌏 Links
