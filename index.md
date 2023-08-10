@@ -16,9 +16,9 @@
 
 Hideaki Joko is a researcher and PhD candidate at Radboud University, Netherlands. He received his MSc from the University of Tokyo for his research on natural language processing (NLP), and BEng in applied mathematics from Waseda University. He was a research engineer at Mitsubishi Electric, Japan, from 2016 to 2020. 
 
-His research interests include information retrieval (IR) and NLP, and he has 7+ years of research and 4+ years of hands-on experience in these fields.
+His research interests include information retrieval (IR) and NLP, and he has ~8 years of research and ~5 years of hands-on experience in these fields.
 
-He has published 10+ papers in conferences and peer-reviewed journals, and filed several patents on IR and NLP algorithms and software. He received six awards including the incentive research award for his NLP research from the Japanese Society of Artificial Intelligence Workshop on Interactive Information Access and Visual Mining, and the Mitsubishi Electric R&D Center president award for making a mechanical device design process efficient by developing an IR algorithm and software.
+He has published 10+ papers in conferences and peer-reviewed journals and filed several patents on IR and NLP algorithms and software. He has received multiple awards, including the Incentive Research Award for his NLP research and the Mitsubishi Electric R&D Center President's Award for developing an IR algorithm that made the mechanical design process more efficient.
 
 # 💪 Skills
 - Programming Languages: Python, C#, Java, etc.
@@ -55,16 +55,15 @@ September 2020 - August 2024
 
 **🇯🇵 University of Tokyo, Tokyo, Japan** - MSc, Natural Language Processing\
 March 2016
-- Received his research master's degree from Computing System Group, Multidisciplinary Science Department, through his research on natural language processing (NLP).
-- His thesis focuses on synonym detection utilizing the skip-gram model, which resulted in a publication in the Journal of Natural Language Processing.
-
-<!--
-Researched Word2vec-based automatic synonym acquisition method for his MSc thesis project and published it to Journal of Natural Language Processing (as well as two conferences)
--->
+- Earned a research master's degree from Computing System Group, Multidisciplinary Science Department, through his research on natural language processing (NLP).
+- Achieved a GPA of 3.7/4.0, demonstrating a commitment to academic excellence.
+- Thesis on synonym detection using the skip-gram model, later published in the Journal of Natural Language Processing.
 
 **🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
-- Bachelor's thesis: Accent Detection based on Optimality Theory
+- Waseda is recognized as one of Japan's distinguished institutions, ranked 5th in Mathematics and 2nd in Employer Reputation nationally by the 2022 QS rankings.
+- Excelled with A's in key subjects including Mathematical Statistics, Numerical Analysis, Differential Equations, and Applied Mathematics, among others; highlighting strong proficiency in Mathematics.
+- His thesis on accent detection using Optimality Theory culminated in a top grade, which further inspired him to pursue a career in research and development.
 
 # 🏆 Awards
 Received six awards and grants including:
