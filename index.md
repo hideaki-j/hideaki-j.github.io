@@ -61,9 +61,9 @@ March 2016
 
 **🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
-- Waseda is recognized as one of Japan's distinguished institutions, ranked 5th in Mathematics and 2nd in Employer Reputation nationally by the 2022 QS rankings.
-- Excelled with A's in key subjects including Mathematical Statistics, Numerical Analysis, Differential Equations, and Applied Mathematics, among others; highlighting strong proficiency in Mathematics.
-- His thesis on accent detection using Optimality Theory culminated in a top grade, which further inspired him to pursue a career in research and development.
+- Waseda is one of Japan’s leading institutions, ranked 5th nationally in Mathematics by the 2022 QS rankings.
+- Earned A's in key subjects such as Mathematical Statistics, Differential Equations, and Applied Mathematics, demonstrating mathematical proficiency.
+- His thesis on accent detection using Optimality Theory earned a top grade, further inspiring him to pursue a career in research and development.
 
 # 🏆 Awards
 Received six awards and grants including:
