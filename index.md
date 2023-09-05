@@ -18,7 +18,7 @@ Hideaki Joko is a researcher and PhD candidate at Radboud University, Netherland
 
 His research interests include information retrieval (IR) and NLP, and he has ~8 years of research and ~5 years of hands-on experience in these fields.
 
-He has published 10+ papers in conferences and peer-reviewed journals and filed several patents on IR and NLP algorithms and software. He has received multiple awards, including the Incentive Research Award for his NLP research and the Mitsubishi Electric R&D Center President's Award for developing an IR algorithm that made the mechanical design process more efficient.
+He has published 10+ papers in conferences and peer-reviewed journals, filed several patents, and received multiple awards for his NLP and IR research and development.
 
 # 💪 Skills
 - Programming Languages: Python, C#, Java, etc.
@@ -61,9 +61,9 @@ March 2016
 
 **🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
-- Waseda is one of Japan’s leading institutions, ranked 5th nationally in Mathematics by the 2022 QS rankings.
-- Earned A's in key subjects such as Mathematical Statistics, Differential Equations, and Applied Mathematics, demonstrating mathematical proficiency.
-- His thesis on accent detection using Optimality Theory earned a top grade, further inspiring him to pursue a career in research and development.
+- Earned math bachelor's from one of Japan's leading institutions, ranked 5th nationally in math (2022 QS).
+- Achieved top-level grades in key subjects, including Mathematical Statistics, Differential Equations, and Applied Mathematics, demonstrating mathematical proficiency.
+- Thesis on accent detection using Optimality Theory earned a top grade, further inspiring him to pursue a career in R&D.
 
 # 🏆 Awards
 Received six awards and grants including:
