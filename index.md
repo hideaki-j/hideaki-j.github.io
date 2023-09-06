@@ -30,22 +30,20 @@ He has published 10+ papers in conferences and peer-reviewed journals, filed sev
 # 💼 Work Experience
 **🇳🇱 Radboud University, Nijmegen, Netherlands** - Doctoral Researcher\
 September 2020 - PRESENT
-- Responsible for researching and developing NLP and IR, as a fully-employed researcher at the university and PhD candidate.
-- Developed the method for creating conversational entity linking datasets, and published it at the SIGIR 2021.
+- Responsible for researching and developing NLP and IR, as a researcher at the university and PhD candidate.
 - Researched the effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021.
-- Developed conversational entity linking method and tool, and published it at the CIKM 2022.
+- Researched and developed conversational entity linking dataset and method, and published them at SIGIR 2021 and CIKM 2022, respectively.
 
 **🇬🇧 Signal AI, London, UK** - Visiting Researcher\
 June 2022 - October 2022
-- Signal AI is one of the fastest-growing UK startups (ranked 23rd in Tech Track 100) with a strong focus on NLP and IR technology.
-- As a visiting researcher, he was responsible for the research and development of an efficient and effective target-based sentiment analysis method using Transformers.
+- Responsible for industrial research in NLP at one of the UK's fastest-growing startups (ranked 23rd in Tech Track 100).
+- Researched and developed an efficient and effective target-based sentiment analysis method using Transformers.
 
 **🇯🇵 Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
 April 2016 - August 2020
-- Researched and developed a deep-learning-based document search algorithm and software with small computational complexity to solve the word sense disambiguation problem
-- Researched and developed an algorithm for deep-learning-based question answering system
-- Developed a text-based automatic error diagnosis algorithm and software
-- Led an R&D project in collaboration with a manufacturing division, and developed a C#-based information retrieval software to make a design process efficient
+- Developed algorithms for search, question answering, and intention understanding, resulting in several patents, international conference and journal papers, and a research award.
+- Developed text-based error diagnosis algorithm and software, reducing costs by ~30%.
+- Led a collaborative R&D project, developed C# information retrieval software to streamline design process, earning the R&D Center President's Award.
 
 # ‍🎓 Education
 
@@ -62,7 +60,7 @@ March 2016
 **🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
 - Earned math bachelor's from one of Japan's leading institutions, ranked 5th nationally in math (2022 QS).
-- Achieved top-level grades in key subjects, including Mathematical Statistics, Differential Equations, and Applied Mathematics, demonstrating mathematical proficiency.
+- Passionate about mathematics, achieving multiple top-level grades in key subjects such as Mathematical Statistics, Differential Equations, and Applied Mathematics.
 - Thesis on accent detection using Optimality Theory earned a top grade, further inspiring him to pursue a career in R&D.
 
 # 🏆 Awards
