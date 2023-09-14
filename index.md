@@ -14,11 +14,9 @@
 
 # 📙 Biography
 
-Hideaki Joko is a researcher and PhD candidate at Radboud University, Netherlands. He received his MSc from the University of Tokyo for his research on natural language processing (NLP), and BEng in applied mathematics from Waseda University. He was a research engineer at Mitsubishi Electric, Japan, from 2016 to 2020. 
+Hideaki Joko is a researcher and PhD candidate at Radboud University, Netherlands. He earned an MSc from the University of Tokyo for his research in natural language processing (NLP) and a BEng in applied mathematics from Waseda University. He served as a research engineer at Mitsubishi Electric from 2016 to 2020.
 
-His research interests include information retrieval (IR) and NLP, and he has ~8 years of research and ~5 years of hands-on experience in these fields.
-
-He has published 10+ papers in conferences and peer-reviewed journals, filed several patents, and received multiple awards for his NLP and IR research and development.
+Having ~8 years of research experience and ~5 years of hands-on experience in NLP and information retrieval (IR), he has published 10+ papers in conferences and peer-reviewed journals, obtained several patents, and received multiple awards for his research and development in NLP and IR.
 
 # 💪 Skills
 - Programming Languages: Python, C#, Java, etc.
@@ -41,7 +39,7 @@ June 2022 - October 2022
 
 **🇯🇵 Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
 April 2016 - August 2020
-- Developed algorithms for search, question answering, and intention understanding, resulting in several patents, international conference and journal papers, and a research award.
+- Developed algorithms for search, question answering, and intention understanding, resulting in multiple academic publications, patents, and a research award.
 - Developed text-based error diagnosis algorithm and software, reducing costs by ~30%.
 - Led a collaborative R&D project, developed C# information retrieval software to streamline design process, earning the R&D Center President's Award.
 
@@ -53,13 +51,13 @@ September 2020 - August 2024
 
 **🇯🇵 University of Tokyo, Tokyo, Japan** - MSc, Natural Language Processing\
 March 2016
-- Earned a research master's degree from Computing System Group, Multidisciplinary Science Department, through his research on natural language processing (NLP).
+- Earned a research master's from the Computing Systems Group, Multidisciplinary Science Department, through research in NLP.
 - Achieved a GPA of 3.7/4.0, demonstrating a commitment to academic excellence.
 - Thesis on synonym detection using the skip-gram model, later published in the Journal of Natural Language Processing.
 
 **🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
-- Earned math bachelor's from one of Japan's leading institutions, ranked 5th nationally in math (2022 QS).
+- Earned a bachelor's from one of Japan's leading institutions, ranked 5th nationally in mathematics (2022 QS).
 - Passionate about mathematics, achieving multiple top-level grades in key subjects such as Mathematical Statistics, Differential Equations, and Applied Mathematics.
 - Thesis on accent detection using Optimality Theory earned a top grade, further inspiring him to pursue a career in R&D.
 
@@ -126,8 +124,8 @@ Other than research, his interest is in solving business challenges using his ex
 - Introduction to Marketing by Wharton Online
 
 # 💯 Test Score
-**Japanese Higher Civil Service Examination** - Category: Engineering
-- Successfully passed the highly selective Japanese governmental examination and interview for high-level administrative positions, with a pass rate of about 6%, demonstrating advanced knowledge of mathematics and engineering. Although honored by the opportunity, he ultimately chose to pursue his career as an industry researcher.
+**Japanese Higher Civil Service Examination** - Engineering Category
+- Successfully passed the highly selective Japanese governmental examination and interview for high-level administrative positions, with a pass rate of about 6% in total, demonstrating advanced knowledge of mathematics and engineering. Although honored by the opportunity, he ultimately chose to pursue his career as an industry researcher.
 
 <!--
 # 🌏 Links
