@@ -79,6 +79,7 @@ Received six awards and grants including:
 # 📄 First Author Publications
 
 **International Conferences**
+- Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search, H. Joko, et. al., ACM SIGIR, 2024.
 - Personal Entity, Concept, and Named Entity Linking in Conversations, H. Joko, et. al., ACM CIKM 2022.
 - Radboud University at TREC CAsT 2021, H. Joko, et. al., TREC, 2021.
 - Conversational Entity Linking: Problem Definition and Datasets, H. Joko, et. al., ACM SIGIR, 2021.
