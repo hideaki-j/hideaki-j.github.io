@@ -28,13 +28,14 @@ Having ~8 years of research experience and ~5 years of hands-on experience in NL
 # 💼 Work Experience
 **🇳🇱 Radboud University, Nijmegen, Netherlands** - Doctoral Researcher\
 September 2020 - PRESENT
-- Responsible for researching and developing NLP and IR, as a researcher at the university and PhD candidate.
+- Responsible for researching and developing NLP and IR as an employed doctoral researcher at the university.
 - Researched the effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021.
 - Researched and developed conversational entity linking dataset and method, and published them at SIGIR 2021 and CIKM 2022, respectively.
+- Led the collaboration project with the University of Glasgow/Edinburgh about LLM-augmented conversational search, resulting in a full paper at SIGIR 2024.
 
 **🇬🇧 Signal AI, London, UK** - Visiting Researcher\
 June 2022 - October 2022
-- Responsible for industrial research in NLP at one of the UK's fastest-growing startups (ranked 23rd in Tech Track 100).
+- Responsible for industrial research in NLP at one of the UK's fastest-growing startups.
 - Researched and developed an efficient and effective target-based sentiment analysis method using Transformers.
 
 **🇯🇵 Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
@@ -57,8 +58,7 @@ March 2016
 
 **🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
 March 2014
-- Earned a bachelor's from one of Japan's leading institutions, ranked 5th nationally in mathematics (2022 QS).
-- Passionate about mathematics, achieving multiple top-level grades in key subjects such as Mathematical Statistics, Differential Equations, and Applied Mathematics.
+- Graduated with a Bachelor's degree in math from a Japanese leading institution, excelling in key subjects such as Mathematical Statistics, Differential Equations, and Applied Mathematics.
 - Thesis on accent detection using Optimality Theory earned a top grade, further inspiring him to pursue a career in R&D.
 
 # 🏆 Awards
