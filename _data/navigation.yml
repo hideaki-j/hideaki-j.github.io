@@ -1,0 +1,13 @@
+# Main navigation links
+main:
+  - title: "About"
+    url: /
+
+  - title: "Work Experience"
+    url: /#-work-experience
+
+  - title: "Education"
+    url: /#-education
+
+  - title: "Publications"
+    url: /#-first-author-publications

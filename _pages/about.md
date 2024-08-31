@@ -1,16 +1,13 @@
-<!-- H. Joko -->
+---
+permalink: /
+title: "Hideaki Joko - NLP and IR Researcher"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
 
-
-  <h3 style>
-  <p align="center">
-    <td><a href="https://www.linkedin.com/in/hide7531b1143/">🔗 LinkedIn</a></td> | <td><a href="https://twitter.com/hideaki_joko">🐦 Twitter</a></td> | <td><a href="https://github.com/hideaki-j">💻 GitHub</a></td>
-  </p>
-  </h3>
-
-
-<!--
-| [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/) | [🐦 Twitter](https://twitter.com/hideaki_joko) | [💻 GitHub](https://github.com/hideaki-j) |
--->
+NLP and IR researcher based in the Netherlands
 
 # 📙 Biography
 
@@ -127,10 +124,3 @@ Other than research, his interest is in solving business challenges using his ex
 # 💯 Test Score
 **Japanese Higher Civil Service Examination** - Engineering Category
 - Successfully passed the highly selective Japanese governmental examination and interview for high-level administrative positions, with a pass rate of about 6% in total, demonstrating advanced knowledge of mathematics and engineering. Although honored by the opportunity, he ultimately chose to pursue his career as an industry researcher.
-
-<!--
-# 🌏 Links
-- [🔗 LinkedIn](https://www.linkedin.com/in/hide7531b1143/)
-- [🐦 Twitter](https://twitter.com/hideaki_joko)
-- [💻 GitHub](https://github.com/hideaki-j)
--->
