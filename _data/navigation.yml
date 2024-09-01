@@ -1,8 +1,5 @@
 # Main navigation links
 main:
-  - title: "About"
-    url: /
-
   - title: "Work Experience"
     url: /#-work-experience
 
