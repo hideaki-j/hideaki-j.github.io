@@ -23,38 +23,68 @@ Having ~8 years of research experience and ~5 years of hands-on experience in NL
 
 
 # 💼 Work Experience
-**🇳🇱 Radboud University, Nijmegen, Netherlands** - Doctoral Researcher\
-September 2020 - PRESENT
+<div style="display: flex; align-items: center;">
+  <img src="images/resume_icons/radboud.png" alt="Radboud University" style="width:40px; height:40px; margin-right: 10px;">
+  <div>
+    <strong>Radboud University, Nijmegen, Netherlands</strong> - Doctoral Researcher<br>
+    September 2020 - PRESENT
+  </div>
+</div>
 - Responsible for researching and developing NLP and IR as an employed doctoral researcher at the university.
 - Researched the effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021.
 - Researched and developed conversational entity linking dataset and method, and published them at SIGIR 2021 and CIKM 2022, respectively.
 - Led the collaboration project with the University of Glasgow/Edinburgh about LLM-augmented conversational search, resulting in a full paper at SIGIR 2024.
 
-**🇬🇧 Signal AI, London, UK** - Visiting Researcher\
-June 2022 - October 2022
+<div style="display: flex; align-items: center;">
+  <img src="images/resume_icons/signal_ai.png" alt="Signal AI" style="width:40px; height:40px; margin-right: 10px;">
+  <div>
+    <strong>Signal AI, London, UK</strong> - Visiting Researcher<br>
+    June 2022 - October 2022
+  </div>
+</div>
 - Responsible for industrial research in NLP at one of the UK's fastest-growing startups.
 - Researched and developed an efficient and effective target-based sentiment analysis method using Transformers.
 
-**🇯🇵 Mitsubishi Electric, Kanagawa, Japan**  - Research Engineer\
-April 2016 - August 2020
+<div style="display: flex; align-items: center;">
+  <img src="images/resume_icons/mitsubishi.png" alt="Mitsubishi Electric" style="width:40px; height:40px; margin-right: 10px;">
+  <div>
+    <strong>Mitsubishi Electric, Kanagawa, Japan</strong> - Research Engineer<br>
+    April 2016 - August 2020
+  </div>
+</div>
 - Developed algorithms for search, question answering, and intention understanding, resulting in multiple academic publications, patents, and a research award.
 - Developed text-based error diagnosis algorithm and software, reducing costs by ~30%.
 - Led a collaborative R&D project, developed C# information retrieval software to streamline design process, earning the R&D Center President's Award.
 
 # ‍🎓 Education
 
-**🇳🇱 Radboud University, Nijmegen, Netherlands** - PhD, Data Science\
-September 2020 - August 2024
+<div style="display: flex; align-items: center;">
+  <img src="images/resume_icons/radboud.png" alt="Radboud University" style="width:40px; height:40px; margin-right: 10px;">
+  <div>
+    <strong>Radboud University, Nijmegen, Netherlands</strong> - PhD, Data Science<br>
+    September 2020 - August 2024
+  </div>
+</div>
 - Fully-funded PhD program, focusing on conversational search and dialogue system. 
 
-**🇯🇵 University of Tokyo, Tokyo, Japan** - MSc, Natural Language Processing\
-March 2016
+<div style="display: flex; align-items: center;">
+  <img src="images/resume_icons/utokyo.png" alt="University of Tokyo" style="width:40px; height:40px; margin-right: 10px;">
+  <div>
+    <strong>University of Tokyo, Tokyo, Japan</strong> - MSc, Natural Language Processing<br>
+    March 2016
+  </div>
+</div>
 - Earned a research master's from the Computing Systems Group, Multidisciplinary Science Department, through research in NLP.
 - Achieved a GPA of 3.7/4.0, demonstrating a commitment to academic excellence.
 - Thesis on synonym detection using the skip-gram model, later published in the Journal of Natural Language Processing.
 
-**🇯🇵 Waseda University, Tokyo, Japan** - BEng. Applied Mathematics\
-March 2014
+<div style="display: flex; align-items: center;">
+  <img src="images/resume_icons/waseda.png" alt="Waseda University" style="width:40px; height:40px; margin-right: 10px;">
+  <div>
+    <strong>Waseda University, Tokyo, Japan</strong> - BEng. Applied Mathematics<br>
+    March 2014
+  </div>
+</div>
 - Graduated with a Bachelor's degree in math from a Japanese leading institution, excelling in key subjects such as Mathematical Statistics, Differential Equations, and Applied Mathematics.
 - Thesis on accent detection using Optimality Theory earned a top grade, further inspiring him to pursue a career in R&D.
 
