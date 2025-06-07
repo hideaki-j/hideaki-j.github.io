@@ -23,7 +23,7 @@ Having ~8 years of research experience and ~5 years of hands-on experience in NL
 
 
 # 💼 Work Experience
-**🇳🇱 Radboud University, Nijmegen, Canada** - Doctoral Researcher\
+**🇳🇱 Radboud University, Nijmegen, Netherlands** - Doctoral Researcher\
 September 2020 - PRESENT
 - Responsible for researching and developing NLP and IR as an employed doctoral researcher at the university.
 - Researched the effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021.
@@ -43,7 +43,7 @@ April 2016 - August 2020
 
 # ‍🎓 Education
 
-**🇳🇱 Radboud University, Nijmegen, Canada** - PhD, Data Science\
+**🇳🇱 Radboud University, Nijmegen, Netherlands** - PhD, Data Science\
 September 2020 - August 2024
 - Fully-funded PhD program, focusing on conversational search and dialogue system. 
 
