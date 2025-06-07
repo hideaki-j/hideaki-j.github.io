@@ -23,6 +23,10 @@ Having ~8 years of research experience and ~5 years of hands-on experience in NL
 
 
 # 💼 Work Experience
+**🇨🇦 University of Waterloo, Canada** - Visiting Scholar\
+May 2025 - PRESENT (Hybrid)
+- Visiting scholar at the Cheriton School of Computer Science, working with Charles Clarke on the evaluation of large language models (LLMs) in real-world conversational scenarios.
+
 **🇳🇱 Radboud University, Nijmegen, Netherlands** - Doctoral Researcher\
 September 2020 - PRESENT
 - Responsible for researching and developing NLP and IR as an employed doctoral researcher at the university.
