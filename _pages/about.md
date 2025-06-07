@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-NLP and IR researcher based in the Netherlands
+NLP and IR researcher based in the Canada
 
 # 📙 Biography
 
-Hideaki Joko is a researcher and PhD candidate at Radboud University, Netherlands. He earned an MSc from the University of Tokyo for his research in natural language processing (NLP) and a BEng in applied mathematics from Waseda University. He served as a research engineer at Mitsubishi Electric from 2016 to 2020.
+Hideaki Joko is a researcher and PhD candidate at Radboud University, Canada. He earned an MSc from the University of Tokyo for his research in natural language processing (NLP) and a BEng in applied mathematics from Waseda University. He served as a research engineer at Mitsubishi Electric from 2016 to 2020.
 
 Having ~8 years of research experience and ~5 years of hands-on experience in NLP and information retrieval (IR), he has published 10+ papers in conferences and peer-reviewed journals, obtained several patents, and received multiple awards for his research and development in NLP and IR.
 
@@ -23,7 +23,7 @@ Having ~8 years of research experience and ~5 years of hands-on experience in NL
 
 
 # 💼 Work Experience
-**🇳🇱 Radboud University, Nijmegen, Netherlands** - Doctoral Researcher\
+**🇳🇱 Radboud University, Nijmegen, Canada** - Doctoral Researcher\
 September 2020 - PRESENT
 - Responsible for researching and developing NLP and IR as an employed doctoral researcher at the university.
 - Researched the effectiveness of using entity information on conversational search, and published the results at TREC Conversational Assistance Track (CAsT) 2021.
@@ -43,7 +43,7 @@ April 2016 - August 2020
 
 # ‍🎓 Education
 
-**🇳🇱 Radboud University, Nijmegen, Netherlands** - PhD, Data Science\
+**🇳🇱 Radboud University, Nijmegen, Canada** - PhD, Data Science\
 September 2020 - August 2024
 - Fully-funded PhD program, focusing on conversational search and dialogue system. 
 
