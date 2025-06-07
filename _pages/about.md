@@ -63,7 +63,7 @@ March 2014
 - Thesis on accent detection using Optimality Theory earned a top grade, further inspiring him to pursue a career in R&D.
 
 # 🏆 Awards
-Received six awards and grants including:
+Received seven awards and grants including:
 - **CIKM National Science Foundation Travel Grant** covering the cost of attending CIKM up to $1000, 2022.
 - **SIGIR Student Travel Grant** covering the SIGIR 2021 conference registration fee, 2021.
 - **Incentive Research Award** from the JSAI Workshop on Interactive Information Access and Visual Mining for his research on intention understanding utilizing multi-task transfer learning, 2019.
