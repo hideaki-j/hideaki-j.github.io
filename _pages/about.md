@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-NLP and IR researcher based in the Canada
+NLP and IR researcher
 
 # 📙 Biography
 
