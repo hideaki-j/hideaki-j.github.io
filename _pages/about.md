@@ -11,9 +11,11 @@ NLP and IR researcher
 
 # 📙 Biography
 
-Hideaki Joko is a researcher and PhD candidate at Radboud University, Netherlands. He earned an MSc from the University of Tokyo for his research in natural language processing (NLP) and a BEng in applied mathematics from Waseda University. He served as a research engineer at Mitsubishi Electric from 2016 to 2020.
+Hideaki Joko is a researcher and engineer specializing in information retrieval (IR) and natural language processing (NLP), passionate about translating academic research into real-world impact, with a strong background in both academia and industry with 10 years of experience combined.
 
-Having ~8 years of research experience and ~5 years of hands-on experience in NLP and information retrieval (IR), he has published 10+ papers in conferences and peer-reviewed journals, obtained several patents, and received multiple awards for his research and development in NLP and IR.
+He is currently a visiting scholar at the University of Waterloo, completing his PhD at Radboud University, Netherlands. He received his MSc from University of Tokyo for his research on NLP. He also holds solid industry experience; at Mitsubishi Electric (2016–20), he applied IR and NLP algorithms to improve factory and support operations.
+
+He has published 10+ papers including top venues such as SIGIR and CIKM, and received 7 awards and 3 patents on IR/NLP research and development. He has delivered 10+ talks at internationally renowned institutes.
 
 # 💪 Skills
 - Programming Languages: Python, C#, Java, etc.
@@ -74,6 +76,11 @@ Received seven awards and grants including:
 -->
 
 # 🙋 Volunteering
+- ACM SIGIR Conference Session Chair (Industry Track), 2025.
+- ACM SIGIR Conference Program Committee, 2025.
+- ACM The Web Conference Program Committee, 2024.
+- ACM CIKM Reviewer, 2024.
+- ACM SIGIR Reviewer, 2024.
 - ACM Conversational User Interface (CUI) Conference Volunteer, 2023.
 - ACM SIGIR Conference Volunteer, 2022.
 
@@ -99,10 +106,14 @@ Received seven awards and grants including:
 - Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2015.
 
 **Presentations**
-- Entity Linking in Conversations, H. Joko, Distinguished Speaker Series at Georgia Tech ACM Student Chapter, 2023. (Invited)
-- Personal Entity, Concept, and Named Entity Linking in Conversations, H. Joko, MICROS Workshop at CIKM, 2022. (Invited)
-- Entity Linking in Conversations, H. Joko, Search-Oriented Conversational AI (SCAI) Workshop at SIGIR, 2022.
-- Conversational Entity Linking: Problem Definition and Datasets, H. Joko, The 20th Dutch-Belgian Information Retrieval Workshop (DIR), 2022.
+- University of Toronto, Prof. Bagheri's Lab - Automatic Evaluation of Conversational Systems, 2025.
+- University of British Columbia, NLP Lab - Automatic Evaluation of Conversational Systems, 2025.
+- SIGIR Tokyo - LLM-Augmented Dialogue Construction, 2024. (Invited)
+- The 21st Dutch-Belgian Information Retrieval Workshop (DIR) - Conversational Entity Linking: Problem Definition and Datasets, 2023.
+- Georgia Tech ACM Student Chapter, Distinguished Speaker Series - Entity Linking for Personalization, 2023. (Invited)
+- CIKM, MICROS Workshop - Entity Linking for Personalization, 2022. (Invited)
+- SIGIR, Search-Oriented Conversational AI (SCAI) Workshop - Entity Linking in Conversations, 2022.
+- The 20th Dutch-Belgian Information Retrieval Workshop (DIR) - Entity Linking in Conversations, 2022.
 
 # 💡 Patents
 - INFORMATION PROCESSING APPARATUS, NON-TRANSITORY COMPUTER-READABLE STORAGE MEDIUM, AND INFORMATION PROCESSING METHOD, H. Joko, JP7058807B2/US20220179890A1
