@@ -86,27 +86,25 @@ Received seven awards and grants including:
 
 # 📄 Publications
 
-(* = first author, † = co-author contributions)
-
 **International Conferences**
-- **ACM WSDM '25**: CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems.†
-- **ACM SIGIR '24**: Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search.*
-- **ACM CIKM '22**: Personal Entity, Concept, and Named Entity Linking in Conversations.*
-- **NIST TREC '21**: Radboud University at TREC CAsT 2021.*
-- **ACM SIGIR '21**: Conversational Entity Linking: Problem Definition and Datasets.*
-- **IEEE SMC '19**: Learning Word Embeddings Using Spatial Information.*
-- **IEEE/IPSJ ICMU '18**: Intention Understanding in Small Training Data Sets by Using Transfer Learning.*
+- **ACM WSDM 2025**: CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems. (co-author)
+- **ACM SIGIR 2024**: Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search. (first author)
+- **ACM CIKM 2022**: Personal Entity, Concept, and Named Entity Linking in Conversations. (first author)
+- **NIST TREC 2021**: Radboud University at TREC CAsT 2021. (first author)
+- **ACM SIGIR 2021**: Conversational Entity Linking: Problem Definition and Datasets. (first author)
+- **IEEE SMC 2019**: Learning Word Embeddings Using Spatial Information. (first author)
+- **IEEE/IPSJ ICMU 2018**: Intention Understanding in Small Training Data Sets by Using Transfer Learning. (first author)
 
 **Refereed Journal Papers (In Japanese)**
-- Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, IEICE Transactions on Information and Systems, '20.*
-- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, Journal of Natural Language Processing, '17.*
+- Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, IEICE Transactions on Information and Systems, 2020. (first author)
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, Journal of Natural Language Processing, 2017. (first author)
 
 **Domestic Conferences (In Japanese)**
-- Learning Word Embeddings Using Spatial Information, JSAI Workshop on Interactive Information Access and Visual Mining, '19.*
-- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, JSAI Workshop on Interactive Information Access and Visual Mining, '18. Incentive Research Award (top 10%).*
-- Intention Understanding in Small Training Data Sets by Using Transfer Learning, IEICE General Conference, '18.*
-- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, The Association for Natural Language Processing, '16.*
-- Evaluation of Word Vectors by Synonym Identification, JSAI Workshop on Interactive Information Access and Visual Mining, '15.*
+- Learning Word Embeddings Using Spatial Information, JSAI Workshop on Interactive Information Access and Visual Mining, 2019. (first author)
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, JSAI Workshop on Interactive Information Access and Visual Mining, 2018. Incentive Research Award (top 10%). (first author)
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, IEICE General Conference, 2018. (first author)
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, The Association for Natural Language Processing, 2016. (first author)
+- Evaluation of Word Vectors by Synonym Identification, JSAI Workshop on Interactive Information Access and Visual Mining, 2015. (first author)
 
 **Talks/Presentations**
 - **SIGIR Workshop** on LLM4Eval - Automatic Evaluation of Conversational Systems, 2025.
