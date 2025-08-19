@@ -84,26 +84,27 @@ Received seven awards and grants including:
 - ACM Conversational User Interface (CUI) Conference Volunteer, 2023.
 - ACM SIGIR Conference Volunteer, 2022.
 
-# 📄 First Author Publications
+# 📄 Publications
 
 **International Conferences**
-- Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search, H. Joko, et. al., ACM SIGIR, 2024.
-- Personal Entity, Concept, and Named Entity Linking in Conversations, H. Joko, et. al., ACM CIKM 2022.
-- Radboud University at TREC CAsT 2021, H. Joko, et. al., TREC, 2021.
-- Conversational Entity Linking: Problem Definition and Datasets, H. Joko, et. al., ACM SIGIR, 2021.
-- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., IEEE International Conference on System, Man, and Cybernetics (SMC), 2019.
-- Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., The International Conference on Mobile Computing and Ubiquitous Networking, 2018.
+- **ACM WSDM 2025**: CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems. (co-author)
+- **ACM SIGIR 2024**: Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search. (first author)
+- **ACM CIKM 2022**: Personal Entity, Concept, and Named Entity Linking in Conversations. (first author)
+- **NIST TREC 2021**: Radboud University at TREC CAsT 2021. (first author)
+- **ACM SIGIR 2021**: Conversational Entity Linking: Problem Definition and Datasets. (first author)
+- **IEEE SMC 2019**: Learning Word Embeddings Using Spatial Information. (first author)
+- **IEEE/IPSJ ICMU 2018**: Intention Understanding in Small Training Data Sets by Using Transfer Learning. (first author)
 
 **Refereed Journal Papers (In Japanese)**
-- Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, H. Joko, et. al., IEICE Transactions on Information and Systems, 2020.
-- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., Journal of Natural Language Processing, 2017.
+- Accelerating Contextualized Representation based Document Retrieval Using Approximate Nearest Neighbor Search, IEICE Transactions on Information and Systems, 2020. (first author)
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, Journal of Natural Language Processing, 2017. (first author)
 
 **Domestic Conferences (In Japanese)**
-- Learning Word Embeddings Using Spatial Information, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2019.
-- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2018. Incentive Research Award (top 10%).
-- Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., IEICE General Conference, 2018.
-- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., The Association for Natural Language Processing, 2016.
-- Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2015.
+- Learning Word Embeddings Using Spatial Information, JSAI Workshop on Interactive Information Access and Visual Mining, 2019. (first author)
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, JSAI Workshop on Interactive Information Access and Visual Mining, 2018. Incentive Research Award (top 10%). (first author)
+- Intention Understanding in Small Training Data Sets by Using Transfer Learning, IEICE General Conference, 2018. (first author)
+- Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, The Association for Natural Language Processing, 2016. (first author)
+- Evaluation of Word Vectors by Synonym Identification, JSAI Workshop on Interactive Information Access and Visual Mining, 2015. (first author)
 
 **Talks/Presentations**
 - **SIGIR Workshop** on LLM4Eval - Automatic Evaluation of Conversational Systems, 2025.
