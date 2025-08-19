@@ -100,20 +100,21 @@ Received seven awards and grants including:
 
 **Domestic Conferences (In Japanese)**
 - Learning Word Embeddings Using Spatial Information, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2019.
-- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2018. Incentive Research Award (Success rate: 10%).
+- Intention Understanding with Small Training Data Sets by Utilizing Multi-Task Transfer Learning, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2018. Incentive Research Award (top 10%).
 - Intention Understanding in Small Training Data Sets by Using Transfer Learning, H. Joko, et. al., IEICE General Conference, 2018.
 - Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model, H. Joko, et. al., The Association for Natural Language Processing, 2016.
 - Evaluation of Word Vectors by Synonym Identification, H. Joko, et. al., JSAI Workshop on Interactive Information Access and Visual Mining, 2015.
 
-**Presentations**
-- University of Toronto, Prof. Bagheri's Lab - Automatic Evaluation of Conversational Systems, 2025.
-- University of British Columbia, NLP Lab - Automatic Evaluation of Conversational Systems, 2025.
-- SIGIR Tokyo - LLM-Augmented Dialogue Construction, 2024. (Invited)
-- The 21st Dutch-Belgian Information Retrieval Workshop (DIR) - Conversational Entity Linking: Problem Definition and Datasets, 2023.
-- Georgia Tech ACM Student Chapter, Distinguished Speaker Series - Entity Linking for Personalization, 2023. (Invited)
-- CIKM, MICROS Workshop - Entity Linking for Personalization, 2022. (Invited)
-- SIGIR, Search-Oriented Conversational AI (SCAI) Workshop - Entity Linking in Conversations, 2022.
-- The 20th Dutch-Belgian Information Retrieval Workshop (DIR) - Entity Linking in Conversations, 2022.
+**Talks/Presentations**
+- **SIGIR Workshop** on LLM4Eval - Automatic Evaluation of Conversational Systems, 2025.
+- **University of Toronto**, Prof. Bagheri's Lab - Automatic Evaluation of Conversational Systems, 2025.
+- **University of British Columbia**, NLP Lab - Automatic Evaluation of Conversational Systems, 2025.
+- **SIGIR Tokyo** - LLM-Augmented Dialogue Construction, 2024. (Invited)
+- **DIR** (Dutch-Belgian Information Retrieval Workshop) - Conversational Entity Linking: Problem Definition and Datasets, 2023.
+- **Georgia Tech** ACM Student Chapter, Distinguished Speaker Series - Entity Linking for Personalization, 2023. (Invited)
+- **CIKM Workshop** on Mixed-Initiative Conversational Systems (MICROS) - Entity Linking for Personalization, 2022. (Invited)
+- **SIGIR Workshop** on Search-Oriented Conversational AI (SCAI) - Entity Linking in Conversations, 2022.
+- **DIR** (Dutch-Belgian Information Retrieval Workshop) - Entity Linking in Conversations, 2022.
 
 # 💡 Patents
 - INFORMATION PROCESSING APPARATUS, NON-TRANSITORY COMPUTER-READABLE STORAGE MEDIUM, AND INFORMATION PROCESSING METHOD, H. Joko, JP7058807B2/US20220179890A1
