@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Hideaki Joko - NLP and IR Researcher"
+title: "Hideaki Joko - Research Engineer"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-NLP and IR researcher
+Machine Learning Research Engineer (IR, NLP, LLM)
 
 # 📙 Biography
 
