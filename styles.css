@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1d1d1f;
+    --secondary-color: #06c;
+    --accent-color: #0071e3;
+    --text-color: #1d1d1f;
+    --text-light: #6e6e73;
+    --bg-color: #fbfbfd;
+    --card-bg: #ffffff;
+    --sidebar-bg: #ffffff;
+    --shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.sidebar-content {
+    padding: 60px 40px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 24px;
+    position: relative;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-placeholder {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #f5f5f7;
+    border: 3px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: var(--text-light);
+}
+
+.profile-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--text-color);
+}
+
+.tagline {
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+    color: var(--text-light);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-links a {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.social-links a:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+/* Bio Section in Sidebar */
+.bio-section {
+    padding-top: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.bio-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.bio-section p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Bio Card */
+.bio-card {
+    background: transparent;
+    border-radius: 0;
+    padding: 0 24px;
+    box-shadow: none;
+    border: none;
+}
+
+.bio-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.bio-card h2 {
+    color: var(--text-color);
+    margin-bottom: 24px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.bio-card h2 i {
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.bio-card p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+    color: var(--text-light);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 320px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+
+.section-alt {
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.section-title i {
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+/* Cards */
+.card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: var(--shadow);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.timeline-card {
+    position: relative;
+    padding-left: 70px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 16px;
+    top: 32px;
+    font-size: 1.8rem;
+    background: transparent;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.timeline-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timeline-card h3 {
+    color: var(--text-color);
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+}
+
+/* Talk items without icons */
+.talk-item {
+    padding-left: 24px;
+}
+
+.role {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+.date {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.timeline-card ul {
+    margin-left: 20px;
+    margin-top: 14px;
+}
+
+.timeline-card li {
+    color: var(--text-light);
+    margin-bottom: 10px;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.timeline-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Achievements Section */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.achievement-card {
+    text-align: center;
+    padding: 40px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+}
+
+.achievement-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:nth-child(1) .achievement-icon {
+    background: linear-gradient(135deg, #0071e3 0%, #005bb5 100%);
+}
+
+.achievement-card:nth-child(2) .achievement-icon {
+    background: linear-gradient(135deg, #ff9500 0%, #ff6700 100%);
+}
+
+.achievement-card:nth-child(3) .achievement-icon {
+    background: linear-gradient(135deg, #ff375f 0%, #ff1744 100%);
+}
+
+.achievement-card:nth-child(4) .achievement-icon {
+    background: linear-gradient(135deg, #30d158 0%, #00c7be 100%);
+}
+
+.achievement-card:nth-child(5) .achievement-icon {
+    background: linear-gradient(135deg, #bf5af2 0%, #a037e8 100%);
+}
+
+.achievement-card:nth-child(6) .achievement-icon {
+    background: linear-gradient(135deg, #64d2ff 0%, #0a84ff 100%);
+}
+
+.achievement-card:hover .achievement-icon {
+    transform: scale(1.08);
+}
+
+.achievement-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.achievement-card h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.achievement-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
+}
+
+.achievement-desc {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.achievements-cta {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 13px 32px;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 980px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 113, 227, 0.25);
+    letter-spacing: -0.01em;
+}
+
+.cta-button:hover {
+    background: #0077ed;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 113, 227, 0.35);
+}
+
+.cta-button i {
+    margin-right: 8px;
+}
+
+/* Footer */
+.footer {
+    background: transparent;
+    color: var(--text-light);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+    width: 20px;
+}
+
+.nav-link:hover {
+    background: rgba(0, 113, 227, 0.08);
+    color: var(--accent-color);
+}
+
+.nav-link.active {
+    background: rgba(0, 113, 227, 0.1);
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sidebar-content {
+        padding: 40px 20px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 32px;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .achievement-card {
+        padding: 32px 24px;
+    }
+
+    .achievement-number {
+        font-size: 2.2rem;
+    }
+
+    .cta-button {
+        padding: 11px 28px;
+        font-size: 0.95rem;
+    }
+    
+    .timeline-card {
+        padding-left: 0;
+    }
+    
+    .timeline-icon {
+        position: static;
+        margin-bottom: 14px;
+    }
+    
+    .sidebar-nav {
+        margin-top: 32px;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .nav-link {
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .bio-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .profile-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-content {
+        padding: 30px 16px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+
+    .profile-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+    }
+
+    .bio-card {
+        padding: 0 16px;
+    }
+
+    .bio-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .timeline-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .achievement-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .achievement-number {
+        font-size: 2rem;
+    }
+
+    .achievement-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .achievement-icon i {
+        font-size: 1.8rem;
+    }
+
+    .social-links {
+        gap: 16px;
+    }
+
+    .social-links a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-content {
+        padding: 24px 12px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .section {
+        padding: 24px 0;
+    }
+
+    .profile-section h1 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .tagline {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+    .profile-image {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 16px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .section-title i {
+        font-size: 1.4rem;
+    }
+
+    .bio-card h2 {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+    }
+
+    .bio-card h2 i {
+        font-size: 1.4rem;
+    }
+
+    .bio-card {
+        padding: 0 12px;
+    }
+
+    .card {
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .timeline-card h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-card ul {
+        margin-left: 16px;
+    }
+
+    .timeline-card li,
+    .timeline-card p,
+    .bio-card p {
+        font-size: 0.9rem;
+    }
+
+    .achievement-card {
+        padding: 24px 16px;
+    }
+
+    .achievement-card h3 {
+        font-size: 1rem;
+    }
+
+    .achievement-number {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .achievement-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+    }
+
+    .achievement-icon i {
+        font-size: 1.5rem;
+    }
+
+    .achievement-desc {
+        font-size: 0.85rem;
+    }
+
+    .achievements-cta {
+        margin-top: 32px;
+    }
+
+    .cta-button {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        gap: 14px;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+        padding: 10px 14px;
+    }
+
+    .nav-link i {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.85rem;
+        padding: 30px 0;
+    }
+
+    .role {
+        font-size: 0.95rem;
+    }
+
+    .date {
+        font-size: 0.85rem;
+    }
+
+    .timeline-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+}
