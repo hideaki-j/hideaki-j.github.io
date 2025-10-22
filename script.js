@@ -135,11 +135,43 @@ function renderTimeline(prefix, timeline) {
         return;
     }
 
+    const iconLibrary = window.siteIcons || {};
+
     container.innerHTML = (timeline.items || []).map(item => {
-        const iconHTML = item.icon && item.icon.includes('.') 
-            ? `<img src="${item.icon}" alt="${item.heading || ''}" />` 
-            : item.icon || '';
-        
+        const iconRef = item.iconKey || item.icon;
+        const iconConfig = typeof iconRef === 'string' ? iconLibrary[iconRef] : undefined;
+
+        let iconHTML = '';
+
+        if (iconConfig && iconConfig.src) {
+            const defaultScale = typeof iconConfig.scale === 'number' ? iconConfig.scale : 100;
+            const rawScale = typeof item.iconScale === 'number' ? item.iconScale : defaultScale;
+            const clampedScale = Math.max(0, Math.min(rawScale, 100));
+            const scaleRatio = clampedScale / 100;
+            const scaleAttr = scaleRatio !== 1 ? ` style="--icon-image-scale: ${scaleRatio};"` : '';
+            const altText = iconConfig.alt || item.heading || '';
+
+            iconHTML = `
+                <div class="timeline-icon-inner"${scaleAttr}>
+                    <img src="${iconConfig.src}" alt="${altText}">
+                </div>
+            `;
+        } else if (typeof iconRef === 'string' && iconRef.includes('.')) {
+            const rawScale = typeof item.iconScale === 'number' ? item.iconScale : 100;
+            const clampedScale = Math.max(0, Math.min(rawScale, 100));
+            const scaleRatio = clampedScale / 100;
+            const scaleAttr = scaleRatio !== 1 ? ` style="--icon-image-scale: ${scaleRatio};"` : '';
+            const altText = item.heading || '';
+
+            iconHTML = `
+                <div class="timeline-icon-inner"${scaleAttr}>
+                    <img src="${iconRef}" alt="${altText}">
+                </div>
+            `;
+        } else {
+            iconHTML = iconRef || '';
+        }
+
         return `
             <div class="card timeline-card">
                 <div class="timeline-icon">${iconHTML}</div>
@@ -308,7 +340,11 @@ function renderOthers(others) {
         // If section has subsections (like Data Analysis and Marketing under Professional Development)
         if (section.subsections && section.subsections.length > 0) {
             contentHTML += section.subsections.map(subsection => {
-                let subHTML = `<h4 style="margin-top: 20px; margin-bottom: 10px;">${subsection.icon || ''} ${subsection.heading || ''}</h4>`;
+                const subScale = subsection.iconScale !== undefined ? subsection.iconScale : 100;
+                const subScaleStyle = subScale !== 100 ? `transform: scale(${subScale / 100}); display: inline-block; transform-origin: center;` : '';
+                const subIconHTML = subScaleStyle ? `<span style="${subScaleStyle}">${subsection.icon || ''}</span>` : (subsection.icon || '');
+                
+                let subHTML = `<h4 style="margin-top: 20px; margin-bottom: 10px;">${subIconHTML} ${subsection.heading || ''}</h4>`;
                 
                 if (subsection.items && subsection.items.length > 0) {
                     subHTML += '<ul>' + subsection.items.map(item => {
@@ -331,9 +367,13 @@ function renderOthers(others) {
             }).join('');
         }
         
+        const sectionScale = section.iconScale !== undefined ? section.iconScale : 100;
+        const sectionScaleStyle = sectionScale !== 100 ? `transform: scale(${sectionScale / 100}); display: inline-block; transform-origin: center;` : '';
+        const sectionIconHTML = sectionScaleStyle ? `<span style="${sectionScaleStyle}">${section.icon || ''}</span>` : (section.icon || '');
+        
         return `
             <div class="card timeline-card">
-                <div class="timeline-icon">${section.icon || ''}</div>
+                <div class="timeline-icon">${sectionIconHTML}</div>
                 <h3>${section.heading || ''}</h3>
                 ${contentHTML}
             </div>

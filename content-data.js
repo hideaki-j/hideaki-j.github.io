@@ -42,28 +42,28 @@ window.siteContent = {
                 titleHTML: '<i class="fas fa-briefcase"></i> Work Experience',
                 items: [
                     {
-                        icon: 'images/waterloo.png',
+                        iconKey: 'waterloo',
                         heading: 'University of Waterloo, Canada',
                         role: 'Visiting Scholar',
                         date: 'May 2025 - Present (Hybrid)',
                         bodyHTML: '<p>Evaluation of LLMs in real-world conversations, working with Charles Clarke.</p>'
                     },
                     {
-                        icon: 'images/radboud.jpg',
+                        iconKey: 'radboud',
                         heading: 'Radboud University, Netherlands',
                         role: 'PhD Researcher',
                         date: 'September 2020 - Present',
                         bodyHTML: '<ul><li>Developed a conversational entity linking dataset/method, published at SIGIR \'21 and CIKM \'22, achieving 1000+ downloads and used by 40+ research groups worldwide.</li><li>Collaborated with the IAI group (University of Stavanger, Norway) to develop an evaluation platform and dataset for conversational systems, resulting in a publication at WSDM \'25.</li><li>Research topics include: large language models, automatic prompt optimization, entity linking, conversational systems, large-scale conversation dataset creation, automatic evaluation.</li></ul>'
                     },
                     {
-                        icon: 'images/signal-ai.png',
+                        iconKey: 'signalAI',
                         heading: 'Signal AI, UK',
                         role: 'Visiting Researcher',
                         date: 'June 2022 - October 2022 (PhD Research Internship)',
                         bodyHTML: '<ul><li>Signal AI is a London-based, fastest-growing startup specializing in risk intelligence through advanced NLP and IR technology, serving 700+ clients, such as Deloitte and Google.</li><li>Developed a Transformer-based sentiment analysis method involving model development, data collection, and evaluation, which enabled successful deployment in their product.</li></ul>'
                     },
                     {
-                        icon: '🇯🇵',
+                        iconKey: 'mitsubishi',
                         heading: 'Mitsubishi Electric, Japan',
                         role: 'Research Engineer',
                         date: 'April 2016 - August 2020 (Full-time, Permanent)',
@@ -77,21 +77,21 @@ window.siteContent = {
                 titleHTML: '<i class="fas fa-graduation-cap"></i> Education',
                 items: [
                     {
-                        icon: 'images/radboud.jpg',
+                        iconKey: 'radboud',
                         heading: 'Radboud University, Netherlands',
                         role: 'PhD, Data Science',
                         date: 'September 2020 - Present',
                         bodyHTML: '<p>Working on NLP, LLMs, and IR, supervised by Faegheh Hasibi and Arjen de Vries.</p>'
                     },
                     {
-                        icon: 'images/utokyo.png',
+                        iconKey: 'utokyo',
                         heading: 'University of Tokyo, Japan',
                         role: 'MSc, Natural Language Processing',
                         date: 'March 2016',
                         bodyHTML: '<ul><li>Earned a research master\'s from the Computing Systems Group, Multidisciplinary Science Department, through research in NLP.</li><li>Thesis on synonym detection using skip-gram models, later published in the Journal of Natural Language Processing.</li></ul>'
                     },
                     {
-                        icon: 'images/waseda.png',
+                        iconKey: 'waseda',
                         heading: 'Waseda University, Japan',
                         role: 'BEng, Applied Mathematics',
                         date: 'March 2014',
@@ -151,6 +151,7 @@ window.siteContent = {
             sections: [
                 {
                     icon: '🧑‍🏫',
+                    iconScale: 100,
                     heading: 'Teaching',
                     items: [
                         {
@@ -167,11 +168,13 @@ window.siteContent = {
                 },
                 {
                     icon: '📚',
+                    iconScale: 100,
                     heading: 'Professional Development',
                     bodyHTML: '<p>Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.</p>',
                     subsections: [
                         {
                             icon: '📊',
+                            iconScale: 100,
                             heading: 'Data Analysis Course Certificates',
                             items: [
                                 {
@@ -186,6 +189,7 @@ window.siteContent = {
                         },
                         {
                             icon: '👔',
+                            iconScale: 100,
                             heading: 'Marketing Course Certificates',
                             items: [
                                 {
@@ -206,6 +210,7 @@ window.siteContent = {
                 },
                 {
                     icon: '💯',
+                    iconScale: 100,
                     heading: 'Test Score',
                     items: [
                         {
