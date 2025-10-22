@@ -30,7 +30,7 @@ window.siteContent = {
             biography: {
                 titleHTML: '<i class="fas fa-user"></i> Biography',
                 paragraphsHTML: [
-                    '<p>Hideaki Joko is a researcher and engineer specializing in information retrieval (IR) and natural language processing (NLP), <span class="highlight-yellow">passionate about translating academic research into real-world impact</span>, with a strong background in both academia and industry with 10 years of experience combined.</p>',
+                    '<p>Hideaki Joko is a researcher and engineer specializing in information retrieval (IR) and NLP, <span class="highlight-yellow">passionate about translating academic research into real-world impact</span>, with a strong background in both academia and industry with 10 years of experience combined.</p>',
                     '<p><b>Research</b>: He has published <span class="highlight-yellow">10+ first-author papers including top venues</span> such as SIGIR and CIKM, and received 7 awards and 3 patents on IR/NLP research and development. He has delivered 10+ talks at internationally renowned institutes, and his first-authored works have been used by <span class="highlight-yellow">300+ researchers across 120+ institutions worldwide</span>, including notable organizations such as Google DeepMind and Stanford.</p>',
                     '<p><b>Experience</b>: He is currently an <span class="highlight-yellow">Applied Scientist at Thomson Reuters Labs</span>, where he applies research in IR/NLP/LLM to develop legal research products which support about half of all lawyers in North America. Before, he was a Visiting Scholar at University of Waterloo, PhD candidate at Radboud University, and a Research Engineer at Mitsubishi Electric.</p>',
                 ]
@@ -120,7 +120,7 @@ window.siteContent = {
                     iconClass: 'fas fa-briefcase',
                     title: 'Experience',
                     number: '10+',
-                    descriptionHTML: '10+ years of strong NLP and IR hands-on experience in academia (Radboud University, University of Waterloo, and University of Tokyo) and industry (Thomson Reuters, Signal AI, and Mitsubishi Electric).',
+                    descriptionHTML: '10+ years of strong NLP and IR hands-on experience in academia and industry combined.',
                     href: 'experience.html'
                 },
                 {
@@ -128,7 +128,7 @@ window.siteContent = {
                     title: 'Publications',
                     number: '10+',
                     second_number: '120+',
-                    descriptionHTML: 'Published 10+ first-author papers including top venues such as SIGIR and CIKM, with his work used by 300+ researchers across 120+ institutions worldwide, including notable organizations such as Google DeepMind and Stanford.',
+                    descriptionHTML: 'Published 10+ first-author papers including A+ venues like SIGIR/CIKM, with his work used by researchers from 120+ institutions worldwide.',
                     href: 'publications.html'
                 },
                 {
