@@ -101,6 +101,34 @@ function renderNavigation(navigation = []) {
             </a>
         `;
     }).join('');
+
+    const schedule = typeof requestAnimationFrame === 'function'
+        ? requestAnimationFrame
+        : (cb => setTimeout(cb, 0));
+
+    schedule(() => {
+        const activeLink = container.querySelector('.nav-link.active');
+        if (!activeLink) {
+            return;
+        }
+
+        if (typeof activeLink.scrollIntoView === 'function') {
+            activeLink.scrollIntoView({
+                behavior: 'auto',
+                block: 'nearest',
+                inline: 'center'
+            });
+        } else {
+            const containerWidth = container.clientWidth;
+            if (containerWidth <= 0) {
+                return;
+            }
+            const target =
+                activeLink.offsetLeft - (containerWidth - activeLink.offsetWidth) / 2;
+            const maxScroll = Math.max(0, container.scrollWidth - containerWidth);
+            container.scrollLeft = Math.max(0, Math.min(target, maxScroll));
+        }
+    });
 }
 
 function renderFooter(footerHTML) {
