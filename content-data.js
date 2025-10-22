@@ -66,7 +66,7 @@ window.siteContent = {
                         heading: 'Radboud-Glasgow Collaboration Project, UK',
                         role: 'Radboud-Glasgow Collaboration Project - Researcher',
                         date: 'Oct 2022 - Jan 2024 (Remote)',
-                        bodyHTML: '<ul><li>Led the collaboration project on LLM-augmented conversational search with GRILL Lab (University of Glasgow/Edinburgh), led by Jeff Dalton, a leader in conversational search.</li><li>Had a full-time responsibility for proposing/developing/implementing the method, gathering a large-scale dataset, and successfully publishing at the top-tier SIGIR 2024 conference as the first author.</li><li>The paper achieved top 5% downloads among all SIGIR 2024 accepted papers (October 2024), highlighting the strong impact of the collaboration\'s outcome.</li></ul>'
+                        bodyHTML: '<ul><li>Led the collaboration project on LLM-augmented conversational search with GRILL Lab (University of Glasgow/Edinburgh), led by Jeff Dalton, a leader in conversational search.</li><li>Had a full-time responsibility for proposing/developing/implementing the method, gathering a large-scale dataset, and successfully publishing at the top-tier SIGIR 2024 conference as the first author.</li><li>The paper achieved top 6% downloads among all SIGIR 2024 accepted papers (October 2025), highlighting the strong impact of the collaboration\'s outcome.</li></ul>'
                     },
                     {
                         iconKey: 'signalAI',
