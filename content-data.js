@@ -226,30 +226,39 @@ window.siteContent = {
             timeline: {
                 items: [
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>SIGIR Workshop</strong> on LLM4Eval - Automatic Evaluation of Conversational Systems, 2025.'
                     },
                     {
+                        iconKey: 'uoft',
                         bodyHTML: '<strong>University of Toronto</strong>, Prof. Bagheri\'s Lab - Automatic Evaluation of Conversational Systems, 2025.'
                     },
                     {
+                        iconKey: 'ubc',
                         bodyHTML: '<strong>University of British Columbia</strong>, NLP Lab - Automatic Evaluation of Conversational Systems, 2025.'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>SIGIR Tokyo</strong> - LLM-Augmented Dialogue Construction, 2024. (Invited)'
                     },
                     {
+                        iconKey: 'dir',
                         bodyHTML: '<strong>DIR</strong> (Dutch-Belgian Information Retrieval Workshop) - Conversational Entity Linking: Problem Definition and Datasets, 2023.'
                     },
                     {
+                        iconKey: 'gt',
                         bodyHTML: '<strong>Georgia Tech</strong> ACM Student Chapter, Distinguished Speaker Series - Entity Linking for Personalization, 2023. (Invited)'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>CIKM Workshop</strong> on Mixed-Initiative Conversational Systems (MICROS) - Entity Linking for Personalization, 2022. (Invited)'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>SIGIR Workshop</strong> on Search-Oriented Conversational AI (SCAI) - Entity Linking in Conversations, 2022.'
                     },
                     {
+                        iconKey: 'dir',
                         bodyHTML: '<strong>DIR</strong> (Dutch-Belgian Information Retrieval Workshop) - Entity Linking in Conversations, 2022.'
                     }
                 ]
@@ -288,24 +297,31 @@ window.siteContent = {
             timeline: {
                 items: [
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM SIGIR Conference</strong> Session Chair (Industry Track), 2025.'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM SIGIR Conference</strong> Program Committee, 2025.'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM The Web Conference</strong> Program Committee, 2024.'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM CIKM</strong> Reviewer, 2024.'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM SIGIR</strong> Reviewer, 2024.'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM Conversational User Interface (CUI) Conference</strong> Volunteer, 2023.'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM SIGIR Conference</strong> Volunteer, 2022.'
                     }
                 ]
@@ -317,15 +333,19 @@ window.siteContent = {
             timeline: {
                 items: [
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>CIKM National Science Foundation Travel Grant</strong> covering the cost of attending CIKM up to $1000, 2022.'
                     },
                     {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>SIGIR Student Travel Grant</strong> covering the SIGIR 2021 conference registration fee, 2021.'
                     },
                     {
+                        iconKey: 'jsai',
                         bodyHTML: '<strong>Incentive Research Award</strong> from the JSAI Workshop on Interactive Information Access and Visual Mining for his research on intention understanding utilizing multi-task transfer learning, 2019.'
                     },
                     {
+                        iconKey: 'mitsubishi',
                         bodyHTML: '<strong>Mitsubishi Electric R&D Center President Award</strong> for making a mechanical device design process efficient by developing an IR algorithm and software, 2019.'
                     }
                 ]

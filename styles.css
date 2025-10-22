@@ -317,6 +317,31 @@ body {
     padding-left: 24px;
 }
 
+/* Single line items with icons (talks, volunteer, awards) */
+.single-line-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 18px;
+    width: 100%;
+}
+
+.timeline-card.single-line-card {
+    display: flex;
+    align-items: center;
+}
+
+.single-line-card .timeline-icon {
+    flex: 0 0 auto;
+}
+
+.single-line-card .single-line-text {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
 .role {
     color: var(--accent-color);
     font-weight: 500;
@@ -605,6 +630,10 @@ body {
         grid-template-columns: 58px 1fr;
     }
 
+    .single-line-card {
+        gap: 16px;
+    }
+
     .timeline-icon {
         width: 58px;
         height: 58px;
@@ -691,6 +720,10 @@ body {
         grid-template-columns: 54px 1fr;
         column-gap: 14px;
         row-gap: 4px;
+    }
+
+    .single-line-card {
+        gap: 14px;
     }
 
     .timeline-card:not(.talk-item) h3 {
@@ -884,5 +917,13 @@ body {
         width: 40px;
         height: 40px;
         font-size: 1.4rem;
+    }
+
+    .single-line-card {
+        gap: 12px;
+    }
+
+    .single-line-card .single-line-text {
+        font-size: 0.9rem;
     }
 }

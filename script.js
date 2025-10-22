@@ -228,11 +228,48 @@ function renderTalks(talks) {
         return;
     }
 
-    container.innerHTML = (talks.timeline.items || []).map(item => `
-        <div class="card timeline-card talk-item">
-            <p>${item.bodyHTML || ''}</p>
-        </div>
-    `).join('');
+    const iconLibrary = window.siteIcons || {};
+
+    container.innerHTML = (talks.timeline.items || []).map(item => {
+        const iconRef = item.iconKey || item.icon;
+        const iconConfig = typeof iconRef === 'string' ? iconLibrary[iconRef] : undefined;
+
+        let iconHTML = '';
+        const bodyHTML = item.bodyHTML || '';
+        const textHTML = `<p class="single-line-text">${bodyHTML}</p>`;
+
+        if (iconConfig && iconConfig.src) {
+            const defaultScale = typeof iconConfig.scale === 'number' ? iconConfig.scale : 100;
+            const rawScale = typeof item.iconScale === 'number' ? item.iconScale : defaultScale;
+            const clampedScale = Math.max(0, Math.min(rawScale, 100));
+            const scaleRatio = clampedScale / 100;
+            const scaleAttr = scaleRatio !== 1 ? ` style="--icon-image-scale: ${scaleRatio};"` : '';
+            const altText = iconConfig.alt || '';
+
+            iconHTML = `
+                <div class="timeline-icon">
+                    <div class="timeline-icon-inner"${scaleAttr}>
+                        <img src="${iconConfig.src}" alt="${altText}">
+                    </div>
+                </div>
+            `;
+        }
+
+        if (iconHTML) {
+            return `
+                <div class="card timeline-card single-line-card">
+                    ${iconHTML}
+                    ${textHTML}
+                </div>
+            `;
+        } else {
+            return `
+                <div class="card timeline-card talk-item">
+                    <p>${item.bodyHTML || ''}</p>
+                </div>
+            `;
+        }
+    }).join('');
 }
 
 function renderVolunteer(volunteer) {
@@ -247,11 +284,48 @@ function renderVolunteer(volunteer) {
         return;
     }
 
-    container.innerHTML = (volunteer.timeline.items || []).map(item => `
-        <div class="card timeline-card talk-item">
-            <p>${item.bodyHTML || ''}</p>
-        </div>
-    `).join('');
+    const iconLibrary = window.siteIcons || {};
+
+    container.innerHTML = (volunteer.timeline.items || []).map(item => {
+        const iconRef = item.iconKey || item.icon;
+        const iconConfig = typeof iconRef === 'string' ? iconLibrary[iconRef] : undefined;
+
+        let iconHTML = '';
+        const bodyHTML = item.bodyHTML || '';
+        const textHTML = `<p class="single-line-text">${bodyHTML}</p>`;
+
+        if (iconConfig && iconConfig.src) {
+            const defaultScale = typeof iconConfig.scale === 'number' ? iconConfig.scale : 100;
+            const rawScale = typeof item.iconScale === 'number' ? item.iconScale : defaultScale;
+            const clampedScale = Math.max(0, Math.min(rawScale, 100));
+            const scaleRatio = clampedScale / 100;
+            const scaleAttr = scaleRatio !== 1 ? ` style="--icon-image-scale: ${scaleRatio};"` : '';
+            const altText = iconConfig.alt || '';
+
+            iconHTML = `
+                <div class="timeline-icon">
+                    <div class="timeline-icon-inner"${scaleAttr}>
+                        <img src="${iconConfig.src}" alt="${altText}">
+                    </div>
+                </div>
+            `;
+        }
+
+        if (iconHTML) {
+            return `
+                <div class="card timeline-card single-line-card">
+                    ${iconHTML}
+                    ${textHTML}
+                </div>
+            `;
+        } else {
+            return `
+                <div class="card timeline-card talk-item">
+                    <p>${item.bodyHTML || ''}</p>
+                </div>
+            `;
+        }
+    }).join('');
 }
 
 function renderAwards(awards) {
@@ -271,11 +345,48 @@ function renderAwards(awards) {
         return;
     }
 
-    container.innerHTML = (awards.timeline.items || []).map(item => `
-        <div class="card timeline-card talk-item">
-            <p>${item.bodyHTML || ''}</p>
-        </div>
-    `).join('');
+    const iconLibrary = window.siteIcons || {};
+
+    container.innerHTML = (awards.timeline.items || []).map(item => {
+        const iconRef = item.iconKey || item.icon;
+        const iconConfig = typeof iconRef === 'string' ? iconLibrary[iconRef] : undefined;
+
+        let iconHTML = '';
+        const bodyHTML = item.bodyHTML || '';
+        const textHTML = `<p class="single-line-text">${bodyHTML}</p>`;
+
+        if (iconConfig && iconConfig.src) {
+            const defaultScale = typeof iconConfig.scale === 'number' ? iconConfig.scale : 100;
+            const rawScale = typeof item.iconScale === 'number' ? item.iconScale : defaultScale;
+            const clampedScale = Math.max(0, Math.min(rawScale, 100));
+            const scaleRatio = clampedScale / 100;
+            const scaleAttr = scaleRatio !== 1 ? ` style="--icon-image-scale: ${scaleRatio};"` : '';
+            const altText = iconConfig.alt || '';
+
+            iconHTML = `
+                <div class="timeline-icon">
+                    <div class="timeline-icon-inner"${scaleAttr}>
+                        <img src="${iconConfig.src}" alt="${altText}">
+                    </div>
+                </div>
+            `;
+        }
+
+        if (iconHTML) {
+            return `
+                <div class="card timeline-card single-line-card">
+                    ${iconHTML}
+                    ${textHTML}
+                </div>
+            `;
+        } else {
+            return `
+                <div class="card timeline-card talk-item">
+                    <p>${item.bodyHTML || ''}</p>
+                </div>
+            `;
+        }
+    }).join('');
 }
 
 function renderPublications(publications) {
