@@ -51,7 +51,7 @@ window.siteContent = {
                         iconKey: 'waterloo',
                         heading: 'University of Waterloo, Canada',
                         role: 'Visiting Scholar',
-                        date: 'May 2025 - Sep 2025',
+                        date: 'May 2025 - Oct 2025',
                         bodyHTML: '<p>Evaluation of LLMs in real-world conversations, working with Charles Clarke.</p>'
                     },
                     {
