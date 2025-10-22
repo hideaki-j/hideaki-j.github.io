@@ -430,6 +430,16 @@ body {
     background: linear-gradient(135deg, #64d2ff 0%, #0a84ff 100%);
 }
 
+.achievement-card-link {
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.achievement-card-link:hover {
+    transform: translateY(-4px);
+}
+
 .achievement-card:hover .achievement-icon {
     transform: scale(1.08);
 }
@@ -453,6 +463,12 @@ body {
     color: var(--text-color);
     margin-bottom: 14px;
     letter-spacing: -0.02em;
+}
+
+.achievement-number .number-divider {
+    margin: 0 0.4em;
+    color: var(--text-light);
+    font-weight: 300;
 }
 
 .achievement-desc {

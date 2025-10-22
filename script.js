@@ -24,6 +24,10 @@ function initContent() {
 
     if (pageKey === 'index' && pageContent.biography) {
         renderBiography(pageContent.biography);
+        // Render achievements on the home page
+        if (content.pages?.achievements) {
+            renderAchievements(content.pages.achievements);
+        }
     }
 
     if (pageKey === 'experience' && pageContent.timeline) {
@@ -65,9 +69,11 @@ function renderProfile(profile) {
         return;
     }
 
-    const socialLinksHTML = (profile.socialLinks || []).map(link => (
-        `<a href="${link.href}" target="_blank" title="${link.title}"><i class="${link.icon}"></i></a>`
-    )).join('');
+    const socialLinksHTML = (profile.socialLinks || []).map(link => {
+        const isExternal = !link.href.includes('hideaki-j.github.io');
+        const target = isExternal ? ' target="_blank"' : '';
+        return `<a href="${link.href}"${target} title="${link.title}"><i class="${link.icon}"></i></a>`;
+    }).join('');
 
     const image = profile.image || {};
 
@@ -222,16 +228,31 @@ function renderAchievements(achievements) {
     }
 
     if (grid) {
-        grid.innerHTML = (achievements.cards || []).map(card => `
-            <div class="card achievement-card">
+        grid.innerHTML = (achievements.cards || []).map(card => {
+            let numberHTML;
+            if (card.second_number) {
+                numberHTML = `<p class="achievement-number">${card.number || ''} <span class="number-divider">|</span> ${card.second_number}</p>`;
+            } else {
+                numberHTML = `<p class="achievement-number">${card.number || ''}</p>`;
+            }
+            
+            const content = `
                 <div class="achievement-icon">
                     <i class="${card.iconClass || ''}"></i>
                 </div>
                 <h3>${card.title || ''}</h3>
-                <p class="achievement-number">${card.number || ''}</p>
+                ${numberHTML}
                 <p class="achievement-desc">${card.descriptionHTML || ''}</p>
-            </div>
-        `).join('');
+            `;
+            
+            if (card.href) {
+                const isExternal = (card.href.startsWith('http://') || card.href.startsWith('https://')) && !card.href.includes('hideaki-j.github.io');
+                const target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+                return `<a href="${card.href}"${target} class="card achievement-card achievement-card-link">${content}</a>`;
+            } else {
+                return `<div class="card achievement-card">${content}</div>`;
+            }
+        }).join('');
     }
 
     if (ctaContainer && achievements.cta) {

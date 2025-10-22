@@ -18,55 +18,68 @@ window.siteContent = {
         { href: 'index.html', icon: 'fas fa-home', label: 'Home', page: 'index' },
         { href: 'experience.html', icon: 'fas fa-briefcase', label: 'Experience', page: 'experience' },
         { href: 'education.html', icon: 'fas fa-graduation-cap', label: 'Education', page: 'education' },
-        { href: 'achievements.html', icon: 'fas fa-star', label: 'Achievements', page: 'achievements' },
         { href: 'publications.html', icon: 'fas fa-file-alt', label: 'Publications', page: 'publications' },
         { href: 'talks.html', icon: 'fas fa-microphone', label: 'Talks', page: 'talks' },
         { href: 'volunteer.html', icon: 'fas fa-hands-helping', label: 'Volunteering', page: 'volunteer' },
         { href: 'awards.html', icon: 'fas fa-trophy', label: 'Awards', page: 'awards' },
         { href: 'others.html', icon: 'fas fa-ellipsis-h', label: 'Others', page: 'others' }
     ],
-    footerHTML: '&copy; 2025 Hideaki Joko. All rights reserved.',
+    footerHTML: '',
     pages: {
         index: {
             biography: {
                 titleHTML: '<i class="fas fa-user"></i> Biography',
                 paragraphsHTML: [
                     '<p>Hideaki Joko is a researcher and engineer specializing in information retrieval (IR) and natural language processing (NLP), passionate about translating academic research into real-world impact, with a strong background in both academia and industry with 10 years of experience combined.</p>',
-                    '<p>He has published 10+ papers including top venues such as SIGIR and CIKM, and received 7 awards and 3 patents on IR/NLP research and development. He has delivered 10+ talks at internationally renowned institutes, and his first-authored works have been used by 300+ researchers across 120+ institutions worldwide, including notable organizations such as Google DeepMind and Stanford.</p>',
-                    '<p>He is an Applied Scientist at Thomson Reuters Labs, where he applies research in IR/NLP/LLM to develop legal research products which support about half of all lawyers in North America.</p>',
+                    '<p>He has published 10+ first-author papers including top venues such as SIGIR and CIKM, and received 7 awards and 3 patents on IR/NLP research and development. He has delivered 10+ talks at internationally renowned institutes, and his first-authored works have been used by 300+ researchers across 120+ institutions worldwide, including notable organizations such as Google DeepMind and Stanford.</p>',
+                    '<p>He is currently an Applied Scientist at Thomson Reuters Labs, where he applies research in IR/NLP/LLM to develop legal research products which support about half of all lawyers in North America. Before, he was a Visiting Scholar at University of Waterloo, PhD candidate at Radboud University, and a Research Engineer at Mitsubishi Electric.</p>',
                 ]
             }
         },
         experience: {
             timeline: {
-                titleHTML: '<i class="fas fa-briefcase"></i> Work Experience',
+                titleHTML: '<i class="fas fa-briefcase"></i> Experience',
                 items: [
+                    {
+                        iconKey: 'thomsonReuters',
+                        heading: 'Thomson Reuters, Canada',
+                        role: 'Applied Scientist',
+                        date: 'Oct 2025 - Present (Permanent)',
+                        bodyHTML: '<p>Research and development at Thomson Reuters Labs, focusing on legal NLP and IR.</p>'
+                    },
                     {
                         iconKey: 'waterloo',
                         heading: 'University of Waterloo, Canada',
                         role: 'Visiting Scholar',
-                        date: 'May 2025 - Present (Hybrid)',
+                        date: 'May 2025 - Sep 2025',
                         bodyHTML: '<p>Evaluation of LLMs in real-world conversations, working with Charles Clarke.</p>'
                     },
                     {
                         iconKey: 'radboud',
                         heading: 'Radboud University, Netherlands',
                         role: 'PhD Researcher',
-                        date: 'September 2020 - Present',
+                        date: 'Sep 2020 - Sep 2025',
                         bodyHTML: '<ul><li>Developed a conversational entity linking dataset/method, published at SIGIR \'21 and CIKM \'22, achieving 1000+ downloads and used by 40+ research groups worldwide.</li><li>Collaborated with the IAI group (University of Stavanger, Norway) to develop an evaluation platform and dataset for conversational systems, resulting in a publication at WSDM \'25.</li><li>Research topics include: large language models, automatic prompt optimization, entity linking, conversational systems, large-scale conversation dataset creation, automatic evaluation.</li></ul>'
+                    },
+                    {
+                        iconKey: 'glasgow',
+                        heading: 'Radboud-Glasgow Collaboration Project, UK',
+                        role: 'Radboud-Glasgow Collaboration Project - Researcher',
+                        date: 'Oct 2022 - Jan 2024 (Remote)',
+                        bodyHTML: '<ul><li>Led the collaboration project on LLM-augmented conversational search with GRILL Lab (University of Glasgow/Edinburgh), led by Jeff Dalton, a leader in conversational search.</li><li>Had a full-time responsibility for proposing/developing/implementing the method, gathering a large-scale dataset, and successfully publishing at the top-tier SIGIR 2024 conference as the first author.</li><li>The paper achieved top 5% downloads among all SIGIR 2024 accepted papers (October 2024), highlighting the strong impact of the collaboration\'s outcome.</li></ul>'
                     },
                     {
                         iconKey: 'signalAI',
                         heading: 'Signal AI, UK',
                         role: 'Visiting Researcher',
-                        date: 'June 2022 - October 2022 (PhD Research Internship)',
+                        date: 'Jun 2022 - Oct 2022',
                         bodyHTML: '<ul><li>Signal AI is a London-based, fastest-growing startup specializing in risk intelligence through advanced NLP and IR technology, serving 700+ clients, such as Deloitte and Google.</li><li>Developed a Transformer-based sentiment analysis method involving model development, data collection, and evaluation, which enabled successful deployment in their product.</li></ul>'
                     },
                     {
                         iconKey: 'mitsubishi',
                         heading: 'Mitsubishi Electric, Japan',
                         role: 'Research Engineer',
-                        date: 'April 2016 - August 2020 (Full-time, Permanent)',
+                        date: 'Apr 2016 - Aug 2020 (Permanent)',
                         bodyHTML: '<ul><li>Researched and developed multiple IR/NLP systems (search, FAQ, error detection) to optimize business and factory processes, resulting in 9 publications, 3 patents, and 4 project awards.</li><li>Led cross-company multi-year collaboration and developed text-based system error diagnosis algorithm and software, reducing operational costs by ~30%.</li><li>Led a cross-functional R&D project and developed search software to optimize the design process in the factory, resulting in the R&D Center President\'s Award.</li></ul>'
                     }
                 ]
@@ -80,21 +93,21 @@ window.siteContent = {
                         iconKey: 'radboud',
                         heading: 'Radboud University, Netherlands',
                         role: 'PhD, Data Science',
-                        date: 'September 2020 - Present',
+                        date: 'Sep 2020 - Sep 2025',
                         bodyHTML: '<p>Working on NLP, LLMs, and IR, supervised by Faegheh Hasibi and Arjen de Vries.</p>'
                     },
                     {
                         iconKey: 'utokyo',
                         heading: 'University of Tokyo, Japan',
                         role: 'MSc, Natural Language Processing',
-                        date: 'March 2016',
+                        date: 'Mar 2016',
                         bodyHTML: '<ul><li>Earned a research master\'s from the Computing Systems Group, Multidisciplinary Science Department, through research in NLP.</li><li>Thesis on synonym detection using skip-gram models, later published in the Journal of Natural Language Processing.</li></ul>'
                     },
                     {
                         iconKey: 'waseda',
                         heading: 'Waseda University, Japan',
                         role: 'BEng, Applied Mathematics',
-                        date: 'March 2014',
+                        date: 'Mar 2014',
                         bodyHTML: ''
                     }
                 ]
@@ -104,40 +117,47 @@ window.siteContent = {
             titleHTML: '<i class="fas fa-star"></i> Achievements',
             cards: [
                 {
+                    iconClass: 'fas fa-briefcase',
+                    title: 'Experience',
+                    number: '10+',
+                    descriptionHTML: '10+ years of strong NLP and IR hands-on experience in academia (Radboud University, University of Waterloo, and University of Tokyo) and industry (Thomson Reuters, Signal AI, and Mitsubishi Electric).',
+                    href: 'experience.html'
+                },
+                {
                     iconClass: 'fas fa-file-alt',
                     title: 'Publications',
                     number: '10+',
-                    descriptionHTML: 'Published papers in NLP and IR, topics ranging from conversational entity linking (SIGIR \'21, CIKM \'22), LLM-augmented personalized conversational dataset construction (SIGIR \'24), and evaluation of conversations (WSDM \'25).'
+                    second_number: '120+',
+                    descriptionHTML: 'Published 10+ first-author papers including top venues such as SIGIR and CIKM, with his work used by 300+ researchers across 120+ institutions worldwide, including notable organizations such as Google DeepMind and Stanford.',
+                    href: 'publications.html'
                 },
                 {
                     iconClass: 'fas fa-lightbulb',
                     title: 'Patents',
                     number: '3',
-                    descriptionHTML: 'Awarded patents about IR and NLP methods\' application in industry.'
+                    descriptionHTML: 'Awarded patents about IR and NLP methods\' application in industry.',
+                    href: 'publications.html'
                 },
                 {
                     iconClass: 'fas fa-trophy',
                     title: 'Awards',
                     number: '7',
-                    descriptionHTML: 'Earned awards including 4 project awards and 3 academic awards and fundings.'
-                },
-                {
-                    iconClass: 'fas fa-users',
-                    title: 'Collaborations',
-                    number: '8',
-                    descriptionHTML: 'Led collaborative projects across multiple organizations, businesses, and diverse teams (5 at Mitsubishi Electric, 3 at Radboud University). Notable: University of Glasgow collaboration on LLM-augmented conversational data (SIGIR \'24, top 5% downloads).'
+                    descriptionHTML: 'Earned awards including 4 project awards and 3 academic awards and fundings.',
+                    href: 'awards.html'
                 },
                 {
                     iconClass: 'fas fa-hands-helping',
                     title: 'Volunteers',
                     number: '7+',
-                    descriptionHTML: 'Service roles including Program Committee for WWW \'25 and SIGIR \'25.'
+                    descriptionHTML: 'Service roles including Session Chair at SIGIR \'25, Program Committee for WWW \'25 and SIGIR \'25.',
+                    href: 'volunteer.html'
                 },
                 {
                     iconClass: 'fas fa-microphone',
                     title: 'Talks',
                     number: '10+',
-                    descriptionHTML: 'Delivered talks at internationally renowned institutes, including SIGIR Tokyo (2024), University of Toronto (Prof. Bagheri, 2025), and University of British Columbia (NLP Lab, 2025).'
+                    descriptionHTML: 'Delivered talks at internationally renowned institutes, including SIGIR Tokyo (2024), University of Toronto (2025), and University of British Columbia (2025).',
+                    href: 'talks.html'
                 }
             ],
             cta: {
@@ -236,6 +256,10 @@ window.siteContent = {
                     {
                         iconKey: 'ubc',
                         bodyHTML: '<strong>University of British Columbia</strong>, NLP Lab - Automatic Evaluation of Conversational Systems, 2025.'
+                    },
+                    {
+                        iconKey: 'radboud',
+                        bodyHTML: '<strong>Radboud University</strong>, Guest Lecture - Dataset Construction and Evaluation of Conversational Information Seeking Systems, 2025.'
                     },
                     {
                         iconKey: 'acm',
@@ -353,7 +377,7 @@ window.siteContent = {
         },
         publications: {
             titleHTML: '<i class="fas fa-file-alt"></i> Publications',
-            intro: '<p>For a complete list of publications, please refer to my <a href="https://hideaki-j.github.io/scholar-profile/" target="_blank" rel="noopener noreferrer">Scholar Profile</a>.</p>'
+            intro: '<p>For a complete list of publications, please refer to my <a href="https://hideaki-j.github.io/scholar-profile/">Scholar Profile</a>.</p>'
         }
     }
 };
