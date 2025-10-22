@@ -943,3 +943,16 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* Formal marker highlight */
+.highlight-yellow {
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        transparent 40%, 
+        rgba(255, 235, 59, 0.5) 40%, 
+        rgba(255, 235, 59, 0.5) 100%
+    );
+    padding: 0 2px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
