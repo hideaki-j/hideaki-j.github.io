@@ -438,32 +438,34 @@ function renderAwards(awards) {
     }).join('');
 }
 
-function renderPublications(publications) {
+function renderPublications(pageContent) {
     const titleEl = document.getElementById('publications-title');
     const introEl = document.getElementById('publications-intro');
 
-    if (titleEl && publications.titleHTML) {
-        titleEl.innerHTML = publications.titleHTML;
+    if (titleEl && pageContent.titleHTML) {
+        titleEl.innerHTML = pageContent.titleHTML;
     }
 
-    if (introEl && publications.intro) {
-        introEl.innerHTML = publications.intro;
+    if (introEl && pageContent.intro) {
+        introEl.innerHTML = pageContent.intro;
     }
 
-    renderScholarProfileSection();
+    renderScholarProfileSection(pageContent.scholarProfile);
 }
 
-function renderScholarProfileSection() {
+function renderScholarProfileSection(scholarData) {
     const root = document.getElementById('scholar-profile-root');
     if (!root) {
         return;
     }
 
-    const profile = window.PROFILE;
-    const publications = Array.isArray(window.PUBLICATIONS) ? window.PUBLICATIONS : [];
+    const profile = scholarData?.profile || window.PROFILE;
+    const publications = Array.isArray(scholarData?.publications)
+        ? scholarData.publications
+        : (Array.isArray(window.PUBLICATIONS) ? window.PUBLICATIONS : []);
 
     if (!profile) {
-        console.warn('Scholar profile data missing: expected window.PROFILE object');
+        console.warn('Scholar profile data missing: expected local scholar data or window.PROFILE object');
         root.style.display = 'none';
         return;
     }
