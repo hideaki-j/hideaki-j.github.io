@@ -10,7 +10,6 @@ window.siteContent = {
         socialLinks: [
             { href: 'https://github.com/hideaki-j', icon: 'fab fa-github', title: 'GitHub' },
             { href: 'https://www.linkedin.com/in/hide7531b1143/', icon: 'fab fa-linkedin', title: 'LinkedIn' },
-            { href: 'https://hideaki-j.github.io/scholar-profile/', icon: 'fas fa-graduation-cap', title: 'Scholar Profile' },
             { href: 'https://x.com/hideaki_joko', icon: 'fab fa-twitter', title: 'X (Twitter)' }
         ]
     },
