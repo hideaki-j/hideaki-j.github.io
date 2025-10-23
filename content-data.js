@@ -377,7 +377,7 @@ window.siteContent = {
         },
         publications: {
             titleHTML: '<i class="fas fa-file-alt"></i> Publications',
-            intro: '<p>For a complete list of publications, please refer to my <a href="https://hideaki-j.github.io/scholar-profile/">Scholar Profile</a>.</p>'
+            intro: ''
         }
     }
 };

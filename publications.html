@@ -24,6 +24,41 @@
             <div class="container">
                 <h2 class="section-title" id="publications-title"></h2>
                 <div id="publications-intro"></div>
+
+                <div class="scholar-profile-root" id="scholar-profile-root">
+                    <div class="scholar-content">
+                        <!-- Citation Stats at Top -->
+                        <section class="scholar-stats-card">
+                            <div class="scholar-stats-grid">
+                                <div class="scholar-stats-total">
+                                    <h3 class="scholar-section-title">Total Citations</h3>
+                                    <div class="scholar-citations-number" id="scholar-citations-all"></div>
+                                </div>
+                                <div class="scholar-chart-wrapper">
+                                    <canvas id="scholar-citations-chart"></canvas>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Publications List -->
+                        <section class="scholar-publications-card">
+                            <div class="scholar-table-header">
+                                <span>Title</span>
+                                <span>Cited By</span>
+                                <span>Year</span>
+                            </div>
+                            <div class="scholar-publications-list" id="scholar-publications-list">
+                                Loading publications...
+                            </div>
+                        </section>
+
+                        <!-- Co-authors at Bottom -->
+                        <section class="scholar-coauthors-card">
+                            <h3 class="scholar-section-title">Co-authors</h3>
+                            <div class="scholar-coauthors-list" id="scholar-coauthors-list"></div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -35,6 +70,8 @@
     </main>
     <script src="icons.js"></script>
     <script src="content-data.js"></script>
+    <script src="scholar-profile/profile.js"></script>
+    <script src="scholar-profile/pub_list.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

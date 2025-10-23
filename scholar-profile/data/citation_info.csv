@@ -1,0 +1,505 @@
+Cited paper,Title,Author,Affiliation,Country
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Yashar Deldjoo,Polytechnic University of Bari,Italy
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Zhankui He,"University of California, La Jolla",USA
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Julian McAuley,"University of California, La Jolla",USA
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Anton Korikov,University of Toronto,Canada
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Scott Sanner,University of Toronto,Canada
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Arnau Ramisa,"Amazon, Palo Alto",USA
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),René Vidal,"Amazon, Palo Alto",USA
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Maheswaran Sathiamoorthy,"Bespoke Labs, Santa Clara",USA
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Atoosa Kasirzadeh,University of Edinburgh,UK
+LAPS,A Review of Modern Recommender Systems Using Generative Models (Gen-RecSys),Silvia Milano,University of Exeter and LMU Munich,Germany
+LAPS,A Survey of Conversational Search,FENGRAN MO,"Department of Computer Science and Operations Research, University of Montreal",Canada
+LAPS,A Survey of Conversational Search,KELONG MAO,"Gaoling School of Artificial Intelligence, Renmin University of China",China
+LAPS,A Survey of Conversational Search,ZILIANG ZHAO,"Gaoling School of Artificial Intelligence, Renmin University of China",China
+LAPS,A Survey of Conversational Search,HONGJIN QIAN,Beijing Academy of Artificial Intelligence,China
+LAPS,A Survey of Conversational Search,HAONAN CHEN,"Gaoling School of Artificial Intelligence, Renmin University of China",China
+LAPS,A Survey of Conversational Search,YIRUO CHENG,"Gaoling School of Artificial Intelligence, Renmin University of China",China
+LAPS,A Survey of Conversational Search,XIAOXI LI,"Gaoling School of Artificial Intelligence, Renmin University of China",China
+LAPS,A Survey of Conversational Search,YUTAO ZHU,"Gaoling School of Artificial Intelligence, Renmin University of China",China
+LAPS,A Survey of Conversational Search,ZHICHENG DOU,"Gaoling School of Artificial Intelligence, Renmin University of China",China
+LAPS,A Survey of Conversational Search,JIAN-YUN NIE,"Department of Computer Science and Operations Research, University of Montreal",Canada
+LAPS,A Survey on Recent Advances in Conversational Data Generation,HEYDAR SOUDANI,Radboud University,The Netherlands
+LAPS,A Survey on Recent Advances in Conversational Data Generation,ROXANA PETCU,University of Amsterdam,The Netherlands
+LAPS,A Survey on Recent Advances in Conversational Data Generation,EVANGELOS KANOULAS,University of Amsterdam,The Netherlands
+LAPS,A Survey on Recent Advances in Conversational Data Generation,FAEGHEH HASIBI,Radboud University,The Netherlands
+LAPS,A survey on pragmatic processing techniques,Rui Mao,School of Computer Science and Engineering,Singapore
+LAPS,A survey on pragmatic processing techniques,Mengshi Ge,Nanyang Technological University,Singapore
+LAPS,A survey on pragmatic processing techniques,Sooji Han,Intapp,Germany
+LAPS,A survey on pragmatic processing techniques,Wei Li,National University of Singapore,Singapore
+LAPS,A survey on pragmatic processing techniques,Kai He,National University of Singapore,Singapore
+LAPS,A survey on pragmatic processing techniques,Luyao Zhu,Nanyang Technological University,Singapore
+LAPS,A survey on pragmatic processing techniques,Erik Cambria,Nanyang Technological University,Singapore
+LAPS,Reinforced Prompt Personalization for Recommendation with Large Language Models,WENYU MAO,"School of Cyber Science and Technology, University of Science and Technology of China",China
+LAPS,Reinforced Prompt Personalization for Recommendation with Large Language Models,JIANCAN WU,University of Science and Technology of China,China
+LAPS,Reinforced Prompt Personalization for Recommendation with Large Language Models,WEIJIAN CHEN,Hefei Comprehensive National Science Center,China
+LAPS,Reinforced Prompt Personalization for Recommendation with Large Language Models,CHONGMING GAO,University of Science and Technology of China,China
+LAPS,Reinforced Prompt Personalization for Recommendation with Large Language Models,XIANG WANG,University of Science and Technology of China,China
+LAPS,Reinforced Prompt Personalization for Recommendation with Large Language Models,XIANGNAN HE,"School of Information Science and Technology, University of Science and Technology of China",China
+LAPS,Recommendation with Generative Models,Yashar Deldjoo,Polytechnic University of Bari,Italy
+LAPS,Recommendation with Generative Models,Zhankui He,"University of California, La Jolla",USA
+LAPS,Recommendation with Generative Models,Julian McAuley,"University of California, La Jolla",USA
+LAPS,Recommendation with Generative Models,Anton Korikov,University of Toronto,Canada
+LAPS,Recommendation with Generative Models,Scott Sanner,University of Toronto,Canada
+LAPS,Recommendation with Generative Models,Arnau Ramisa,"Amazon, Palo Alto",USA
+LAPS,Recommendation with Generative Models,Rene Vidal,"Amazon, Palo Alto",USA
+LAPS,Recommendation with Generative Models,Maheswaran Sathiamoorthy,"Bespoke Labs, Santa Clara",USA
+LAPS,Recommendation with Generative Models,Atoosa Kasrizadeh,University of Edinburgh,UK
+LAPS,Recommendation with Generative Models,Silvia Milano,University of Exeter and LMU Munich,Germany
+LAPS,Recommendation with Generative Models,Francesco Ricci,Free University of Bozen-Bolzano,Italy
+LAPS,Recommendation with Generative Models,Alet Heezemans,"now publishers, Inc.",USA
+LAPS,Recommendation with Generative Models,Mike Casey,"now publishers, Inc.",USA
+LAPS,Relational AI: Facilitating Intergroup Cooperation with Socially Aware Conversational Support,Elijah L. Claggett,Carnegie Mellon University,USA
+LAPS,Relational AI: Facilitating Intergroup Cooperation with Socially Aware Conversational Support,Robert E. Kraut,Carnegie Mellon University,USA
+LAPS,Relational AI: Facilitating Intergroup Cooperation with Socially Aware Conversational Support,Hirokazu Shirado,Carnegie Mellon University,USA
+LAPS,A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval,YU ZHANG,Tsinghua University,China
+LAPS,A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval,SHUTONG QIAO,University of Queensland,Australia
+LAPS,A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval,JIAQI ZHANG,University of Queensland,Australia
+LAPS,A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval,TZU-HENG LIN,Tsinghua University,China
+LAPS,A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval,CHEN GAO,Tsinghua University,China
+LAPS,A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval,YONG LI,Tsinghua University,China
+LAPS,A Survey of Personalization: From RAG to Agent,XIAOPENG LI,City University of Hong Kong,Hong Kong
+LAPS,A Survey of Personalization: From RAG to Agent,PENGYUE JIA,City University of Hong Kong,Hong Kong
+LAPS,A Survey of Personalization: From RAG to Agent,DERONG XU,City University of Hong Kong and University of Science and Technology of China,China
+LAPS,A Survey of Personalization: From RAG to Agent,YI WEN,City University of Hong Kong,Hong Kong
+LAPS,A Survey of Personalization: From RAG to Agent,YINGYI ZHANG,City University of Hong Kong and Dalian University of Technology,China
+LAPS,A Survey of Personalization: From RAG to Agent,WENLIN ZHANG,City University of Hong Kong,Hong Kong
+LAPS,A Survey of Personalization: From RAG to Agent,WANYU WANG,City University of Hong Kong,Hong Kong
+LAPS,A Survey of Personalization: From RAG to Agent,YICHAO WANG,"Noah’s Ark Lab, Huawei",China
+LAPS,A Survey of Personalization: From RAG to Agent,ZHAOCHENG DU,"Noah’s Ark Lab, Huawei",China
+LAPS,A Survey of Personalization: From RAG to Agent,XIANGYANG LI,"Noah’s Ark Lab, Huawei",China
+LAPS,A Survey of Personalization: From RAG to Agent,YONG LIU,"Noah’s Ark Lab, Huawei",Singapore
+LAPS,A Survey of Personalization: From RAG to Agent,HUIFENG GUO,"Noah’s Ark Lab, Huawei",China
+LAPS,A Survey of Personalization: From RAG to Agent,RUIMING TANG,"Noah’s Ark Lab, Huawei",China
+LAPS,A Survey of Personalization: From RAG to Agent,XIANGYU ZHAO,City University of Hong Kong,Hong Kong
+LAPS,ConvMix: A Mixed-Criteria Data Augmentation Framework for Conversational Dense Retrieval,Fengran Mo,University of Montreal,Canada
+LAPS,ConvMix: A Mixed-Criteria Data Augmentation Framework for Conversational Dense Retrieval,Jinghan Zhang,Clemson University,USA
+LAPS,ConvMix: A Mixed-Criteria Data Augmentation Framework for Conversational Dense Retrieval,Yuchen Hui,University of Montreal,Canada
+LAPS,ConvMix: A Mixed-Criteria Data Augmentation Framework for Conversational Dense Retrieval,Jia Ao Sun,University of Montreal,Canada
+LAPS,ConvMix: A Mixed-Criteria Data Augmentation Framework for Conversational Dense Retrieval,Zhichao Xu,University of Utah,USA
+LAPS,ConvMix: A Mixed-Criteria Data Augmentation Framework for Conversational Dense Retrieval,Zhan Su,University of Montreal,Canada
+LAPS,ConvMix: A Mixed-Criteria Data Augmentation Framework for Conversational Dense Retrieval,Jian-Yun Nie,University of Montreal,Canada
+LAPS,Generate then Refine: Data Augmentation for Zero-shot Intent Detection,I-Fan Lin,Leiden University,The Netherlands
+LAPS,Generate then Refine: Data Augmentation for Zero-shot Intent Detection,Faegheh Hasibi,Radboud University,The Netherlands
+LAPS,Generate then Refine: Data Augmentation for Zero-shot Intent Detection,Suzan Verberne,Leiden University,The Netherlands
+LAPS,AGENT-CQ: Automatic Generation and Evaluation of Clarifying Questions for Conversational Search with LLMs,Clemencia Siro,University of Amsterdam,The Netherlands
+LAPS,AGENT-CQ: Automatic Generation and Evaluation of Clarifying Questions for Conversational Search with LLMs,Yifei Yuan,University of Copenhagen,Denmark
+LAPS,AGENT-CQ: Automatic Generation and Evaluation of Clarifying Questions for Conversational Search with LLMs,Mohammad Aliannejadi,University of Amsterdam,The Netherlands
+LAPS,AGENT-CQ: Automatic Generation and Evaluation of Clarifying Questions for Conversational Search with LLMs,Maarten de Rijke,University of Amsterdam,The Netherlands
+LAPS,Accessibility Scout: Personalized Accessibility Scans of Built Environments,William Huang,"University of California, Los Angeles",USA
+LAPS,Accessibility Scout: Personalized Accessibility Scans of Built Environments,Xia Su,University of Washington,USA
+LAPS,Accessibility Scout: Personalized Accessibility Scans of Built Environments,Jon E. Froehlich,University of Washington,USA
+LAPS,Accessibility Scout: Personalized Accessibility Scans of Built Environments,Yang Zhang,"University of California, Los Angeles",USA
+LAPS,Personalised Explainable Robots Using LLMs,Ferran Gebellí,PAL Robotics,Spain
+LAPS,Personalised Explainable Robots Using LLMs,Lavinia Hriscu,IRI (UPC-CSIC),Spain
+LAPS,Personalised Explainable Robots Using LLMs,Raquel Ros,PAL Robotics,Spain
+LAPS,Personalised Explainable Robots Using LLMs,Severin Lemaignan,PAL Robotics,Spain
+LAPS,Personalised Explainable Robots Using LLMs,Alberto Sanfeliu,IRI (UPC-CSIC),Spain
+LAPS,Personalised Explainable Robots Using LLMs,Anaïs Garrell,IRI (UPC-CSIC),Spain
+LAPS,SOLID: Self-seeding and Multi-intent Self-instructing LLMs for Generating Intent-aware Information-Seeking Dialogs,Arian Askari,Leiden University,The Netherlands
+LAPS,SOLID: Self-seeding and Multi-intent Self-instructing LLMs for Generating Intent-aware Information-Seeking Dialogs,Roxana Petcu,University of Amsterdam,The Netherlands
+LAPS,SOLID: Self-seeding and Multi-intent Self-instructing LLMs for Generating Intent-aware Information-Seeking Dialogs,Chuan Meng,University of Amsterdam,The Netherlands
+LAPS,SOLID: Self-seeding and Multi-intent Self-instructing LLMs for Generating Intent-aware Information-Seeking Dialogs,Mohammad Aliannejadi,University of Amsterdam,The Netherlands
+LAPS,SOLID: Self-seeding and Multi-intent Self-instructing LLMs for Generating Intent-aware Information-Seeking Dialogs,Amin Abolghasemi,Leiden University,The Netherlands
+LAPS,SOLID: Self-seeding and Multi-intent Self-instructing LLMs for Generating Intent-aware Information-Seeking Dialogs,Evangelos Kanoulas,University of Amsterdam,The Netherlands
+LAPS,SOLID: Self-seeding and Multi-intent Self-instructing LLMs for Generating Intent-aware Information-Seeking Dialogs,Suzan Verberne,Leiden University,The Netherlands
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Yiming Du,The Chinese University of Hong Kong,Hong Kong
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Bingbing Wang,"Harbin Institute of Technology, Shenzhen",China
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Yang He,The Hong Kong University of Science and Technology,Hong Kong
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Bin Liang,The Chinese University of Hong Kong,Hong Kong
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Baojun Wang,Huawei Noah’s Ark Lab,China
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Zhongyang Li,Huawei Noah’s Ark Lab,China
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Lin Gui,King’s College London,UK
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Jeff Z. Pan,The University of Edinburgh,UK
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Ruifeng Xu,"Harbin Institute of Technology, Shenzhen",China
+LAPS,MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents,Kam-Fai Wong,The Chinese University of Hong Kong,Hong Kong
+LAPS,CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems,Nolwenn Bernard,University of Stavanger,Norway
+LAPS,CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems,Hideaki Joko,Radboud University,The Netherlands
+LAPS,CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems,Faegheh Hasibi,Radboud University,The Netherlands
+LAPS,CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems,Krisztian Balog,University of Stavanger,Norway
+LAPS,Large Language Model Driven Recommendation,Anton Korikov,University of Toronto,Canada
+LAPS,Large Language Model Driven Recommendation,Scott Sanner,University of Toronto,Canada
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Xin Wang,Northwestern Polytechnical University,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Zhiyao Cui,Northwestern Polytechnical University and Shanghai Artificial Intelligence Laboratory,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Hao Li,Northwestern Polytechnical University and Shanghai Artificial Intelligence Laboratory,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Ya Zeng,Northwestern Polytechnical University,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Chenxu Wang,Shanghai Artificial Intelligence Laboratory,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Ruiqi Song,Northwestern Polytechnical University,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Yihang Chen,Huawei Noah’s Ark Lab,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Kun Shao,Huawei Noah’s Ark Lab,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Qiaosheng Zhang,Shanghai Artificial Intelligence Laboratory,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Jinzhuo Liu,Yunnan University,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Siyue Ren,Northwestern Polytechnical University and Shanghai Artificial Intelligence Laboratory,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Shuyue Hu,Shanghai Artificial Intelligence Laboratory,China
+LAPS,PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration,Zhen Wang,Northwestern Polytechnical University,China
+LAPS,EventWeave: A Dynamic Framework for Capturing Core and Supporting Events in Dialogue Systems,Zhengyi Zhao,The Chinese University of Hong Kong,Hong Kong
+LAPS,EventWeave: A Dynamic Framework for Capturing Core and Supporting Events in Dialogue Systems,Shubo Zhang,University of International Relations,China
+LAPS,EventWeave: A Dynamic Framework for Capturing Core and Supporting Events in Dialogue Systems,Yiming Du,The Chinese University of Hong Kong,Hong Kong
+LAPS,EventWeave: A Dynamic Framework for Capturing Core and Supporting Events in Dialogue Systems,Bin Liang,The Chinese University of Hong Kong,Hong Kong
+LAPS,EventWeave: A Dynamic Framework for Capturing Core and Supporting Events in Dialogue Systems,Baojun Wang,Huawei Noah’s Ark Lab,China
+LAPS,EventWeave: A Dynamic Framework for Capturing Core and Supporting Events in Dialogue Systems,Zhongyang Li,"Huawei Technologies Co., Ltd.",China
+LAPS,EventWeave: A Dynamic Framework for Capturing Core and Supporting Events in Dialogue Systems,Binyang Li,University of International Relations,China
+LAPS,EventWeave: A Dynamic Framework for Capturing Core and Supporting Events in Dialogue Systems,Kam-Fai Wong,The Chinese University of Hong Kong,Hong Kong
+LAPS,Can Large Language Models Derive High-Level Cognition from Low-Level and Fragmented Foundational Information?,Yang Liu,Hunan University,China
+LAPS,Can Large Language Models Derive High-Level Cognition from Low-Level and Fragmented Foundational Information?,Xiaoping Wang,Hunan University,China
+LAPS,Can Large Language Models Derive High-Level Cognition from Low-Level and Fragmented Foundational Information?,Kai Lu,National University of Defense Technology,China
+LAPS,Adaptive Orchestration of Modular Generative Information Access Systems,Mohanna Hoveyda,Radboud University,The Netherlands
+LAPS,Adaptive Orchestration of Modular Generative Information Access Systems,Harrie Oosterhuis,Radboud University,The Netherlands
+LAPS,Adaptive Orchestration of Modular Generative Information Access Systems,Arjen P. de Vries,Radboud University,The Netherlands
+LAPS,Adaptive Orchestration of Modular Generative Information Access Systems,Maarten de Rijke,University of Amsterdam,The Netherlands
+LAPS,Adaptive Orchestration of Modular Generative Information Access Systems,Faegheh Hasibi,Radboud University,The Netherlands
+LAPS,Staff Competency Assessment and Task Allocation Methods Considering AI Augmentation: A Study Based on the E-CARGO Model,Xinlei Zhang,King Saud University,Saudi Arabia
+LAPS,Staff Competency Assessment and Task Allocation Methods Considering AI Augmentation: A Study Based on the E-CARGO Model,Jiahui Yu,King Saud University,Saudi Arabia
+LAPS,Staff Competency Assessment and Task Allocation Methods Considering AI Augmentation: A Study Based on the E-CARGO Model,Danming Huang,King Saud University,Saudi Arabia
+LAPS,Staff Competency Assessment and Task Allocation Methods Considering AI Augmentation: A Study Based on the E-CARGO Model,Haibin Zhu,King Saud University,Saudi Arabia
+LAPS,Staff Competency Assessment and Task Allocation Methods Considering AI Augmentation: A Study Based on the E-CARGO Model,Yuxiang Sun,King Saud University,Saudi Arabia
+LAPS,Staff Competency Assessment and Task Allocation Methods Considering AI Augmentation: A Study Based on the E-CARGO Model,Xianzhong Zhou,King Saud University,Saudi Arabia
+LAPS,PersonaLens: A Benchmark for Personalization Evaluation in Conversational AI Assistants,Zheng Zhao,University of Edinburgh,UK
+LAPS,PersonaLens: A Benchmark for Personalization Evaluation in Conversational AI Assistants,Clara Vania,Amazon,USA
+LAPS,PersonaLens: A Benchmark for Personalization Evaluation in Conversational AI Assistants,Subhradeep Kayal,Amazon,USA
+LAPS,PersonaLens: A Benchmark for Personalization Evaluation in Conversational AI Assistants,Naila Khan,Amazon,USA
+LAPS,PersonaLens: A Benchmark for Personalization Evaluation in Conversational AI Assistants,Shay B. Cohen,University of Edinburgh,UK
+LAPS,PersonaLens: A Benchmark for Personalization Evaluation in Conversational AI Assistants,Emine Yilmaz,University College London,UK
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Christine Bauer,University of Salzburg,Austria
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Li Chen,Hong Kong Baptist University,China
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Nicola Ferro,University of Padua,Italy
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Norbert Fuhr,Universität Duisburg-Essen,Germany
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Avishek Anand,TU Delft,Netherlands
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Timo Breuer,TH Köln,Germany
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Guglielmo Faggioli,University of Padua,Italy
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Ophir Frieder,Georgetown University,USA
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Hideo Joho,University of Tsukuba,Japan
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Jussi Karlgren,Silo AI,Finland
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Johannes Kiesel,Bauhaus-Universität Weimar,Germany
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Bart P. Knijnenburg,Clemson University,USA
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Aldo Lipani,University College London,UK
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Lien Michiels,Vrije Universiteit Brussel & University of Antwerp,Belgium
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Andrea Papenmeier,University of Twente,Netherlands
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Maria Soledad Pera,TU Delft,Netherlands
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Mark Sanderson,RMIT University,Australia
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Scott Sanner,University of Toronto,Canada
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Benno Stein,Bauhaus-Universität Weimar,Germany
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Johanne R. Trippas,RMIT University,Australia
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Karin Verspoor,RMIT University,Australia
+LAPS,Manifesto from Dagstuhl Perspectives Workshop 24352—Conversational Agents: A Framework for Evaluation (CAFE),Martijn C. Willemsen,TU Eindhoven & JADS,Netherlands
+LAPS,PROMPTAUG: Fine-grained Conflict Classification Using Data Augmentation,Oliver Warke,University of Glasgow,UK
+LAPS,PROMPTAUG: Fine-grained Conflict Classification Using Data Augmentation,Joemon M. Jose,University of Glasgow,UK
+LAPS,PROMPTAUG: Fine-grained Conflict Classification Using Data Augmentation,Faegheh Hasibi,Radboud University,Netherlands
+LAPS,PROMPTAUG: Fine-grained Conflict Classification Using Data Augmentation,Jan Breitsohl,University of Glasgow,UK
+LAPS,AI-Driven Personalized Microlearning Framework for Enhanced E-Learning,Sarah Almuqhim,King Saud University,Saudi Arabia
+LAPS,AI-Driven Personalized Microlearning Framework for Enhanced E-Learning,Jawad Berri,King Saud University,Saudi Arabia
+LAPS,Enhanced Bloom’s Educational Taxonomy for Fostering Information Literacy in the Era of Large Language Models,Yiming Luo,Macao Polytechnic University,Macao
+LAPS,Enhanced Bloom’s Educational Taxonomy for Fostering Information Literacy in the Era of Large Language Models,Ting Liu,Macao Polytechnic University,Macao
+LAPS,Enhanced Bloom’s Educational Taxonomy for Fostering Information Literacy in the Era of Large Language Models,Patrick Cheong-Iao Pang,Macao Polytechnic University,Macao
+LAPS,Enhanced Bloom’s Educational Taxonomy for Fostering Information Literacy in the Era of Large Language Models,Dana McKay,RMIT University,Australia
+LAPS,Enhanced Bloom’s Educational Taxonomy for Fostering Information Literacy in the Era of Large Language Models,Ziqi Chen,Macao Polytechnic University,Macao
+LAPS,Enhanced Bloom’s Educational Taxonomy for Fostering Information Literacy in the Era of Large Language Models,George Buchanan,RMIT University,Australia
+LAPS,Enhanced Bloom’s Educational Taxonomy for Fostering Information Literacy in the Era of Large Language Models,Shanton Chang,The University of Melbourne,Australia
+LAPS,FACE: A Fine-grained Reference Free Evaluator for Conversational Recommender Systems,Hideaki Joko,Radboud University,Netherlands
+LAPS,FACE: A Fine-grained Reference Free Evaluator for Conversational Recommender Systems,Faegheh Hasibi,Radboud University,Netherlands
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Hideaki Joko,Radboud University,Netherlands
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Shakiba Amirshahi,University of Waterloo,Canada
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Charles L. A. Clarke,University of Waterloo,Canada
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Faegheh Hasibi,Radboud University,Netherlands
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Ferran Gebellí,PAL Robotics,Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Anaïs Garrell,IRI (UPC-CSIC),Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Jan-Gerrit Habekost,University of Hamburg,Germany
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Severin Lemaignan,PAL Robotics,Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Stefan Wermter,University of Hamburg,Germany
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Raquel Ros,IIIA-CSIC,Spain
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Shengnan Guo,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Yuchen Zhai,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Shenyi Zhang,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Lingchen Zhao,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Zhangyi Wang,Wuhan University,China
+LAPS,The Other You in Black Mirror: First Steps from Chatbots to Personalized LLM Clones,Mingzhong Sun,Nanyang Technological University,Singapore
+LAPS,The Other You in Black Mirror: First Steps from Chatbots to Personalized LLM Clones,Mengmi Zhang,Nanyang Technological University / A*STAR,Singapore
+LAPS,The Other You in Black Mirror: First Steps from Chatbots to Personalized LLM Clones,Gabriel Kreiman,Harvard Medical School,USA
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Yang Zhang,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Wenjie Wang,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Xinyu Lin,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Fuli Feng,University of Science and Technology of China,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Hongzhi Yin,The University of Queensland,Australia
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Wayne Xin Zhao,Renmin University of China,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Lina Yao,CSIRO’s Data61,Australia
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Yang Song,Kuaishou Inc,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Xiangnan He,University of Science and Technology of China,China
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Maya Medjad,"LIRIS, UMR5205 (Lyon Universities)",France
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Hugo Imbert,Reecall,France
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Bruno Yun,"LIRIS, UMR5205 (Lyon Universities)",France
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Raphaël Szymocha,Reecall,France
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Frédéric Armetta,"LIRIS, UMR5205 (Lyon Universities)",France
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,N.V. Maiorana,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,S. Marceglia,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Treddenti,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Tosi,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Guidetti,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M.F. Creta,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,T. Bocci,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,S. Oliveri,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,F. Martinelli-Boneschi,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,A. Priori,University of Milan,Italy
+LAPS,Evaluating User Intent Classification and Hybrid Retrieval in a RAG-based Conversational Tourism Recommender System,Akshat Tandon,Technical University of Munich,Germany
+LAPS,Evaluating User Intent Classification and Hybrid Retrieval in a RAG-based Conversational Tourism Recommender System,Ashmi Banerjee,Technical University of Munich,Germany
+LAPS,Rethinking the Human-centered Evaluation of Conversational Systems,Clemencia Siro,University of Amsterdam,Netherlands
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Marcus D. Collins,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Eugene Agichtein,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Oleg Rokhlenko,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Shervin Malmasi,"Amazon.com, Inc.",USA
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Hideaki Joko,Radboud University,The Netherlands
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Shakiba Amirshahi,University of Waterloo,Canada
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Charles L. A. Clarke,University of Waterloo,Canada
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Faegheh Hasibi,Radboud University,The Netherlands
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Ferran Gebellí,PAL Robotics,Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Anaïs Garrell,"IRI-CSIC, UPC BarcelonaTech",Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Jan-Gerrit Habekost,University of Hamburg,Germany
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Severin Lemaignan,PAL Robotics,Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Stefan Wermter,University of Hamburg,Germany
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Raquel Ros,IIIA-CSIC,Spain
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Shengnan Guo,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Yuchen Zhai,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Shenyi Zhang,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Lingchen Zhao,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Zhangyi Wang,Wuhan University,China
+LAPS,The other you in black mirror: first steps from chatbots to personalized LLM clones,Mingzhong Sun,Nanyang Technological University,Singapore
+LAPS,The other you in black mirror: first steps from chatbots to personalized LLM clones,Mengmi Zhang,Nanyang Technological University / A*STAR,Singapore
+LAPS,The other you in black mirror: first steps from chatbots to personalized LLM clones,Gabriel Kreiman,Harvard Medical School,USA
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Yang Zhang,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Wenjie Wang,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Xinyu Lin,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Fuli Feng,University of Science and Technology of China,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Hongzhi Yin,The University of Queensland,Australia
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Wayne Xin Zhao,Renmin University of China,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Lina Yao,CSIRO’s Data61,Australia
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Yang Song,Kuaishou Inc,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Xiangnan He,University of Science and Technology of China,China
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Maya Medjad,"UCBL, CNRS, Centrale Lyon, INSA Lyon, Univ. Lumière Lyon 2",France
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Hugo Imbert,Reecall,France
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Bruno Yun,"UCBL, CNRS, Centrale Lyon, INSA Lyon, Univ. Lumière Lyon 2",France
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Raphaël Szymocha,Reecall,France
+LAPS,Leveraging Graph Structures and Large Language Models for End-to-End Synthetic Task-Oriented Dialogues,Frédéric Armetta,"UCBL, CNRS, Centrale Lyon, INSA Lyon, Univ. Lumière Lyon 2",France
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,N. V. Maiorana,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,S. Marceglia,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Treddenti,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Tosi,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Guidetti,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. F. Creta,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,T. Bocci,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,S. Oliveri,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,F. Martinelli-Boneschi,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,A. Priori,University of Milan,Italy
+LAPS,Evaluating User Intent Classification and Hybrid Retrieval in a RAG-based Conversational Tourism Recommender System,Akshat Tandon,Technical University of Munich,Germany
+LAPS,Evaluating User Intent Classification and Hybrid Retrieval in a RAG-based Conversational Tourism Recommender System,Ashmi Banerjee,Technical University of Munich,Germany
+LAPS,Rethinking the human-centered evaluation of conversational systems,Clemencia N. Siro,University of Amsterdam,The Netherlands
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Marcus D. Collins,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Eugene Agichtein,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Oleg Rokhlenko,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Shervin Malmasi,"Amazon.com, Inc.",USA
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Hideaki Joko,Radboud University,The Netherlands
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Shakiba Amirshahi,University of Waterloo,Canada
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Charles L. A. Clarke,University of Waterloo,Canada
+LAPS,WildClaims: Information Access Conversations in the Wild(Chat),Faegheh Hasibi,Radboud University,The Netherlands
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Ferran Gebellí,PAL Robotics,Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Anaïs Garrell,Institut de Robòtica i Informàtica Industrial (IRI-CSIC) / Universitat Politècnica de Catalunya (UPC),Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Jan-Gerrit Habekost,University of Hamburg,Germany
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Severin Lemaignan,PAL Robotics,Spain
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Stefan Wermter,University of Hamburg,Germany
+LAPS,Personalised Explanations in Long-term Human-Robot Interactions,Raquel Ros,Artificial Intelligence Research Institute (IIIA-CSIC),Spain
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Shengnan Guo,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Yuchen Zhai,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Shenyi Zhang,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Lingchen Zhao,Wuhan University,China
+LAPS,IntentBreaker: Intent-Adaptive Jailbreak Attack on Large Language Models,Zhangyi Wang,Wuhan University,China
+LAPS,The other you in black mirror: first steps from chatbots to personalized LLM clones,Mingzhong Sun,Nanyang Technological University,Singapore
+LAPS,The other you in black mirror: first steps from chatbots to personalized LLM clones,Mengmi Zhang,Nanyang Technological University / A*STAR,Singapore
+LAPS,The other you in black mirror: first steps from chatbots to personalized LLM clones,Gabriel Kreiman,Harvard Medical School,USA
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Yang Zhang,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Wenjie Wang,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Xinyu Lin,National University of Singapore,Singapore
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Fuli Feng,University of Science and Technology of China,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Hongzhi Yin,The University of Queensland,Australia
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Wayne Xin Zhao,Renmin University of China,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Lina Yao,CSIRO’s Data61,Australia
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Yang Song,Kuaishou Inc,China
+LAPS,The 3rd Workshop on Personal Intelligence with Generative AI,Xiangnan He,University of Science and Technology of China,China
+LAPS,LEVERAGING GRAPH STRUCTURES AND LARGE LANGUAGE MODELS FOR END-TO-END SYNTHETIC TASK-ORIENTED DIALOGUES,Maya Medjad,"UCBL, CNRS, Centrale Lyon, INSA Lyon, Univ. Lumière Lyon 2, LIRIS (UMR5205)",France
+LAPS,LEVERAGING GRAPH STRUCTURES AND LARGE LANGUAGE MODELS FOR END-TO-END SYNTHETIC TASK-ORIENTED DIALOGUES,Hugo Imbert,Reecall,France
+LAPS,LEVERAGING GRAPH STRUCTURES AND LARGE LANGUAGE MODELS FOR END-TO-END SYNTHETIC TASK-ORIENTED DIALOGUES,Bruno Yun,"UCBL, CNRS, Centrale Lyon, INSA Lyon, Univ. Lumière Lyon 2, LIRIS (UMR5205)",France
+LAPS,LEVERAGING GRAPH STRUCTURES AND LARGE LANGUAGE MODELS FOR END-TO-END SYNTHETIC TASK-ORIENTED DIALOGUES,Raphaël Szymocha,Reecall,France
+LAPS,LEVERAGING GRAPH STRUCTURES AND LARGE LANGUAGE MODELS FOR END-TO-END SYNTHETIC TASK-ORIENTED DIALOGUES,Frédéric Armetta,"UCBL, CNRS, Centrale Lyon, INSA Lyon, Univ. Lumière Lyon 2, LIRIS (UMR5205)",France
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,N. V. Maiorana,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,S. Marceglia,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Treddenti,University of Milan / ASST Santi Paolo e Carlo,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Tosi,University of Milan / ASST Santi Paolo e Carlo,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M. Guidetti,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,M.F. Creta,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,T. Bocci,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,S. Oliveri,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,F. Martinelli-Boneschi,University of Milan,Italy
+LAPS,Is it time for the neurologist to use Large Language Models in everyday practice?,A. Priori,University of Milan,Italy
+LAPS,Evaluating User Intent Classification and Hybrid Retrieval in a RAG-based Conversational Tourism Recommender System,Akshat Tandon,Technical University of Munich,Germany
+LAPS,Evaluating User Intent Classification and Hybrid Retrieval in a RAG-based Conversational Tourism Recommender System,Ashmi Banerjee,Technical University of Munich,Germany
+LAPS,Rethinking the human-centered evaluation of conversational systems,Clemencia Siro,University of Amsterdam,The Netherlands
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Marcus D. Collins,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Eugene Agichtein,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Oleg Rokhlenko,"Amazon.com, Inc.",USA
+LAPS,Collecting High-quality Multi-modal Conversational Search Data for E-Commerce,Shervin Malmasi,"Amazon.com, Inc.",USA
+LAPS,Ontology-Based Fact Checking for Verification of Defense Domain Sentences,Hwang Seok-ju,Yonsei University,South Korea
+LAPS,Ontology-Based Fact Checking for Verification of Defense Domain Sentences,Kim Dong-hyun,Yonsei University,South Korea
+LAPS,Ontology-Based Fact Checking for Verification of Defense Domain Sentences,Lee Kyung-ho,Yonsei University,South Korea
+LAPS,Ontology-Based Fact Checking for Verification of Defense Domain Sentences,Lee Kyung-hwa,Ssangyong Information & Communications,South Korea
+ConEL,Conversational Information Seeking,Hamed Zamani,University of Massachusetts Amherst,USA
+ConEL,Conversational Information Seeking,Johanne R. Trippas,RMIT University,Australia
+ConEL,Conversational Information Seeking,Jeff Dalton,University of Edinburgh,UK
+ConEL,Conversational Information Seeking,Filip Radlinski,Google Research,UK
+ConEL,A Survey on Recent Advances in Conversational Data Generation,Heydar Soudani,Radboud University,The Netherlands
+ConEL,A Survey on Recent Advances in Conversational Data Generation,Roxana Petcu,University of Amsterdam,The Netherlands
+ConEL,A Survey on Recent Advances in Conversational Data Generation,Evangelos Kanoulas,University of Amsterdam,The Netherlands
+ConEL,A Survey on Recent Advances in Conversational Data Generation,Faegheh Hasibi,Radboud University,The Netherlands
+ConEL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Hideaki Joko,Radboud University,The Netherlands
+ConEL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Shubham Chatterjee,University of Edinburgh,UK
+ConEL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Andrew Ramsay,University of Glasgow,UK
+ConEL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Arjen P. de Vries,Radboud University,The Netherlands
+ConEL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Jeff Dalton,University of Edinburgh,UK
+ConEL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Faegheh Hasibi,Radboud University,The Netherlands
+ConEL,Conversational Question Answering on Heterogeneous Sources,Philipp Christmann,Max Planck Institute for Informatics,Germany
+ConEL,Conversational Question Answering on Heterogeneous Sources,Rishiraj Saha Roy,Max Planck Institute for Informatics,Germany
+ConEL,Conversational Question Answering on Heterogeneous Sources,Gerhard Weikum,Max Planck Institute for Informatics,Germany
+ConEL,Learning to Relate to Previous Turns in Conversational Search,Fengran Mo,University of Montreal,Canada
+ConEL,Learning to Relate to Previous Turns in Conversational Search,Jian-Yun Nie,University of Montreal,Canada
+ConEL,Learning to Relate to Previous Turns in Conversational Search,Kaiyu Huang,Tsinghua University,China
+ConEL,Learning to Relate to Previous Turns in Conversational Search,Kelong Mao,Renmin University of China,China
+ConEL,Learning to Relate to Previous Turns in Conversational Search,Yutao Zhu,University of Montreal,Canada
+ConEL,Learning to Relate to Previous Turns in Conversational Search,Peng Li,Tsinghua University,China
+ConEL,Learning to Relate to Previous Turns in Conversational Search,Yang Liu,Tsinghua University,China
+ConEL,MG-ShopDial: A Multi-Goal Conversational Dataset for e-Commerce,Nolwenn Bernard,University of Stavanger,Norway
+ConEL,MG-ShopDial: A Multi-Goal Conversational Dataset for e-Commerce,Krisztian Balog,University of Stavanger,Norway
+ConEL,Personal Research Knowledge Graphs,Prantika Chakraborty,Indian Association for the Cultivation of Science,India
+ConEL,Personal Research Knowledge Graphs,Sudakshina Dutta,Indian Institute of Technology Goa,India
+ConEL,Personal Research Knowledge Graphs,Debarshi Kumar Sanyal,Indian Association for the Cultivation of Science,India
+ConEL,"Personal Entity, Concept, and Named Entity Linking in Conversations",Hideaki Joko,Radboud University,The Netherlands
+ConEL,"Personal Entity, Concept, and Named Entity Linking in Conversations",Faegheh Hasibi,Radboud University,The Netherlands
+ConEL,GraphWOZ: Dialogue Management with Conversational Knowledge Graphs,Nicholas Walker,Norwegian Computing Center,Norway
+ConEL,GraphWOZ: Dialogue Management with Conversational Knowledge Graphs,Stefan Ultes,University of Bamberg,Germany
+ConEL,GraphWOZ: Dialogue Management with Conversational Knowledge Graphs,Pierre Lison,Norwegian Computing Center,Norway
+ConEL,Towards Self-Contained Answers: Entity-Based Answer Rewriting in Conversational Search,Ivan Sekulić,Università della Svizzera italiana,Switzerland
+ConEL,Towards Self-Contained Answers: Entity-Based Answer Rewriting in Conversational Search,Krisztian Balog,University of Stavanger,Norway
+ConEL,Towards Self-Contained Answers: Entity-Based Answer Rewriting in Conversational Search,Fabio Crestani,Università della Svizzera italiana,Switzerland
+ConEL,NILK: Entity Linking Dataset Targeting NIL-Linking Cases,Anastasiia Iurshina,University of Stuttgart,Germany
+ConEL,NILK: Entity Linking Dataset Targeting NIL-Linking Cases,Jiaxin Pan,University of Stuttgart,Germany
+ConEL,NILK: Entity Linking Dataset Targeting NIL-Linking Cases,Rafika Boutalbi,University of Stuttgart,Germany
+ConEL,NILK: Entity Linking Dataset Targeting NIL-Linking Cases,Steffen Staab,University of Stuttgart,Germany
+ConEL,A Longitudinal Study on Different Annotator Feedback Loops in Complex RAG Tasks,Sara Rosenthal,IBM,USA
+ConEL,A Longitudinal Study on Different Annotator Feedback Loops in Complex RAG Tasks,Maeda Hanafi,IBM,USA
+ConEL,A Longitudinal Study on Different Annotator Feedback Loops in Complex RAG Tasks,Yannis Katsis,IBM,USA
+ConEL,A Longitudinal Study on Different Annotator Feedback Loops in Complex RAG Tasks,Lucian Popa,IBM,USA
+ConEL,A Longitudinal Study on Different Annotator Feedback Loops in Complex RAG Tasks,Marina Danilevsky,IBM,USA
+ConEL,ECIR 23 Tutorial: Neuro-Symbolic Approaches for Information Retrieval,Laura Dietz,University of New Hampshire,USA
+ConEL,ECIR 23 Tutorial: Neuro-Symbolic Approaches for Information Retrieval,Hannah Bast,University of Freiburg,Germany
+ConEL,ECIR 23 Tutorial: Neuro-Symbolic Approaches for Information Retrieval,Shubham Chatterjee,University of Glasgow,UK
+ConEL,ECIR 23 Tutorial: Neuro-Symbolic Approaches for Information Retrieval,Jeff Dalton,University of Glasgow,UK
+ConEL,ECIR 23 Tutorial: Neuro-Symbolic Approaches for Information Retrieval,Edgar Meij,Bloomberg,UK
+ConEL,ECIR 23 Tutorial: Neuro-Symbolic Approaches for Information Retrieval,Arjen de Vries,Radboud University,The Netherlands
+ConEL,FACE: A Fine-grained Reference Free Evaluator for Conversational Recommender Systems,Hideaki Joko,Radboud University,The Netherlands
+ConEL,FACE: A Fine-grained Reference Free Evaluator for Conversational Recommender Systems,Faegheh Hasibi,Radboud University,The Netherlands
+ConEL,Conversational Search with Random Walks over Entity Graphs,Gustavo Gonçalves,Carnegie Mellon University,USA
+ConEL,Conversational Search with Random Walks over Entity Graphs,João Magalhães,Universidade NOVA de Lisboa,Portugal
+ConEL,Conversational Search with Random Walks over Entity Graphs,Jamie Callan,Carnegie Mellon University,USA
+ConEL,Real World Conversational Entity Linking Requires More Than Zero-Shots,Mohanna Hoveyda,Radboud University,The Netherlands
+ConEL,Real World Conversational Entity Linking Requires More Than Zero-Shots,Arjen P. de Vries,Radboud University,The Netherlands
+ConEL,Real World Conversational Entity Linking Requires More Than Zero-Shots,Maarten de Rijke,University of Amsterdam,The Netherlands
+ConEL,Real World Conversational Entity Linking Requires More Than Zero-Shots,Faegheh Hasibi,Radboud University,The Netherlands
+ConEL,OPENEL: An Annotated Corpus for Entity Linking and Discourse in Open Domain Dialogue,Wen Cui,"University of California, Santa Cruz",USA
+ConEL,OPENEL: An Annotated Corpus for Entity Linking and Discourse in Open Domain Dialogue,Leanne Rolston,LivePerson Inc.,USA
+ConEL,OPENEL: An Annotated Corpus for Entity Linking and Discourse in Open Domain Dialogue,Marilyn A. Walker,"University of California, Santa Cruz",USA
+ConEL,OPENEL: An Annotated Corpus for Entity Linking and Discourse in Open Domain Dialogue,Beth Ann Hockey,LivePerson Inc.,USA
+ConEL,Creating Conversational Datasets for Retrieval-Augmented Generation Applications is Hard: Challenges & Research Opportunities,Maeda F Hanafi,IBM Research,USA
+ConEL,Creating Conversational Datasets for Retrieval-Augmented Generation Applications is Hard: Challenges & Research Opportunities,Kshitij Fadnis,IBM Research AI,USA
+ConEL,Creating Conversational Datasets for Retrieval-Augmented Generation Applications is Hard: Challenges & Research Opportunities,Marina Danilevsky,IBM Research,USA
+ConEL,Creating Conversational Datasets for Retrieval-Augmented Generation Applications is Hard: Challenges & Research Opportunities,Sara Rosenthal,IBM Research,USA
+ConEL,Creating Conversational Datasets for Retrieval-Augmented Generation Applications is Hard: Challenges & Research Opportunities,Yannis Katsis,IBM Research,USA
+ConEL,Adversarial Learning for Multi-Lingual Entity Linking,Bingbing Wang,"Harbin Institute of Technology, Shenzhen",China
+ConEL,Adversarial Learning for Multi-Lingual Entity Linking,Bin Liang,The Chinese University of Hong Kong,Hong Kong
+ConEL,Adversarial Learning for Multi-Lingual Entity Linking,Zhixin Bai,Harbin Institute of Technology,China
+ConEL,Adversarial Learning for Multi-Lingual Entity Linking,Yongzhuo Ma,"Harbin Institute of Technology, Shenzhen",China
+ConEL,Multilingual Entity Linking,Chen-Tse Tsai,Bloomberg,USA
+ConEL,Multilingual Entity Linking,Shyam Upadhyay,Google Deepmind,USA
+ConEL,Multilingual Entity Linking,Dan Roth,University of Pennsylvania,USA
+ConEL,Linking Surface Facts to Large-Scale Knowledge Graphs,Gorjan Radevski,NEC Laboratories Europe / KU Leuven,Germany / Belgium
+ConEL,Linking Surface Facts to Large-Scale Knowledge Graphs,Kiril Gashteovski,NEC Laboratories Europe / Ss. Cyril and Methodius University / CAIR,Germany / North Macedonia
+ConEL,Linking Surface Facts to Large-Scale Knowledge Graphs,Chia-Chien Hung,NEC Laboratories Europe,Germany
+ConEL,Linking Surface Facts to Large-Scale Knowledge Graphs,Carolin Lawrence,NEC Laboratories Europe,Germany
+ConEL,Linking Surface Facts to Large-Scale Knowledge Graphs,Goran Glavaš,University of Würzburg,Germany
+ConEL,Multilingual Entity Linking Using Dense Retrieval,Dominik Farhan,Charles University,Czech Republic
+ConEL,Ethical management of human-AI interaction: Theory development review,Teresa Heyder,University of Bamberg,Germany
+ConEL,Ethical management of human-AI interaction: Theory development review,Nina Passlack,University of Bamberg,Germany
+ConEL,Ethical management of human-AI interaction: Theory development review,Oliver Posegga,University of Bamberg,Germany
+ConEL,Clarification and user simulation in mixed-initiative conversational search,Ivan Sekulić,Università della Svizzera italiana,Switzerland
+ConEL,Clarification and user simulation in mixed-initiative conversational search,Fabio Crestani,Università della Svizzera italiana,Switzerland
+ConEL,Enhancing Entity Linking with Contextualized Entity Embeddings,Zhenran Xu,"Harbin Institute of Technology, Shenzhen",China
+ConEL,Enhancing Entity Linking with Contextualized Entity Embeddings,Yulin Chen,"Harbin Institute of Technology, Shenzhen",China
+ConEL,Enhancing Entity Linking with Contextualized Entity Embeddings,Senbao Shi,"Harbin Institute of Technology, Shenzhen",China
+ConEL,Enhancing Entity Linking with Contextualized Entity Embeddings,Baotian Hu,"Harbin Institute of Technology, Shenzhen",China
+ConEL,Relation Extraction using Few-Shot Entailment on Conversational Data,Arne Steffen Wittgen,Radboud University,The Netherlands
+ConEL,Relation Extraction using Few-Shot Entailment on Conversational Data,Faegheh Hasibi,Radboud University,The Netherlands
+ConEL,Relation Extraction using Few-Shot Entailment on Conversational Data,Serge Thill,Radboud University,The Netherlands
+ConEL,Radboud University at TREC CAsT 2021,Hideaki Joko,Radboud University,The Netherlands
+ConEL,Radboud University at TREC CAsT 2021,Emma J. Gerritse,Radboud University,The Netherlands
+ConEL,Radboud University at TREC CAsT 2021,Faegheh Hasibi,Radboud University,The Netherlands
+ConEL,Radboud University at TREC CAsT 2021,Arjen P. de Vries,Radboud University,The Netherlands
+ConEL,Entity Linking to Dynamically-Evolving Personal Knowledge Graphs in Conversations,Abiram Mohanaraj,Aalborg University,Denmark
+ConEL,Entity Linking to Dynamically-Evolving Personal Knowledge Graphs in Conversations,Elisabeth Niemeyer Laursen,Aalborg University,Denmark
+CREL,A Survey on Recent Advances in Conversational Data Generation,Heydar Soudani,Radboud University,The Netherlands
+CREL,A Survey on Recent Advances in Conversational Data Generation,Roxana Petcu,University of Amsterdam,The Netherlands
+CREL,A Survey on Recent Advances in Conversational Data Generation,Evangelos Kanoulas,University of Amsterdam,The Netherlands
+CREL,A Survey on Recent Advances in Conversational Data Generation,Faegheh Hasibi,Radboud University,The Netherlands
+CREL,Conversational Information Seeking,Hamed Zamani,University of Massachusetts Amherst,USA
+CREL,Conversational Information Seeking,Johanne R. Trippas,RMIT University,Australia
+CREL,Conversational Information Seeking,Jeff Dalton,University of Edinburgh,UK
+CREL,Conversational Information Seeking,Filip Radlinski,Google Research,UK
+CREL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Hideaki Joko,Radboud University,The Netherlands
+CREL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Shubham Chatterjee,University of Edinburgh,UK
+CREL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Andrew Ramsay,University of Glasgow,UK
+CREL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Arjen P. de Vries,Radboud University,The Netherlands
+CREL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Jeff Dalton,University of Edinburgh,UK
+CREL,Doing Personal LAPS: LLM-Augmented Dialogue Construction for Personalized Multi-Session Conversational Search,Faegheh Hasibi,Radboud University,The Netherlands
+CREL,A comprehensive survey of personal knowledge graphs,Prantika Chakraborty,Indian Association for the Cultivation of Science,India
+CREL,A comprehensive survey of personal knowledge graphs,Debarshi Kumar Sanyal,Indian Association for the Cultivation of Science,India
+CREL,Graph-Embedding Empowered Entity Retrieval,Emma J. Gerritse,Radboud University,The Netherlands
+CREL,Graph-Embedding Empowered Entity Retrieval,Faegheh Hasibi,Radboud University,The Netherlands
+CREL,Graph-Embedding Empowered Entity Retrieval,Arjen P. de Vries,Radboud University,The Netherlands
+CREL,Towards Self-Contained Answers: Entity-Based Answer Rewriting in Conversational Search,Ivan Sekulić,Università della Svizzera italiana,Switzerland
+CREL,Towards Self-Contained Answers: Entity-Based Answer Rewriting in Conversational Search,Krisztian Balog,University of Stavanger,Norway
+CREL,Towards Self-Contained Answers: Entity-Based Answer Rewriting in Conversational Search,Fabio Crestani,Università della Svizzera italiana,Switzerland
+CREL,Bidirectional End-to-End Learning of Retriever-Reader Paradigm for Entity Linking,Yinghui Li,Tsinghua Shenzhen International Graduate School,China
+CREL,Bidirectional End-to-End Learning of Retriever-Reader Paradigm for Entity Linking,Yong Jiang,Alibaba DAMO Academy,China
+CREL,Bidirectional End-to-End Learning of Retriever-Reader Paradigm for Entity Linking,Yangning Li,Tsinghua University,China
+CREL,Bidirectional End-to-End Learning of Retriever-Reader Paradigm for Entity Linking,Xinyu Lu,Tsinghua University,China
+CREL,Bidirectional End-to-End Learning of Retriever-Reader Paradigm for Entity Linking,Pengjun Xie,Alibaba DAMO Academy,China
+CREL,Bidirectional End-to-End Learning of Retriever-Reader Paradigm for Entity Linking,Ying Shen,Sun-Yat Sen University,China
+CREL,Bidirectional End-to-End Learning of Retriever-Reader Paradigm for Entity Linking,Hai-Tao Zheng,Tsinghua University,China
+CREL,Real World Conversational Entity Linking Requires More Than Zero-Shots,Mohanna Hoveyda,Radboud University,The Netherlands
+CREL,Real World Conversational Entity Linking Requires More Than Zero-Shots,Arjen P. de Vries,Radboud University,The Netherlands
+CREL,Real World Conversational Entity Linking Requires More Than Zero-Shots,Maarten de Rijke,University of Amsterdam,The Netherlands
+CREL,Real World Conversational Entity Linking Requires More Than Zero-Shots,Faegheh Hasibi,Radboud University,The Netherlands
+CREL,Report on the 21st Dutch-Belgian Information Retrieval Workshop (DIR 2023),Avishek Anand,TU Delft,The Netherlands
+CREL,Report on the 21st Dutch-Belgian Information Retrieval Workshop (DIR 2023),Maria Soledad Pera,TU Delft,The Netherlands
+CREL,Report on the 21st Dutch-Belgian Information Retrieval Workshop (DIR 2023),Maria Heuss,University of Amsterdam,The Netherlands
+CREL,Report on the 21st Dutch-Belgian Information Retrieval Workshop (DIR 2023),Venktesh V,TU Delft,The Netherlands
+CREL,Report on the 21st Dutch-Belgian Information Retrieval Workshop (DIR 2023),Matteo Corsi,TU Delft,The Netherlands
+CREL,MG: End-to-End Expert Linking via Multi-Granularity Representation Learning,Zhiyuan Zha,Renmin University of China,China
+CREL,MG: End-to-End Expert Linking via Multi-Granularity Representation Learning,Pengnian Qi,Renmin University of China,China
+CREL,MG: End-to-End Expert Linking via Multi-Granularity Representation Learning,Xigang Bao,Renmin University of China,China
+CREL,MG: End-to-End Expert Linking via Multi-Granularity Representation Learning,Biao Qin,Renmin University of China,China
+CREL,Graph Embeddings to Empower Entity Retrieval,Emma J. Gerritse,Radboud University,The Netherlands
+CREL,Graph Embeddings to Empower Entity Retrieval,Faegheh Hasibi,Radboud University,The Netherlands
+CREL,Graph Embeddings to Empower Entity Retrieval,Arjen P. de Vries,Radboud University,The Netherlands
+CREL,DeepType: Natural Language Understanding by Abstraction,Jonathan Raiman,Université Paris-Saclay,France
+CREL,Relation Extraction using Few-Shot Entailment on Conversational Data,Arne Steffen Wittgen,Radboud University,The Netherlands
+CREL,Relation Extraction using Few-Shot Entailment on Conversational Data,Faegheh Hasibi,Radboud University,The Netherlands
+CREL,Relation Extraction using Few-Shot Entailment on Conversational Data,Serge Thill,Radboud University,The Netherlands
+CREL,Study on automatic construction method of personal knowledge graphs based on filenames,Kazuya Matsuo,NTT Digital Twin Computing Research Center,Japan
+CREL,Study on automatic construction method of personal knowledge graphs based on filenames,Hajime Noto,NTT Digital Twin Computing Research Center,Japan
+CREL,Study on automatic construction method of personal knowledge graphs based on filenames,Shinichiro Eitoku,NTT Digital Twin Computing Research Center,Japan
+CREL,Study on automatic construction method of personal knowledge graphs based on filenames,Atsushi Fukayama,NTT Digital Twin Computing Research Center,Japan
+CREL,Study on automatic construction method of personal knowledge graphs based on filenames,Takao Nakamura,NTT Digital Twin Computing Research Center,Japan
