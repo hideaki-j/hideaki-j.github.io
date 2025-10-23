@@ -778,7 +778,7 @@ function resolveScholarAsset(path) {
         return path;
     }
 
-    return `scholar-profile/${path}`;
+    return path;
 }
 
 function formatScholarPaperCount(count) {
