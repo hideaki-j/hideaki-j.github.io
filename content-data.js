@@ -292,34 +292,6 @@ window.siteContent = {
             timeline: {
                 items: [
                     {
-                        bodyHTML: '<strong>ACM SIGIR Conference</strong> Session Chair (Industry Track), 2025.'
-                    },
-                    {
-                        bodyHTML: '<strong>ACM SIGIR Conference</strong> Program Committee, 2025.'
-                    },
-                    {
-                        bodyHTML: '<strong>ACM The Web Conference</strong> Program Committee, 2024.'
-                    },
-                    {
-                        bodyHTML: '<strong>ACM CIKM</strong> Reviewer, 2024.'
-                    },
-                    {
-                        bodyHTML: '<strong>ACM SIGIR</strong> Reviewer, 2024.'
-                    },
-                    {
-                        bodyHTML: '<strong>ACM Conversational User Interface (CUI) Conference</strong> Volunteer, 2023.'
-                    },
-                    {
-                        bodyHTML: '<strong>ACM SIGIR Conference</strong> Volunteer, 2022.'
-                    }
-                ]
-            }
-        },
-        volunteer: {
-            titleHTML: '<i class="fas fa-hands-helping"></i> Volunteering',
-            timeline: {
-                items: [
-                    {
                         iconKey: 'acm',
                         bodyHTML: '<strong>ACM SIGIR Conference</strong> Session Chair (Industry Track), 2025.'
                     },
