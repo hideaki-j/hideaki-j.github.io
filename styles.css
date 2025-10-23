@@ -230,13 +230,13 @@ body {
 
 .scholar-table-header {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 110px 80px;
+    grid-template-columns: minmax(0, 1fr) 100px 80px;
     gap: 16px;
     align-items: center;
     padding: 12px 20px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: #5f6368;
@@ -248,6 +248,10 @@ body {
 .scholar-table-header span:nth-child(2),
 .scholar-table-header span:nth-child(3) {
     text-align: right;
+}
+
+.scholar-table-header span:nth-child(2) {
+    padding-right: 20px;
 }
 
 .scholar-publications-list {
@@ -263,18 +267,19 @@ body {
 
 .scholar-paper-row {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 110px 80px;
+    grid-template-columns: minmax(0, 1fr) 100px 80px;
     gap: 16px;
     padding: 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     align-items: start;
-    transition: background 0.2s ease, padding 0.2s ease;
+    transition: background-color 0.2s ease, margin 0.2s ease, padding 0.2s ease;
 }
 
 .scholar-paper-row:hover {
-    background: rgba(66, 133, 244, 0.06);
-    padding: 20px 16px;
-    border-radius: 12px;
+    background-color: #f8f9fa;
+    margin: 0 -20px;
+    padding: 20px 20px;
+    border-radius: 8px;
 }
 
 .scholar-paper-content {
@@ -283,8 +288,8 @@ body {
 
 .scholar-paper-title {
     display: inline-block;
-    font-size: 1.05rem;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
     color: var(--accent-color);
     text-decoration: none;
     margin-bottom: 8px;
@@ -296,14 +301,27 @@ body {
 }
 
 .scholar-paper-authors {
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     color: var(--text-color);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+    line-height: 1.4;
 }
 
 .scholar-paper-venue {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     color: var(--text-light);
+}
+
+.scholar-paper-cited,
+.scholar-paper-year {
+    text-align: right;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    white-space: nowrap;
+}
+
+.scholar-paper-cited {
+    padding-right: 20px;
 }
 
 .scholar-badges {
@@ -370,6 +388,10 @@ body {
     white-space: nowrap;
 }
 
+.scholar-paper-cited {
+    padding-right: 20px;
+}
+
 .scholar-ellipsis-row {
     text-align: center;
     font-size: 1.4rem;
@@ -395,18 +417,23 @@ body {
     transition: background 0.2s ease, transform 0.2s ease;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 
-.scholar-toggle-button::after {
-    content: '>';
-    font-size: 0.8rem;
+.scholar-toggle-button::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%23787878' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
     transition: transform 0.2s ease;
-    transform: rotate(90deg);
 }
 
-.scholar-toggle-button[data-state="expanded"]::after {
-    transform: rotate(-90deg);
+.scholar-toggle-button[data-state="expanded"]::before {
+    transform: rotate(180deg);
 }
 
 .scholar-toggle-button:hover,
@@ -487,7 +514,7 @@ body {
 
 .scholar-coauthors-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 12px;
 }
 
@@ -565,12 +592,45 @@ body {
     }
 
     .scholar-coauthors-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .scholar-table-header,
+    .scholar-paper-row {
+        grid-template-columns: minmax(0, 1fr) 60px 50px;
+        gap: 8px;
+    }
+
+    .scholar-table-header {
+        padding: 10px 12px;
+        margin: -24px -24px 20px -24px;
+        font-size: 0.625rem;
+    }
+
+    .scholar-paper-row {
+        padding: 16px 0;
+    }
+
+    .scholar-paper-row:hover {
+        margin: 0 -12px;
+        padding: 16px 12px;
+        border-radius: 8px;
+    }
+
+    .scholar-paper-title {
+        font-size: 0.9375rem;
+        margin-bottom: 6px;
+    }
+
+    .scholar-paper-authors,
+    .scholar-paper-venue {
+        font-size: 0.8125rem;
     }
 
     .scholar-paper-cited,
     .scholar-paper-year {
         font-size: 0.85rem;
+        padding-right: 10px;
     }
 }
 
@@ -951,7 +1011,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     body {
         flex-direction: column;
     }
