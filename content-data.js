@@ -414,7 +414,7 @@ window.siteContent = {
                         },
                         {
                             name: "Shubham Chatterjee",
-                            affiliation: "🇺🇸 Missouri University of Science and Technology",
+                            affiliation: "🇺🇸 Missouri S&T",
                             scholarUrl: "https://scholar.google.com/citations?hl=en&user=DdgpMIQAAAAJ",
                             image: "figs/missouri.png"
                         },
@@ -432,7 +432,7 @@ window.siteContent = {
                         },
                         {
                             name: "Emma J. Gerritse",
-                            affiliation: "🇳🇱 Radboud University Nijmegen",
+                            affiliation: "🇳🇱 Radboud University",
                             scholarUrl: "https://scholar.google.com/citations?hl=en&user=WvFwI6MAAAAJ",
                             image: "figs/radboud.jpg"
                         },
