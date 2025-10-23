@@ -222,6 +222,10 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
+.scholar-publications-card {
+    padding: 32px 8px 32px 32px;
+}
+
 .scholar-content {
     display: flex;
     flex-direction: column;
@@ -230,10 +234,10 @@ body {
 
 .scholar-table-header {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 100px 80px;
+    grid-template-columns: minmax(0, 1fr) 100px max-content;
     gap: 16px;
     align-items: center;
-    padding: 12px 20px;
+    padding: 12px 8px 12px 12px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     font-size: 0.75rem;
     font-weight: 600;
@@ -241,8 +245,8 @@ body {
     letter-spacing: 0.5px;
     color: #5f6368;
     background: #f8f9fa;
-    border-radius: 12px 12px 0 0;
-    margin: -32px -32px 24px -32px;
+    border-radius: 16px 16px 0 0;
+    margin: -32px -8px 24px -32px;
 }
 
 .scholar-table-header span:nth-child(2),
@@ -251,7 +255,11 @@ body {
 }
 
 .scholar-table-header span:nth-child(2) {
-    padding-right: 20px;
+    padding-right: 12px;
+}
+
+.scholar-table-header span:nth-child(3) {
+    padding-right: 12px;
 }
 
 .scholar-publications-list {
@@ -267,7 +275,7 @@ body {
 
 .scholar-paper-row {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 100px 80px;
+    grid-template-columns: minmax(0, 1fr) 100px max-content;
     gap: 16px;
     padding: 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -277,8 +285,8 @@ body {
 
 .scholar-paper-row:hover {
     background-color: #f8f9fa;
-    margin: 0 -20px;
-    padding: 20px 20px;
+    margin: 0 -8px;
+    padding: 20px 8px;
     border-radius: 8px;
 }
 
@@ -321,7 +329,11 @@ body {
 }
 
 .scholar-paper-cited {
-    padding-right: 20px;
+    padding-right: 12px;
+}
+
+.scholar-paper-year {
+    padding-right: 12px;
 }
 
 .scholar-badges {
@@ -582,6 +594,10 @@ body {
         padding: 24px;
     }
 
+    .scholar-publications-card {
+        padding: 24px 8px 24px 24px;
+    }
+
     .scholar-stats-grid {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -597,14 +613,19 @@ body {
 
     .scholar-table-header,
     .scholar-paper-row {
-        grid-template-columns: minmax(0, 1fr) 60px 50px;
+        grid-template-columns: minmax(0, 1fr) 60px max-content;
         gap: 8px;
     }
 
     .scholar-table-header {
-        padding: 10px 12px;
-        margin: -24px -24px 20px -24px;
+        padding: 10px 8px 10px 12px;
+        margin: -24px -8px 20px -24px;
         font-size: 0.625rem;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .scholar-table-header span:nth-child(3) {
+        padding-right: 10px;
     }
 
     .scholar-paper-row {
@@ -612,8 +633,8 @@ body {
     }
 
     .scholar-paper-row:hover {
-        margin: 0 -12px;
-        padding: 16px 12px;
+        margin: 0 -8px;
+        padding: 16px 8px;
         border-radius: 8px;
     }
 
