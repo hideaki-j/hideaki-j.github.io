@@ -10,14 +10,15 @@ window.siteContent = {
         socialLinks: [
             { href: 'https://github.com/hideaki-j', icon: 'fab fa-github', title: 'GitHub' },
             { href: 'https://www.linkedin.com/in/hide7531b1143/', icon: 'fab fa-linkedin', title: 'LinkedIn' },
-            { href: 'https://x.com/hideaki_joko', icon: 'fab fa-twitter', title: 'X (Twitter)' }
+            { href: 'https://x.com/hideaki_joko', icon: 'fab fa-twitter', title: 'X (Twitter)' },
+            { href: 'publications.html', icon: 'fas fa-graduation-cap', title: 'Publications' }
         ]
     },
     navigation: [
         { href: 'index.html', icon: 'fas fa-home', label: 'Home', page: 'index' },
         { href: 'experience.html', icon: 'fas fa-briefcase', label: 'Experience', page: 'experience' },
-        { href: 'education.html', icon: 'fas fa-graduation-cap', label: 'Education', page: 'education' },
-        { href: 'publications.html', icon: 'fas fa-file-alt', label: 'Publications', page: 'publications' },
+        { href: 'education.html', icon: 'fas fa-school', label: 'Education', page: 'education' },
+        { href: 'publications.html', icon: 'fas fa-graduation-cap', label: 'Publications', page: 'publications' },
         { href: 'talks.html', icon: 'fas fa-microphone', label: 'Talks', page: 'talks' },
         { href: 'volunteer.html', icon: 'fas fa-hands-helping', label: 'Volunteering', page: 'volunteer' },
         { href: 'awards.html', icon: 'fas fa-trophy', label: 'Awards', page: 'awards' },
@@ -86,7 +87,7 @@ window.siteContent = {
         },
         education: {
             timeline: {
-                titleHTML: '<i class="fas fa-graduation-cap"></i> Education',
+                titleHTML: '<i class="fas fa-school"></i> Education',
                 items: [
                     {
                         iconKey: 'radboud',
@@ -347,7 +348,7 @@ window.siteContent = {
             }
         },
         publications: {
-            titleHTML: '<i class="fas fa-file-alt"></i> Publications',
+            titleHTML: '<i class="fas fa-graduation-cap"></i> Publications',
             intro: '',
             scholarProfile: {
                 profile: {
