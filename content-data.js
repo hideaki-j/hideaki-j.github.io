@@ -148,7 +148,7 @@ window.siteContent = {
                 {
                     iconClass: 'fas fa-hands-helping',
                     title: 'Volunteers',
-                    number: '7+',
+                    number: '8',
                     descriptionHTML: 'Service roles including Session Chair at SIGIR \'25, Program Committee for WWW \'25 and SIGIR \'25.',
                     href: 'volunteer.html'
                 },
@@ -190,7 +190,7 @@ window.siteContent = {
                     icon: '📚',
                     iconScale: 100,
                     heading: 'Professional Development',
-                    bodyHTML: '<p>Other than research, his interest is in solving business challenges using his expertise in NLP and IR. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.</p>',
+                    bodyHTML: '<p>His passion has been in <span class="highlight-yellow">solving business challenges using his expertise in NLP and IR</span>. He has 200+ hours of data analysis, marketing, and project management education from several institutes including Wharton Online and Mitsubishi Electric.</p>',
                     subsections: [
                         {
                             icon: '📊',
@@ -235,7 +235,7 @@ window.siteContent = {
                     items: [
                         {
                             role: 'Japanese Higher Civil Service Examination - Engineering Category',
-                            bodyHTML: '<p>Successfully passed the highly selective Japanese governmental examination and interview for high-level administrative positions, with a pass rate of about 6% in total, demonstrating advanced knowledge of mathematics and engineering. Although honored by the opportunity, he ultimately chose to pursue his career as an industry researcher.</p>'
+                            bodyHTML: '<p>Successfully passed the highly selective Japanese governmental examination and interview for <span class="highlight-yellow">high-level administrative positions, with a pass rate of ~6% in total</span>, demonstrating advanced knowledge of mathematics and engineering. Although honored by the opportunity, he ultimately chose to pursue his career as an industry researcher.</p>'
                         }
                     ]
                 }
@@ -294,6 +294,10 @@ window.siteContent = {
                 items: [
                     {
                         iconKey: 'acm',
+                        bodyHTML: '<strong>ACM WSDM Conference</strong> Reviewer, 2025.'
+                    },
+                    {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM SIGIR Conference</strong> Session Chair (Industry Track), 2025.'
                     },
                     {
@@ -306,11 +310,11 @@ window.siteContent = {
                     },
                     {
                         iconKey: 'acm',
-                        bodyHTML: '<strong>ACM CIKM</strong> Reviewer, 2024.'
+                        bodyHTML: '<strong>ACM CIKM Conference</strong> Reviewer, 2024.'
                     },
                     {
                         iconKey: 'acm',
-                        bodyHTML: '<strong>ACM SIGIR</strong> Reviewer, 2024.'
+                        bodyHTML: '<strong>ACM SIGIR Conference</strong> Reviewer, 2024.'
                     },
                     {
                         iconKey: 'acm',
