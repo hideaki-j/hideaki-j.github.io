@@ -465,7 +465,6 @@ window.siteContent = {
                         ranking: "A*",
                         url: "https://arxiv.org/abs/2405.03480",
                         citations_url: "https://scholar.google.com/scholar?cites=2349539739266859572&as_sdt=2005&sciodt=0,5&hl=en",
-                        downloads: "2,400+",
                         downloads_top_percent: "Top 6% Downloads in SIGIR 2024",
                         downloadsUrl: "https://dl.acm.org/doi/10.1145/3626772.3657815"
                     },
@@ -478,7 +477,6 @@ window.siteContent = {
                         ranking: "A*",
                         url: "https://arxiv.org/abs/2105.04903",
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
-                        downloads: "800+",
                         downloadsUrl: "https://dl.acm.org/doi/abs/10.1145/3404835.3463258"
                     },
                     {
