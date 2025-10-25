@@ -668,7 +668,7 @@ function renderScholarStats(profile) {
             if (showingFirstAuthor) {
                 setText('scholar-citations-all', firstAuthor.citations);
                 citationHeading.textContent = 'First-author Citations';
-                toggleBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Show Total';
+                toggleBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Include co-author papers';
                 drawScholarCitationGraph(profile, 'firstAuthor');
             } else {
                 setText('scholar-citations-all', all.citations);
