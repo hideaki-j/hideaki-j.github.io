@@ -355,7 +355,7 @@ window.siteContent = {
             }
         },
         publications: {
-            titleHTML: '<i class="fas fa-graduation-cap"></i> Publications',
+            titleHTML: '<i class="fas fa-graduation-cap"></i> Scholar Profile',
             intro: '',
             scholarProfile: {
                 profile: {
