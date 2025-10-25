@@ -475,7 +475,7 @@ function renderScholarProfileSection(scholarData) {
     renderScholarCoauthors(profile);
 
     requestAnimationFrame(() => {
-        drawScholarCitationGraph(profile);
+        drawScholarCitationGraph(profile, 'firstAuthor');
         attachScholarChartResize(profile);
     });
 }
@@ -639,7 +639,11 @@ function buildHiddenPublicationRow(publication) {
 
 function renderScholarStats(profile) {
     const citations = profile.citations || {};
+    const firstAuthor = citations.firstAuthor || {};
     const all = citations.all || {};
+    
+    let showingFirstAuthor = true;
+    window.__scholarChartMode = 'firstAuthor';
 
     const setText = (id, value) => {
         const el = document.getElementById(id);
@@ -648,7 +652,32 @@ function renderScholarStats(profile) {
         }
     };
 
-    setText('scholar-citations-all', all.citations);
+    // Set initial value to first-author citations
+    setText('scholar-citations-all', firstAuthor.citations);
+    
+    // Add toggle functionality
+    const toggleBtn = document.getElementById('citation-toggle-btn');
+    const citationHeading = document.getElementById('citation-heading');
+    if (citationHeading) {
+        citationHeading.textContent = 'First-author Citations';
+    }
+    
+    if (toggleBtn && citationHeading) {
+        toggleBtn.addEventListener('click', () => {
+            showingFirstAuthor = !showingFirstAuthor;
+            if (showingFirstAuthor) {
+                setText('scholar-citations-all', firstAuthor.citations);
+                citationHeading.textContent = 'First-author Citations';
+                toggleBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Include co-author papers';
+                drawScholarCitationGraph(profile, 'firstAuthor');
+            } else {
+                setText('scholar-citations-all', all.citations);
+                citationHeading.textContent = 'Total Citations';
+                toggleBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Show first-author only';
+                drawScholarCitationGraph(profile, 'all');
+            }
+        });
+    }
 }
 
 function renderScholarCoauthors(profile) {
@@ -678,7 +707,13 @@ function renderScholarCoauthors(profile) {
     }).join('');
 }
 
-function drawScholarCitationGraph(profile) {
+function easeInOutCubic(t) {
+    return t < 0.5
+        ? 4 * t * t * t
+        : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+function drawScholarCitationGraph(profile, modeOverride) {
     const canvas = document.getElementById('scholar-citations-chart');
     if (!canvas || !profile?.citations?.byYear) {
         return;
@@ -689,67 +724,194 @@ function drawScholarCitationGraph(profile) {
         return;
     }
 
-    const dpr = window.devicePixelRatio || 1;
-    const { width: cssWidth, height: cssHeight } = canvas.getBoundingClientRect();
+    const rect = canvas.getBoundingClientRect();
+    const cssWidth = rect.width || canvas.clientWidth || canvas.width;
+    const cssHeight = rect.height || canvas.clientHeight || canvas.height;
 
-    canvas.width = cssWidth * dpr;
-    canvas.height = cssHeight * dpr;
-    ctx.scale(dpr, dpr);
-
-    ctx.clearRect(0, 0, cssWidth, cssHeight);
-
-    const years = profile.citations.byYear.years || [];
-    const counts = profile.citations.byYear.counts || [];
-
-    if (!years.length || !counts.length) {
+    if (!cssWidth || !cssHeight) {
         return;
     }
+
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = cssWidth * dpr;
+    canvas.height = cssHeight * dpr;
+
+    if (typeof ctx.setTransform === 'function') {
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    } else {
+        ctx.scale(dpr, dpr);
+    }
+
+    const byYear = profile.citations.byYear || {};
+    const years = Array.isArray(byYear.years) ? byYear.years.slice() : [];
+    const mode = modeOverride || window.__scholarChartMode || 'firstAuthor';
+
+    const fallbackCounts = Array.isArray(byYear.counts) ? byYear.counts : [];
+    const allCountsRaw = Array.isArray(byYear.all) && byYear.all.length ? byYear.all : fallbackCounts;
+    const firstAuthorCountsRaw = Array.isArray(byYear.firstAuthor) && byYear.firstAuthor.length
+        ? byYear.firstAuthor
+        : fallbackCounts;
+    const targetCountsRaw = mode === 'all' ? allCountsRaw : firstAuthorCountsRaw;
+
+    window.__scholarChartMode = mode;
+    window.__scholarChartProfile = profile;
+
+    if (!years.length || !targetCountsRaw.length) {
+        ctx.clearRect(0, 0, cssWidth, cssHeight);
+        return;
+    }
+
+    // Use total counts when available to keep the y-axis fixed to the overall scale.
+    const axisBaselineCounts = years.map((_, idx) => {
+        const totalValue = allCountsRaw[idx];
+        const fallbackValue = targetCountsRaw[idx];
+        const value = totalValue !== undefined ? totalValue : fallbackValue;
+        const numericValue = Number(value);
+        return Number.isFinite(numericValue) ? numericValue : 0;
+    });
+
+    let axisMax = 1;
+    axisBaselineCounts.forEach(value => {
+        if (Number.isFinite(value)) {
+            axisMax = Math.max(axisMax, value);
+        }
+    });
 
     const padding = { top: 12, right: 32, bottom: 26, left: 12 };
     const innerWidth = cssWidth - padding.left - padding.right;
     const innerHeight = cssHeight - padding.top - padding.bottom;
-    const maxCount = Math.max(...counts, 1);
-    const barWidth = innerWidth / counts.length;
+    const barWidth = innerWidth / years.length;
 
-    ctx.strokeStyle = 'rgba(0, 0, 0, 0.08)';
-    ctx.lineWidth = 1;
+    const targetCounts = years.map((_, idx) => {
+        const numericValue = Number(targetCountsRaw[idx]);
+        return Number.isFinite(numericValue) ? numericValue : 0;
+    });
 
-    const gridSteps = 3;
-    for (let i = 0; i <= gridSteps; i += 1) {
-        const y = padding.top + (innerHeight / gridSteps) * i;
-        ctx.beginPath();
-        ctx.moveTo(padding.left, y);
-        ctx.lineTo(padding.left + innerWidth, y);
-        ctx.stroke();
+    // Persist chart state so toggles can animate between views.
+    window.__scholarChartState = window.__scholarChartState || {};
+    const state = window.__scholarChartState;
+
+    const getNow = () => (typeof performance !== 'undefined' && typeof performance.now === 'function'
+        ? performance.now()
+        : Date.now());
+    const requestFrame = typeof window.requestAnimationFrame === 'function'
+        ? window.requestAnimationFrame.bind(window)
+        : callback => setTimeout(() => callback(getNow()), 16);
+    const cancelFrame = typeof window.cancelAnimationFrame === 'function'
+        ? window.cancelAnimationFrame.bind(window)
+        : clearTimeout;
+
+    if (state.animationFrame) {
+        cancelFrame(state.animationFrame);
+        state.animationFrame = null;
     }
 
-    ctx.fillStyle = '#6c91f1';
+    const previousCounts = (() => {
+        if (!Array.isArray(state.displayedYears) || !Array.isArray(state.displayedCounts)) {
+            return years.map(() => 0);
+        }
+        const yearToCount = new Map();
+        state.displayedYears.forEach((year, idx) => {
+            yearToCount.set(year, state.displayedCounts[idx] || 0);
+        });
+        return years.map(year => yearToCount.get(year) ?? 0);
+    })();
 
-    counts.forEach((count, index) => {
-        const height = (count / maxCount) * innerHeight;
-        const x = padding.left + index * barWidth + barWidth * 0.1;
-        const y = padding.top + innerHeight - height;
-        const width = barWidth * 0.8;
-        ctx.fillRect(x, y, width, height);
-    });
+    const drawFrame = countsForFrame => {
+        ctx.clearRect(0, 0, cssWidth, cssHeight);
 
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
-    ctx.font = '11px "Inter", "Helvetica Neue", Arial, sans-serif';
-    ctx.textAlign = 'center';
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.08)';
+        ctx.lineWidth = 1;
 
-    years.forEach((year, index) => {
-        const x = padding.left + index * barWidth + barWidth / 2;
-        const y = cssHeight - 6;
-        ctx.fillText(year, x, y);
-    });
+        const gridSteps = 3;
+        for (let i = 0; i <= gridSteps; i += 1) {
+            const ratio = i / gridSteps;
+            const y = padding.top + innerHeight - ratio * innerHeight;
+            ctx.beginPath();
+            ctx.moveTo(padding.left, y);
+            ctx.lineTo(padding.left + innerWidth, y);
+            ctx.stroke();
+        }
 
-    ctx.textAlign = 'right';
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
-    const tickValues = [0, Math.round(maxCount / 2), maxCount];
-    tickValues.forEach(value => {
-        const y = padding.top + innerHeight - (value / maxCount) * innerHeight;
-        ctx.fillText(String(value), cssWidth - 6, y + 4);
-    });
+        ctx.fillStyle = '#6c91f1';
+        for (let index = 0; index < years.length; index += 1) {
+            const count = Math.max(countsForFrame[index] || 0, 0);
+            const height = axisMax ? (count / axisMax) * innerHeight : 0;
+            const x = padding.left + index * barWidth + barWidth * 0.1;
+            const y = padding.top + innerHeight - height;
+            const width = barWidth * 0.8;
+            ctx.fillRect(x, y, width, height);
+        }
+
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
+        ctx.font = '11px "Inter", "Helvetica Neue", Arial, sans-serif';
+        ctx.textAlign = 'center';
+
+        years.forEach((year, index) => {
+            const x = padding.left + index * barWidth + barWidth / 2;
+            const y = cssHeight - 6;
+            ctx.fillText(year, x, y);
+        });
+
+        ctx.textAlign = 'right';
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+
+        for (let i = 0; i <= gridSteps; i += 1) {
+            const ratio = i / gridSteps;
+            const y = padding.top + innerHeight - ratio * innerHeight;
+            let labelValue = Math.round(axisMax * ratio);
+            if (i === gridSteps) {
+                labelValue = Math.round(axisMax);
+            }
+            if (i === 0) {
+                labelValue = 0;
+            }
+            ctx.fillText(String(labelValue), cssWidth - 6, y + 4);
+        }
+
+        state.displayedCounts = countsForFrame.slice();
+        state.displayedYears = years.slice();
+        state.displayedMode = mode;
+        state.axisMax = axisMax;
+    };
+
+    const hasRendered = Boolean(state.hasRendered);
+    const shouldAnimate = hasRendered && targetCounts.some((value, idx) => Math.abs((previousCounts[idx] || 0) - value) > 0.01);
+
+    if (!hasRendered || !shouldAnimate) {
+        drawFrame(targetCounts);
+        state.currentCounts = targetCounts.slice();
+        state.years = years.slice();
+        state.currentMode = mode;
+        state.hasRendered = true;
+        return;
+    }
+
+    const animationDuration = 420;
+    const startTime = getNow();
+
+    const step = now => {
+        const progress = Math.min(1, (now - startTime) / animationDuration);
+        const eased = easeInOutCubic(progress);
+        const interpolatedCounts = targetCounts.map((target, idx) => {
+            const start = previousCounts[idx] || 0;
+            return start + (target - start) * eased;
+        });
+
+        drawFrame(interpolatedCounts);
+
+        if (progress < 1) {
+            state.animationFrame = requestFrame(step);
+        } else {
+            state.animationFrame = null;
+            state.currentCounts = targetCounts.slice();
+            state.years = years.slice();
+            state.currentMode = mode;
+            state.hasRendered = true;
+        }
+    };
+
+    state.animationFrame = requestFrame(step);
 }
 
 function attachScholarChartResize(profile) {
@@ -763,7 +925,7 @@ function attachScholarChartResize(profile) {
 
     window.addEventListener('resize', () => {
         if (window.__scholarChartProfile) {
-            drawScholarCitationGraph(window.__scholarChartProfile);
+            drawScholarCitationGraph(window.__scholarChartProfile, window.__scholarChartMode);
         }
     });
 }
