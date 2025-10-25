@@ -206,12 +206,14 @@ function renderTimeline(prefix, timeline) {
             iconHTML = iconRef || '';
         }
 
+        const dateNoteHTML = item.dateNote ? ` <span class="timeline-date-note">(${item.dateNote})</span>` : '';
+
         return `
             <div class="card timeline-card">
                 <div class="timeline-icon">${iconHTML}</div>
                 <h3>${item.heading || ''}</h3>
                 <p class="role">${item.role || ''}</p>
-                <p class="date">${item.date || ''}</p>
+                <p class="date">${item.date || ''}${dateNoteHTML}</p>
                 ${item.bodyHTML || ''}
             </div>
         `;

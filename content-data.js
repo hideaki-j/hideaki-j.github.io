@@ -44,7 +44,8 @@ window.siteContent = {
                         iconKey: 'thomsonReuters',
                         heading: 'Thomson Reuters, Canada',
                         role: 'Applied Scientist',
-                        date: 'Oct 2025 - Present (Permanent)',
+                        date: 'Oct 2025 - Present',
+                        dateNote: 'Permanent',
                         bodyHTML: '<p>Research and development at Thomson Reuters Labs, focusing on legal NLP and IR.</p>'
                     },
                     {
@@ -64,8 +65,9 @@ window.siteContent = {
                     {
                         iconKey: 'glasgow',
                         heading: 'Radboud-Glasgow Collaboration Project, UK',
-                        role: 'Radboud-Glasgow Collaboration Project - Researcher',
-                        date: 'Oct 2022 - Jan 2024 (Remote)',
+                        role: 'Project Researcher',
+                        date: 'Oct 2022 - Jan 2024',
+                        dateNote: 'Remote',
                         bodyHTML: '<ul><li>Led the collaboration project on LLM-augmented conversational search with GRILL Lab (University of Glasgow/Edinburgh), led by Jeff Dalton, a leader in conversational search.</li><li>Had a full-time responsibility for proposing/developing/implementing the method, gathering a large-scale dataset, and successfully publishing at the top-tier SIGIR 2024 conference as the first author.</li><li>The paper achieved top 6% downloads among all SIGIR 2024 accepted papers (October 2025), highlighting the strong impact of the collaboration\'s outcome.</li></ul>'
                     },
                     {
@@ -79,7 +81,8 @@ window.siteContent = {
                         iconKey: 'mitsubishi',
                         heading: 'Mitsubishi Electric, Japan',
                         role: 'Research Engineer',
-                        date: 'Apr 2016 - Aug 2020 (Permanent)',
+                        date: 'Apr 2016 - Aug 2020',
+                        dateNote: 'Permanent',
                         bodyHTML: '<ul><li>Researched and developed multiple IR/NLP systems (search, FAQ, error detection) to optimize business and factory processes, resulting in 9 publications, 3 patents, and 4 project awards.</li><li>Led cross-company multi-year collaboration and developed text-based system error diagnosis algorithm and software, reducing operational costs by ~30%.</li><li>Led a cross-functional R&D project and developed search software to optimize the design process in the factory, resulting in the R&D Center President\'s Award.</li></ul>'
                     }
                 ]
