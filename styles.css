@@ -491,6 +491,33 @@ body {
     margin-top: 8px;
 }
 
+.citation-toggle-btn {
+    margin-top: 12px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    background: var(--bg-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.citation-toggle-btn:hover {
+    background: var(--card-bg);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    box-shadow: 0 2px 8px rgba(0, 113, 227, 0.15);
+}
+
+.citation-toggle-btn i {
+    font-size: 0.7rem;
+}
+
 .scholar-stats-table {
     width: 100%;
     border-collapse: collapse;

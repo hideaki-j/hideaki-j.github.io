@@ -377,6 +377,9 @@ window.siteContent = {
                         twitter: "https://x.com/hideaki_joko"
                     },
                     citations: {
+                        firstAuthor: {
+                            citations: 97
+                        },
                         all: {
                             citations: 101,
                             hIndex: 4,
@@ -389,7 +392,9 @@ window.siteContent = {
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
-                            counts: [2, 0, 1, 1, 13, 19, 22, 42]
+                            counts: [2, 0, 1, 1, 13, 19, 22, 38],
+                            firstAuthor: [2, 0, 1, 1, 13, 19, 22, 38],
+                            all: [2, 0, 1, 1, 13, 19, 22, 42]
                         }
                     },
                     coauthors: [
