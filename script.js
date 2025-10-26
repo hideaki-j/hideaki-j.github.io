@@ -279,9 +279,18 @@ function renderTalks(talks) {
         return;
     }
 
+    const visibleCap = 5;
     const iconLibrary = window.siteIcons || {};
+    const items = Array.isArray(talks.timeline.items)
+        ? talks.timeline.items.map((item, index) => ({
+            ...item,
+            __index: index,
+            __wasHidden: index >= visibleCap
+        }))
+        : [];
 
-    container.innerHTML = (talks.timeline.items || []).map(item => {
+    const buildTalkCard = (item, options = {}) => {
+        const { hidden = false, animate = false } = options;
         const iconRef = item.iconKey || item.icon;
         const iconConfig = typeof iconRef === 'string' ? iconLibrary[iconRef] : undefined;
 
@@ -307,20 +316,125 @@ function renderTalks(talks) {
         }
 
         if (iconHTML) {
+            const classes = ['card', 'timeline-card', 'single-line-card'];
+            if (hidden) {
+                classes.push('talk-card-hidden');
+            }
+            if (animate) {
+                classes.push('talk-card-animate', 'talk-card-enter');
+            }
+            const hiddenStyle = hidden ? ' style="display: none;"' : '';
             return `
-                <div class="card timeline-card single-line-card">
+                <div class="${classes.join(' ')}"${hiddenStyle}>
                     ${iconHTML}
                     ${textHTML}
                 </div>
             `;
         } else {
+            const classes = ['card', 'timeline-card', 'talk-item'];
+            if (hidden) {
+                classes.push('talk-card-hidden');
+            }
+            if (animate) {
+                classes.push('talk-card-animate', 'talk-card-enter');
+            }
+            const hiddenStyle = hidden ? ' style="display: none;"' : '';
             return `
-                <div class="card timeline-card talk-item">
+                <div class="${classes.join(' ')}"${hiddenStyle}>
                     <p>${item.bodyHTML || ''}</p>
                 </div>
             `;
         }
-    }).join('');
+    };
+
+    if (items.length <= visibleCap) {
+        container.innerHTML = items.map(item => buildTalkCard(item)).join('');
+        return;
+    }
+
+    const leading = items.slice(0, visibleCap);
+    const hidden = items.slice(visibleCap);
+    const hiddenCount = hidden.length;
+
+    const getTalkYear = item => {
+        const matches = (item.bodyHTML || '').match(/(\d{4})/g);
+        if (!matches || !matches.length) {
+            return -Infinity;
+        }
+        const year = parseInt(matches[matches.length - 1], 10);
+        return Number.isFinite(year) ? year : -Infinity;
+    };
+
+    const sortedItems = items.slice().sort((a, b) => {
+        const yearA = getTalkYear(a);
+        const yearB = getTalkYear(b);
+
+        if (yearA !== yearB) {
+            return yearB - yearA;
+        }
+
+        const indexA = typeof a.__index === 'number' ? a.__index : 0;
+        const indexB = typeof b.__index === 'number' ? b.__index : 0;
+        return indexA - indexB;
+    });
+
+    const buildToggleButton = state => {
+        const label = state === 'collapsed'
+            ? `Show more ${hiddenCount} ${formatTalkCount(hiddenCount)}`
+            : `Hide ${hiddenCount} ${formatTalkCount(hiddenCount)}`;
+
+        return `<div class="scholar-toggle-row talks-toggle-row"><button type="button" class="scholar-toggle-button talks-toggle-button" data-state="${state}">${label}</button></div>`;
+    };
+
+    function renderState(state) {
+        if (state === 'expanded') {
+            const expandedHTML = sortedItems.map(item => buildTalkCard(item, {
+                animate: item.__wasHidden === true
+            })).join('') + buildToggleButton('expanded');
+            container.innerHTML = expandedHTML;
+        } else {
+            let collapsedHTML = leading.map(item => buildTalkCard(item)).join('');
+            collapsedHTML += hidden.map(item => buildTalkCard(item, { hidden: true })).join('');
+            collapsedHTML += buildToggleButton('collapsed');
+            container.innerHTML = collapsedHTML;
+        }
+
+        triggerTalkInsertAnimation();
+        attachToggleHandler();
+    }
+
+    function attachToggleHandler() {
+        const toggleButton = container.querySelector('.talks-toggle-button');
+        if (!toggleButton) {
+            return;
+        }
+
+        toggleButton.addEventListener('click', () => {
+            const nextState = toggleButton.dataset.state === 'collapsed' ? 'expanded' : 'collapsed';
+            renderState(nextState);
+        });
+    }
+
+    function triggerTalkInsertAnimation() {
+        const animatedCards = Array.from(container.querySelectorAll('.talk-card-animate.talk-card-enter'));
+        if (!animatedCards.length) {
+            return;
+        }
+
+        requestAnimationFrame(() => {
+            animatedCards.forEach(card => {
+                // Force layout so the initial state is committed before transition.
+                void card.offsetWidth;
+            });
+            requestAnimationFrame(() => {
+                animatedCards.forEach(card => {
+                    card.classList.remove('talk-card-enter');
+                });
+            });
+        });
+    }
+
+    renderState('collapsed');
 }
 
 function renderVolunteer(volunteer) {
@@ -947,6 +1061,10 @@ function resolveScholarAsset(path) {
 
 function formatScholarPaperCount(count) {
     return count === 1 ? 'article' : 'articles';
+}
+
+function formatTalkCount(count) {
+    return count === 1 ? 'talk' : 'talks';
 }
 
 function renderOthers(others) {

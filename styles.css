@@ -822,6 +822,15 @@ body {
     align-items: center;
 }
 
+.timeline-card.talk-card-animate {
+    transition: opacity 0.45s ease-out, transform 0.45s ease-out;
+}
+
+.timeline-card.talk-card-enter {
+    opacity: 0;
+    transform: translateY(-12px);
+}
+
 .single-line-card .timeline-icon {
     flex: 0 0 auto;
 }
