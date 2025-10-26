@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Map - Hideaki Joko</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-page="access_map">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="profile-section" id="profile-section"></div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav" id="sidebar-nav"></nav>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-map-marked-alt"></i> Visitor Map</h2>
+                <p>Live view of visits counted from the main page. The map refreshes whenever the hidden counter snippet on the homepage loads.</p>
+                <div class="visitor-map-embed" aria-live="polite">
+                    <!-- Replace REPLACE_WITH_WIDGET_ID with the MapMyVisitors widget id generated for hideaki-j.github.io -->
+                    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=REPLACE_WITH_WIDGET_ID&amp;cl=ffffff&amp;w=500"></script>
+                    <noscript>
+                        <p>Please enable JavaScript to see the MapMyVisitors widget.</p>
+                    </noscript>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p id="footer-text"></p>
+            </div>
+        </footer>
+    </main>
+    <script src="icons.js"></script>
+    <script src="content-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
