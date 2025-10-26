@@ -35,7 +35,7 @@ window.siteIcons = {
         alt: 'ACM logo'
     },
     nfs: {
-        src: 'images/nfs.png',
+        src: 'images/nsf.png',
         scale: 100,
         alt: 'National Science Foundation logo'
     },

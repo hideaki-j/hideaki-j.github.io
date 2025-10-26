@@ -417,6 +417,13 @@ body {
     margin-top: 12px;
 }
 
+.talks-toggle-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 .scholar-toggle-button {
     border: none;
     background: rgba(66, 133, 244, 0.12);
@@ -446,6 +453,22 @@ body {
 
 .scholar-toggle-button[data-state="expanded"]::before {
     transform: rotate(180deg);
+}
+
+.talks-sort-button::before {
+    display: none;
+}
+
+.talk-card-animate {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 1.05s ease-out, transform 1.05s ease-out;
+    will-change: opacity, transform;
+}
+
+.talk-card-animate-active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .scholar-toggle-button:hover,

@@ -279,9 +279,46 @@ function renderTalks(talks) {
         return;
     }
 
+    const visibleCap = 5;
     const iconLibrary = window.siteIcons || {};
+    const timelineConfig = talks.timeline || {};
 
-    container.innerHTML = (talks.timeline.items || []).map(item => {
+    let highlightedSource = Array.isArray(timelineConfig.highlighted_talks)
+        ? timelineConfig.highlighted_talks.slice()
+        : [];
+    let otherSource = Array.isArray(timelineConfig.other_talks)
+        ? timelineConfig.other_talks.slice()
+        : [];
+
+    if (!highlightedSource.length && Array.isArray(timelineConfig.items)) {
+        const fallbackItems = timelineConfig.items.slice();
+        highlightedSource = fallbackItems.slice(0, visibleCap);
+        otherSource = fallbackItems.slice(visibleCap);
+    }
+
+    if (!highlightedSource.length && otherSource.length) {
+        highlightedSource = otherSource.slice(0, visibleCap);
+        otherSource = otherSource.slice(visibleCap);
+    }
+
+    const mapItems = (list, prefix, startOrder) => list.map((item, index) => ({
+        ...item,
+        __index: index,
+        __order: startOrder + index,
+        __key: `${prefix}-${index}`
+    }));
+
+    const highlightedItems = mapItems(highlightedSource, 'highlighted', 0);
+    const otherItems = mapItems(otherSource, 'other', highlightedItems.length);
+    const allItems = highlightedItems.concat(otherItems);
+
+    if (!allItems.length) {
+        container.innerHTML = '';
+        return;
+    }
+
+    const buildTalkCard = (item, options = {}) => {
+        const { hidden = false, animate = false } = options;
         const iconRef = item.iconKey || item.icon;
         const iconConfig = typeof iconRef === 'string' ? iconLibrary[iconRef] : undefined;
 
@@ -306,21 +343,273 @@ function renderTalks(talks) {
             `;
         }
 
+        const hiddenStyle = hidden ? ' style="display: none;"' : '';
+        const keyAttr = typeof item.__key === 'string' ? ` data-talk-key="${item.__key}"` : '';
+
         if (iconHTML) {
+            const classes = ['card', 'timeline-card', 'single-line-card'];
+            if (animate) {
+                classes.push('talk-card-animate');
+            }
             return `
-                <div class="card timeline-card single-line-card">
+                <div class="${classes.join(' ')}"${keyAttr}${hiddenStyle}>
                     ${iconHTML}
                     ${textHTML}
                 </div>
             `;
         } else {
+            const classes = ['card', 'timeline-card', 'talk-item'];
+            if (animate) {
+                classes.push('talk-card-animate');
+            }
             return `
-                <div class="card timeline-card talk-item">
+                <div class="${classes.join(' ')}"${keyAttr}${hiddenStyle}>
                     <p>${item.bodyHTML || ''}</p>
                 </div>
             `;
         }
-    }).join('');
+    };
+
+    if (!otherItems.length) {
+        container.innerHTML = allItems.map(item => buildTalkCard(item)).join('');
+        return;
+    }
+
+    const getTalkYear = item => {
+        const matches = (item.bodyHTML || '').match(/(\d{4})/g);
+        if (!matches || !matches.length) {
+            return -Infinity;
+        }
+        const year = parseInt(matches[matches.length - 1], 10);
+        return Number.isFinite(year) ? year : -Infinity;
+    };
+
+    const sortedItems = allItems.slice().sort((a, b) => {
+        const yearA = getTalkYear(a);
+        const yearB = getTalkYear(b);
+
+        if (yearA !== yearB) {
+            return yearB - yearA;
+        }
+
+        const orderA = typeof a.__order === 'number' ? a.__order : 0;
+        const orderB = typeof b.__order === 'number' ? b.__order : 0;
+        return orderA - orderB;
+    });
+
+    const buildControlRow = (state, hiddenCount, sortMode) => {
+        if (hiddenCount <= 0) {
+            return '';
+        }
+
+        const toggleLabel = state === 'collapsed'
+            ? `Show more ${hiddenCount} ${formatTalkCount(hiddenCount)}`
+            : `Hide ${hiddenCount} ${formatTalkCount(hiddenCount)}`;
+
+        const sortLabel = sortMode === 'year' ? 'Original order' : 'Sort by year';
+        const sortButtonHTML = state === 'expanded'
+            ? `<button type="button" class="scholar-toggle-button talks-sort-button" data-sort="${sortMode}">${sortLabel}</button>`
+            : '';
+
+        return `
+            <div class="scholar-toggle-row talks-toggle-row">
+                <button type="button" class="scholar-toggle-button talks-toggle-button" data-state="${state}">${toggleLabel}</button>
+                ${sortButtonHTML}
+            </div>
+        `;
+    };
+
+    const viewState = {
+        display: 'collapsed',
+        sort: 'original',
+        transition: 'init'
+    };
+
+    const triggerTalkAnimation = shouldAnimate => {
+        if (!shouldAnimate) {
+            return;
+        }
+
+        const animatedCards = Array.from(container.querySelectorAll('.talk-card-animate'));
+        if (!animatedCards.length) {
+            return;
+        }
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                animatedCards.forEach(card => {
+                    card.classList.add('talk-card-animate-active');
+                });
+            });
+        });
+
+        animatedCards.forEach(card => {
+            const handleTransitionEnd = () => {
+                card.classList.remove('talk-card-animate', 'talk-card-animate-active');
+                card.removeEventListener('transitionend', handleTransitionEnd);
+            };
+            card.addEventListener('transitionend', handleTransitionEnd);
+        });
+    };
+
+    const captureCardPositions = () => {
+        const positions = new Map();
+        if (!container) {
+            return positions;
+        }
+
+        const cards = container.querySelectorAll('[data-talk-key]');
+        cards.forEach(card => {
+            const key = card.getAttribute('data-talk-key');
+            if (!key) {
+                return;
+            }
+            if (card.offsetParent === null) {
+                return;
+            }
+            const rect = card.getBoundingClientRect();
+            positions.set(key, {
+                top: rect.top + window.scrollY,
+                left: rect.left + window.scrollX
+            });
+        });
+
+        return positions;
+    };
+
+    const animateSortMovement = preRects => {
+        if (!preRects || !preRects.size) {
+            return;
+        }
+
+        const cards = Array.from(container.querySelectorAll('[data-talk-key]')).filter(card => card.offsetParent !== null);
+        const movingCards = [];
+
+        cards.forEach(card => {
+            const key = card.getAttribute('data-talk-key');
+            if (!key || !preRects.has(key)) {
+                return;
+            }
+
+            const rect = card.getBoundingClientRect();
+            const currentTop = rect.top + window.scrollY;
+            const currentLeft = rect.left + window.scrollX;
+            const previous = preRects.get(key);
+
+            const deltaX = previous.left - currentLeft;
+            const deltaY = previous.top - currentTop;
+
+            if (Math.abs(deltaX) < 1 && Math.abs(deltaY) < 1) {
+                return;
+            }
+
+            card.style.transition = 'none';
+            card.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+            card.style.willChange = 'transform, opacity';
+            card.style.opacity = '0.9';
+            card.getBoundingClientRect();
+            movingCards.push(card);
+        });
+
+        if (!movingCards.length) {
+            return;
+        }
+
+        requestAnimationFrame(() => {
+            movingCards.forEach(card => {
+                const cleanup = event => {
+                    if (event.propertyName !== 'transform') {
+                        return;
+                    }
+                    card.style.transition = '';
+                    card.style.transform = '';
+                    card.style.willChange = '';
+                    card.style.opacity = '';
+                    card.removeEventListener('transitionend', cleanup);
+                };
+                card.addEventListener('transitionend', cleanup);
+                card.style.transition = 'transform 0.75s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.55s ease';
+                card.style.transform = 'translate(0, 0)';
+                card.style.opacity = '1';
+            });
+        });
+    };
+
+    const pinnedItems = highlightedItems.length
+        ? highlightedItems
+        : allItems.slice(0, Math.min(visibleCap, allItems.length));
+    const pinnedKeySet = new Set(pinnedItems.map(item => item.__key));
+    const totalHiddenCount = Math.max(allItems.length - pinnedItems.length, 0);
+
+    const renderState = () => {
+        const transitionType = viewState.transition || 'none';
+        const preRects = transitionType === 'sort' ? captureCardPositions() : null;
+        viewState.transition = null;
+
+        const isSortedByYear = viewState.sort === 'year';
+        const sourceItems = isSortedByYear ? sortedItems : allItems;
+        const animateTargets = new Set();
+        let visibleItems;
+        let hiddenItems = [];
+
+        if (viewState.display === 'expanded') {
+            if (isSortedByYear) {
+                visibleItems = sourceItems;
+            } else {
+                const remainder = sourceItems.filter(item => !pinnedKeySet.has(item.__key));
+                if (transitionType === 'expand') {
+                    remainder.forEach(item => animateTargets.add(item.__key));
+                }
+                visibleItems = pinnedItems.concat(remainder);
+            }
+        } else {
+            visibleItems = pinnedItems;
+            hiddenItems = allItems.filter(item => !pinnedKeySet.has(item.__key));
+        }
+
+        let html = visibleItems.map(item => buildTalkCard(item, {
+            animate: animateTargets.has(item.__key)
+        })).join('');
+
+        if (hiddenItems.length) {
+            html += hiddenItems.map(item => buildTalkCard(item, { hidden: true })).join('');
+        }
+
+        html += buildControlRow(viewState.display, totalHiddenCount, viewState.sort);
+        container.innerHTML = html;
+        attachControlHandlers();
+        if (transitionType === 'sort') {
+            animateSortMovement(preRects);
+        } else {
+            triggerTalkAnimation(animateTargets.size > 0);
+        }
+    };
+
+    const attachControlHandlers = () => {
+        const toggleButton = container.querySelector('.talks-toggle-button');
+        if (toggleButton) {
+            toggleButton.addEventListener('click', () => {
+                const nextState = toggleButton.dataset.state === 'collapsed' ? 'expanded' : 'collapsed';
+                if (nextState === 'collapsed') {
+                    viewState.sort = 'original';
+                }
+                viewState.transition = nextState === 'expanded' ? 'expand' : 'collapse';
+                viewState.display = nextState;
+                renderState();
+            });
+        }
+
+        const sortButton = container.querySelector('.talks-sort-button');
+        if (sortButton) {
+            sortButton.addEventListener('click', () => {
+                viewState.transition = 'sort';
+                viewState.sort = viewState.sort === 'original' ? 'year' : 'original';
+                renderState();
+            });
+        }
+    };
+
+    renderState();
 }
 
 function renderVolunteer(volunteer) {
@@ -947,6 +1236,10 @@ function resolveScholarAsset(path) {
 
 function formatScholarPaperCount(count) {
     return count === 1 ? 'article' : 'articles';
+}
+
+function formatTalkCount(count) {
+    return count === 1 ? 'talk' : 'talks';
 }
 
 function renderOthers(others) {
