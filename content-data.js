@@ -249,6 +249,10 @@ window.siteContent = {
             timeline: {
                 items: [
                     {
+                        iconKey: 'acm',
+                        bodyHTML: '<strong>SIGIR Workshop</strong> on LLM4Eval - Automatic Evaluation of Conversational Systems, 2025.'
+                    },
+                    {
                         iconKey: 'uoft',
                         bodyHTML: '<strong>University of Toronto</strong>, Prof. Bagheri\'s Lab - Automatic Evaluation of Conversational Systems, 2025.'
                     },
@@ -257,8 +261,16 @@ window.siteContent = {
                         bodyHTML: '<strong>University of British Columbia</strong>, NLP Lab - Automatic Evaluation of Conversational Systems, 2025.'
                     },
                     {
+                        iconKey: 'radboud',
+                        bodyHTML: '<strong>Radboud University</strong>, Guest Lecture - Dataset Construction and Evaluation of Conversational Information Seeking Systems, 2025.'
+                    },
+                    {
                         iconKey: 'acm',
                         bodyHTML: '<strong>SIGIR Tokyo</strong> - LLM-Augmented Dialogue Construction, 2024. (Invited)'
+                    },
+                    {
+                        iconKey: 'dir',
+                        bodyHTML: '<strong>DIR</strong> (Dutch-Belgian Information Retrieval Workshop) - Conversational Entity Linking: Problem Definition and Datasets, 2023.'
                     },
                     {
                         iconKey: 'gt',
@@ -267,18 +279,6 @@ window.siteContent = {
                     {
                         iconKey: 'acm',
                         bodyHTML: '<strong>CIKM Workshop</strong> on Mixed-Initiative Conversational Systems (MICROS) - Entity Linking for Personalization, 2022. (Invited)'
-                    },
-                    {
-                        iconKey: 'radboud',
-                        bodyHTML: '<strong>Radboud University</strong>, Guest Lecture - Dataset Construction and Evaluation of Conversational Information Seeking Systems, 2025.'
-                    },
-                    {
-                        iconKey: 'dir',
-                        bodyHTML: '<strong>DIR</strong> (Dutch-Belgian Information Retrieval Workshop) - Conversational Entity Linking: Problem Definition and Datasets, 2023.'
-                    },
-                    {
-                        iconKey: 'acm',
-                        bodyHTML: '<strong>SIGIR Workshop</strong> on LLM4Eval - Automatic Evaluation of Conversational Systems, 2025.'
                     },
                     {
                         iconKey: 'acm',
