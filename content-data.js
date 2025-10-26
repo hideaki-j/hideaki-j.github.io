@@ -249,16 +249,16 @@ window.siteContent = {
             timeline: {
                 items: [
                     {
-                        iconKey: 'acm',
-                        bodyHTML: '<strong>SIGIR Workshop</strong> on LLM4Eval - Automatic Evaluation of Conversational Systems, 2025.'
-                    },
-                    {
                         iconKey: 'uoft',
                         bodyHTML: '<strong>University of Toronto</strong>, Prof. Bagheri\'s Lab - Automatic Evaluation of Conversational Systems, 2025.'
                     },
                     {
                         iconKey: 'ubc',
                         bodyHTML: '<strong>University of British Columbia</strong>, NLP Lab - Automatic Evaluation of Conversational Systems, 2025.'
+                    },
+                    {
+                        iconKey: 'acm',
+                        bodyHTML: '<strong>SIGIR Workshop</strong> on LLM4Eval - Automatic Evaluation of Conversational Systems, 2025.'
                     },
                     {
                         iconKey: 'radboud',
