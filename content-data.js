@@ -297,7 +297,7 @@ window.siteContent = {
                 items: [
                     {
                         iconKey: 'acm',
-                        bodyHTML: '<strong>ACM WSDM Conference</strong> Reviewer, 2025.'
+                        bodyHTML: '<strong>ACM WSDM Conference</strong> Program Committee, 2025.'
                     },
                     {
                         iconKey: 'acm',
