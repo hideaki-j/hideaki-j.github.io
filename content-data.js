@@ -336,7 +336,7 @@ window.siteContent = {
             timeline: {
                 items: [
                     {
-                        iconKey: 'acm',
+                        iconKey: 'nfs',
                         bodyHTML: '<strong>CIKM National Science Foundation Travel Grant</strong> covering the cost of attending CIKM up to $1000, 2022.'
                     },
                     {

@@ -34,6 +34,11 @@ window.siteIcons = {
         scale: 100,
         alt: 'ACM logo'
     },
+    nfs: {
+        src: 'images/nfs.png',
+        scale: 100,
+        alt: 'National Science Foundation logo'
+    },
     uoft: {
         src: 'images/uoft.png',
         scale: 100,
