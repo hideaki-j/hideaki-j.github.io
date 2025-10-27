@@ -1702,7 +1702,9 @@ function initScrollSpy() {
 }
 
 function initScrollAnimations() {
-    const elements = document.querySelectorAll('.timeline-card, .skill-card, .education-card, .achievement-card');
+    const elements = document.querySelectorAll(
+        '.timeline-card, .skill-card, .education-card, .achievement-card, .scholar-publications-card'
+    );
 
     if (!elements.length) {
         return;
