@@ -769,7 +769,7 @@ function renderScholarProfileSection(scholarData) {
     setupScholarViewSwitcher(profile);
 
     requestAnimationFrame(() => {
-        drawScholarCitationGraph(profile, 'firstAuthor');
+        scheduleScholarCitationGraph(profile, 'firstAuthor');
         attachScholarChartResize(profile);
     });
 }
@@ -963,12 +963,12 @@ function renderScholarStats(profile) {
                 setText('scholar-citations-all', firstAuthor.citations);
                 citationHeading.textContent = 'First-author Citations';
                 toggleBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Include co-author papers';
-                drawScholarCitationGraph(profile, 'firstAuthor');
+                scheduleScholarCitationGraph(profile, 'firstAuthor');
             } else {
                 setText('scholar-citations-all', all.citations);
                 citationHeading.textContent = 'Total Citations';
                 toggleBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Show first-author only';
-                drawScholarCitationGraph(profile, 'all');
+                scheduleScholarCitationGraph(profile, 'all');
             }
         });
     }
@@ -1211,10 +1211,8 @@ function setupScholarViewSwitcher(profile) {
 
         const chartProfile = profile || window.__scholarChartProfile;
         if (view === 'citations' && chartProfile) {
-            requestAnimationFrame(() => {
-                const mode = window.__scholarChartMode || 'firstAuthor';
-                drawScholarCitationGraph(chartProfile, mode);
-            });
+            const mode = window.__scholarChartMode || 'firstAuthor';
+            scheduleScholarCitationGraph(chartProfile, mode);
         }
     };
 
@@ -1280,6 +1278,52 @@ function easeInOutCubic(t) {
         : 1 - Math.pow(-2 * t + 2, 3) / 2;
 }
 
+function scheduleScholarCitationGraph(profile, modeOverride) {
+    const canvas = document.getElementById('scholar-citations-chart');
+    if (!canvas) {
+        return;
+    }
+
+    const mode = modeOverride || window.__scholarChartMode || 'firstAuthor';
+    const resolvedProfile = profile || canvas.__scholarPendingProfile || window.__scholarChartProfile;
+    if (!resolvedProfile) {
+        return;
+    }
+
+    canvas.__scholarPendingProfile = resolvedProfile;
+    canvas.__scholarPendingMode = mode;
+
+    if (canvas.__scholarRenderScheduled) {
+        return;
+    }
+
+    canvas.__scholarRenderScheduled = true;
+
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            canvas.__scholarRenderScheduled = false;
+            drawScholarCitationGraph(canvas.__scholarPendingProfile, canvas.__scholarPendingMode);
+        });
+    });
+}
+
+function isScholarChartPanelVisible(canvas) {
+    if (!(canvas instanceof HTMLElement)) {
+        return false;
+    }
+
+    const panel = canvas.closest('.scholar-view-section');
+    if (!panel) {
+        return true;
+    }
+
+    if (panel.classList.contains('is-active') && !panel.hasAttribute('hidden')) {
+        return true;
+    }
+
+    return false;
+}
+
 function drawScholarCitationGraph(profile, modeOverride) {
     const canvas = document.getElementById('scholar-citations-chart');
     if (!canvas || !profile?.citations?.byYear) {
@@ -1291,13 +1335,28 @@ function drawScholarCitationGraph(profile, modeOverride) {
         return;
     }
 
+    const mode = modeOverride || window.__scholarChartMode || 'firstAuthor';
+    window.__scholarChartMode = mode;
+    window.__scholarChartProfile = profile;
+
     const rect = canvas.getBoundingClientRect();
     const cssWidth = rect.width || canvas.clientWidth || canvas.width;
     const cssHeight = rect.height || canvas.clientHeight || canvas.height;
 
     if (!cssWidth || !cssHeight) {
+        if (isScholarChartPanelVisible(canvas)) {
+            const retryCount = (canvas.__scholarRenderRetries || 0) + 1;
+            if (retryCount <= 5) {
+                canvas.__scholarRenderRetries = retryCount;
+                scheduleScholarCitationGraph(profile, mode);
+            } else {
+                canvas.__scholarRenderRetries = 0;
+            }
+        }
         return;
     }
+
+    canvas.__scholarRenderRetries = 0;
 
     const dpr = window.devicePixelRatio || 1;
     canvas.width = cssWidth * dpr;
@@ -1311,7 +1370,6 @@ function drawScholarCitationGraph(profile, modeOverride) {
 
     const byYear = profile.citations.byYear || {};
     const years = Array.isArray(byYear.years) ? byYear.years.slice() : [];
-    const mode = modeOverride || window.__scholarChartMode || 'firstAuthor';
 
     const fallbackCounts = Array.isArray(byYear.counts) ? byYear.counts : [];
     const allCountsRaw = Array.isArray(byYear.all) && byYear.all.length ? byYear.all : fallbackCounts;
@@ -1319,9 +1377,6 @@ function drawScholarCitationGraph(profile, modeOverride) {
         ? byYear.firstAuthor
         : fallbackCounts;
     const targetCountsRaw = mode === 'all' ? allCountsRaw : firstAuthorCountsRaw;
-
-    window.__scholarChartMode = mode;
-    window.__scholarChartProfile = profile;
 
     if (!years.length || !targetCountsRaw.length) {
         ctx.clearRect(0, 0, cssWidth, cssHeight);
@@ -1492,7 +1547,7 @@ function attachScholarChartResize(profile) {
 
     window.addEventListener('resize', () => {
         if (window.__scholarChartProfile) {
-            drawScholarCitationGraph(window.__scholarChartProfile, window.__scholarChartMode);
+            scheduleScholarCitationGraph(window.__scholarChartProfile, window.__scholarChartMode);
         }
     });
 }
