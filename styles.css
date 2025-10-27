@@ -217,6 +217,8 @@ body {
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 20px;
+    justify-content: left;
+    padding-left: 5px;
 }
 
 .scholar-view-button {
