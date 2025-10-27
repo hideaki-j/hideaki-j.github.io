@@ -761,9 +761,12 @@ function renderScholarProfileSection(scholarData) {
         return;
     }
 
+    window.__scholarChartProfile = profile;
+
     renderScholarPublicationsList(publications);
     renderScholarStats(profile);
     renderScholarCoauthors(profile);
+    setupScholarViewSwitcher(profile);
 
     requestAnimationFrame(() => {
         drawScholarCitationGraph(profile, 'firstAuthor');
@@ -996,6 +999,120 @@ function renderScholarCoauthors(profile) {
             </a>
         `;
     }).join('');
+}
+
+function setupScholarViewSwitcher(profile) {
+    const root = document.getElementById('scholar-profile-root');
+    if (!root) {
+        return;
+    }
+
+    const buttons = Array.from(root.querySelectorAll('[data-scholar-view-button]'));
+    const panels = Array.from(root.querySelectorAll('[data-scholar-view]'));
+
+    if (!buttons.length || !panels.length) {
+        return;
+    }
+
+    const hasView = view =>
+        panels.some(panel => panel.dataset.scholarView === view);
+
+    let activeView = window.__scholarActiveView || 'papers';
+    if (!hasView(activeView)) {
+        activeView = panels[0].dataset.scholarView || 'papers';
+    }
+
+    const applyState = view => {
+        if (!hasView(view)) {
+            return;
+        }
+
+        activeView = view;
+        window.__scholarActiveView = view;
+
+        buttons.forEach(button => {
+            const buttonView = button.dataset.scholarViewButton;
+            const isActive = buttonView === view;
+            button.classList.toggle('is-active', isActive);
+            button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            button.setAttribute('tabindex', isActive ? '0' : '-1');
+        });
+
+        panels.forEach(panel => {
+            const panelView = panel.dataset.scholarView;
+            const isActive = panelView === view;
+            panel.classList.toggle('is-active', isActive);
+            panel.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+            if (isActive) {
+                panel.removeAttribute('hidden');
+            } else {
+                panel.setAttribute('hidden', '');
+            }
+        });
+
+        const chartProfile = profile || window.__scholarChartProfile;
+        if (view === 'citations' && chartProfile) {
+            requestAnimationFrame(() => {
+                const mode = window.__scholarChartMode || 'firstAuthor';
+                drawScholarCitationGraph(chartProfile, mode);
+            });
+        }
+    };
+
+    if (root.dataset.viewSwitcherInitialized === 'true') {
+        applyState(activeView);
+        return;
+    }
+
+    root.dataset.viewSwitcherInitialized = 'true';
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const view = button.dataset.scholarViewButton;
+            if (!view || view === activeView) {
+                return;
+            }
+            applyState(view);
+        });
+    });
+
+    root.addEventListener('keydown', event => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement) || !buttons.includes(target)) {
+            return;
+        }
+
+        let nextIndex = -1;
+
+        if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            const currentIndex = buttons.indexOf(target);
+            nextIndex = (currentIndex + 1) % buttons.length;
+        } else if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            const currentIndex = buttons.indexOf(target);
+            nextIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+        } else if (event.key === 'Home') {
+            event.preventDefault();
+            nextIndex = 0;
+        } else if (event.key === 'End') {
+            event.preventDefault();
+            nextIndex = buttons.length - 1;
+        }
+
+        if (nextIndex === -1) {
+            return;
+        }
+
+        const nextButton = buttons[nextIndex];
+        nextButton.focus();
+        const view = nextButton.dataset.scholarViewButton;
+        if (view) {
+            applyState(view);
+        }
+    });
+
+    applyState(activeView);
 }
 
 function easeInOutCubic(t) {

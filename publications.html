@@ -30,9 +30,49 @@
                 <div id="publications-intro"></div>
 
                 <div class="scholar-profile-root" id="scholar-profile-root">
+                    <div class="scholar-view-toggle" role="tablist" aria-label="Scholar profile sections">
+                        <button
+                            type="button"
+                            class="scholar-view-button is-active"
+                            id="scholar-view-tab-papers"
+                            data-scholar-view-button="papers"
+                            aria-controls="scholar-view-panel-papers"
+                            aria-selected="true"
+                        >
+                            <i class="fas fa-file-alt"></i> Papers
+                        </button>
+                        <button
+                            type="button"
+                            class="scholar-view-button"
+                            id="scholar-view-tab-citations"
+                            data-scholar-view-button="citations"
+                            aria-controls="scholar-view-panel-citations"
+                            aria-selected="false"
+                            tabindex="-1"
+                        >
+                            <i class="fas fa-chart-bar"></i> Citations
+                        </button>
+                        <button
+                            type="button"
+                            class="scholar-view-button"
+                            id="scholar-view-tab-coauthors"
+                            data-scholar-view-button="coauthors"
+                            aria-controls="scholar-view-panel-coauthors"
+                            aria-selected="false"
+                            tabindex="-1"
+                        >
+                            <i class="fas fa-users"></i> Co-authors
+                        </button>
+                    </div>
                     <div class="scholar-content">
                         <!-- Publications List -->
-                        <section class="scholar-publications-card">
+                        <section
+                            class="scholar-publications-card scholar-view-section is-active"
+                            id="scholar-view-panel-papers"
+                            role="tabpanel"
+                            aria-labelledby="scholar-view-tab-papers"
+                            data-scholar-view="papers"
+                        >
                             <div class="scholar-table-header">
                                 <span>Title</span>
                                 <span>Cited By</span>
@@ -44,7 +84,15 @@
                         </section>
 
                         <!-- Citation Stats -->
-                        <section class="scholar-stats-card">
+                        <section
+                            class="scholar-stats-card scholar-view-section"
+                            id="scholar-view-panel-citations"
+                            role="tabpanel"
+                            aria-labelledby="scholar-view-tab-citations"
+                            data-scholar-view="citations"
+                            aria-hidden="true"
+                            hidden
+                        >
                             <div class="scholar-stats-grid">
                                 <div class="scholar-stats-total">
                                     <h3 class="scholar-section-title" id="citation-heading">First-author Citations</h3>
@@ -60,7 +108,15 @@
                         </section>
 
                         <!-- Co-authors at Bottom -->
-                        <section class="scholar-coauthors-card">
+                        <section
+                            class="scholar-coauthors-card scholar-view-section"
+                            id="scholar-view-panel-coauthors"
+                            role="tabpanel"
+                            aria-labelledby="scholar-view-tab-coauthors"
+                            data-scholar-view="coauthors"
+                            aria-hidden="true"
+                            hidden
+                        >
                             <h3 class="scholar-section-title">Co-authors</h3>
                             <div class="scholar-coauthors-list" id="scholar-coauthors-list"></div>
                         </section>
