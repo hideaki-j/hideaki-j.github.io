@@ -1103,15 +1103,14 @@ function setupScholarViewSwitcher(profile) {
 
         resetElementAnimation(panel, true);
 
-        if (prefersReducedMotion()) {
-            return;
-        }
-
+        const reduceMotion = prefersReducedMotion();
         panel.dataset.scholarAnimating = 'true';
         panel.style.opacity = '0';
-        panel.style.transform = 'translateY(20px)';
-        panel.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
-        panel.style.willChange = 'opacity, transform';
+        panel.style.transform = reduceMotion ? 'none' : 'translateY(20px)';
+        panel.style.transition = reduceMotion
+            ? 'opacity 0.24s ease'
+            : 'opacity 0.45s ease, transform 0.45s ease';
+        panel.style.willChange = reduceMotion ? 'opacity' : 'opacity, transform';
 
         const panelCleanup = event => {
             if (event.target !== panel) {
@@ -1127,7 +1126,9 @@ function setupScholarViewSwitcher(profile) {
                 return;
             }
             panel.style.opacity = '1';
-            panel.style.transform = 'translateY(0)';
+            if (!reduceMotion) {
+                panel.style.transform = 'translateY(0)';
+            }
         });
 
         const children = getAnimatableChildren(panel);
@@ -1142,10 +1143,13 @@ function setupScholarViewSwitcher(profile) {
             resetElementAnimation(child, false);
             child.dataset.scholarAnimating = 'true';
             child.style.opacity = '0';
-            child.style.transform = 'translateY(16px)';
-            child.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-            child.style.transitionDelay = `${Math.min(index, maxDelayItems) * delayIncrement}ms`;
-            child.style.willChange = 'opacity, transform';
+            child.style.transform = reduceMotion ? 'none' : 'translateY(16px)';
+            child.style.transition = reduceMotion
+                ? 'opacity 0.24s ease'
+                : 'opacity 0.4s ease, transform 0.4s ease';
+            const delay = Math.min(index, maxDelayItems) * (reduceMotion ? 30 : delayIncrement);
+            child.style.transitionDelay = `${delay}ms`;
+            child.style.willChange = reduceMotion ? 'opacity' : 'opacity, transform';
 
             const childCleanup = event => {
                 if (event.target !== child) {
@@ -1161,7 +1165,9 @@ function setupScholarViewSwitcher(profile) {
                     return;
                 }
                 child.style.opacity = '1';
-                child.style.transform = 'translateY(0)';
+                if (!reduceMotion) {
+                    child.style.transform = 'translateY(0)';
+                }
             });
         });
     };
