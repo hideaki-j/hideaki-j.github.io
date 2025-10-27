@@ -1014,6 +1014,158 @@ function setupScholarViewSwitcher(profile) {
         return;
     }
 
+    const prefersReducedMotion = () =>
+        typeof window !== 'undefined' &&
+        typeof window.matchMedia === 'function' &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const scheduleAnimationFrame = callback => {
+        if (typeof window !== 'undefined' && typeof window.requestAnimationFrame === 'function') {
+            window.requestAnimationFrame(() => {
+                window.requestAnimationFrame(callback);
+            });
+        } else {
+            setTimeout(callback, 32);
+        }
+    };
+
+    const resetElementAnimation = (element, includeDescendants = false) => {
+        if (!(element instanceof HTMLElement)) {
+            return;
+        }
+
+        if (element.__scholarAnimationCleanup) {
+            element.removeEventListener('transitionend', element.__scholarAnimationCleanup);
+            delete element.__scholarAnimationCleanup;
+        }
+
+        element.style.opacity = '';
+        element.style.transform = '';
+        element.style.transition = '';
+        element.style.transitionDelay = '';
+        element.style.willChange = '';
+
+        if (element.dataset && element.dataset.scholarAnimating) {
+            delete element.dataset.scholarAnimating;
+        }
+
+        if (includeDescendants) {
+            const descendants = element.querySelectorAll('[data-scholar-animating]');
+            descendants.forEach(descendant => {
+                if (descendant === element) {
+                    return;
+                }
+                resetElementAnimation(descendant, false);
+            });
+        }
+    };
+
+    const isElementVisible = element => {
+        if (!(element instanceof HTMLElement)) {
+            return false;
+        }
+        if (element.offsetParent !== null) {
+            return true;
+        }
+        const rect = element.getBoundingClientRect();
+        return rect.width > 0 && rect.height > 0;
+    };
+
+    const getAnimatableChildren = panel => {
+        if (!(panel instanceof HTMLElement)) {
+            return [];
+        }
+
+        if (panel.classList.contains('scholar-publications-card')) {
+            return Array.from(panel.querySelectorAll('.scholar-paper-row, .scholar-ellipsis-row, .scholar-toggle-row'))
+                .filter(isElementVisible);
+        }
+
+        if (panel.classList.contains('scholar-stats-card')) {
+            const statsGrid = panel.querySelector('.scholar-stats-grid');
+            if (!statsGrid) {
+                return [];
+            }
+            return Array.from(statsGrid.children).filter(isElementVisible);
+        }
+
+        if (panel.classList.contains('scholar-coauthors-card')) {
+            return Array.from(panel.querySelectorAll('.scholar-coauthor-item')).filter(isElementVisible);
+        }
+
+        return [];
+    };
+
+    const animateScholarPanel = panel => {
+        if (!(panel instanceof HTMLElement)) {
+            return;
+        }
+
+        resetElementAnimation(panel, true);
+
+        if (prefersReducedMotion()) {
+            return;
+        }
+
+        panel.dataset.scholarAnimating = 'true';
+        panel.style.opacity = '0';
+        panel.style.transform = 'translateY(20px)';
+        panel.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
+        panel.style.willChange = 'opacity, transform';
+
+        const panelCleanup = event => {
+            if (event.target !== panel) {
+                return;
+            }
+            resetElementAnimation(panel, false);
+        };
+        panel.__scholarAnimationCleanup = panelCleanup;
+        panel.addEventListener('transitionend', panelCleanup);
+
+        scheduleAnimationFrame(() => {
+            if (panel.dataset.scholarAnimating !== 'true') {
+                return;
+            }
+            panel.style.opacity = '1';
+            panel.style.transform = 'translateY(0)';
+        });
+
+        const children = getAnimatableChildren(panel);
+        if (!children.length) {
+            return;
+        }
+
+        const maxDelayItems = 6;
+        const delayIncrement = 60;
+
+        children.forEach((child, index) => {
+            resetElementAnimation(child, false);
+            child.dataset.scholarAnimating = 'true';
+            child.style.opacity = '0';
+            child.style.transform = 'translateY(16px)';
+            child.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            child.style.transitionDelay = `${Math.min(index, maxDelayItems) * delayIncrement}ms`;
+            child.style.willChange = 'opacity, transform';
+
+            const childCleanup = event => {
+                if (event.target !== child) {
+                    return;
+                }
+                resetElementAnimation(child, false);
+            };
+            child.__scholarAnimationCleanup = childCleanup;
+            child.addEventListener('transitionend', childCleanup);
+
+            scheduleAnimationFrame(() => {
+                if (child.dataset.scholarAnimating !== 'true') {
+                    return;
+                }
+                child.style.opacity = '1';
+                child.style.transform = 'translateY(0)';
+            });
+        });
+    };
+
     const hasView = view =>
         panels.some(panel => panel.dataset.scholarView === view);
 
@@ -1038,6 +1190,7 @@ function setupScholarViewSwitcher(profile) {
             button.setAttribute('tabindex', isActive ? '0' : '-1');
         });
 
+        let activePanel = null;
         panels.forEach(panel => {
             const panelView = panel.dataset.scholarView;
             const isActive = panelView === view;
@@ -1045,10 +1198,16 @@ function setupScholarViewSwitcher(profile) {
             panel.setAttribute('aria-hidden', isActive ? 'false' : 'true');
             if (isActive) {
                 panel.removeAttribute('hidden');
+                activePanel = panel;
             } else {
                 panel.setAttribute('hidden', '');
+                resetElementAnimation(panel, true);
             }
         });
+
+        if (activePanel) {
+            animateScholarPanel(activePanel);
+        }
 
         const chartProfile = profile || window.__scholarChartProfile;
         if (view === 'citations' && chartProfile) {
