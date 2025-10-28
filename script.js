@@ -70,9 +70,9 @@ function renderProfile(profile) {
     }
 
     const socialLinksHTML = (profile.socialLinks || []).map(link => {
-        const isExternal = !link.href.includes('hideaki-j.github.io');
-        const target = isExternal ? ' target="_blank"' : '';
-        return `<a href="${link.href}"${target} title="${link.title}"><i class="${link.icon}"></i></a>`;
+        const isExternal = /^https?:\/\//.test(link.href) && !link.href.includes('hideaki-j.github.io');
+        const targetAttr = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+        return `<a href="${link.href}"${targetAttr} title="${link.title}"><i class="${link.icon}"></i></a>`;
     }).join('');
 
     const image = profile.image || {};
