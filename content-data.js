@@ -470,7 +470,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 41,
+                        cited_by: 43,
                         year: 2024,
                         ranking: "A*",
                         url: "https://arxiv.org/abs/2405.03480",
