@@ -383,10 +383,10 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 97
+                            citations: 99
                         },
                         all: {
-                            citations: 101,
+                            citations: 103,
                             hIndex: 4,
                             i10Index: 3
                         },
@@ -399,7 +399,7 @@ window.siteContent = {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
                             counts: [2, 0, 1, 1, 13, 19, 22, 38],
                             firstAuthor: [2, 0, 1, 1, 13, 19, 22, 38],
-                            all: [2, 0, 1, 1, 13, 19, 22, 42]
+                            all: [2, 0, 1, 1, 13, 19, 22, 44]
                         }
                     },
                     coauthors: [
