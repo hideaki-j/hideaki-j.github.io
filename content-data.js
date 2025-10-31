@@ -473,7 +473,7 @@ window.siteContent = {
                         cited_by: 43,
                         year: 2024,
                         ranking: "A*",
-                        url: "https://arxiv.org/abs/2405.03480",
+                        url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
                         citations_url: "https://scholar.google.com/scholar?cites=2349539739266859572&as_sdt=2005&sciodt=0,5&hl=en",
                         downloads_top_percent: "Top 6% Downloads in SIGIR 2024",
                         downloadsUrl: "https://dl.acm.org/doi/10.1145/3626772.3657815"
@@ -485,7 +485,7 @@ window.siteContent = {
                         cited_by: 31,
                         year: 2021,
                         ranking: "A*",
-                        url: "https://arxiv.org/abs/2105.04903",
+                        url: "https://dl.acm.org/doi/10.1145/3404835.3463258",
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
                         downloadsUrl: "https://dl.acm.org/doi/abs/10.1145/3404835.3463258"
                     },
@@ -496,7 +496,7 @@ window.siteContent = {
                         cited_by: 14,
                         year: 2022,
                         ranking: "A",
-                        url: "https://arxiv.org/abs/2206.07836",
+                        url: "https://dl.acm.org/doi/10.1145/3511808.3557667",
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537"
                     },
                     {
