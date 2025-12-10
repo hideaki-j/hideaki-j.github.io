@@ -386,20 +386,20 @@ window.siteContent = {
                             citations: 104
                         },
                         all: {
-                            citations: 108,
+                            citations: 109,
                             hIndex: 4,
                             i10Index: 3
                         },
                         since2020: {
-                            citations: 104,
+                            citations: 105,
                             hIndex: 4,
                             i10Index: 3
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
-                            counts: [2, 0, 1, 1, 13, 19, 22, 43],
+                            counts: [2, 0, 1, 1, 13, 19, 22, 44],
                             firstAuthor: [2, 0, 1, 1, 13, 19, 22, 43],
-                            all: [2, 0, 1, 1, 13, 19, 22, 49]
+                            all: [2, 0, 1, 1, 13, 19, 22, 50]
                         }
                     },
                     coauthors: [
@@ -503,7 +503,7 @@ window.siteContent = {
                         title: "CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems",
                         authors: "N Bernard, H Joko, F Hasibi, K Balog",
                         venue: "WSDM '25",
-                        cited_by: 4,
+                        cited_by: 5,
                         year: 2025,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/abs/10.1145/3701551.3704120",
