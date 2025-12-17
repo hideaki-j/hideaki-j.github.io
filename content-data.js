@@ -573,6 +573,7 @@ window.siteContent = {
                         title: "WildClaims: Information Access Conversations in the Wild (Chat)",
                         authors: "H Joko, S Amirshahi, CLA Clarke, F Hasibi",
                         venue: "ECIR '26",
+                        ranking: "A",
                         cited_by: 0,
                         year: 2026
                     },
