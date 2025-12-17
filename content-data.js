@@ -572,9 +572,9 @@ window.siteContent = {
                     {
                         title: "WildClaims: Information Access Conversations in the Wild (Chat)",
                         authors: "H Joko, S Amirshahi, CLA Clarke, F Hasibi",
-                        venue: "arXiv preprint",
+                        venue: "ECIR '26",
                         cited_by: 0,
-                        year: 2025
+                        year: 2026
                     },
                     {
                         title: "Information processing device and information processing method for judging the semantic relationship between words and sentences",
