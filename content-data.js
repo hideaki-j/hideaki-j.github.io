@@ -383,23 +383,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 106
+                            citations: 107
                         },
                         all: {
-                            citations: 111,
+                            citations: 112,
                             hIndex: 4,
                             i10Index: 3
                         },
                         since2020: {
-                            citations: 107,
+                            citations: 108,
                             hIndex: 4,
                             i10Index: 3
                         },
                         byYear: {
-                            years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
-                            counts: [2, 0, 1, 1, 13, 19, 22, 46],
-                            firstAuthor: [2, 0, 1, 1, 13, 19, 22, 45],
-                            all: [2, 0, 1, 1, 13, 19, 22, 52]
+                            years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
+                            counts: [2, 0, 1, 1, 13, 19, 22, 46, 1],
+                            firstAuthor: [2, 0, 1, 1, 13, 19, 22, 45, 1],
+                            all: [2, 0, 1, 1, 13, 19, 22, 52, 1]
                         }
                     },
                     coauthors: [
@@ -470,7 +470,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 49,
+                        cited_by: 50,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
