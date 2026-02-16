@@ -383,23 +383,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 108
+                            citations: 115
                         },
                         all: {
-                            citations: 114,
+                            citations: 122,
                             hIndex: 4,
                             i10Index: 3
                         },
                         since2020: {
-                            citations: 110,
+                            citations: 118,
                             hIndex: 4,
                             i10Index: 3
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [2, 0, 1, 1, 13, 19, 22, 46, 3],
-                            firstAuthor: [2, 0, 1, 1, 13, 19, 22, 45, 2],
-                            all: [2, 0, 1, 1, 13, 19, 22, 52, 3]
+                            counts: [2, 0, 1, 1, 13, 19, 22, 46, 11],
+                            firstAuthor: [2, 0, 1, 1, 13, 19, 22, 45, 9],
+                            all: [2, 0, 1, 1, 13, 19, 22, 52, 11]
                         }
                     },
                     coauthors: [
@@ -470,7 +470,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 51,
+                        cited_by: 56,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
@@ -503,7 +503,7 @@ window.siteContent = {
                         title: "CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems",
                         authors: "N Bernard, H Joko, F Hasibi, K Balog",
                         venue: "WSDM '25",
-                        cited_by: 6,
+                        cited_by: 7,
                         year: 2025,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/abs/10.1145/3701551.3704120",
@@ -544,7 +544,7 @@ window.siteContent = {
                         title: "Intention Understanding in Small Training Data Sets by Using Transfer Learning",
                         authors: "H Joko, Y Koji, H Ucihde, T Otsuka",
                         venue: "2018 Eleventh International Conference on Mobile Computing and Ubiquitous …",
-                        cited_by: 1,
+                        cited_by: 2,
                         year: 2018
                     },
                     {
@@ -574,7 +574,7 @@ window.siteContent = {
                         authors: "H Joko, S Amirshahi, CLA Clarke, F Hasibi",
                         venue: "ECIR '26",
                         ranking: "A",
-                        cited_by: 0,
+                        cited_by: 1,
                         year: 2026
                     },
                     {
