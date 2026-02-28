@@ -769,7 +769,7 @@ function renderScholarProfileSection(scholarData) {
     setupScholarViewSwitcher(profile);
 
     requestAnimationFrame(() => {
-        scheduleScholarCitationGraph(profile, 'firstAuthor');
+        scheduleScholarCitationGraph(profile, 'all');
         attachScholarChartResize(profile);
     });
 }
@@ -933,11 +933,8 @@ function buildHiddenPublicationRow(publication) {
 
 function renderScholarStats(profile) {
     const citations = profile.citations || {};
-    const firstAuthor = citations.firstAuthor || {};
     const all = citations.all || {};
-    
-    let showingFirstAuthor = true;
-    window.__scholarChartMode = 'firstAuthor';
+    window.__scholarChartMode = 'all';
 
     const setText = (id, value) => {
         const el = document.getElementById(id);
@@ -946,31 +943,11 @@ function renderScholarStats(profile) {
         }
     };
 
-    // Set initial value to first-author citations
-    setText('scholar-citations-all', firstAuthor.citations);
-    
-    // Add toggle functionality
-    const toggleBtn = document.getElementById('citation-toggle-btn');
+    setText('scholar-citations-all', all.citations);
+
     const citationHeading = document.getElementById('citation-heading');
     if (citationHeading) {
-        citationHeading.textContent = 'First-author Citations';
-    }
-    
-    if (toggleBtn && citationHeading) {
-        toggleBtn.addEventListener('click', () => {
-            showingFirstAuthor = !showingFirstAuthor;
-            if (showingFirstAuthor) {
-                setText('scholar-citations-all', firstAuthor.citations);
-                citationHeading.textContent = 'First-author Citations';
-                toggleBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Include co-author papers';
-                scheduleScholarCitationGraph(profile, 'firstAuthor');
-            } else {
-                setText('scholar-citations-all', all.citations);
-                citationHeading.textContent = 'Total Citations';
-                toggleBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Show first-author only';
-                scheduleScholarCitationGraph(profile, 'all');
-            }
-        });
+        citationHeading.textContent = 'Total Citations';
     }
 }
 
@@ -1217,7 +1194,7 @@ function setupScholarViewSwitcher(profile) {
 
         const chartProfile = profile || window.__scholarChartProfile;
         if (view === 'citations' && chartProfile) {
-            const mode = window.__scholarChartMode || 'firstAuthor';
+            const mode = window.__scholarChartMode || 'all';
             scheduleScholarCitationGraph(chartProfile, mode);
         }
     };
@@ -1290,7 +1267,7 @@ function scheduleScholarCitationGraph(profile, modeOverride) {
         return;
     }
 
-    const mode = modeOverride || window.__scholarChartMode || 'firstAuthor';
+    const mode = modeOverride || window.__scholarChartMode || 'all';
     const resolvedProfile = profile || canvas.__scholarPendingProfile || window.__scholarChartProfile;
     if (!resolvedProfile) {
         return;
@@ -1341,7 +1318,7 @@ function drawScholarCitationGraph(profile, modeOverride) {
         return;
     }
 
-    const mode = modeOverride || window.__scholarChartMode || 'firstAuthor';
+    const mode = modeOverride || window.__scholarChartMode || 'all';
     window.__scholarChartMode = mode;
     window.__scholarChartProfile = profile;
 

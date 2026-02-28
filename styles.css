@@ -591,44 +591,6 @@ body[data-page="publications"] #publications-title {
     margin-top: 8px;
 }
 
-.citation-toggle-btn {
-    margin-top: 8px;
-    padding: 0;
-    font-size: 0.7rem;
-    background: none;
-    border: none;
-    color: var(--accent-color);
-    cursor: pointer;
-    font-weight: 400;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    line-height: 1;
-    position: relative;
-    padding-bottom: 1px;
-}
-
-.citation-toggle-btn i {
-    font-size: 0.6rem;
-}
-
-.citation-toggle-btn::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background-color: currentColor;
-    opacity: 0;
-    transition: opacity 0.15s ease;
-}
-
-.citation-toggle-btn:hover::after,
-.citation-toggle-btn:focus-visible::after {
-    opacity: 1;
-}
-
 .scholar-stats-table {
     width: 100%;
     border-collapse: collapse;

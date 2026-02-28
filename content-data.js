@@ -383,23 +383,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 115
+                            citations: 116
                         },
                         all: {
-                            citations: 122,
+                            citations: 123,
                             hIndex: 4,
                             i10Index: 3
                         },
                         since2020: {
-                            citations: 118,
+                            citations: 120,
                             hIndex: 4,
                             i10Index: 3
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [2, 0, 1, 1, 13, 19, 22, 46, 11],
-                            firstAuthor: [2, 0, 1, 1, 13, 19, 22, 45, 9],
-                            all: [2, 0, 1, 1, 13, 19, 22, 52, 11]
+                            counts: [2, 0, 1, 1, 13, 19, 22, 60, 4],
+                            firstAuthor: [2, 0, 1, 1, 13, 19, 22, 45, 10],
+                            all: [2, 0, 1, 1, 13, 19, 22, 60, 4]
                         }
                     },
                     coauthors: [
@@ -470,7 +470,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 56,
+                        cited_by: 58,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
@@ -544,7 +544,7 @@ window.siteContent = {
                         title: "Intention Understanding in Small Training Data Sets by Using Transfer Learning",
                         authors: "H Joko, Y Koji, H Ucihde, T Otsuka",
                         venue: "2018 Eleventh International Conference on Mobile Computing and Ubiquitous …",
-                        cited_by: 2,
+                        cited_by: 1,
                         year: 2018
                     },
                     {
