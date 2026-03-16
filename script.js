@@ -1400,6 +1400,13 @@ function drawScholarCitationGraph(profile, modeOverride) {
             axisMax = Math.max(axisMax, value);
         }
     });
+    const axisStep = 20;
+    const axisLabelMax = Math.max(axisStep, Math.floor(axisMax / axisStep) * axisStep);
+    const axisRenderMax = Math.max(axisLabelMax, Math.ceil(axisMax / axisStep) * axisStep);
+    const gridValues = [];
+    for (let value = 0; value <= axisLabelMax; value += axisStep) {
+        gridValues.push(value);
+    }
 
     const padding = { top: 12, right: 32, bottom: 26, left: 12 };
     const innerWidth = cssWidth - padding.left - padding.right;
@@ -1447,20 +1454,19 @@ function drawScholarCitationGraph(profile, modeOverride) {
         ctx.strokeStyle = 'rgba(0, 0, 0, 0.08)';
         ctx.lineWidth = 1;
 
-        const gridSteps = 3;
-        for (let i = 0; i <= gridSteps; i += 1) {
-            const ratio = i / gridSteps;
+        gridValues.forEach(value => {
+            const ratio = axisRenderMax ? (value / axisRenderMax) : 0;
             const y = padding.top + innerHeight - ratio * innerHeight;
             ctx.beginPath();
             ctx.moveTo(padding.left, y);
             ctx.lineTo(padding.left + innerWidth, y);
             ctx.stroke();
-        }
+        });
 
         ctx.fillStyle = '#6c91f1';
         for (let index = 0; index < years.length; index += 1) {
             const count = Math.max(countsForFrame[index] || 0, 0);
-            const height = axisMax ? (count / axisMax) * innerHeight : 0;
+            const height = axisRenderMax ? (count / axisRenderMax) * innerHeight : 0;
             const x = padding.left + index * barWidth + barWidth * 0.1;
             const y = padding.top + innerHeight - height;
             const width = barWidth * 0.8;
@@ -1480,23 +1486,16 @@ function drawScholarCitationGraph(profile, modeOverride) {
         ctx.textAlign = 'right';
         ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
 
-        for (let i = 0; i <= gridSteps; i += 1) {
-            const ratio = i / gridSteps;
+        gridValues.forEach(value => {
+            const ratio = axisRenderMax ? (value / axisRenderMax) : 0;
             const y = padding.top + innerHeight - ratio * innerHeight;
-            let labelValue = Math.round(axisMax * ratio);
-            if (i === gridSteps) {
-                labelValue = Math.round(axisMax);
-            }
-            if (i === 0) {
-                labelValue = 0;
-            }
-            ctx.fillText(String(labelValue), cssWidth - 6, y + 4);
-        }
+            ctx.fillText(String(value), cssWidth - 6, y + 4);
+        });
 
         state.displayedCounts = countsForFrame.slice();
         state.displayedYears = years.slice();
         state.displayedMode = mode;
-        state.axisMax = axisMax;
+        state.axisMax = axisRenderMax;
     };
 
     const hasRendered = Boolean(state.hasRendered);
