@@ -754,6 +754,7 @@ function renderScholarProfileSection(scholarData) {
     const publications = Array.isArray(scholarData?.publications)
         ? scholarData.publications
         : (Array.isArray(window.PUBLICATIONS) ? window.PUBLICATIONS : []);
+    const sortedPublications = sortScholarPublications(publications);
 
     if (!profile) {
         console.warn('Scholar profile data missing: expected local scholar data or window.PROFILE object');
@@ -763,7 +764,7 @@ function renderScholarProfileSection(scholarData) {
 
     window.__scholarChartProfile = profile;
 
-    renderScholarPublicationsList(publications);
+    renderScholarPublicationsList(sortedPublications);
     renderScholarStats(profile);
     renderScholarCoauthors(profile);
     setupScholarViewSwitcher(profile);
@@ -840,6 +841,24 @@ function renderScholarPublicationsList(publications) {
             }
         });
     }
+}
+
+function sortScholarPublications(publications) {
+    return publications.slice().sort((left, right) => {
+        const leftCitations = Number(left?.cited_by) || 0;
+        const rightCitations = Number(right?.cited_by) || 0;
+        if (rightCitations !== leftCitations) {
+            return rightCitations - leftCitations;
+        }
+
+        const leftYear = Number(left?.year) || 0;
+        const rightYear = Number(right?.year) || 0;
+        if (rightYear !== leftYear) {
+            return rightYear - leftYear;
+        }
+
+        return (left?.title || '').localeCompare(right?.title || '');
+    });
 }
 
 function buildPublicationRow(publication) {

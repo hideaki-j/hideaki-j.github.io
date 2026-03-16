@@ -299,6 +299,10 @@ window.siteContent = {
                 items: [
                     {
                         iconKey: 'acm',
+                        bodyHTML: '<strong>ACM SIGIR Conference</strong> Program Committee, 2026.'
+                    },
+                    {
+                        iconKey: 'acm',
                         bodyHTML: '<strong>ACM WSDM Conference</strong> Program Committee, 2025.'
                     },
                     {
