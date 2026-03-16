@@ -364,6 +364,7 @@ window.siteContent = {
             titleHTML: '<i class="fas fa-graduation-cap"></i> Scholar Profile',
             intro: '',
             scholarProfile: {
+                lastUpdated: '2026-03-15',
                 profile: {
                     name: "Hideaki Joko",
                     affiliation: "Applied Scientist at Thomson Reuters Labs",

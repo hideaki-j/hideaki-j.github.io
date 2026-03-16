@@ -764,6 +764,7 @@ function renderScholarProfileSection(scholarData) {
 
     window.__scholarChartProfile = profile;
 
+    renderScholarMeta(scholarData);
     renderScholarPublicationsList(sortedPublications);
     renderScholarStats(profile);
     renderScholarCoauthors(profile);
@@ -773,6 +774,32 @@ function renderScholarProfileSection(scholarData) {
         scheduleScholarCitationGraph(profile, 'all');
         attachScholarChartResize(profile);
     });
+}
+
+function renderScholarMeta(scholarData) {
+    const metaEl = document.getElementById('scholar-profile-meta');
+    if (!metaEl) {
+        return;
+    }
+
+    const lastUpdated = scholarData?.lastUpdated;
+    if (!lastUpdated) {
+        metaEl.innerHTML = '';
+        metaEl.hidden = true;
+        return;
+    }
+
+    const parsedDate = new Date(`${lastUpdated}T00:00:00`);
+    const formattedDate = Number.isNaN(parsedDate.getTime())
+        ? lastUpdated
+        : new Intl.DateTimeFormat('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+        }).format(parsedDate);
+
+    metaEl.innerHTML = `<span class="scholar-last-updated">Updated ${formattedDate}</span>`;
+    metaEl.hidden = false;
 }
 
 function renderScholarPublicationsList(publications) {
