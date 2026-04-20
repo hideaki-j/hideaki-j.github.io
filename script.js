@@ -1412,28 +1412,8 @@ function drawScholarCitationGraph(profile, modeOverride) {
         return;
     }
 
-    // Use total counts when available to keep the y-axis fixed to the overall scale.
-    const axisBaselineCounts = years.map((_, idx) => {
-        const totalValue = allCountsRaw[idx];
-        const fallbackValue = targetCountsRaw[idx];
-        const value = totalValue !== undefined ? totalValue : fallbackValue;
-        const numericValue = Number(value);
-        return Number.isFinite(numericValue) ? numericValue : 0;
-    });
-
-    let axisMax = 1;
-    axisBaselineCounts.forEach(value => {
-        if (Number.isFinite(value)) {
-            axisMax = Math.max(axisMax, value);
-        }
-    });
-    const axisStep = 20;
-    const axisLabelMax = Math.max(axisStep, Math.floor(axisMax / axisStep) * axisStep);
-    const axisRenderMax = Math.max(axisLabelMax, Math.ceil(axisMax / axisStep) * axisStep);
-    const gridValues = [];
-    for (let value = 0; value <= axisLabelMax; value += axisStep) {
-        gridValues.push(value);
-    }
+    const axisRenderMax = 60;
+    const gridValues = [0, 20, 40, 60];
 
     const padding = { top: 12, right: 32, bottom: 26, left: 12 };
     const innerWidth = cssWidth - padding.left - padding.right;

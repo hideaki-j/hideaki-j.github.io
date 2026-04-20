@@ -364,7 +364,7 @@ window.siteContent = {
             titleHTML: '<i class="fas fa-graduation-cap"></i> Scholar Profile',
             intro: '',
             scholarProfile: {
-                lastUpdated: '2026-03-15',
+                lastUpdated: '2026-04-20',
                 profile: {
                     name: "Hideaki Joko",
                     affiliation: "Applied Scientist at Thomson Reuters Labs",
@@ -388,23 +388,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 118
+                            citations: 126
                         },
                         all: {
-                            citations: 125,
+                            citations: 135,
                             hIndex: 4,
                             i10Index: 3
                         },
                         since2020: {
-                            citations: 122,
+                            citations: 133,
                             hIndex: 4,
                             i10Index: 3
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [2, 0, 1, 1, 13, 19, 22, 61, 5],
-                            firstAuthor: [2, 0, 1, 1, 13, 19, 22, 46, 11],
-                            all: [2, 0, 1, 1, 13, 19, 22, 61, 5]
+                            counts: [2, 0, 1, 1, 14, 18, 25, 59, 15],
+                            firstAuthor: [2, 0, 1, 1, 14, 18, 25, 50, 15],
+                            all: [2, 0, 1, 1, 14, 18, 25, 59, 15]
                         }
                     },
                     coauthors: [
@@ -475,7 +475,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 60,
+                        cited_by: 62,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
@@ -487,7 +487,7 @@ window.siteContent = {
                         title: "Conversational entity linking: problem definition and datasets",
                         authors: "H Joko, F Hasibi, K Balog, AP de Vries",
                         venue: "SIGIR '21",
-                        cited_by: 32,
+                        cited_by: 33,
                         year: 2021,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/10.1145/3404835.3463258",
@@ -508,7 +508,7 @@ window.siteContent = {
                         title: "CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems",
                         authors: "N Bernard, H Joko, F Hasibi, K Balog",
                         venue: "WSDM '25",
-                        cited_by: 7,
+                        cited_by: 9,
                         year: 2025,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/abs/10.1145/3701551.3704120",
@@ -534,8 +534,10 @@ window.siteContent = {
                     {
                         title: "FACE: A Fine-grained Reference Free Evaluator for Conversational Recommender Systems",
                         authors: "H Joko, F Hasibi",
-                        venue: "arXiv preprint",
-                        cited_by: 1,
+                        venue: "SIGIR '26",
+                        ranking: "A*",
+                        cited_by: 3,
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227",
                         year: 2025
                     },
                     {
@@ -579,8 +581,16 @@ window.siteContent = {
                         authors: "H Joko, S Amirshahi, CLA Clarke, F Hasibi",
                         venue: "ECIR '26",
                         ranking: "A",
-                        cited_by: 1,
-                        year: 2026
+                        cited_by: 2,
+                        year: 2025
+                    },
+                    {
+                        title: "Information processing apparatus, non-transitory computer-readable storage medium, and information processing method",
+                        authors: "H Joko",
+                        venue: "JP/CN/KR/TW Patent",
+                        cited_by: 2,
+                        year: 2022,
+                        type: "patent"
                     },
                     {
                         title: "Information processing device and information processing method for judging the semantic relationship between words and sentences",
