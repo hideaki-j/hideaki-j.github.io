@@ -537,6 +537,7 @@ window.siteContent = {
                         venue: "SIGIR '26",
                         ranking: "A*",
                         cited_by: 3,
+                        url: "https://arxiv.org/abs/2506.00314",
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227",
                         year: 2025
                     },
