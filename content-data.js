@@ -364,7 +364,7 @@ window.siteContent = {
             titleHTML: '<i class="fas fa-graduation-cap"></i> Scholar Profile',
             intro: '',
             scholarProfile: {
-                lastUpdated: '2026-04-20',
+                lastUpdated: '2026-04-28',
                 profile: {
                     name: "Hideaki Joko",
                     affiliation: "Applied Scientist at Thomson Reuters Labs",
@@ -388,23 +388,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 126
+                            citations: 133
                         },
                         all: {
-                            citations: 135,
+                            citations: 142,
                             hIndex: 4,
                             i10Index: 3
                         },
                         since2020: {
-                            citations: 133,
+                            citations: 140,
                             hIndex: 4,
                             i10Index: 3
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [2, 0, 1, 1, 14, 18, 25, 59, 15],
-                            firstAuthor: [2, 0, 1, 1, 14, 18, 25, 50, 15],
-                            all: [2, 0, 1, 1, 14, 18, 25, 59, 15]
+                            counts: [2, 0, 1, 1, 14, 18, 25, 59, 22],
+                            firstAuthor: [2, 0, 1, 1, 14, 18, 25, 50, 22],
+                            all: [2, 0, 1, 1, 14, 18, 25, 59, 22]
                         }
                     },
                     coauthors: [
@@ -475,7 +475,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 62,
+                        cited_by: 65,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
@@ -487,7 +487,7 @@ window.siteContent = {
                         title: "Conversational entity linking: problem definition and datasets",
                         authors: "H Joko, F Hasibi, K Balog, AP de Vries",
                         venue: "SIGIR '21",
-                        cited_by: 33,
+                        cited_by: 35,
                         year: 2021,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/10.1145/3404835.3463258",
@@ -498,7 +498,7 @@ window.siteContent = {
                         title: "Personal entity, concept, and named entity linking in conversations",
                         authors: "H Joko, F Hasibi",
                         venue: "CIKM '22",
-                        cited_by: 14,
+                        cited_by: 15,
                         year: 2022,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/10.1145/3511808.3557667",
@@ -536,7 +536,7 @@ window.siteContent = {
                         authors: "H Joko, F Hasibi",
                         venue: "SIGIR '26",
                         ranking: "A*",
-                        cited_by: 3,
+                        cited_by: 4,
                         url: "https://arxiv.org/abs/2506.00314",
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227",
                         year: 2025
