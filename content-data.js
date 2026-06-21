@@ -49,13 +49,6 @@ window.siteContent = {
                         bodyHTML: '<p>Research and development at Thomson Reuters Labs, focusing on legal NLP and IR.</p>'
                     },
                     {
-                        iconKey: 'waterloo',
-                        heading: 'University of Waterloo, Canada',
-                        role: 'Visiting Scholar',
-                        date: 'May 2025 - Oct 2025',
-                        bodyHTML: '<p>Evaluation of LLMs in real-world conversations, working with Charles Clarke.</p>'
-                    },
-                    {
                         iconKey: 'radboud',
                         heading: 'Radboud University, Netherlands',
                         role: 'PhD Researcher',
@@ -98,6 +91,13 @@ window.siteContent = {
                         role: 'PhD, Data Science',
                         date: 'Sep 2020 - Sep 2025',
                         bodyHTML: '<p>Working on NLP, LLMs, and IR, supervised by Faegheh Hasibi and Arjen de Vries.</p>'
+                    },
+                    {
+                        iconKey: 'waterloo',
+                        heading: 'University of Waterloo, Canada',
+                        role: 'Visiting Scholar',
+                        date: 'May 2025 - Oct 2025',
+                        bodyHTML: '<p>Evaluation of LLMs in real-world conversations, working with Charles Clarke.</p>'
                     },
                     {
                         iconKey: 'utokyo',
@@ -364,7 +364,7 @@ window.siteContent = {
             titleHTML: '<i class="fas fa-graduation-cap"></i> Scholar Profile',
             intro: '',
             scholarProfile: {
-                lastUpdated: '2026-04-28',
+                lastUpdated: '2026-06-21',
                 profile: {
                     name: "Hideaki Joko",
                     affiliation: "Applied Scientist at Thomson Reuters Labs",
@@ -388,23 +388,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 133
+                            citations: 142
                         },
                         all: {
-                            citations: 142,
-                            hIndex: 4,
-                            i10Index: 3
+                            citations: 153,
+                            hIndex: 5,
+                            i10Index: 4
                         },
                         since2020: {
-                            citations: 140,
-                            hIndex: 4,
-                            i10Index: 3
+                            citations: 150,
+                            hIndex: 5,
+                            i10Index: 4
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [2, 0, 1, 1, 14, 18, 25, 59, 22],
-                            firstAuthor: [2, 0, 1, 1, 14, 18, 25, 50, 22],
-                            all: [2, 0, 1, 1, 14, 18, 25, 59, 22]
+                            counts: [2, 0, 1, 1, 14, 18, 25, 58, 34],
+                            firstAuthor: [2, 0, 1, 1, 14, 18, 25, 50, 31],
+                            all: [2, 0, 1, 1, 14, 18, 25, 58, 34]
                         }
                     },
                     coauthors: [
@@ -475,7 +475,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 65,
+                        cited_by: 70,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
@@ -487,7 +487,7 @@ window.siteContent = {
                         title: "Conversational entity linking: problem definition and datasets",
                         authors: "H Joko, F Hasibi, K Balog, AP de Vries",
                         venue: "SIGIR '21",
-                        cited_by: 35,
+                        cited_by: 34,
                         year: 2021,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/10.1145/3404835.3463258",
@@ -498,7 +498,7 @@ window.siteContent = {
                         title: "Personal entity, concept, and named entity linking in conversations",
                         authors: "H Joko, F Hasibi",
                         venue: "CIKM '22",
-                        cited_by: 15,
+                        cited_by: 14,
                         year: 2022,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/10.1145/3511808.3557667",
@@ -508,7 +508,7 @@ window.siteContent = {
                         title: "CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems",
                         authors: "N Bernard, H Joko, F Hasibi, K Balog",
                         venue: "WSDM '25",
-                        cited_by: 9,
+                        cited_by: 11,
                         year: 2025,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/abs/10.1145/3701551.3704120",
@@ -536,10 +536,10 @@ window.siteContent = {
                         authors: "H Joko, F Hasibi",
                         venue: "SIGIR '26",
                         ranking: "A*",
-                        cited_by: 4,
+                        cited_by: 8,
                         url: "https://arxiv.org/abs/2506.00314",
-                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227",
-                        year: 2025
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227,8657043087002599898,13242180718810573332",
+                        year: 2026
                     },
                     {
                         title: "Radboud University at TREC CAsT 2021",
@@ -582,8 +582,17 @@ window.siteContent = {
                         authors: "H Joko, S Amirshahi, CLA Clarke, F Hasibi",
                         venue: "ECIR '26",
                         ranking: "A",
-                        cited_by: 2,
-                        year: 2025
+                        cited_by: 4,
+                        url: "https://arxiv.org/abs/2509.17442",
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227",
+                        year: 2026
+                    },
+                    {
+                        title: "Personalization and Evaluation of Conversational Information Access",
+                        authors: "H Joko",
+                        venue: "Radboud University Press",
+                        cited_by: 0,
+                        year: 2026
                     },
                     {
                         title: "Information processing apparatus, non-transitory computer-readable storage medium, and information processing method",
