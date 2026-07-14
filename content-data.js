@@ -388,23 +388,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 142
+                            citations: 148
                         },
                         all: {
-                            citations: 153,
+                            citations: 160,
                             hIndex: 5,
                             i10Index: 4
                         },
                         since2020: {
-                            citations: 150,
+                            citations: 157,
                             hIndex: 5,
                             i10Index: 4
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [2, 0, 1, 1, 14, 18, 25, 58, 34],
-                            firstAuthor: [2, 0, 1, 1, 14, 18, 25, 50, 31],
-                            all: [2, 0, 1, 1, 14, 18, 25, 58, 34]
+                            counts: [2, 0, 1, 1, 14, 18, 25, 58, 41],
+                            firstAuthor: [2, 0, 1, 1, 14, 18, 25, 50, 37],
+                            all: [2, 0, 1, 1, 14, 18, 25, 58, 41]
                         }
                     },
                     coauthors: [
@@ -475,7 +475,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 70,
+                        cited_by: 71,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
@@ -487,7 +487,7 @@ window.siteContent = {
                         title: "Conversational entity linking: problem definition and datasets",
                         authors: "H Joko, F Hasibi, K Balog, AP de Vries",
                         venue: "SIGIR '21",
-                        cited_by: 34,
+                        cited_by: 37,
                         year: 2021,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/10.1145/3404835.3463258",
@@ -508,7 +508,7 @@ window.siteContent = {
                         title: "CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems",
                         authors: "N Bernard, H Joko, F Hasibi, K Balog",
                         venue: "WSDM '25",
-                        cited_by: 11,
+                        cited_by: 12,
                         year: 2025,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/abs/10.1145/3701551.3704120",
@@ -582,9 +582,9 @@ window.siteContent = {
                         authors: "H Joko, S Amirshahi, CLA Clarke, F Hasibi",
                         venue: "ECIR '26",
                         ranking: "A",
-                        cited_by: 4,
+                        cited_by: 6,
                         url: "https://arxiv.org/abs/2509.17442",
-                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227",
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16908428218423313060,8897382592771078",
                         year: 2026
                     },
                     {
