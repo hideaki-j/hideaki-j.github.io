@@ -1,3 +1,5 @@
 .DS_Store
 AGENTS.md
 .codex/
+tmp/
+.playwright-mcp/
