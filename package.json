@@ -1,6 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "test": "node tests/citation-aggregates.test.js"
+    "test": "node tests/citation-aggregates.test.js && python3 tests/citation-impact.test.py"
   }
 }

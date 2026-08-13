@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-08-12",
+  "google_scholar_profile": "https://scholar.google.com/citations?user=clyZUqIAAAAJ&hl=en",
+  "citation_results": 160,
+  "distinct_scholar_records": 140,
+  "distinct_normalized_titles": 139,
+  "unique_researchers": 487,
+  "unique_institutions": 178,
+  "homepage_claim": "480+ researchers across 175+ institutions worldwide",
+  "method": "Unique researchers use accent/case/punctuation normalization plus documented identity aliases. Institutions expand explicit multi-affiliation strings and apply documented organization aliases."
+}

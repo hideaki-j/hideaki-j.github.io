@@ -1,0 +1,1378 @@
+[
+  {
+    "title": "Personalization of large language models: A survey",
+    "evidence_url": "https://arxiv.org/html/2411.00027v3",
+    "authors": [
+      [
+        "Zhehao Zhang",
+        "Dartmouth College"
+      ],
+      [
+        "Ryan A. Rossi",
+        "Adobe Research"
+      ],
+      [
+        "Branislav Kveton",
+        "Adobe Research"
+      ],
+      [
+        "Yijia Shao",
+        "Stanford University"
+      ],
+      [
+        "Diyi Yang",
+        "Stanford University"
+      ],
+      [
+        "Hamed Zamani",
+        "University of Massachusetts Amherst"
+      ],
+      [
+        "Franck Dernoncourt",
+        "Adobe Research"
+      ],
+      [
+        "Joe Barrow",
+        "Pattern Data"
+      ],
+      [
+        "Tong Yu",
+        "Adobe Research"
+      ],
+      [
+        "Sungchul Kim",
+        "Adobe Research"
+      ],
+      [
+        "Ruiyi Zhang",
+        "Adobe Research"
+      ],
+      [
+        "Jiuxiang Gu",
+        "Adobe Research"
+      ],
+      [
+        "Tyler Derr",
+        "Vanderbilt University"
+      ],
+      [
+        "Hongjie Chen",
+        "Dolby Research"
+      ],
+      [
+        "Junda Wu",
+        "University of California San Diego"
+      ],
+      [
+        "Xiang Chen",
+        "Adobe Research"
+      ],
+      [
+        "Zichao Wang",
+        "Adobe Research"
+      ],
+      [
+        "Subrata Mitra",
+        "Adobe Research"
+      ],
+      [
+        "Nedim Lipka",
+        "Adobe Research"
+      ],
+      [
+        "Nesreen Ahmed",
+        "Cisco Research"
+      ],
+      [
+        "Yu Wang",
+        "University of Oregon"
+      ]
+    ]
+  },
+  {
+    "title": "ToolSpectrum: Towards personalized tool utilization for large language models",
+    "evidence_url": "https://aclanthology.org/2025.findings-acl.1063.pdf",
+    "authors": [
+      [
+        "Zihao Cheng",
+        "Beihang University; University of Science and Technology Beijing"
+      ],
+      [
+        "Hongru Wang",
+        "The Chinese University of Hong Kong"
+      ],
+      [
+        "Zeming Liu",
+        "Beihang University"
+      ],
+      [
+        "Yuhang Guo",
+        "Beijing Institute of Technology"
+      ],
+      [
+        "Yuanfang Guo",
+        "Beihang University"
+      ],
+      [
+        "Yunhong Wang",
+        "Beihang University"
+      ],
+      [
+        "Haifeng Wang",
+        "Baidu Inc."
+      ]
+    ]
+  },
+  {
+    "title": "Revision: Reflective intent mining and online reasoning auxiliary for e-commerce visual search system optimization",
+    "evidence_url": "https://arxiv.org/html/2510.22739",
+    "authors": [
+      [
+        "Yiwen Tang",
+        "Alibaba Group"
+      ],
+      [
+        "Qiuyu Zhao",
+        "Alibaba Group"
+      ],
+      [
+        "Zenghui Sun",
+        "Alibaba Group"
+      ],
+      [
+        "Jinsong Lan",
+        "Alibaba Group"
+      ],
+      [
+        "Xiaoyong Zhu",
+        "Alibaba Group"
+      ],
+      [
+        "Bo Zheng",
+        "Alibaba Group"
+      ]
+    ]
+  },
+  {
+    "title": "Enabling chatbots with eyes and ears: An immersive multimodal conversation system for dynamic interactions",
+    "evidence_url": "https://arxiv.org/html/2506.00421v1",
+    "authors": [
+      [
+        "Jihyoung Jang",
+        "Graduate School of Artificial Intelligence, POSTECH"
+      ],
+      [
+        "Minwook Bae",
+        "Artificial Intelligence Graduate School, UNIST"
+      ],
+      [
+        "Minji Kim",
+        "Graduate School of Artificial Intelligence, POSTECH"
+      ],
+      [
+        "Dilek Hakkani-Tür",
+        "University of Illinois Urbana-Champaign"
+      ],
+      [
+        "Hyounghun Kim",
+        "Graduate School of Artificial Intelligence, POSTECH; Department of Computer Science and Engineering, POSTECH"
+      ]
+    ]
+  },
+  {
+    "title": "PersonaGen: A Persona-Driven Open-Ended Machine-Generated Text Dataset",
+    "evidence_url": "https://dl.acm.org/doi/abs/10.1145/3746252.3761611",
+    "authors": [
+      [
+        "Carmelo Gugliotta",
+        "DIMES, University of Calabria"
+      ],
+      [
+        "Lucio La Cava",
+        "DIMES, University of Calabria"
+      ],
+      [
+        "Andrea Tagarelli",
+        "DIMES, University of Calabria"
+      ]
+    ]
+  },
+  {
+    "title": "Beyond the hype: exploring the impact, challenges, and potential of large language models in healthcare",
+    "evidence_url": "https://link.springer.com/article/10.1007/s10586-025-05793-0",
+    "authors": [
+      [
+        "Hafiz Farooq Ahmad",
+        "King Faisal University"
+      ],
+      [
+        "Junaid Sajid",
+        "Tallinn University of Technology"
+      ],
+      [
+        "Raihan Ur Rasool",
+        "IBM Technologies"
+      ],
+      [
+        "Asad Waqar Malik",
+        "Mississippi State University"
+      ]
+    ]
+  },
+  {
+    "title": "RecQuest: Towards Estimating User Domain Knowledge in Conversational Recommender Systems",
+    "evidence_url": "https://arxiv.org/html/2512.13173",
+    "authors": [
+      [
+        "Ivica Kostric",
+        "University of Stavanger"
+      ],
+      [
+        "Ujwal Gadiraju",
+        "Delft University of Technology"
+      ],
+      [
+        "Krisztian Balog",
+        "University of Stavanger"
+      ]
+    ]
+  },
+  {
+    "title": "From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents",
+    "evidence_url": "https://arxiv.org/html/2608.02171",
+    "authors": [
+      [
+        "Jiajia Song",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ],
+      [
+        "Bobo Li",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ],
+      [
+        "Haiwen Yi",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ],
+      [
+        "Zibo Ji",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ],
+      [
+        "Meishan Zhang",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ],
+      [
+        "Hao Fei",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ],
+      [
+        "Min Zhang",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ],
+      [
+        "Mong-Li Lee",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ],
+      [
+        "Wynne Hsu",
+        "National University of Singapore; University of Toronto; University of Minnesota Twin Cities; Harbin Institute of Technology, Shenzhen; University of Oxford"
+      ]
+    ]
+  },
+  {
+    "title": "TrajWiki: Source-Grounded Memory Trajectories for Long-Horizon Dialogue Agents",
+    "evidence_url": "https://arxiv.org/html/2608.00967",
+    "authors": [
+      [
+        "Jingyu Sun",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Yuyang Xue",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Mingyang Li",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Zhengtao Yao",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Jiachen Li",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Yang Cui",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Wenhao Cai",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Haozhe Liu",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Fangying Wang",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Magdalene Katharina Montgomery",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Syed Murtuza Baker",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ],
+      [
+        "Hongpeng Zhou",
+        "The University of Melbourne; The University of Edinburgh; University of Southern California; The University of Texas at Austin; The University of Manchester"
+      ]
+    ]
+  },
+  {
+    "title": "Is Passive Expertise-Based Personalization Enough? A Case Study in AI-Assisted Test-Taking",
+    "evidence_url": "https://arxiv.org/html/2511.23376",
+    "authors": [
+      [
+        "Li Siyan",
+        "Columbia University; Georgia Institute of Technology; Adobe"
+      ],
+      [
+        "Jason Zhang",
+        "Columbia University; Georgia Institute of Technology; Adobe"
+      ],
+      [
+        "Akash Maharaj",
+        "Columbia University; Georgia Institute of Technology; Adobe"
+      ],
+      [
+        "Yuanming Shi",
+        "Columbia University; Georgia Institute of Technology; Adobe"
+      ],
+      [
+        "Yunyao Li",
+        "Columbia University; Georgia Institute of Technology; Adobe"
+      ]
+    ]
+  },
+  {
+    "title": "Evaluating Conversational Recommender Systems via Large Language Models: A User-Centric Framework",
+    "evidence_url": "https://arxiv.org/html/2501.09493",
+    "authors": [
+      [
+        "Nuo Chen",
+        "The Hong Kong Polytechnic University"
+      ],
+      [
+        "Quanyu Dai",
+        "Huawei Noah’s Ark Lab"
+      ],
+      [
+        "Xiaoyu Dong",
+        "The Hong Kong Polytechnic University"
+      ],
+      [
+        "Piaohong Wang",
+        "City University of Hong Kong"
+      ],
+      [
+        "Qinglin Jia",
+        "Huawei Noah’s Ark Lab"
+      ],
+      [
+        "Zhaocheng Du",
+        "Huawei Noah’s Ark Lab"
+      ],
+      [
+        "Zhenhua Dong",
+        "Huawei Noah’s Ark Lab"
+      ],
+      [
+        "Xiao-Ming Wu",
+        "The Hong Kong Polytechnic University"
+      ]
+    ]
+  },
+  {
+    "title": "Personalization and Evaluation of Conversational Information Access",
+    "evidence_url": "https://arxiv.org/abs/2606.13717",
+    "authors": [
+      [
+        "Hideaki Joko",
+        "Radboud University"
+      ]
+    ]
+  },
+  {
+    "title": "-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
+    "evidence_url": "https://arxiv.org/html/2606.10156",
+    "authors": [
+      [
+        "Bharath Sivaram Narasimhan",
+        "Independent Researcher"
+      ],
+      [
+        "Karthik R Narasimhan",
+        "Princeton University"
+      ]
+    ]
+  },
+  {
+    "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation",
+    "evidence_url": "https://arxiv.org/html/2605.29956",
+    "authors": [
+      [
+        "Simon Binz",
+        "Radboud University; German Research Center for Artificial Intelligence (DFKI)"
+      ],
+      [
+        "Heydar Soudani",
+        "Radboud University"
+      ],
+      [
+        "Faegheh Hasibi",
+        "Radboud University"
+      ]
+    ]
+  },
+  {
+    "title": "Plans for Evaluating Structured Generative Search Summaries",
+    "evidence_url": "https://arxiv.org/html/2605.26400",
+    "authors": [
+      [
+        "Tetsuya Sakai",
+        "Waseda University; Naver Corporation"
+      ],
+      [
+        "Jina Lee",
+        "Waseda University"
+      ],
+      [
+        "Hanpei Fang",
+        "Waseda University"
+      ],
+      [
+        "Young-In Song",
+        "Naver Corporation"
+      ]
+    ]
+  },
+  {
+    "title": "Evaluation of Agents under Simulated AI Marketplace Dynamics",
+    "evidence_url": "https://arxiv.org/html/2604.14256",
+    "authors": [
+      [
+        "To Eun Kim",
+        "Carnegie Mellon University"
+      ],
+      [
+        "Alireza Salemi",
+        "University of Massachusetts Amherst"
+      ],
+      [
+        "Hamed Zamani",
+        "University of Massachusetts Amherst"
+      ],
+      [
+        "Fernando Diaz",
+        "Carnegie Mellon University"
+      ]
+    ]
+  },
+  {
+    "title": "The Decision to Verify: How Warmth and User Characteristics Shape Reliance on Conversational Agents for Information Search",
+    "evidence_url": "https://arxiv.org/html/2605.28498",
+    "authors": [
+      [
+        "Mert Yazan",
+        "Amsterdam University of Applied Sciences; Leiden University"
+      ],
+      [
+        "Frederik Bungaran Ishak Situmeang",
+        "Amsterdam University of Applied Sciences"
+      ],
+      [
+        "Suzan Verberne",
+        "Leiden University"
+      ]
+    ]
+  },
+  {
+    "title": "UserSimCRS v2: Simulation-based evaluation for conversational recommender systems",
+    "evidence_url": "https://arxiv.org/html/2512.04588",
+    "authors": [
+      [
+        "Nolwenn Bernard",
+        "TH Köln"
+      ],
+      [
+        "Krisztian Balog",
+        "University of Stavanger"
+      ]
+    ]
+  },
+  {
+    "title": "Interplay: Training Independent Simulators for Reference-Free Conversational Recommendation",
+    "evidence_url": "https://arxiv.org/html/2603.18573",
+    "authors": [
+      [
+        "Jerome Ramos",
+        "University College London"
+      ],
+      [
+        "Feng Xia",
+        "University of Sheffield"
+      ],
+      [
+        "Xi Wang",
+        "University of Sheffield"
+      ],
+      [
+        "Shubham Chatterjee",
+        "Missouri University of Science and Technology"
+      ],
+      [
+        "Xiao Fu",
+        "University College London"
+      ],
+      [
+        "Hossein A. Rahmani",
+        "University College London"
+      ],
+      [
+        "Aldo Lipani",
+        "University College London"
+      ]
+    ]
+  },
+  {
+    "title": "Sim4ia-bench: a user simulation benchmark suite for next query and utterance prediction",
+    "evidence_url": "https://arxiv.org/html/2511.09329",
+    "authors": [
+      [
+        "Andreas Konstantin Kruff",
+        "TH Köln"
+      ],
+      [
+        "Christin Katharina Kreutz",
+        "TH Mittelhessen"
+      ],
+      [
+        "Timo Breuer",
+        "TH Köln"
+      ],
+      [
+        "Philipp Schaer",
+        "TH Köln"
+      ],
+      [
+        "Krisztian Balog",
+        "University of Stavanger"
+      ]
+    ]
+  },
+  {
+    "title": "User Simulation for the Development and Evaluation of Conversational Information Access Agents",
+    "evidence_url": "https://gustav1.ux.uis.no/downloads/thesis_bernard.pdf",
+    "authors": [
+      [
+        "Nolwenn Marie Emilie Bernard",
+        "University of Stavanger"
+      ]
+    ]
+  },
+  {
+    "title": "Towards Trustworthy AI: Transparent and Scrutable Recommendations and Conversations",
+    "evidence_url": "https://discovery.ucl.ac.uk/id/eprint/10222976/",
+    "authors": [
+      [
+        "Jerome Ramos",
+        "University College London"
+      ]
+    ]
+  },
+  {
+    "title": "Automatic Personalized Evaluation",
+    "evidence_url": "https://www.lti.cs.cmu.edu/research/dissertations/huynh-jessica-thesis-dissertation.pdf",
+    "authors": [
+      [
+        "Jessica Huynh",
+        "Carnegie Mellon University"
+      ]
+    ]
+  },
+  {
+    "title": "Studying Software Engineering Processes within Computational Notebooks",
+    "evidence_url": "https://ualberta.scholaris.ca/items/eaf877d8-12a3-4b92-83da-bff122b7adb9",
+    "authors": [
+      [
+        "Md Saeed Siddik",
+        "University of Alberta"
+      ]
+    ]
+  },
+  {
+    "title": "Reinforcement learning from implicit feedback for conversational question answering",
+    "evidence_url": "https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/41527",
+    "authors": [
+      [
+        "Magdalena Theresa Kaiser",
+        "Saarland University"
+      ]
+    ]
+  },
+  {
+    "title": "Natural Language Processing Leveraging Entity-Aware Representations",
+    "evidence_url": "https://www.google.com/search?q=%22Natural+Language+Processing+Leveraging+Entity-Aware+Representations%22",
+    "authors": [
+      [
+        "José Luís Mourão Malaquias",
+        "Instituto Superior Técnico, University of Lisbon"
+      ]
+    ]
+  },
+  {
+    "title": "ユーザーレビューに基づいた消費者のニーズに関する研究",
+    "evidence_url": "https://asia-u.repo.nii.ac.jp/records/26404",
+    "authors": [
+      [
+        "Rihai Xu",
+        "Asia University"
+      ]
+    ]
+  },
+  {
+    "title": "Extracting user profile via large language models and ontologies",
+    "evidence_url": "https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0329934",
+    "authors": [
+      [
+        "Pegah Safari",
+        "Shahid Beheshti University"
+      ],
+      [
+        "Mehrnoush Shamsfard",
+        "Shahid Beheshti University"
+      ]
+    ]
+  },
+  {
+    "title": "STELLAR: A Structured, Trustworthy, and Explainable LLM-Led Architecture for Reliable Customer Support",
+    "evidence_url": "https://journals-sol.sbc.org.br/index.php/jbcs/article/view/6044",
+    "authors": [
+      [
+        "Matheus Ferracciú Scatolin",
+        "University of Campinas"
+      ],
+      [
+        "Helio Pedrini",
+        "University of Campinas"
+      ]
+    ]
+  },
+  {
+    "title": "Personalized Text Generation with LLMs: A Systematic Literature Review with a Focus on Healthcare",
+    "evidence_url": "https://sol.sbc.org.br/index.php/sbcas/article/view/42848",
+    "authors": [
+      [
+        "André Felipe dos S. Caraíba",
+        "Federal University of Goiás"
+      ],
+      [
+        "Sávio S. T. de Oliveira",
+        "Federal University of Goiás"
+      ],
+      [
+        "Deborah S. A. Fernandes",
+        "Federal University of Goiás"
+      ]
+    ]
+  },
+  {
+    "title": "Self-supervised representation learning for geographical data—A systematic literature review",
+    "evidence_url": "https://www.mdpi.com/2220-9964/12/2/64",
+    "authors": [
+      [
+        "Padraig Corcoran",
+        "Cardiff University"
+      ],
+      [
+        "Irena Spasić",
+        "Cardiff University"
+      ]
+    ]
+  },
+  {
+    "title": "Self-Supervised Representation Learning for Geographical Data-A Systematic Literature Review Supplementary Material",
+    "evidence_url": "https://www.mdpi.com/2220-9964/12/2/64",
+    "authors": [
+      [
+        "Padraig Corcoran",
+        "Cardiff University"
+      ],
+      [
+        "Irena Spasić",
+        "Cardiff University"
+      ]
+    ]
+  },
+  {
+    "title": "Dialogue processing apparatus, learning apparatus, dialogue processing method, learning method and program",
+    "evidence_url": "https://patents.google.com/patent/US12387051B2/en",
+    "authors": [
+      [
+        "Yasuhito Osugi",
+        "Nippon Telegraph and Telephone Corporation"
+      ],
+      [
+        "Itsumi Saito",
+        "Nippon Telegraph and Telephone Corporation"
+      ],
+      [
+        "Kyosuke Nishida",
+        "Nippon Telegraph and Telephone Corporation"
+      ],
+      [
+        "Hisako Asano",
+        "Nippon Telegraph and Telephone Corporation"
+      ],
+      [
+        "Junji Tomita",
+        "Nippon Telegraph and Telephone Corporation"
+      ]
+    ]
+  },
+  {
+    "title": "Idea generation support device, idea generation support system, and recording medium",
+    "evidence_url": "https://patents.google.com/patent/US20200387806A1/en",
+    "authors": [
+      [
+        "Takumi Kaseda",
+        "Konica Minolta Inc."
+      ]
+    ]
+  },
+  {
+    "title": "Storage medium, information processing method, and information processing apparatus",
+    "evidence_url": "https://patents.google.com/patent/US20220261430A1/en",
+    "authors": [
+      [
+        "Masahiro Kataoka",
+        "Fujitsu Ltd."
+      ],
+      [
+        "Shogo Ohyama",
+        "Fujitsu Ltd."
+      ],
+      [
+        "Satoshi Onoue",
+        "Fujitsu Ltd."
+      ]
+    ]
+  },
+  {
+    "title": "Techniques for similarity determination across software testing configuration data entities",
+    "evidence_url": "https://patents.google.com/patent/US20220374345A1/en",
+    "authors": [
+      [
+        "Jeffrey Allen Brown",
+        "Infor US LLC"
+      ],
+      [
+        "Ranasinghage Piyaviraj Ranasinghe",
+        "Infor US LLC"
+      ]
+    ]
+  },
+  {
+    "title": "Apparatus and a method for the anonymization of user data",
+    "evidence_url": "https://patents.google.com/patent/US12530498B2/en",
+    "authors": [
+      [
+        "Karthik Murugadoss",
+        "Nference Inc."
+      ],
+      [
+        "Sankar Ardhanari",
+        "Nference Inc."
+      ]
+    ]
+  },
+  {
+    "title": "True-to-Role, Tailored-to-You: A Survey of LLM-based Role-Playing Agents",
+    "evidence_url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.177160619.98027802/v1",
+    "authors": [
+      [
+        "Shuchen Wu",
+        "Baidu Inc."
+      ],
+      [
+        "Zhishu Jiang",
+        "Baidu Inc."
+      ],
+      [
+        "Jiaye Yang",
+        "Baidu Inc."
+      ],
+      [
+        "Xin Shen",
+        "Baidu Inc."
+      ],
+      [
+        "Haibo Liu",
+        "Baidu Inc."
+      ],
+      [
+        "Yichen Wan",
+        "Baidu Inc."
+      ],
+      [
+        "Chenxi Miao",
+        "Baidu Inc."
+      ],
+      [
+        "Guanqiang Qi",
+        "Baidu Inc."
+      ],
+      [
+        "Tingzhi Dai",
+        "Baidu Inc."
+      ],
+      [
+        "Jiarui Zhang",
+        "Baidu Inc."
+      ],
+      [
+        "Luodong Xu",
+        "Baidu Inc."
+      ],
+      [
+        "Jiahui Liang",
+        "Baidu Inc."
+      ],
+      [
+        "Weikang Li",
+        "Peking University"
+      ],
+      [
+        "Yang Li",
+        "Baidu Inc."
+      ],
+      [
+        "Deguo Xia",
+        "Baidu Inc."
+      ],
+      [
+        "Jizhou Huang",
+        "Baidu Inc."
+      ]
+    ]
+  },
+  {
+    "title": "More Than a Role: Memory in LLM-based Role-Playing Agents",
+    "evidence_url": "https://openreview.net/pdf?id=b0gO9JXUiP",
+    "authors": [
+      [
+        "Shuchen Wu",
+        "Baidu Inc."
+      ],
+      [
+        "Zhishu Jiang",
+        "Baidu Inc."
+      ],
+      [
+        "Jiaye Yang",
+        "Baidu Inc."
+      ],
+      [
+        "Xin Shen",
+        "Baidu Inc."
+      ],
+      [
+        "Haibo Liu",
+        "Baidu Inc."
+      ],
+      [
+        "Yichen Wan",
+        "Baidu Inc."
+      ],
+      [
+        "Chenxi Miao",
+        "Baidu Inc."
+      ],
+      [
+        "Guanqiang Qi",
+        "Baidu Inc."
+      ],
+      [
+        "Tingzhi Dai",
+        "Baidu Inc."
+      ],
+      [
+        "Jiarui Zhang",
+        "Baidu Inc."
+      ],
+      [
+        "Luodong Xu",
+        "Baidu Inc."
+      ],
+      [
+        "Jiahui Liang",
+        "Baidu Inc."
+      ],
+      [
+        "Weikang Li",
+        "Peking University"
+      ],
+      [
+        "Yang Li",
+        "Baidu Inc."
+      ],
+      [
+        "Deguo Xia",
+        "Baidu Inc."
+      ],
+      [
+        "Jizhou Huang",
+        "Baidu Inc."
+      ]
+    ]
+  },
+  {
+    "title": "Toward Exploring Mixed-Initiative Conversation Generation Based on Community Question Answering",
+    "evidence_url": "https://dl.acm.org/doi/10.1145/3814610",
+    "authors": [
+      [
+        "Lili Lu",
+        "Università della Svizzera italiana"
+      ],
+      [
+        "Pranav Kasela",
+        "Università della Svizzera italiana"
+      ],
+      [
+        "Federico Ravenda",
+        "University of Milano-Bicocca"
+      ],
+      [
+        "Chuan Meng",
+        "University of Edinburgh"
+      ],
+      [
+        "Gabriella Pasi",
+        "University of Milano-Bicocca"
+      ],
+      [
+        "Fabio Crestani",
+        "Università della Svizzera italiana"
+      ]
+    ]
+  },
+  {
+    "title": "Conversational recommender systems with large language models: A review of current developments",
+    "evidence_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417426014211",
+    "authors": [
+      [
+        "Yeong-Hyeon Kim",
+        "Chung-Ang University"
+      ],
+      [
+        "Yoon-Sik Cho",
+        "Chung-Ang University"
+      ]
+    ]
+  },
+  {
+    "title": "作業フォルダを基にした個人知識グラフの自動構築手法に関する検討",
+    "evidence_url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/SWO-058/2022_03/_pdf/-char/ja",
+    "authors": [
+      [
+        "Kazuya Matsuo",
+        "NTT Digital Twin Computing Research Center"
+      ],
+      [
+        "Hajime Noto",
+        "NTT Digital Twin Computing Research Center"
+      ],
+      [
+        "Shinichiro Eitoku",
+        "NTT Digital Twin Computing Research Center"
+      ],
+      [
+        "Atsushi Miyama",
+        "NTT Digital Twin Computing Research Center"
+      ],
+      [
+        "Takao Nakamura",
+        "NTT Digital Twin Computing Research Center"
+      ]
+    ]
+  },
+  {
+    "title": "マルチタスク転移学習による 小規模教師データを用いた意図理解",
+    "evidence_url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2018/AM-19/2018_01/_pdf/-char/ja",
+    "authors": [
+      [
+        "Hideaki Joko",
+        "Mitsubishi Electric Corporation, Information Technology R&D Center"
+      ],
+      [
+        "Hayato Uchide",
+        "Mitsubishi Electric Corporation, Information Technology R&D Center"
+      ],
+      [
+        "Yusuke Koji",
+        "Mitsubishi Electric Corporation, Information Technology R&D Center"
+      ],
+      [
+        "Takahiro Otsuka",
+        "Mitsubishi Electric Corporation, Information Technology R&D Center"
+      ]
+    ]
+  },
+  {
+    "title": "Mapping the Collaboration between Crowdsourcing and Large Language Models: A Fine-Grained Survey",
+    "evidence_url": "https://www.intechopen.com/chapters/1229427",
+    "authors": [
+      [
+        "Chunli Lv",
+        "China Agricultural University"
+      ],
+      [
+        "Chunli Lv",
+        "Key Laboratory of Agricultural Machinery Monitoring and Big Data Application, Ministry of Agriculture and Rural Affairs"
+      ],
+      [
+        "Cheng Shen",
+        "China Agricultural University"
+      ],
+      [
+        "Miao Xie",
+        "China Agricultural University"
+      ],
+      [
+        "Miao Xie",
+        "Key Laboratory of Agricultural Machinery Monitoring and Big Data Application, Ministry of Agriculture and Rural Affairs"
+      ]
+    ]
+  },
+  {
+    "title": "Knowledge bases, datasets, and evaluation",
+    "evidence_url": "https://link.springer.com/chapter/10.1007/978-3-031-74901-8_2",
+    "authors": [
+      [
+        "Chen-Tse Tsai",
+        "Bloomberg"
+      ],
+      [
+        "Shyam Upadhyay",
+        "Google DeepMind"
+      ],
+      [
+        "Dan Roth",
+        "University of Pennsylvania"
+      ]
+    ]
+  },
+  {
+    "title": "Secondary Publication",
+    "evidence_url": "https://fis.uni-bamberg.de/bitstreams/60fadd42-f8a9-4cd2-ae7a-31664b69a468/download",
+    "authors": [
+      [
+        "Teresa Heyder",
+        "University of Bamberg"
+      ],
+      [
+        "Nina Passlack",
+        "University of Bamberg"
+      ],
+      [
+        "Oliver Posegga",
+        "University of Bamberg"
+      ]
+    ]
+  },
+  {
+    "title": "Yearning for Better Metrics: Revisiting the ReDial Dataset for Evaluating Conversational Recommender Systems.",
+    "evidence_url": "https://ceur-ws.org/Vol-4118/paper13.pdf",
+    "authors": [
+      [
+        "Michael Müller",
+        "University of Innsbruck"
+      ],
+      [
+        "Amir Reza Mohammadi",
+        "University of Innsbruck"
+      ],
+      [
+        "Andreas Peintner",
+        "University of Innsbruck"
+      ],
+      [
+        "Beatriz Barroso Gstrein",
+        "University of Innsbruck"
+      ],
+      [
+        "Eva Zangerle",
+        "University of Innsbruck"
+      ],
+      [
+        "Günther Specht",
+        "University of Innsbruck"
+      ]
+    ]
+  },
+  {
+    "title": "From answering to discussing: Advancing human-AI cognitive collaboration in dialogue agents",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0306457326001020",
+    "authors": [
+      [
+        "Pan Li",
+        "Northeastern University, China"
+      ],
+      [
+        "Junchi Wang",
+        "Northeastern University, China"
+      ],
+      [
+        "Qingwen Yang",
+        "Northeastern University, China"
+      ],
+      [
+        "Tianyue Guo",
+        "Northeastern University, China"
+      ],
+      [
+        "Yanyi Liu",
+        "Northeastern University, China"
+      ],
+      [
+        "Yingyou Wen",
+        "Northeastern University, China"
+      ]
+    ]
+  },
+  {
+    "title": "DebaToM: An Innovative Debate Framework for Theory of Mind Reasoning Using Large Language Models",
+    "evidence_url": "https://ieeexplore.ieee.org/document/11493938/authors",
+    "authors": [
+      [
+        "Li Zheng",
+        "Wuhan University"
+      ],
+      [
+        "Tongyue Wang",
+        "Wuhan University"
+      ],
+      [
+        "Hao Fei",
+        "National University of Singapore"
+      ],
+      [
+        "Fei Li",
+        "Wuhan University"
+      ],
+      [
+        "Qiujing Xu",
+        "Wuhan University"
+      ],
+      [
+        "Chong Teng",
+        "Wuhan University"
+      ],
+      [
+        "Donghong Ji",
+        "Wuhan University"
+      ]
+    ]
+  },
+  {
+    "title": "A Conversational Entity Linking Method Based on Sentence Level and Token Level Dual Evaluation",
+    "evidence_url": "https://ieeexplore.ieee.org/document/11462421/authors",
+    "authors": [
+      [
+        "Huanting Cheng",
+        "Northeast Normal University"
+      ],
+      [
+        "Shaohan Li",
+        "Northeast Normal University"
+      ],
+      [
+        "Huayu Zhang",
+        "Northeast Normal University"
+      ],
+      [
+        "Ming Fang",
+        "Northeast Normal University"
+      ],
+      [
+        "Shuhua Liu",
+        "Northeast Normal University"
+      ]
+    ]
+  },
+  {
+    "title": "Entity-aware transformers for entity search",
+    "evidence_url": "https://dl.acm.org/doi/abs/10.1145/3477495.3531971",
+    "authors": [
+      [
+        "Emma J. Gerritse",
+        "Radboud University"
+      ],
+      [
+        "Faegheh Hasibi",
+        "Radboud University"
+      ],
+      [
+        "Arjen P. de Vries",
+        "Radboud University"
+      ],
+      [
+        "Arjen P. de Vries",
+        "CWI"
+      ]
+    ]
+  },
+  {
+    "title": "Limitations of current evaluation practices for conversational recommender systems and the potential of user simulation",
+    "evidence_url": "https://dl.acm.org/doi/abs/10.1145/3767695.3769478",
+    "authors": [
+      [
+        "Nolwenn Bernard",
+        "University of Stavanger"
+      ],
+      [
+        "Krisztian Balog",
+        "University of Stavanger"
+      ]
+    ]
+  },
+  {
+    "title": "Advancing user-centric evaluation and design of conversational recommender systems",
+    "evidence_url": "https://dl.acm.org/doi/abs/10.1145/3705328.3748759",
+    "authors": [
+      [
+        "Michael Müller",
+        "University of Innsbruck"
+      ]
+    ]
+  },
+  {
+    "title": "How Much Should a Conversational Recommender System Converse?",
+    "evidence_url": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=3951&context=cowles-discussion-paper-series",
+    "authors": [
+      [
+        "Akshit Kumar",
+        "Yale University"
+      ],
+      [
+        "Vahideh Manshadi",
+        "Yale University"
+      ],
+      [
+        "Akhilesh Tumu",
+        "Yale University"
+      ]
+    ]
+  },
+  {
+    "title": "Unified Entity Matching under Scarce Supervision via Meta-Rule Induction and Retrieval",
+    "evidence_url": "https://dl.acm.org/doi/abs/10.1145/3805712.3809619",
+    "authors": [
+      [
+        "Ziheng Zhang",
+        "National University of Defense Technology"
+      ],
+      [
+        "Weixin Zeng",
+        "National University of Defense Technology"
+      ],
+      [
+        "Jiuyang Tang",
+        "National University of Defense Technology"
+      ],
+      [
+        "Xiang Zhao",
+        "National University of Defense Technology"
+      ]
+    ]
+  },
+  {
+    "title": "Feedback by design: Understanding and overcoming user feedback barriers in conversational agents",
+    "evidence_url": "https://arxiv.org/html/2602.01405",
+    "authors": [
+      [
+        "Nikhil Sharma",
+        "Johns Hopkins University"
+      ],
+      [
+        "Zheng Zhang",
+        "Adobe"
+      ],
+      [
+        "Daniel Lee",
+        "Adobe"
+      ],
+      [
+        "Namita Krishnan",
+        "Adobe"
+      ],
+      [
+        "Guang-Jie Ren",
+        "Adobe"
+      ],
+      [
+        "Ziang Xiao",
+        "Johns Hopkins University"
+      ],
+      [
+        "Yunyao Li",
+        "Adobe"
+      ]
+    ]
+  },
+  {
+    "title": "A Multi-angle Bidirectional Interaction Model for Entity Linking",
+    "evidence_url": "https://assets-eu.researchsquare.com/files/rs-2841899/v1_covered.pdf",
+    "authors": [
+      [
+        "Lin Ji",
+        "Sichuan University"
+      ],
+      [
+        "Bei Hui",
+        "University of Electronic Science and Technology of China"
+      ],
+      [
+        "Yuhui Nian",
+        "University of Electronic Science and Technology of China"
+      ],
+      [
+        "Wei Zhou",
+        "Swinburne University of Technology"
+      ],
+      [
+        "Jiajun Qiu",
+        "Sichuan University"
+      ]
+    ]
+  },
+  {
+    "title": "The X types: Mapping the semantics of the Twitter sphere",
+    "evidence_url": "https://www.sciencedirect.com/science/article/pii/S1570826826000077",
+    "authors": [
+      [
+        "Osnat Drukerman",
+        "University of Haifa"
+      ],
+      [
+        "Einat Minkov",
+        "University of Haifa"
+      ]
+    ]
+  }
+]

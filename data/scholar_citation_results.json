@@ -1,0 +1,1442 @@
+[
+  {
+    "authors_line": "Y Deldjoo, Z He, J McAuley, A Korikov… - Proceedings of the 30th …, 2024 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3637528.3671474",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3637528.3671474",
+    "scholar_id": "iqaDj1FMRVsJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "A review of modern recommender systems using generative models (gen-recsys)",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "X Li, P Jia, D Xu, Y Wen, Y Zhang, W Zhang… - ACM Transactions on …, 2026 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3802586",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3802586",
+    "scholar_id": "1z_TIz041qkJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "A survey of personalization: From rag to agent",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Z Zhang, RA Rossi, B Kveton, Y Shao, D Yang… - arXiv preprint arXiv …, 2024 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2411.00027",
+    "paper_url": "https://arxiv.org/abs/2411.00027",
+    "scholar_id": "yZI-dopTydMJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "Personalization of large language models: A survey",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "F Mo, K Mao, Z Zhao, H Qian, H Chen… - ACM Transactions on …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3759453",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3759453",
+    "scholar_id": "18VP1Mg48LQJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "A survey of conversational search",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Y Deldjoo, Z He, J McAuley, A Korikov… - … and Trends® in …, 2026 - emerald.com",
+    "full_text_url": "https://www.emerald.com/ftinr/article-pdf/20/1-2/1/11676543/ftinr-06-2025-0109en.pdf?casa_token=wDd_XkuqcqAAAAAA:C6FDWRwN0UV2keDMUsw7vepOwaCFwZa63-I6sI88PYPTCqogtet_cHcH_Uc-3VB2fk0HmhTJ0qin3_Q",
+    "paper_url": "https://www.emerald.com/ftinr/article/20/1-2/1/1379964?casa_token=q7NZh9s87g8AAAAA:6kUTYiLLfVpCv5-DwdsWOUTNbJcAiTvGhlHeFz0ZySg6mFV-YvPnx2hh-3oUMuTeGhzd6VtHPIoVVGk",
+    "scholar_id": "xaK5rTTrvaMJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "Recommendation with generative models",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Y Zhang, S Qiao, J Zhang, TH Lin, C Gao… - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2503.05659",
+    "paper_url": "https://arxiv.org/abs/2503.05659",
+    "scholar_id": "W9MinBOPmSIJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "A survey of large language model empowered agents for recommendation and search: Towards next-generation information retrieval",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "R Mao, M Ge, S Han, W Li, K He, L Zhu, E Cambria - Information Fusion, 2025 - Elsevier",
+    "full_text_url": "https://www.sciencedirect.com/science/article/pii/S1566253524004901?casa_token=bxLiBvRqUfgAAAAA:Kqpi1yoSRDryLsQ4zoS22K_6zbaqzVDgz457VBA-l6RP--DzV-pndO1OK8bFw9rxpNYJSXgpng",
+    "paper_url": "https://www.sciencedirect.com/science/article/pii/S1566253524004901?casa_token=bxLiBvRqUfgAAAAA:Kqpi1yoSRDryLsQ4zoS22K_6zbaqzVDgz457VBA-l6RP--DzV-pndO1OK8bFw9rxpNYJSXgpng",
+    "scholar_id": "_A8pNfW9MiQJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "A survey on pragmatic processing techniques",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "H Soudani, R Petcu, E Kanoulas, F Hasibi - ACM Computing Surveys, 2026 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3795686",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3795686",
+    "scholar_id": "01BfAqHcf8QJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "A survey on recent advances in conversational data generation",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "W Mao, J Wu, W Chen, C Gao, X Wang… - ACM Transactions on …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3716320",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3716320",
+    "scholar_id": "N2w0ipj3PGEJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "Reinforced prompt personalization for recommendation with large language models",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "EL Claggett, RE Kraut, H Shirado - … of the 2025 CHI Conference on …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3706598.3713757",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3706598.3713757",
+    "scholar_id": "BEfHsHfGI5IJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=2349539739266859572",
+    "title": "Relational ai: Facilitating intergroup cooperation with socially aware conversational support",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "F Mo, J Zhang, Y Hui, JA Sun, Z Xu, Z Su… - Proceedings of the AAAI …, 2026 - ojs.aaai.org",
+    "full_text_url": "https://ojs.aaai.org/index.php/AAAI/article/view/38584/42546",
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/38584",
+    "scholar_id": "Hzyoq_mUIz0J",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Convmix: A mixed-criteria data augmentation framework for conversational dense retrieval",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Y Du, B Wang, Y He, B Liang, B Wang, Z Li… - Proceedings of the …, 2026 - ojs.aaai.org",
+    "full_text_url": "https://ojs.aaai.org/index.php/AAAI/article/download/40313/44274",
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/40313",
+    "scholar_id": "UnYG0P_3Dk4J",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Memguide: Intent-driven memory selection for goal-oriented multi-session llm agents",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "S Almuqhim, J Berri - Computer Applications in Engineering …, 2025 - Wiley Online Library",
+    "full_text_url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cae.70040?casa_token=j-hBniXBFBMAAAAA:SGhOYBJV8u9_yohG6ipOT5ytw9TPjCmQXEOgN0UorzLZ9RU1Rh8X7wZRZmCYXgZJ87bQU7v2-gjsBM4",
+    "paper_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cae.70040?casa_token=mHVg2cPYmRIAAAAA:V_8f_FDJsUOnFQYPTOSKEvvlT0gDTMgjnQ7ovccIl-_nCvTsuTwwUD4dFzkjcyZyzHtB-0J9-c7Unt8",
+    "scholar_id": "sYatq-qoRqIJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "AI‐driven personalized microlearning framework for enhanced e‐learning",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "W Huang, X Su, JE Froehlich, Y Zhang - Proceedings of the 38th Annual …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3746059.3747624",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3746059.3747624",
+    "scholar_id": "KT7VA22C6DcJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Accessibility scout: Personalized accessibility scans of built environments",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "A Askari, R Petcu, C Meng, M Aliannejadi… - Findings of the …, 2025 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2025.findings-naacl.357.pdf",
+    "paper_url": "https://aclanthology.org/2025.findings-naacl.357/",
+    "scholar_id": "SKtlNHPZ8zcJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "SOLID: Self-seeding and multi-intent self-instructing LLMs for generating intent-aware information-seeking dialogs",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Z Cheng, H Wang, Z Liu, Y Guo, Y Guo… - Findings of the …, 2025 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2025.findings-acl.1063.pdf",
+    "paper_url": "https://aclanthology.org/2025.findings-acl.1063/",
+    "scholar_id": "Owi90bz1jGsJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "ToolSpectrum: Towards personalized tool utilization for large language models",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Z Zhao, C Vania, S Kayal, N Khan… - Findings of the …, 2025 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2025.findings-acl.927.pdf",
+    "paper_url": "https://aclanthology.org/2025.findings-acl.927/",
+    "scholar_id": "ATgbmSCEPQoJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Personalens: A benchmark for personalization evaluation in conversational ai assistants",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "M Hoveyda, H Oosterhuis, AP de Vries… - Proceedings of the 48th …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3726302.3730351",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3726302.3730351",
+    "scholar_id": "qahCudiyrVwJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Adaptive orchestration of modular generative information access systems",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Bauer, L Chen, N Ferro, N Fuhr, A Anand… - Dagstuhl …, 2025 - drops.dagstuhl.de",
+    "full_text_url": "https://drops.dagstuhl.de/storage/03dagstuhl-manifestos/volume011/issue01/DagMan.11.1.19/DagMan.11.1.19.pdf",
+    "paper_url": "https://drops.dagstuhl.de/entities/document/10.4230/DagMan.11.1.19",
+    "scholar_id": "-MHh5VnakacJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Conversational agents: A framework for evaluation (CAFE)(Dagstuhl Perspectives Workshop 24352)",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "F Gebellí, L Hriscu, R Ros, S Lemaignan… - 2025 20th ACM/IEEE …, 2025 - ieeexplore.ieee.org",
+    "full_text_url": "https://ieeexplore.ieee.org/iel8/10973274/10973800/10974125.pdf?casa_token=goaLA5RE6H8AAAAA:BrpFYYMPIn8m5ZXR9FO4Tf4qkPPdTZ55Otrdy1P2Swwu6wefcAShuFz5Wmp674DowU6sCNZsW_8P",
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/10974125/?casa_token=q1kQgv7ELCoAAAAA:Ym8QwClJyTE6A7A9PAQa8cQFVZSqHNeQTON13iVdKel0qi_EyxhqtCMx-VW4mQxxxbK3kbtXg1co",
+    "scholar_id": "76-P2Hsl3qYJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Personalised explainable robots using llms",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "IF Lin, F Hasibi, S Verberne - Findings of the Association for …, 2024 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2024.findings-emnlp.768.pdf",
+    "paper_url": "https://aclanthology.org/2024.findings-emnlp.768/",
+    "scholar_id": "s7rgQjePc8wJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Generate then refine: data augmentation for zero-shot intent detection",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Y Luo, T Liu, PCI Pang, D McKay, Z Chen… - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2503.19434",
+    "paper_url": "https://arxiv.org/abs/2503.19434",
+    "scholar_id": "IYmmxiLuLX4J",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Enhanced Bloom's Educational Taxonomy for Fostering Information Literacy in the Era of Large Language Models",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "N Bernard, H Joko, F Hasibi, K Balog - … on Web Search and Data Mining, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3701551.3704120",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3701551.3704120",
+    "scholar_id": "_dUBIOrb6mUJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Crs arena: Crowdsourced benchmarking of conversational recommender systems",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "YH Kim, YS Cho - Expert Systems with Applications, 2026 - Elsevier",
+    "full_text_url": "https://www.sciencedirect.com/science/article/pii/S0957417426014211?casa_token=TsFHCWXNLpQAAAAA:fub27qLaRJBHA0957XUq6g8d22zNzMzmZUFr6zH0Q9M5FeVGzd_yAgYeoYJ_JxLdgx4RXJP67Q",
+    "paper_url": "https://www.sciencedirect.com/science/article/pii/S0957417426014211?casa_token=TsFHCWXNLpQAAAAA:fub27qLaRJBHA0957XUq6g8d22zNzMzmZUFr6zH0Q9M5FeVGzd_yAgYeoYJ_JxLdgx4RXJP67Q",
+    "scholar_id": "wp7-OYfiSqQJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Conversational recommender systems with large language models: A review of current developments",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "H Joko, S Amirshahi, CLA Clarke, F Hasibi - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2509.17442",
+    "paper_url": "https://arxiv.org/abs/2509.17442",
+    "scholar_id": "pAJQReHNpuoJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "WildClaims: Information Access Conversations in the Wild (Chat)",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "P Li, J Wang, Q Yang, T Guo, Y Liu, Y Wen - Information Processing & …, 2026 - Elsevier",
+    "full_text_url": "https://www.sciencedirect.com/science/article/pii/S0306457326001020?casa_token=52P6ppxta6IAAAAA:MZ5_I1FnM-MT1ODwbxRSp-v4aWLh033-R7hkUmNYjDWgc1fSv7av8BrueCvCb2xSb-EpszaRBA",
+    "paper_url": "https://www.sciencedirect.com/science/article/pii/S0306457326001020?casa_token=52P6ppxta6IAAAAA:MZ5_I1FnM-MT1ODwbxRSp-v4aWLh033-R7hkUmNYjDWgc1fSv7av8BrueCvCb2xSb-EpszaRBA",
+    "scholar_id": "NA_WYuJdrI8J",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "From answering to discussing: Advancing human-AI cognitive collaboration in dialogue agents",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "S Guo, Y Zhai, S Zhang, L Zhao, Z Wang - Joint European Conference on …, 2025 - Springer",
+    "full_text_url": "https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/preprints/2025/research/preprint_ecml_pkdd_2025_research_407.pdf",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-06078-5_14",
+    "scholar_id": "JhbP-x610KkJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Intentbreaker: intent-adaptive jailbreak attack on large language models",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Siro, Y Yuan, M Aliannejadi, M de Rijke - arXiv preprint arXiv …, 2024 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2410.19692?",
+    "paper_url": "https://arxiv.org/abs/2410.19692",
+    "scholar_id": "bfuAN26uxlEJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Agent-cq: Automatic generation and evaluation of clarifying questions for conversational search with llms",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "X Zhang, J Yu, D Huang, H Zhu… - IEEE Transactions on …, 2025 - ieeexplore.ieee.org",
+    "full_text_url": "https://ieeexplore.ieee.org/iel8/6221021/6376248/11148281.pdf?casa_token=11nZxQeEvaIAAAAA:k39Rmvja-leCLWYE8auZZvYd6MeEPvZe2r7Pf2N6QUoTKP9qFKq1WPXucHy4joWkkk1X523_XqCE",
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/11148281/?casa_token=zhzc8uek0l4AAAAA:Oz6pzZeQSnzpvdQ0__hAJTv_wchMILC8VPoNJxM7IaYkoiGnfQaVNBO5Dcu5Ngp18Ox3l74F24z9",
+    "scholar_id": "iLNmqDuAGzoJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Staff competency assessment and task allocation methods considering ai augmentation: A study based on the e-cargo model",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Y Tang, Q Zhao, Z Sun, J Lan, X Zhu… - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2510.22739",
+    "paper_url": "https://arxiv.org/abs/2510.22739",
+    "scholar_id": "nR39h1B768gJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Revision: Reflective intent mining and online reasoning auxiliary for e-commerce visual search system optimization",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "J Jang, M Bae, M Kim, D Hakkani-Tur… - Proceedings of the 63rd …, 2025 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2025.acl-long.1519.pdf",
+    "paper_url": "https://aclanthology.org/2025.acl-long.1519/",
+    "scholar_id": "z5joCkD5wT0J",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Enabling chatbots with eyes and ears: An immersive multimodal conversation system for dynamic interactions",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "A Askari, R Petcu, C Meng, M Aliannejadi… - arXiv preprint arXiv …, 2024 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2402.11633",
+    "paper_url": "https://arxiv.org/abs/2402.11633",
+    "scholar_id": "b7w5g5Q0LUMJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Self-seeding and multi-intent self-instructing llms for generating intent-aware information-seeking dialogs",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "X Wang, Z Cui, H Li, Y Zeng, C Wang, R Song… - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2508.18040?",
+    "paper_url": "https://arxiv.org/abs/2508.18040",
+    "scholar_id": "lEkL_abILyoJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Perpilot: Personalizing vlm-based mobile agents via memory and exploration",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Gugliotta, L La Cava, A Tagarelli - Proceedings of the 34th ACM …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3746252.3761611",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3746252.3761611",
+    "scholar_id": "Hqe_LVscB0oJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "PersonaGen: A Persona-Driven Open-Ended Machine-Generated Text Dataset",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "H Farooq Ahmad, J Sajid, R Ur Rasool, AW Malik - Cluster Computing, 2025 - Springer",
+    "full_text_url": "https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/content/pdf/10.1007/s10586-025-05793-0.pdf&casa_token=kLzT2WTvPQMAAAAA:JW8Y1Com-8GR-1-tH1f10HsKTfJHiRo4qttshMD8r8zjzb96hZSmNryKatABAb9Vgr1jbhAr2QpreDK1",
+    "paper_url": "https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10586-025-05793-0&casa_token=7RcQ58RPKgMAAAAA:Cw3KAw3fOvFOXOjwpFA-RVOx5gj4Yp0Sw_Q8RWeEGBdrO7QXusYeLgUeTSEpSFiuSO1leqn-48eqSWrC",
+    "scholar_id": "HO9h1W4J-gAJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Beyond the hype: exploring the impact, challenges, and potential of large language models in healthcare",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Z Zhao, S Zhang, Y Du, B Liang, B Wang… - Proceedings of the …, 2026 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2026.acl-long.198.pdf",
+    "paper_url": "https://aclanthology.org/2026.acl-long.198/",
+    "scholar_id": "aXZP585acdkJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Eventweave: A dynamic framework for capturing core and supporting events in dialogue systems",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "F Gebellí, A Garrell, JG Habekost… - 2025 34th IEEE …, 2025 - ieeexplore.ieee.org",
+    "full_text_url": "https://ieeexplore.ieee.org/iel8/11217544/11217526/11217900.pdf?casa_token=LqCyeJckwbAAAAAA:yyF0-5cK2CLXRuGDMDVYlzwo1uJlLKIQBqf8iU8PVyj3KBHNaRePpbSojlAZ2Yvws2xBkavcEOab",
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/11217900/?casa_token=6y9BCNcirPIAAAAA:6m-7t5linitvJxTi1tG39yFn-eBmU6eCFvfMol4pxpPOTtwKW6yCyACnLMDB64I0HDnaJ8Tlp9wl",
+    "scholar_id": "49Rh_sduvHgJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Personalised explanations in long-term human-robot interactions",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "L Zheng, T Wang, H Fei, F Li, Q Xu… - IEEE Transactions on …, 2026 - ieeexplore.ieee.org",
+    "full_text_url": "https://ieeexplore.ieee.org/iel8/10723155/10818373/11493938.pdf?casa_token=S0tdSWCdAZEAAAAA:3CSrTJf2xhMbhgMB-4-4t7Ihj8sQ4ufa47RfQRmIPrxpDuvyPzAv5kcxs26HskMKOWTzepXQWh4A",
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/11493938/?casa_token=FP1FDbqqjCgAAAAA:lE9vMwDzAmWEbGze5HEoX81wAkIQIpgXkefHioeMiJ9tEA0-dPqMCStb-K6e003mJPkY6CTS3McQ",
+    "scholar_id": "YOofjybqoZsJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "DebaToM: An Innovative Debate Framework for Theory of Mind Reasoning Using Large Language Models",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "L Lu, P Kasela, F Ravenda, C Meng, G Pasi… - ACM Transactions on …, 2026 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3814610",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3814610",
+    "scholar_id": "zRHg2bW0BkUJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Toward Exploring Mixed-Initiative Conversation Generation Based on Community Question Answering",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "H Joko, S Amirshahi, CLA Clarke, F Hasibi - European Conference on …, 2026 - Springer",
+    "full_text_url": "",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-21321-1_47",
+    "scholar_id": "BnTfUB-cHwAJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "WildClaims: Conversational Information Access in the Wild(Chat)",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "I Kostric, U Gadiraju, K Balog - arXiv preprint arXiv:2512.13173, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2512.13173",
+    "paper_url": "https://arxiv.org/abs/2512.13173",
+    "scholar_id": "N7RtLa7kTtIJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "RecQuest: Towards Estimating User Domain Knowledge in Conversational Recommender Systems",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "A Korikov, S Sanner, Y Deldjoo, Z He… - arXiv preprint arXiv …, 2024 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2408.10946?",
+    "paper_url": "https://arxiv.org/abs/2408.10946",
+    "scholar_id": "Ot6_vqqR55EJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Large language model driven recommendation",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "H Joko, F Hasibi - arXiv preprint arXiv:2506.00314, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2506.00314",
+    "paper_url": "https://arxiv.org/abs/2506.00314",
+    "scholar_id": "dr7b-NSfmk0J",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "FACE: A Fine-Grained Reference-Free Evaluator for Conversational Information Access",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "P Safari, M Shamsfard - PLoS One, 2026 - journals.plos.org",
+    "full_text_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0329934&type=printable",
+    "paper_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0329934",
+    "scholar_id": "yy4GdjaP_a4J",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Extracting user profile via large language models and ontologies",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "J Song, B Li, H Yi, Z Ji, M Zhang, H Fei… - arXiv preprint arXiv …, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2608.02171",
+    "paper_url": "https://arxiv.org/abs/2608.02171",
+    "scholar_id": "RNQvuOGLy_kJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "From Profiling to Synthesis: Benchmarking Implicit Behavioral Alignment in Personalized LLM Agents",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "A Tandon, A Banerjee - RecTour workshop on RecSys, 2025 - mediatum.ub.tum.de",
+    "full_text_url": "https://mediatum.ub.tum.de/doc/1834489/document.pdf",
+    "paper_url": "https://mediatum.ub.tum.de/doc/1834489/document.pdf",
+    "scholar_id": "8hogkSAhO4QJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Evaluating User Intent Classification and Hybrid Retrieval in a RAG-based Conversational Tourism Recommender System",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Y Zhang, W Wang, X Lin, F Feng, H Yin… - … Proceedings of the …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3701716.3717524",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3701716.3717524",
+    "scholar_id": "OtlrnBU4YlIJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "The 3rd Workshop on Personal Intelligence with Generative AI",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "J Ramos, F Xia, X Wang, S Chatterjee, X Fu… - … on Information Retrieval, 2026 - Springer",
+    "full_text_url": "https://arxiv.org/pdf/2603.18573",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-21289-4_40",
+    "scholar_id": "-KfO-Ol1MTMJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Interplay: Training Independent Simulators for Reference-Free Conversational Recommendation",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Bauer, L Chen, N Ferro, N Fuhr, A Anand, T Breuer… - 2025 - research.utwente.nl",
+    "full_text_url": "https://research.utwente.nl/files/500565276/2506.11112v1.pdf",
+    "paper_url": "https://research.utwente.nl/en/publications/manifesto-from-dagstuhl-perspectives-workshop-24352-conversationa/",
+    "scholar_id": "c_LJMLCOjLYJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Manifesto from dagstuhl perspectives workshop 24352-conversational agents: A framework for evaluation (CAFE)",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "NV Maiorana, S Marceglia, M Treddenti, M Tosi… - medRxiv, 2025 - medrxiv.org",
+    "full_text_url": "https://www.medrxiv.org/content/10.1101/2025.01.23.25320945.full.pdf",
+    "paper_url": "https://www.medrxiv.org/content/10.1101/2025.01.23.25320945.abstract",
+    "scholar_id": "rzKbPpfIX-EJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Is it time for the neurologist to use Large Language Models in everyday practice?",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "NME Bernard - 2025 - gustav1.ux.uis.no",
+    "full_text_url": "https://gustav1.ux.uis.no/downloads/thesis_bernard.pdf",
+    "paper_url": "https://gustav1.ux.uis.no/downloads/thesis_bernard.pdf",
+    "scholar_id": "AkdovCQVVHQJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "User Simulation for the Development and Evaluation of Conversational Information Access Agents",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "M Medjad, H Imbert, B Yun, R Szymocha… - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2501.11977?",
+    "paper_url": "https://arxiv.org/abs/2501.11977",
+    "scholar_id": "pk3U1nL8prIJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Leveraging graph structures and large language models for end-to-end synthetic task-oriented dialogues",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "J Sun, Y Xue, M Li, Z Yao, J Li, Y Cui, W Cai… - arXiv preprint arXiv …, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2608.00967",
+    "paper_url": "https://arxiv.org/abs/2608.00967",
+    "scholar_id": "TxDZBFFDjqEJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "TrajWiki: Source-Grounded Memory Trajectories for Long-Horizon Dialogue Agents",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "Y Liu, X Wang, K Lu - Proceedings of the AAAI Conference on Artificial …, 2025 - ojs.aaai.org",
+    "full_text_url": "https://ojs.aaai.org/index.php/AAAI/article/view/34648/36803",
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/34648",
+    "scholar_id": "dOosp0uuPEcJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Can large language models derive high-level cognition from low-level and fragmented foundational information?",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "L Siyan, J Zhang, A Maharaj, Y Shi, Y Li - arXiv preprint arXiv:2511.23376, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2511.23376",
+    "paper_url": "https://arxiv.org/abs/2511.23376",
+    "scholar_id": "pftf85rRUaAJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Is Passive Expertise-Based Personalization Enough? A Case Study in AI-Assisted Test-Taking",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "O Warke, J Jose, F Hasibi, J Breitsohl - ACM Journal on Computing and …, 2026 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3833214",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3833214",
+    "scholar_id": "A-KRVCGShHAJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "PromptAug: Fine-grained Conflict Classification Using Data Augmentation",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Bauer, L Chen, N Ferro, N Fuhr, A Anand… - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2506.11112",
+    "paper_url": "https://arxiv.org/abs/2506.11112",
+    "scholar_id": "_Jnc4W7dI4kJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Dagstuhl Perspectives Workshop 24352--Conversational Agents: A Framework for Evaluation (CAFE): Manifesto",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "MF Scatolin, H Pedrini - Journal of the Brazilian Computer …, 2026 - journals-sol.sbc.org.br",
+    "full_text_url": "https://journals-sol.sbc.org.br/index.php/jbcs/article/download/6044/3828",
+    "paper_url": "https://journals-sol.sbc.org.br/index.php/jbcs/article/view/6044",
+    "scholar_id": "ytxDJl2Iq3IJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "STELLAR: A Structured, Trustworthy, and Explainable LLM-Led Architecture for Reliable Customer Support",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Lv, C Shen, M Xie - Crowdsourcing-Innovations in Digital …, 2026 - intechopen.com",
+    "full_text_url": "https://www.intechopen.com/chapters/1229427",
+    "paper_url": "https://www.intechopen.com/chapters/1229427",
+    "scholar_id": "MYLW5gh85qAJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Mapping the Collaboration between Crowdsourcing and Large Language Models: A Fine-Grained Survey",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Lv, C Shen, M Xie - Crowdsourcing-Innovations in Digital …, 2026 - books.google.com",
+    "full_text_url": "",
+    "paper_url": "https://books.google.com/books?hl=en&lr=&id=Q7_bEQAAQBAJ&oi=fnd&pg=PA19&ots=7pwzf7ngkX&sig=l_LnbrW491LfTZrBI-loD7GDjAY",
+    "scholar_id": "Tlq5Nm2Juf4J",
+    "scholar_page": "https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Mapping the Collaboration between Crowdsourcing and Large",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "J Ramos - 2026 - discovery.ucl.ac.uk",
+    "full_text_url": "https://discovery.ucl.ac.uk/id/eprint/10222976/2/Jerome_Ramos___UCL_PhD_Thesis_final.pdf",
+    "paper_url": "https://discovery.ucl.ac.uk/id/eprint/10222976/",
+    "scholar_id": "__lVHkaE1NYJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Towards Trustworthy AI: Transparent and Scrutable Recommendations and Conversations",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "M Sun, M Zhang, G Kreiman - 2025 - openreview.net",
+    "full_text_url": "https://openreview.net/pdf?id=znGnmAM44K",
+    "paper_url": "https://openreview.net/forum?id=znGnmAM44K",
+    "scholar_id": "g9NXwwt_cEMJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "The other you in Black Mirror: first steps from chatbots to personalized LLM clones",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "AFS Caraíba, SST de Oliveira… - Simpósio Brasileiro de …, 2026 - sol.sbc.org.br",
+    "full_text_url": "https://sol.sbc.org.br/index.php/sbcas/article/download/42848/42615",
+    "paper_url": "https://sol.sbc.org.br/index.php/sbcas/article/view/42848",
+    "scholar_id": "aGbNRzt8KY4J",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Personalized Text Generation with LLMs: A Systematic Literature Review with a Focus on Healthcare",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "J Huynh - 2026 - lti.cs.cmu.edu",
+    "full_text_url": "https://www.lti.cs.cmu.edu/research/dissertations/huynh-jessica-thesis-dissertation.pdf",
+    "paper_url": "https://www.lti.cs.cmu.edu/research/dissertations/huynh-jessica-thesis-dissertation.pdf",
+    "scholar_id": "8FU93cY9yQMJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Automatic Personalized Evaluation",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "MS Siddik - 2025 - ualberta.scholaris.ca",
+    "full_text_url": "https://ualberta.scholaris.ca/bitstreams/6fbb5e9e-f222-45cb-8745-7a126e55e36e/download",
+    "paper_url": "https://ualberta.scholaris.ca/items/eaf877d8-12a3-4b92-83da-bff122b7adb9",
+    "scholar_id": "ECQyS62WwMoJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Studying Software Engineering Processes within Computational Notebooks",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Bauer, L Chen, N Ferro, N Fuhr, A Anand, T Breuer… - 2025",
+    "full_text_url": "",
+    "paper_url": "",
+    "scholar_id": "JI0bkdfUvPwJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Dagstuhl Reports, Vol. 11, Issue 1 ISSN 2193-2433",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "C Siro - 2025 - pure.uva.nl",
+    "full_text_url": "https://pure.uva.nl/ws/files/237858349/Thesis.pdf",
+    "paper_url": "https://pure.uva.nl/ws/files/237858349/Thesis.pdf",
+    "scholar_id": "x1GwROH9SBMJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Rethinking the Human-centered Evaluation of Conversational Systems",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "S Wu, Z Jiang, J Yang, X Shen, H Liu, Y Wan, C Miao… - 2026 - techrxiv.org",
+    "full_text_url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.177160619.98027802",
+    "paper_url": "https://www.techrxiv.org/doi/full/10.36227/techrxiv.177160619.98027802",
+    "scholar_id": "FeuVxoBuWrUJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "True-to-Role, Tailored-to-You: A Survey of LLM-based Role-Playing Agents",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "M Collins, O Rokhlenko, E Agichtein… - Proceedings of the 3rd …, 2024 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2024.knowledgenlp-1.3.pdf",
+    "paper_url": "https://aclanthology.org/2024.knowledgenlp-1.3/",
+    "scholar_id": "WpOno_tQiX8J",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Collecting high-quality multi-modal conversational search data for e-commerce",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "S Wu, Z Jiang, J Yang, X Shen, H Liu, Y Wan, C Miao… - openreview.net",
+    "full_text_url": "https://openreview.net/pdf?id=b0gO9JXUiP",
+    "paper_url": "https://openreview.net/pdf?id=b0gO9JXUiP",
+    "scholar_id": "YFo90v2vnUsJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "More Than a Role: Memory in LLM-based Role-Playing Agents",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "A Heezemans, M Casey - 2024 - researchgate.net",
+    "full_text_url": "https://www.researchgate.net/profile/Yashar-Deldjoo/publication/384145983_Recommendation_with_Generative_Models/links/6896cf098a487c1ea6d9703b/Recommendation-with-Generative-Models.pdf",
+    "paper_url": "https://www.researchgate.net/profile/Yashar-Deldjoo/publication/384145983_Recommendation_with_Generative_Models/links/6896cf098a487c1ea6d9703b/Recommendation-with-Generative-Models.pdf",
+    "scholar_id": "ZzGHDkxY6pEJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=70&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "Recommendation with Generative Models",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "L Wang - scholarlypublications …",
+    "full_text_url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A4294661/download",
+    "paper_url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A4294661/download",
+    "scholar_id": "DzthRtQLZTkJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=70&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "SOLID: self-seeding and multi-intent self-instructing LLMs for generating Iitent-a are information-seeking dialogs",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "황석주， 김동현， 이경호， 이경화 - 멀티미디어학회논문지, 2024 - dbpia.co.kr",
+    "full_text_url": "",
+    "paper_url": "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11991782",
+    "scholar_id": "7_SV_L8PjRoJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=70&hl=en&as_sdt=2005&sciodt=0,5&cites=2349539739266859572&scipsc=&authuser=1",
+    "title": "국방 도메인 문장의 검증을 위한 온톨로지 기반 팩트 체킹",
+    "cited_work": "LAPS"
+  },
+  {
+    "authors_line": "H Soudani, R Petcu, E Kanoulas, F Hasibi - ACM Computing Surveys, 2026 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3795686",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3795686",
+    "scholar_id": "01BfAqHcf8QJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "A survey on recent advances in conversational data generation",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "H Zamani, JR Trippas, J Dalton… - Foundations and Trends® …, 2023 - emerald.com",
+    "full_text_url": "https://www.emerald.com/ftinr/article-pdf/17/3-4/244/11100882/1500000081en.pdf?casa_token=7Gqxj-tRsoMAAAAA:ziX9X_EvFJaPnGRVjSk_DG8AFZXVhVlHeWUGGD0_SPh5kwbqMtidur3xnwRWTC9-UTm6sXziIB7NjcU",
+    "paper_url": "https://www.emerald.com/ftinr/article/17/3%E2%80%944/244/1330396?casa_token=DaT_PHNv99cAAAAA:T0m1C6HsaqfEcvqBRsfL-gg2y8ri9GHMVFn2_AEguEZ4H8ui6J4mnHqPCjBDdxMe3qZxkIIGxT1ssd4",
+    "scholar_id": "4Qw6ZBtFoSMJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "Conversational information seeking",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "H Joko, S Chatterjee, A Ramsay, AP De Vries… - Proceedings of the 47th …, 2024 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3626772.3657815",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
+    "scholar_id": "NEKqyPE9myAJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "F Mo, JY Nie, K Huang, K Mao, Y Zhu, P Li… - Proceedings of the 29th …, 2023 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3580305.3599411",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3580305.3599411",
+    "scholar_id": "jtxSe8h8Xq8J",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "Learning to relate to previous turns in conversational search",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "P Christmann, R Saha Roy, G Weikum - Proceedings of the 45th …, 2022 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3477495.3531815",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3477495.3531815",
+    "scholar_id": "Rm-enBqnc0EJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "Conversational question answering on heterogeneous sources",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "N Bernard, K Balog - Proceedings of the 46th International ACM SIGIR …, 2023 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3539618.3591883",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3539618.3591883",
+    "scholar_id": "-fjJzQOtvYwJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "Mg-shopdial: a multi-goal conversational dataset for e-commerce",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "P Chakraborty, S Dutta, DK Sanyal - Companion proceedings of the web …, 2022 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3487553.3524654",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3487553.3524654",
+    "scholar_id": "G3Gr47uccTsJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "Personal research knowledge graphs",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "NT Walker, S Ultes, P Lison - arXiv preprint arXiv:2211.12852, 2022 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2211.12852",
+    "paper_url": "https://arxiv.org/abs/2211.12852",
+    "scholar_id": "N_IMdVDoKOsJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "Graphwoz: Dialogue management with conversational knowledge graphs",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "I Sekulic, K Balog, F Crestani - Proceedings of the 2024 Conference on …, 2024 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3627508.3638300",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3627508.3638300",
+    "scholar_id": "0aSUtW65MhYJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "Towards self-contained answers: Entity-based answer rewriting in conversational search",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "L Dietz, H Bast, S Chatterjee, J Dalton, E Meij… - … on Information Retrieval, 2023 - Springer",
+    "full_text_url": "https://par.nsf.gov/servlets/purl/10473542",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-031-28241-6_33",
+    "scholar_id": "cjlkXyP8nu8J",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=6019146726436238425",
+    "title": "ECIR 23 tutorial: Neuro-symbolic approaches for information retrieval",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "H Joko, F Hasibi - arXiv preprint arXiv:2506.00314, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2506.00314",
+    "paper_url": "https://arxiv.org/abs/2506.00314",
+    "scholar_id": "dr7b-NSfmk0J",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "FACE: A Fine-Grained Reference-Free Evaluator for Conversational Information Access",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "H Joko, F Hasibi - Proceedings of the 31st ACM International …, 2022 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3511808.3557667",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3511808.3557667",
+    "scholar_id": "2di1fV8LP20J",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Personal entity, concept, and named entity linking in conversations",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "A Iurshina, J Pan, R Boutalbi, S Staab - Proceedings of the 31st ACM …, 2022 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3511808.3557659",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3511808.3557659",
+    "scholar_id": "g3vRulQjiPgJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "NILK: entity linking dataset targeting NIL-linking cases",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "CT Tsai, S Upadhyay, D Roth - 2024 - Springer",
+    "full_text_url": "",
+    "paper_url": "https://link.springer.com/book/10.1007/978-3-031-74901-8",
+    "scholar_id": "FNJgajIxKhcJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Multilingual Entity Linking",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "MF Hanafi, K Fadnis, M Danilevsky… - Proceedings of the …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3706599.3719962",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3706599.3719962",
+    "scholar_id": "WWTNGoRivCUJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Creating Conversational Datasets for Retrieval-Augmented Generation Applications is Hard: Challenges & Research Opportunities",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "B Wang, B Liang, Z Bai, Y Ma - … of the 10th SIGHAN workshop on …, 2024 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2024.sighan-1.4.pdf",
+    "paper_url": "https://aclanthology.org/2024.sighan-1.4/",
+    "scholar_id": "QISImVifkkYJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Adversarial learning for multi-lingual entity linking",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "OS Drukerman, E Minkov - Journal of Web Semantics, 2026 - Elsevier",
+    "full_text_url": "https://www.sciencedirect.com/science/article/pii/S1570826826000077",
+    "paper_url": "https://www.sciencedirect.com/science/article/pii/S1570826826000077",
+    "scholar_id": "jnjcSq4iLQMJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "The X types: Mapping the semantics of the Twitter sphere",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "S Rosenthal, M Hanafi, Y Katsis, L Popa… - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2510.11897",
+    "paper_url": "https://arxiv.org/abs/2510.11897",
+    "scholar_id": "3UIpcV24kVwJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "A Longitudinal Study on Different Annotator Feedback Loops in Complex RAG Tasks",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "G Radevski, K Gashteovski, CC Hung… - Proceedings of the …, 2023 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2023.emnlp-main.445.pdf",
+    "paper_url": "https://aclanthology.org/2023.emnlp-main.445/",
+    "scholar_id": "WEYDtGZzjpwJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Linking surface facts to large-scale knowledge graphs",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "NME Bernard - 2025 - gustav1.ux.uis.no",
+    "full_text_url": "https://gustav1.ux.uis.no/downloads/thesis_bernard.pdf",
+    "paper_url": "https://gustav1.ux.uis.no/downloads/thesis_bernard.pdf",
+    "scholar_id": "AkdovCQVVHQJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "User Simulation for the Development and Evaluation of Conversational Information Access Agents",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "M Hoveyda, A Vries, F Hasibi… - Findings of the …, 2024 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2024.findings-acl.829.pdf",
+    "paper_url": "https://aclanthology.org/2024.findings-acl.829/",
+    "scholar_id": "frHNQcmVUqsJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Real World Conversational Entity Linking Requires More Than Zero-Shots",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "Z Zhang, W Zeng, J Tang, X Zhao - … of the 49th International ACM SIGIR …, 2026 - dl.acm.org",
+    "full_text_url": "",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3805712.3809619",
+    "scholar_id": "OCs5n1f_becJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Unified Entity Matching under Scarce Supervision via Meta-Rule Induction and Retrieval",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "CT Tsai, S Upadhyay, D Roth - Multilingual Entity Linking, 2025 - Springer",
+    "full_text_url": "",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-031-74901-8_2",
+    "scholar_id": "hgiT3KiV4-gJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Knowledge bases, datasets, and evaluation",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "W Cui, L Rolston, M Walker… - Proceedings of the …, 2022 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2022.lrec-1.241.pdf",
+    "paper_url": "https://aclanthology.org/2022.lrec-1.241/",
+    "scholar_id": "uELjtxCFUPEJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "OpenEL: An annotated corpus for entity linking and discourse in open domain dialogue",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "H Cheng, S Li, H Zhang, M Fang… - ICASSP 2026-2026 IEEE …, 2026 - ieeexplore.ieee.org",
+    "full_text_url": "https://ieeexplore.ieee.org/iel8/11460365/11460314/11462421.pdf?casa_token=8tnTd704q2EAAAAA:ehNCXKNRmZxWLrCP7-Z8KCzjrVJnIxU9TuFN9fVNk1EjIU4rRjKXR1jbB4J0lftAa_ibiJ6X8nI9",
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/11462421/?casa_token=DdEqi6j1stUAAAAA:9XQ4qWMQ7K1T8CLObyAloAkzJnAnHeHdUujAmrrnQu7TiZP4UN2OjcEozcLCicKlNX3AVNhJbXXp",
+    "scholar_id": "-CapSyQOFS8J",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "A Conversational Entity Linking Method Based on Sentence Level and Token Level Dual Evaluation",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "Z Xu, Y Chen, S Shi, B Hu - … on Natural Language Processing and Chinese …, 2022 - Springer",
+    "full_text_url": "",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-031-17189-5_19",
+    "scholar_id": "tJ6EysrghEUJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Enhancing entity linking with contextualized entity embeddings",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "G Gonçalves, J Magalhães, J Callan - Proceedings of the 2023 ACM …, 2023 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3578337.3605125",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3578337.3605125",
+    "scholar_id": "RxC_Xzo89WwJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Conversational search with random walks over entity graphs",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "D Farhan - arXiv preprint arXiv:2406.16892, 2024 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2406.16892",
+    "paper_url": "https://arxiv.org/abs/2406.16892",
+    "scholar_id": "75Rp-J0JcC0J",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Multilingual Entity Linking Using Dense Retrieval",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "MT Kaiser - 2025 - publikationen.sulb.uni-saarland.de",
+    "full_text_url": "https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/41527/1/PhD_Thesis-Magdalena_Kaiser.pdf",
+    "paper_url": "https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/41527",
+    "scholar_id": "DCnfvRHQjocJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Reinforcement learning from implicit feedback for conversational question answering",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "A Wittgen - 2023 - theses.ubn.ru.nl",
+    "full_text_url": "https://theses.ubn.ru.nl/bitstreams/5d605759-c69a-4fd5-9985-ee7e5dff2d78/download",
+    "paper_url": "https://theses.ubn.ru.nl/items/0f89ca47-0129-4c5a-a9b6-a67cba93ef65",
+    "scholar_id": "6YMZhJp3akgJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Relation Extraction using Few-Shot Entailment on Conversational Data",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "T Heyder, N Passlack, O Posegga - Journal of Strategic …, 2023 - fis.uni-bamberg.de",
+    "full_text_url": "https://fis.uni-bamberg.de/bitstreams/60fadd42-f8a9-4cd2-ae7a-31664b69a468/download",
+    "paper_url": "https://fis.uni-bamberg.de/bitstreams/60fadd42-f8a9-4cd2-ae7a-31664b69a468/download",
+    "scholar_id": "xOKYD0FX-JUJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Secondary Publication",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "A Mohanaraj, EN Laursen - 2022 - projekter.aau.dk",
+    "full_text_url": "https://projekter.aau.dk/projekter/files/474519955/master_thesis.pdf",
+    "paper_url": "https://projekter.aau.dk/projekter/files/474519955/master_thesis.pdf",
+    "scholar_id": "Khzo8ewPNBkJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Entity linking to dynamically-evolving personal knowledge graphs in conversations",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "I Sekulić - 2024 - folia.unifr.ch",
+    "full_text_url": "https://folia.unifr.ch/documents/328498/files/2024INF006.pdf",
+    "paper_url": "https://folia.unifr.ch/global/documents/328498",
+    "scholar_id": "xaicQxuF42MJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Clarification and user simulation in mixed-initiative conversational search",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "B Hui, L Zhang, Y Nian, K Yan… - Available at SSRN …, 2023 - papers.ssrn.com",
+    "full_text_url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=4200929",
+    "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4200929",
+    "scholar_id": "Fbuns4jGDX4J",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "A Multi-angle Bidirectional Interaction Model for Entity Linking",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "H Joko, EJ Gerritse, F Hasibi, AP de Vries - 2022 - repository.ubn.ru.nl",
+    "full_text_url": "https://repository.ubn.ru.nl/bitstream/handle/2066/250445/250445.pdf?sequence=1",
+    "paper_url": "https://repository.ubn.ru.nl/bitstream/handle/2066/250445/250445.pdf?sequence=1",
+    "scholar_id": "qcBLnU8RZeQJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Radboud University at TREC CAsT 2021",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "JLM Malaquias - 2023 - scholar.tecnico.ulisboa.pt",
+    "full_text_url": "https://scholar.tecnico.ulisboa.pt/api/records/BX-IQZf3UCob2Nxp_MKxA0DTNF0uUB4mSeFM/file/3655622380825a48ca97221a0731547218949992c9960c0f3b5b0f34bce30deb.pdf",
+    "paper_url": "https://scholar.tecnico.ulisboa.pt/api/records/BX-IQZf3UCob2Nxp_MKxA0DTNF0uUB4mSeFM/file/3655622380825a48ca97221a0731547218949992c9960c0f3b5b0f34bce30deb.pdf",
+    "scholar_id": "1ErSBYkbjvEJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=6019146726436238425&scipsc=&authuser=1",
+    "title": "Natural Language Processing Leveraging Entity-Aware Representations",
+    "cited_work": "ConEL"
+  },
+  {
+    "authors_line": "H Soudani, R Petcu, E Kanoulas, F Hasibi - ACM Computing Surveys, 2026 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3795686",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3795686",
+    "scholar_id": "01BfAqHcf8QJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "A survey on recent advances in conversational data generation",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "H Zamani, JR Trippas, J Dalton… - Foundations and Trends® …, 2023 - emerald.com",
+    "full_text_url": "https://www.emerald.com/ftinr/article-pdf/17/3-4/244/11100882/1500000081en.pdf?casa_token=o7J_84aDSUwAAAAA:nxX2TjW6mMffoOeqhZMOYPVPqKbrGNQjrPmf5Ublu36TrY5R7yM4rKHiSevxii7oxINuFZqFp3kv_CI",
+    "paper_url": "https://www.emerald.com/ftinr/article/17/3%E2%80%944/244/1330396?casa_token=6KjtP50sKToAAAAA:z-eljYXjzLfrMda8uToIfJuFk1uuDl13Ozj2DKRWRpXYCEVhUxnlzHmq6hejPrxV7qyGTfMNp2s_MMw",
+    "scholar_id": "4Qw6ZBtFoSMJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "Conversational information seeking",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "H Joko, S Chatterjee, A Ramsay, AP De Vries… - Proceedings of the 47th …, 2024 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3626772.3657815",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
+    "scholar_id": "NEKqyPE9myAJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "P Chakraborty, DK Sanyal - Wiley Interdisciplinary Reviews …, 2023 - Wiley Online Library",
+    "full_text_url": "https://wires.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/widm.1513?casa_token=BQKUDg0Y7HEAAAAA:c9br-vWN1u2Rfk-gEkt1uDSsS2I1ggpTGKgYq3nqW26LIHUQefkTm90aSNXe0ZV4iBHIJHUNdNwpeAs",
+    "paper_url": "https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1513?casa_token=v-1eR-2-iicAAAAA:P1foRF1flPrTuDLFnLuWkiQawSfIVW9cO_crJIEg9I7IWloLExVfSovXwMdsqDKj6alIA5vDqteoIDk",
+    "scholar_id": "WRekMF1nowoJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "A comprehensive survey of personal knowledge graphs",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "I Sekulic, K Balog, F Crestani - Proceedings of the 2024 Conference on …, 2024 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3627508.3638300",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3627508.3638300",
+    "scholar_id": "0aSUtW65MhYJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "Towards self-contained answers: Entity-based answer rewriting in conversational search",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "EJ Gerritse, F Hasibi, AP de Vries - arXiv preprint arXiv:2506.03895, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2506.03895",
+    "paper_url": "https://arxiv.org/abs/2506.03895",
+    "scholar_id": "jHFMywrB9M4J",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "Graph-embedding empowered entity retrieval",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "M Hoveyda, A Vries, F Hasibi… - Findings of the …, 2024 - aclanthology.org",
+    "full_text_url": "https://aclanthology.org/2024.findings-acl.829.pdf",
+    "paper_url": "https://aclanthology.org/2024.findings-acl.829/",
+    "scholar_id": "frHNQcmVUqsJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "Real World Conversational Entity Linking Requires More Than Zero-Shots",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "Y Li, Y Jiang, Y Li, X Lu, P Xie, Y Shen… - arXiv preprint arXiv …, 2023 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2306.12245",
+    "paper_url": "https://arxiv.org/abs/2306.12245",
+    "scholar_id": "SYNOSChY-YIJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "Bidirectional end-to-end learning of retriever-reader paradigm for entity linking",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "EJ Gerritse, F Hasibi, AP de Vries - 2025 - repository.ubn.ru.nl",
+    "full_text_url": "https://repository.ubn.ru.nl/bitstream/handle/2066/320599/320599.pdf?sequence=1",
+    "paper_url": "https://repository.ubn.ru.nl/bitstream/handle/2066/320599/320599.pdf?sequence=1",
+    "scholar_id": "EvItQh3oJeQJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "Graph embeddings to empower entity retrieval",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "A Wittgen - 2023 - theses.ubn.ru.nl",
+    "full_text_url": "https://theses.ubn.ru.nl/bitstreams/5d605759-c69a-4fd5-9985-ee7e5dff2d78/download",
+    "paper_url": "https://theses.ubn.ru.nl/items/0f89ca47-0129-4c5a-a9b6-a67cba93ef65",
+    "scholar_id": "6YMZhJp3akgJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537",
+    "title": "Relation Extraction using Few-Shot Entailment on Conversational Data",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "A Anand, MS Pera, M Heuss, VV, M Corsi - ACM SIGIR Forum, 2024 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3642979.3643004",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3642979.3643004",
+    "scholar_id": "K61OwGd901sJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=7872023178425784537&scipsc=&authuser=1",
+    "title": "Report on the 21st Dutch-Belgian Information Retrieval Workshop (DIR 2023)",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "Z Zha, P Qi, X Bao, B Qin - International Conference on Neural Information …, 2023 - Springer",
+    "full_text_url": "",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-981-99-8178-6_21",
+    "scholar_id": "awtG22PEom8J",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=7872023178425784537&scipsc=&authuser=1",
+    "title": "-MG: End-to-End Expert Linking via Multi-Granularity Representation Learning",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "J Raiman - 2023 - theses.hal.science",
+    "full_text_url": "https://theses.hal.science/tel-04588554/file/121609_RAIMAN_2023_archivage.pdf",
+    "paper_url": "https://theses.hal.science/tel-04588554/",
+    "scholar_id": "cdX8YCh94pEJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=7872023178425784537&scipsc=&authuser=1",
+    "title": "DeepType: Natural Language Understanding by Abstraction",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "松尾和哉， 能登肇， 永徳真一郎， 深山篤… - 人工知能学会第二種 …, 2022 - jstage.jst.go.jp",
+    "full_text_url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/SWO-058/2022_03/_pdf",
+    "paper_url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/SWO-058/2022_03/_article/-char/ja/",
+    "scholar_id": "9B5LLL7HU64J",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=7872023178425784537&scipsc=&authuser=1",
+    "title": "作業フォルダを基にした個人知識グラフの自動構築手法に関する検討",
+    "cited_work": "CREL"
+  },
+  {
+    "authors_line": "N Bernard, K Balog - Proceedings of the 2025 Annual International ACM …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3767695.3769478",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3767695.3769478",
+    "scholar_id": "cEmzqxN5yQoJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "Limitations of current evaluation practices for conversational recommender systems and the potential of user simulation",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "M Müller - Proceedings of the Nineteenth ACM Conference on …, 2025 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3705328.3748759",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3705328.3748759",
+    "scholar_id": "VkHActpfnCIJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "Advancing user-centric evaluation and design of conversational recommender systems",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "N Bernard, K Balog - European Conference on Information Retrieval, 2026 - Springer",
+    "full_text_url": "https://arxiv.org/pdf/2512.04588",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-21321-1_55",
+    "scholar_id": "1q_vEvZEcWQJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "UserSimCRS v2: Simulation-based evaluation for conversational recommender systems",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "H Joko, S Amirshahi, CLA Clarke, F Hasibi - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2509.17442",
+    "paper_url": "https://arxiv.org/abs/2509.17442",
+    "scholar_id": "pAJQReHNpuoJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "WildClaims: Information Access Conversations in the Wild (Chat)",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "N Chen, Q Dai, X Dong, P Wang, Q Jia, Z Du… - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2501.09493",
+    "paper_url": "https://arxiv.org/abs/2501.09493",
+    "scholar_id": "-mENyO7STHoJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "Evaluating Conversational Recommender Systems via Large Language Models: A User-Centric Framework",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "H Joko, S Amirshahi, CLA Clarke, F Hasibi - European Conference on …, 2026 - Springer",
+    "full_text_url": "",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-21321-1_47",
+    "scholar_id": "BnTfUB-cHwAJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "WildClaims: Conversational Information Access in the Wild(Chat)",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "H Joko, F Hasibi - arXiv preprint arXiv:2506.00314, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2506.00314",
+    "paper_url": "https://arxiv.org/abs/2506.00314",
+    "scholar_id": "dr7b-NSfmk0J",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "FACE: A Fine-Grained Reference-Free Evaluator for Conversational Information Access",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "H Joko - arXiv preprint arXiv:2606.13717, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2606.13717",
+    "paper_url": "https://arxiv.org/abs/2606.13717",
+    "scholar_id": "23Wj93bLTEwJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "Personalization and Evaluation of Conversational Information Access",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "BS Narasimhan, KR Narasimhan - arXiv preprint arXiv:2606.10156, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2606.10156",
+    "paper_url": "https://arxiv.org/abs/2606.10156",
+    "scholar_id": "cS3b1LCCAkcJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "-Rec: A Verifiable Benchmark for Agentic Recommender Systems",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "A Kumar, V Manshadi, A Tumu - Available at SSRN 6481459, 2026 - papers.ssrn.com",
+    "full_text_url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=6481459",
+    "paper_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6481459",
+    "scholar_id": "FYNQ_G3IAvcJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477",
+    "title": "How Much Should a Conversational Recommender System Converse?",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "MM Müller, AR Mohammadi, A Peintner, BB Gstrein… - GvDB, 2025 - ceur-ws.org",
+    "full_text_url": "https://ceur-ws.org/Vol-4118/paper13.pdf",
+    "paper_url": "https://ceur-ws.org/Vol-4118/paper13.pdf",
+    "scholar_id": "eagPO6Sm_REJ",
+    "scholar_page": "https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=7343923940986836477&scipsc=&authuser=1",
+    "title": "Yearning for Better Metrics: Revisiting the ReDial Dataset for Evaluating Conversational Recommender Systems.",
+    "cited_work": "CRSArena"
+  },
+  {
+    "authors_line": "H Soudani, R Petcu, E Kanoulas, F Hasibi - ACM Computing Surveys, 2026 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3795686",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3795686",
+    "scholar_id": "01BfAqHcf8QJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227%2C5591957624390925942%2C13242180718810573332",
+    "title": "A survey on recent advances in conversational data generation",
+    "cited_work": "FACE"
+  },
+  {
+    "authors_line": "YH Kim, YS Cho - Expert Systems with Applications, 2026 - Elsevier",
+    "full_text_url": "https://www.sciencedirect.com/science/article/pii/S0957417426014211?casa_token=u73BcrWdOeYAAAAA:MicBJXCqXWtt_CNbm1oDIhiJqZoZDKYCEMjc5fYATNzAcK1OWmboj58QnvstwzkHRu4XCReHpg",
+    "paper_url": "https://www.sciencedirect.com/science/article/pii/S0957417426014211?casa_token=u73BcrWdOeYAAAAA:MicBJXCqXWtt_CNbm1oDIhiJqZoZDKYCEMjc5fYATNzAcK1OWmboj58QnvstwzkHRu4XCReHpg",
+    "scholar_id": "wp7-OYfiSqQJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227%2C5591957624390925942%2C13242180718810573332",
+    "title": "Conversational recommender systems with large language models: A review of current developments",
+    "cited_work": "FACE"
+  },
+  {
+    "authors_line": "H Joko, S Amirshahi, CLA Clarke, F Hasibi - arXiv preprint arXiv …, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2509.17442",
+    "paper_url": "https://arxiv.org/abs/2509.17442",
+    "scholar_id": "pAJQReHNpuoJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227%2C5591957624390925942%2C13242180718810573332",
+    "title": "WildClaims: Information Access Conversations in the Wild (Chat)",
+    "cited_work": "FACE"
+  },
+  {
+    "authors_line": "H Joko, S Amirshahi, CLA Clarke, F Hasibi - European Conference on …, 2026 - Springer",
+    "full_text_url": "",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-21321-1_47",
+    "scholar_id": "BnTfUB-cHwAJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227%2C5591957624390925942%2C13242180718810573332",
+    "title": "WildClaims: Conversational Information Access in the Wild(Chat)",
+    "cited_work": "FACE"
+  },
+  {
+    "authors_line": "S Binz, H Soudani, F Hasibi - arXiv preprint arXiv:2605.29956, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2605.29956",
+    "paper_url": "https://arxiv.org/abs/2605.29956",
+    "scholar_id": "n6t4bcOW6m4J",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227%2C5591957624390925942%2C13242180718810573332",
+    "title": "Uncertainty Quantification for Multimodal Retrieval Augmented Generation",
+    "cited_work": "FACE"
+  },
+  {
+    "authors_line": "T Sakai, J Lee, H Fang, YI Song - arXiv preprint arXiv:2605.26400, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2605.26400",
+    "paper_url": "https://arxiv.org/abs/2605.26400",
+    "scholar_id": "U0izafGtgbwJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227%2C5591957624390925942%2C13242180718810573332",
+    "title": "Plans for Evaluating Structured Generative Search Summaries",
+    "cited_work": "FACE"
+  },
+  {
+    "authors_line": "J Ramos, F Xia, X Wang, S Chatterjee, X Fu… - … on Information Retrieval, 2026 - Springer",
+    "full_text_url": "https://arxiv.org/pdf/2603.18573",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-21289-4_40",
+    "scholar_id": "-KfO-Ol1MTMJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227%2C5591957624390925942%2C13242180718810573332",
+    "title": "Interplay: Training Independent Simulators for Reference-Free Conversational Recommendation",
+    "cited_work": "FACE"
+  },
+  {
+    "authors_line": "J Ramos - 2026 - discovery.ucl.ac.uk",
+    "full_text_url": "https://discovery.ucl.ac.uk/id/eprint/10222976/2/Jerome_Ramos___UCL_PhD_Thesis_final.pdf",
+    "paper_url": "https://discovery.ucl.ac.uk/id/eprint/10222976/",
+    "scholar_id": "__lVHkaE1NYJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227%2C5591957624390925942%2C13242180718810573332",
+    "title": "Towards Trustworthy AI: Transparent and Scrutable Recommendations and Conversations",
+    "cited_work": "FACE"
+  },
+  {
+    "authors_line": "N Sharma, Z Zhang, D Lee, N Krishnan… - Proceedings of the …, 2026 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3772318.3791600",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3772318.3791600",
+    "scholar_id": "69lh_BgMzukJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16908428218423313060%2C8897382592771078",
+    "title": "Feedback by design: Understanding and overcoming user feedback barriers in conversational agents",
+    "cited_work": "WildClaims"
+  },
+  {
+    "authors_line": "AK Kruff, CK Kreutz, T Breuer, P Schaer… - European Conference on …, 2026 - Springer",
+    "full_text_url": "https://arxiv.org/pdf/2511.09329",
+    "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-21321-1_61",
+    "scholar_id": "e7lR6YlZikUJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16908428218423313060%2C8897382592771078",
+    "title": "Sim4ia-bench: a user simulation benchmark suite for next query and utterance prediction",
+    "cited_work": "WildClaims"
+  },
+  {
+    "authors_line": "TE Kim, A Salemi, H Zamani, F Diaz - arXiv preprint arXiv:2604.14256, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2604.14256",
+    "paper_url": "https://arxiv.org/abs/2604.14256",
+    "scholar_id": "iA8k8d8Ndx4J",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16908428218423313060%2C8897382592771078",
+    "title": "Evaluation of Agents under Simulated AI Marketplace Dynamics",
+    "cited_work": "WildClaims"
+  },
+  {
+    "authors_line": "M Yazan, FBI Situmeang, S Verberne - arXiv preprint arXiv:2605.28498, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2605.28498",
+    "paper_url": "https://arxiv.org/abs/2605.28498",
+    "scholar_id": "Fm0JGLkYskEJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16908428218423313060%2C8897382592771078",
+    "title": "The Decision to Verify: How Warmth and User Characteristics Shape Reliance on Conversational Agents for Information Search",
+    "cited_work": "WildClaims"
+  },
+  {
+    "authors_line": "H Joko, F Hasibi - arXiv preprint arXiv:2506.00314, 2025 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2506.00314",
+    "paper_url": "https://arxiv.org/abs/2506.00314",
+    "scholar_id": "dr7b-NSfmk0J",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16908428218423313060%2C8897382592771078",
+    "title": "FACE: A Fine-Grained Reference-Free Evaluator for Conversational Information Access",
+    "cited_work": "WildClaims"
+  },
+  {
+    "authors_line": "H Joko - arXiv preprint arXiv:2606.13717, 2026 - arxiv.org",
+    "full_text_url": "https://arxiv.org/pdf/2606.13717",
+    "paper_url": "https://arxiv.org/abs/2606.13717",
+    "scholar_id": "23Wj93bLTEwJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16908428218423313060%2C8897382592771078",
+    "title": "Personalization and Evaluation of Conversational Information Access",
+    "cited_work": "WildClaims"
+  },
+  {
+    "authors_line": "Y OSUGI, I SAITO, K NISHIDA, H ASANO… - US Patent …, 2025 - Google Patents",
+    "full_text_url": "",
+    "paper_url": "https://patents.google.com/patent/US12387051B2/en",
+    "scholar_id": "kSITsquNIYMJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=3295116525722928383",
+    "title": "Dialogue processing apparatus, learning apparatus, dialogue processing method, learning method and program",
+    "cited_work": "LanguagePatent"
+  },
+  {
+    "authors_line": "T KASEDA - US Patent App. 16/890,018, 2020 - Google Patents",
+    "full_text_url": "https://patentimages.storage.googleapis.com/7b/7d/84/6e241e1efcbf2b/US20200387806A1.pdf",
+    "paper_url": "https://patents.google.com/patent/US20200387806A1/en",
+    "scholar_id": "BsTM50XrdKsJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=3295116525722928383",
+    "title": "Idea generation support device, idea generation support system, and recording medium",
+    "cited_work": "LanguagePatent"
+  },
+  {
+    "authors_line": "M Kataoka, S Ohyama, S ONOUE - US Patent App. 17/738,582, 2022 - Google Patents",
+    "full_text_url": "https://patentimages.storage.googleapis.com/17/6b/f9/6384a42fbc1ed0/US20220261430A1.pdf",
+    "paper_url": "https://patents.google.com/patent/US20220261430A1/en",
+    "scholar_id": "CZh_fgl-v-wJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=3295116525722928383",
+    "title": "Storage medium, information processing method, and information processing apparatus",
+    "cited_work": "LanguagePatent"
+  },
+  {
+    "authors_line": "JA Brown, RP Ranasinghe - US Patent App. 17/328,908, 2022 - Google Patents",
+    "full_text_url": "https://patentimages.storage.googleapis.com/0d/2e/ad/fb9be5a31af29c/US20220374345A1.pdf",
+    "paper_url": "https://patents.google.com/patent/US20220374345A1/en",
+    "scholar_id": "f72D6FbOX8oJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=3565139109879989387",
+    "title": "Techniques for similarity determination across software testing configuration data entities",
+    "cited_work": "InfoPatent"
+  },
+  {
+    "authors_line": "K MURUGADOSS, S Ardhanari - US Patent 12,530,498, 2026 - Google Patents",
+    "full_text_url": "",
+    "paper_url": "https://patents.google.com/patent/US12530498B2/en",
+    "scholar_id": "3Hx1q5Wf85AJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=3565139109879989387",
+    "title": "Apparatus and a method for the anonymization of user data",
+    "cited_work": "InfoPatent"
+  },
+  {
+    "authors_line": "P Corcoran, I Spasić - ISPRS International Journal of Geo-Information, 2023 - mdpi.com",
+    "full_text_url": "https://www.mdpi.com/2220-9964/12/2/64",
+    "paper_url": "https://www.mdpi.com/2220-9964/12/2/64",
+    "scholar_id": "ohMAGcEDxNUJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=14648032618851338011",
+    "title": "Self-supervised representation learning for geographical data—A systematic literature review",
+    "cited_work": "SpatialEmbeddings"
+  },
+  {
+    "authors_line": "P Corcoran, I Spasic - 2023 - scholar.archive.org",
+    "full_text_url": "https://scholar.archive.org/work/a6yjh3gtefee7ffi4afcknk34i/access/wayback/https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/39219263/SSRL_Geo_data_supplementary_material.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20230213/eu-west-1/s3/aws4_request&X-Amz-Date=20230213T164537Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=7bbf9ec2079ee043f1f8ac2692afca690ade91ea44a822d926a26ca85625203f",
+    "paper_url": "https://scholar.archive.org/work/a6yjh3gtefee7ffi4afcknk34i/access/wayback/https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/39219263/SSRL_Geo_data_supplementary_material.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20230213/eu-west-1/s3/aws4_request&X-Amz-Date=20230213T164537Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=7bbf9ec2079ee043f1f8ac2692afca690ade91ea44a822d926a26ca85625203f",
+    "scholar_id": "jmrdEdc4jpcJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=14648032618851338011",
+    "title": "Self-Supervised Representation Learning for Geographical Data-A Systematic Literature Review Supplementary Material",
+    "cited_work": "SpatialEmbeddings"
+  },
+  {
+    "authors_line": "EJ Gerritse, F Hasibi, AP de Vries - … of the 45th international acm sigir …, 2022 - dl.acm.org",
+    "full_text_url": "https://dl.acm.org/doi/pdf/10.1145/3477495.3531971",
+    "paper_url": "https://dl.acm.org/doi/abs/10.1145/3477495.3531971",
+    "scholar_id": "1afQqEBFOl8J",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16457579446934421673",
+    "title": "Entity-aware transformers for entity search",
+    "cited_work": "TRECCAsT"
+  },
+  {
+    "authors_line": "이효찬， 홍승용， 이형탁， 황한정 - Proceedings of KIIT Conference, 2021 - dbpia.co.kr",
+    "full_text_url": "",
+    "paper_url": "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE10569074",
+    "scholar_id": "URXR2CrdiVgJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=12047754234760638851",
+    "title": "전이 학습을 이용한 뇌신경신호 데이터 분석",
+    "cited_work": "IntentTransfer"
+  },
+  {
+    "authors_line": "城光英彰， 内出隼人， 小路悠介… - 人工知能学会第二種研究会 …, 2018 - jstage.jst.go.jp",
+    "full_text_url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2018/AM-19/2018_01/_pdf",
+    "paper_url": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2018/AM-19/2018_01/_article/-char/ja/",
+    "scholar_id": "AWSpe3akoAYJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15642013674692360151",
+    "title": "マルチタスク転移学習による 小規模教師データを用いた意図理解",
+    "cited_work": "JPIntentTransfer"
+  },
+  {
+    "authors_line": "赤木里騎， 徐海燕 - 電気関係学会九州支部連合大会講演論文集 平成 …, 2018 - jstage.jst.go.jp",
+    "full_text_url": "https://www.jstage.jst.go.jp/article/jceeek/2018/0/2018_15/_pdf",
+    "paper_url": "https://www.jstage.jst.go.jp/article/jceeek/2018/0/2018_15/_article/-char/ja/",
+    "scholar_id": "rDXa6HIsS0EJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=213920213056860757",
+    "title": "分散表現モデルにコーパスの差異が与える影響について",
+    "cited_work": "Skipgram"
+  },
+  {
+    "authors_line": "R XU - asia-u.repo.nii.ac.jp",
+    "full_text_url": "https://asia-u.repo.nii.ac.jp/record/26404/files/20400336.pdf",
+    "paper_url": "https://asia-u.repo.nii.ac.jp/record/26404/files/20400336.pdf",
+    "scholar_id": "xQBhGyPmK3YJ",
+    "scholar_page": "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=16162825426406427637",
+    "title": "ユーザーレビューに基づいた消費者のニーズに関する研究",
+    "cited_work": "WordSenseEval"
+  }
+]
