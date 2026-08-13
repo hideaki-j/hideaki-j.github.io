@@ -11,7 +11,7 @@ Google Scholar profile dated 2026-08-12.
   information. `citation_manual_evidence.json` records newly reviewed papers;
   earlier reviewed rows were reconciled from `citation_info.csv`.
 - Author identity normalization yields 487 unique researchers.
-- Affiliation splitting and organization-alias normalization yields 178 unique
+- Affiliation splitting and organization-alias normalization yields 179 unique
   institutions.
 
 The public wording rounds these audited counts down to the durable claim:

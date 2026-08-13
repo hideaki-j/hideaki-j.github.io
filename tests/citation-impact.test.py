@@ -27,7 +27,7 @@ institutions = {normalized(row["Canonical Institution"]) for row in rows}
 
 assert len(scholar) == summary["citation_results"] == 160
 assert len(authors) == summary["unique_researchers"] == 487
-assert len(institutions) == summary["unique_institutions"] == 178
+assert len(institutions) == summary["unique_institutions"] == 179
 assert "Google DeepMind" in {row["Canonical Institution"] for row in rows}
 assert "Stanford University" in {row["Canonical Institution"] for row in rows}
 
