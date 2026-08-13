@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Citation Impact Map</title>
+  <style>
+    :root {
+      --background: #f1f1ee;
+      --background-soft: #f7f7f4;
+      --panel: #ffffff;
+      --ink: #202020;
+      --muted: #5f5f5b;
+      --line: #d2d2cc;
+      --line-dark: #aaaaa4;
+      --accent: #8b1e2d;
+      --accent-dark: #6f1521;
+      --accent-soft: #f3e8e9;
+      --serif: Georgia, "Times New Roman", Times, serif;
+      --sans: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    [hidden] { display: none !important; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    a { color: var(--accent-dark); }
+    a:hover { color: var(--accent); }
+
+    button, input, select { font: inherit; }
+
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .hero {
+      position: relative;
+      border: 1px solid var(--line);
+      border-top: 6px solid var(--accent);
+      background: var(--panel);
+      padding: 34px 38px 30px;
+    }
+
+    .scope-toggle {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .scope-toggle input {
+      width: 38px;
+      height: 21px;
+      margin: 0;
+      appearance: none;
+      border: 1px solid var(--line-dark);
+      border-radius: 999px;
+      background: var(--background);
+      cursor: pointer;
+      transition: background .15s ease;
+    }
+
+    .scope-toggle input::before {
+      display: block;
+      width: 15px;
+      height: 15px;
+      margin: 2px;
+      border-radius: 50%;
+      background: var(--panel);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+      content: "";
+      transition: transform .15s ease;
+    }
+
+    .scope-toggle input:checked { background: var(--accent); border-color: var(--accent); }
+    .scope-toggle input:checked::before { transform: translateX(17px); }
+    .scope-toggle input:focus-visible { outline: 3px solid #d39aa2; outline-offset: 2px; }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(38px, 6vw, 66px);
+      letter-spacing: -.025em;
+    }
+
+    .dek {
+      max-width: 790px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-family: var(--serif);
+      font-size: 19px;
+    }
+
+    .dataset-note {
+      margin: 20px 0 0;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      border: 1px solid var(--line);
+      border-top: 0;
+      background: var(--panel);
+    }
+
+    .stat {
+      min-width: 0;
+      padding: 20px 18px;
+      border-right: 1px solid var(--line);
+    }
+
+    .stat:last-child { border-right: 0; }
+
+    .stat strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: clamp(25px, 3vw, 34px);
+      font-weight: 400;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .tabs {
+      display: flex;
+      margin-top: 28px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      overflow-x: auto;
+    }
+
+    .tab {
+      flex: 1 0 auto;
+      min-width: 145px;
+      border: 0;
+      border-right: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 13px 20px;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .tab:last-child { border-right: 0; }
+    .tab:hover { background: var(--background-soft); }
+    .tab[aria-selected="true"] { background: var(--accent); color: #fff; }
+    .tab:focus-visible { outline: 3px solid #d39aa2; outline-offset: -3px; }
+
+    .tab-panel { display: none; margin-top: 18px; }
+    .tab-panel.active { display: block; }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr);
+      gap: 18px;
+    }
+
+    .panel {
+      min-width: 0;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    .panel-heading {
+      padding: 22px 24px 17px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .panel-heading h2, .panel-heading h3 { margin: 0; font-size: 24px; }
+    .panel-heading p { margin: 7px 0 0; color: var(--muted); font-size: 13px; }
+
+    .panel-body { padding: 22px 24px; }
+    .panel-body.flush { padding: 0; }
+
+    .bar-list { display: grid; gap: 13px; }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: minmax(95px, 1.1fr) minmax(120px, 2fr) 44px;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .bar-label {
+      overflow: hidden;
+      font-size: 13px;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .bar-track { height: 12px; background: #e7e7e2; }
+    .bar-fill { height: 100%; background: var(--accent); }
+    .bar-value { color: var(--muted); font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+
+    .archive-note {
+      margin: 0;
+      border-left: 4px solid var(--accent);
+      padding: 3px 0 3px 15px;
+      color: var(--muted);
+      font-family: var(--serif);
+      font-size: 16px;
+    }
+
+    .compact-list {
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .compact-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+    }
+
+    .compact-list strong { font-variant-numeric: tabular-nums; }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) repeat(2, minmax(150px, .36fr));
+      gap: 12px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+    }
+
+    .field { display: grid; gap: 5px; }
+
+    .field label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .field input, .field select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line-dark);
+      border-radius: 0;
+      background: #fff;
+      color: var(--ink);
+      padding: 9px 11px;
+    }
+
+    .field input:focus, .field select:focus {
+      border-color: var(--accent);
+      outline: 2px solid var(--accent-soft);
+      outline-offset: 0;
+    }
+
+    .result-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 12px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .work-list { display: grid; gap: 10px; }
+
+    .work-card {
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    .work-card summary {
+      position: relative;
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 54px 17px 20px;
+    }
+
+    .work-card summary::-webkit-details-marker { display: none; }
+
+    .work-card summary::after {
+      content: "+";
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      color: var(--accent);
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .work-card[open] summary::after { content: "−"; }
+    .work-card[open] summary { background: var(--background-soft); border-bottom: 1px solid var(--line); }
+
+    .work-title {
+      display: block;
+      margin-bottom: 9px;
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.25;
+    }
+
+    .badges { display: flex; flex-wrap: wrap; gap: 5px; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 23px;
+      border: 1px solid #d5b6ba;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      padding: 2px 7px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .badge.neutral { border-color: var(--line); background: var(--background-soft); color: var(--muted); }
+
+    .work-detail { padding: 20px; }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, .75fr);
+      gap: 24px;
+    }
+
+    .detail-title {
+      margin: 0 0 9px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .author-list { display: grid; gap: 13px; }
+    .author { padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+    .author:last-child { border-bottom: 0; padding-bottom: 0; }
+    .author-name { font-weight: 700; }
+    .affiliation { margin-top: 3px; color: var(--muted); font-size: 12px; }
+
+    .citation-links { display: grid; gap: 8px; }
+
+    .citation-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid var(--line);
+      padding: 0 0 8px;
+      font-size: 13px;
+    }
+
+    .link-button {
+      display: inline-block;
+      border: 1px solid var(--accent);
+      background: #fff;
+      color: var(--accent-dark);
+      padding: 6px 9px;
+      font-size: 11px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .link-button:hover { background: var(--accent); color: #fff; }
+
+    .evidence-link { margin-top: 15px; }
+
+    .table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #e9e9e5;
+      color: #3f3f3c;
+      padding: 10px 12px;
+      font-size: 10px;
+      letter-spacing: .055em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    td { border-top: 1px solid var(--line); padding: 10px 12px; vertical-align: top; }
+    tbody tr:nth-child(even) { background: #f7f7f5; }
+    tbody tr:hover { background: #f2f0e8; }
+    td.number, th.number { text-align: right; font-variant-numeric: tabular-nums; }
+    .cell-main { font-weight: 700; }
+    .cell-sub { margin-top: 2px; color: var(--muted); font-size: 11px; }
+
+    .load-more {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      border: 1px solid var(--line-dark);
+      border-radius: 0;
+      background: var(--panel);
+      color: var(--ink);
+      cursor: pointer;
+      padding: 11px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .load-more:hover { border-color: var(--accent); color: var(--accent); }
+    .empty { border: 1px solid var(--line); background: var(--panel); padding: 28px; color: var(--muted); text-align: center; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-top: 30px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(3, 1fr); }
+      .stat:nth-child(3) { border-right: 0; }
+      .stat:nth-child(-n+3) { border-bottom: 1px solid var(--line); }
+      .section-grid, .detail-grid { grid-template-columns: 1fr; }
+      .toolbar { grid-template-columns: 1fr 1fr; }
+      .toolbar .field:first-child { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 620px) {
+      .shell { width: min(100% - 18px, 1180px); padding-top: 9px; }
+      .hero { padding: 25px 20px 22px; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .stat { border-bottom: 1px solid var(--line); }
+      .stat:nth-child(2n) { border-right: 0; }
+      .stat:nth-last-child(-n+2) { border-bottom: 0; }
+      .toolbar { grid-template-columns: 1fr; }
+      .toolbar .field:first-child { grid-column: auto; }
+      .panel-heading, .panel-body { padding-left: 18px; padding-right: 18px; }
+      .bar-row { grid-template-columns: 88px minmax(90px, 1fr) 36px; gap: 7px; }
+      footer { display: block; }
+      footer span { display: block; margin-top: 6px; }
+      .scope-toggle { position: static; width: fit-content; margin-bottom: 18px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .shell { width: 100%; padding: 0; }
+      .tabs, .toolbar, .load-more { display: none; }
+      .tab-panel { display: none !important; }
+      #overview-panel { display: block !important; }
+      .panel, .hero, .stats { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <label class="scope-toggle" for="first-author-toggle">
+        <span>First-author works only</span>
+        <input id="first-author-toggle" type="checkbox" role="switch">
+      </label>
+      <p class="eyebrow">Research influence archive</p>
+      <h1>Citation Impact Map</h1>
+      <p class="dek">Explore the researchers, institutions, countries, and scholarly works connected to this publication portfolio.</p>
+      <p class="dataset-note" id="dataset-note">Loading embedded citation evidence…</p>
+    </header>
+
+    <section class="stats" aria-label="Dataset summary">
+      <div class="stat"><strong id="stat-works">—</strong><span>Citing works</span></div>
+      <div class="stat"><strong id="stat-links">—</strong><span>Citation links</span></div>
+      <div class="stat"><strong id="stat-authors">—</strong><span>Researchers</span></div>
+      <div class="stat"><strong id="stat-institutions">—</strong><span>Institutions</span></div>
+      <div class="stat"><strong id="stat-countries">—</strong><span>Countries</span></div>
+      <div class="stat"><strong id="stat-continents">—</strong><span>Continents</span></div>
+    </section>
+
+    <nav class="tabs" role="tablist" aria-label="Citation explorer views">
+      <button class="tab" id="overview-tab" role="tab" aria-selected="true" aria-controls="overview-panel" tabindex="0" data-tab="overview">Overview</button>
+      <button class="tab" id="works-tab" role="tab" aria-selected="false" aria-controls="works-panel" tabindex="-1" data-tab="works">Citing works</button>
+      <button class="tab" id="researchers-tab" role="tab" aria-selected="false" aria-controls="researchers-panel" tabindex="-1" data-tab="researchers">Researchers</button>
+      <button class="tab" id="institutions-tab" role="tab" aria-selected="false" aria-controls="institutions-panel" tabindex="-1" data-tab="institutions">Institutions</button>
+      <button class="tab" id="name-map-tab" role="tab" aria-selected="false" aria-controls="name-map-panel" tabindex="-1" data-tab="name-map">Name map</button>
+    </nav>
+
+    <section class="tab-panel active" id="overview-panel" role="tabpanel" aria-labelledby="overview-tab">
+      <div class="section-grid">
+        <article class="panel">
+          <div class="panel-heading">
+            <h2>Portfolio reach</h2>
+            <p>Number of audited citing works connected to each publication code.</p>
+          </div>
+          <div class="panel-body"><div class="bar-list" id="portfolio-bars"></div></div>
+        </article>
+        <aside class="panel">
+          <div class="panel-heading">
+            <h2>Evidence at a glance</h2>
+            <p>A compact reading of the normalized citation graph.</p>
+          </div>
+          <div class="panel-body">
+            <p class="archive-note" id="overview-note"></p>
+            <ul class="compact-list" id="overview-facts"></ul>
+          </div>
+        </aside>
+      </div>
+
+      <div class="section-grid" style="margin-top:18px">
+        <article class="panel">
+          <div class="panel-heading">
+            <h2>Geographic distribution</h2>
+            <p>Countries ranked by the number of citing works with recorded affiliations.</p>
+          </div>
+          <div class="panel-body"><div class="bar-list" id="country-bars"></div></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading">
+            <h2>Leading institutions</h2>
+            <p>Institutions ranked by distinct citing works in this snapshot.</p>
+          </div>
+          <div class="panel-body flush table-wrap">
+            <table>
+              <thead><tr><th>Institution</th><th class="number">Works</th><th class="number">Researchers</th></tr></thead>
+              <tbody id="top-institutions"></tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="works-panel" role="tabpanel" aria-labelledby="works-tab" hidden>
+      <div class="toolbar">
+        <div class="field"><label for="work-search">Search the archive</label><input id="work-search" type="search" placeholder="Title, researcher, institution, or country"></div>
+        <div class="field"><label for="work-citation-filter">Portfolio work</label><select id="work-citation-filter"><option value="">All works</option></select></div>
+        <div class="field"><label for="work-country-filter">Country</label><select id="work-country-filter"><option value="">All countries</option></select></div>
+      </div>
+      <div class="result-line"><span id="work-result-count"></span><span>Select a title to inspect its evidence.</span></div>
+      <div class="work-list" id="work-list"></div>
+      <button class="load-more" id="work-more" type="button">Show more citing works</button>
+    </section>
+
+    <section class="tab-panel" id="researchers-panel" role="tabpanel" aria-labelledby="researchers-tab" hidden>
+      <div class="toolbar" style="grid-template-columns:1fr">
+        <div class="field"><label for="researcher-search">Search researchers</label><input id="researcher-search" type="search" placeholder="Name, institution, country, or publication code"></div>
+      </div>
+      <div class="result-line"><span id="researcher-result-count"></span><span>Counts are deduplicated by normalized identity.</span></div>
+      <div class="panel table-wrap">
+        <table>
+          <thead><tr><th>Researcher</th><th>Institutions and countries</th><th>Portfolio works cited</th><th class="number">Citing works</th></tr></thead>
+          <tbody id="researcher-table"></tbody>
+        </table>
+      </div>
+      <button class="load-more" id="researcher-more" type="button">Show more researchers</button>
+    </section>
+
+    <section class="tab-panel" id="institutions-panel" role="tabpanel" aria-labelledby="institutions-tab" hidden>
+      <div class="toolbar" style="grid-template-columns:1fr">
+        <div class="field"><label for="institution-search">Search institutions</label><input id="institution-search" type="search" placeholder="Institution, country, or publication code"></div>
+      </div>
+      <div class="result-line"><span id="institution-result-count"></span><span>Multi-affiliations are expanded in the normalized graph.</span></div>
+      <div class="panel table-wrap">
+        <table>
+          <thead><tr><th>Institution</th><th>Countries</th><th>Portfolio works cited</th><th class="number">Researchers</th><th class="number">Citing works</th></tr></thead>
+          <tbody id="institution-table"></tbody>
+        </table>
+      </div>
+      <button class="load-more" id="institution-more" type="button">Show more institutions</button>
+    </section>
+
+    <section class="tab-panel" id="name-map-panel" role="tabpanel" aria-labelledby="name-map-tab" hidden>
+      <div class="toolbar" style="grid-template-columns:1fr">
+        <div class="field"><label for="name-map-search">Search institution names</label><input id="name-map-search" type="search" placeholder="Recorded name, canonical institution, or country"></div>
+      </div>
+      <div class="result-line"><span id="name-map-result-count"></span><span>Recorded affiliation names are resolved through the centralized institution registry.</span></div>
+      <div class="panel table-wrap">
+        <table>
+          <thead><tr><th>Recorded affiliation</th><th>Canonical institution(s)</th><th>Registered countries</th></tr></thead>
+          <tbody id="name-map-table"></tbody>
+        </table>
+      </div>
+      <button class="load-more" id="name-map-more" type="button">Show more mappings</button>
+    </section>
+
+    <footer>
+      <div>Standalone citation evidence viewer</div>
+      <span id="footer-source"></span>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script>
+    (async () => {
+      "use strict";
+
+      const numberFormat = new Intl.NumberFormat("en-US");
+      const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
+      const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
+      })[char]);
+      const safeUrl = (value) => {
+        try {
+          const url = new URL(String(value));
+          return ["http:", "https:"].includes(url.protocol) ? escapeHtml(url.href) : "#";
+        } catch (_) { return "#"; }
+      };
+      const uniqueSorted = (values) => [...new Set(values.filter(Boolean))].sort(collator.compare);
+      const decodeData = async (encoded) => {
+        if (!encoded) throw new Error("Citation map data is missing. Run convert.py first.");
+        const bytes = Uint8Array.from(atob(encoded), (character) => character.charCodeAt(0));
+        const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+        return JSON.parse(await new Response(stream).text());
+      };
+
+      const payload = await decodeData(window._D);
+      const source = payload.citation;
+      const institutionRegistry = payload.institutions;
+      const firstAuthorCodes = new Set(payload.first_author_codes || []);
+      const firstAuthorOnly = new URLSearchParams(window.location.search).get("firstAuthor") === "1";
+      const firstAuthorToggle = document.getElementById("first-author-toggle");
+      firstAuthorToggle.checked = firstAuthorOnly;
+      firstAuthorToggle.addEventListener("change", () => {
+        const url = new URL(window.location.href);
+        if (firstAuthorToggle.checked) url.searchParams.set("firstAuthor", "1");
+        else url.searchParams.delete("firstAuthor");
+        window.location.href = url.href;
+      });
+      const authorDirectory = source.authors || {};
+      const citationInstitutionDirectory = source.institutions || {};
+      const institutionDirectory = institutionRegistry.institutions || source.institutions || {};
+      const institutionNameMap = institutionRegistry.name_map || {};
+      const authorMap = new Map();
+      const institutionMap = new Map();
+      const countryWorks = new Map();
+      const portfolioCounts = new Map();
+
+      const works = Object.entries(source.works || {})
+        .filter(([, work]) => Object.keys(work.citations || {}).some((code) => !firstAuthorOnly || firstAuthorCodes.has(code)))
+        .map(([scholarId, work]) => {
+        const citations = Object.entries(work.citations || {})
+          .filter(([code]) => !firstAuthorOnly || firstAuthorCodes.has(code))
+          .map(([code, url]) => ({ code, url }));
+        citations.forEach(({ code }) => portfolioCounts.set(code, (portfolioCounts.get(code) || 0) + 1));
+        const workCountries = new Set();
+        const workInstitutions = new Set();
+
+        const authors = (work.authorships || []).map((authorship) => {
+          const authorRecord = authorDirectory[authorship.author_id] || {};
+          const name = authorship.display_name || authorRecord.canonical_name || authorship.author_id;
+          const affiliations = (authorship.affiliations || []).map((affiliation) => {
+            const sourceInstitutionIds = affiliation.institution_ids || [];
+            const sourceName = affiliation.label || (sourceInstitutionIds.length === 1 ? citationInstitutionDirectory[sourceInstitutionIds[0]]?.canonical_name || "" : "");
+            const institutionIds = institutionNameMap[sourceName] || sourceInstitutionIds;
+            const institutions = institutionIds.map((id) => institutionDirectory[id]?.canonical_name || id);
+            const registeredCountries = institutionIds.flatMap((id) => institutionDirectory[id]?.countries || []);
+            const countries = uniqueSorted(registeredCountries.length ? registeredCountries : affiliation.countries || []);
+            countries.forEach((country) => workCountries.add(country));
+            institutionIds.forEach((id) => workInstitutions.add(id));
+            return { label: affiliation.label || "", countries, institutionIds, institutions };
+          });
+
+          if (!authorMap.has(authorship.author_id)) {
+            authorMap.set(authorship.author_id, {
+              id: authorship.author_id,
+              name: authorRecord.canonical_name || name,
+              aliases: authorRecord.aliases || [],
+              works: new Set(),
+              institutions: new Set(),
+              countries: new Set(),
+              portfolio: new Set()
+            });
+          }
+          const aggregate = authorMap.get(authorship.author_id);
+          aggregate.works.add(scholarId);
+          citations.forEach(({ code }) => aggregate.portfolio.add(code));
+          affiliations.forEach((affiliation) => {
+            affiliation.institutionIds.forEach((id) => aggregate.institutions.add(id));
+            affiliation.countries.forEach((country) => aggregate.countries.add(country));
+          });
+          return { id: authorship.author_id, name, affiliations };
+        });
+
+        [...workCountries].forEach((country) => {
+          if (!countryWorks.has(country)) countryWorks.set(country, new Set());
+          countryWorks.get(country).add(scholarId);
+        });
+
+        [...workInstitutions].forEach((institutionId) => {
+          if (!institutionMap.has(institutionId)) {
+            institutionMap.set(institutionId, {
+              id: institutionId,
+              name: institutionDirectory[institutionId]?.canonical_name || institutionId,
+              works: new Set(),
+              authors: new Set(),
+              countries: new Set(institutionDirectory[institutionId]?.countries || []),
+              portfolio: new Set()
+            });
+          }
+          const aggregate = institutionMap.get(institutionId);
+          aggregate.works.add(scholarId);
+          citations.forEach(({ code }) => aggregate.portfolio.add(code));
+          authors.forEach((author) => author.affiliations.forEach((affiliation) => {
+            if (affiliation.institutionIds.includes(institutionId)) {
+              aggregate.authors.add(author.id);
+              if (!(institutionDirectory[institutionId]?.countries || []).length && affiliation.institutionIds.length === 1) {
+                affiliation.countries.forEach((country) => aggregate.countries.add(country));
+              }
+            }
+          }));
+        });
+
+        const countries = uniqueSorted([...workCountries]);
+        const institutionNames = uniqueSorted([...workInstitutions].map((id) => institutionDirectory[id]?.canonical_name || id));
+        const searchText = [work.title, ...citations.map(({ code }) => code), ...countries, ...institutionNames,
+          ...authors.map((author) => author.name)].join(" ").toLocaleLowerCase();
+
+        return {
+          scholarId,
+          title: work.title,
+          evidenceUrl: work.evidence_url || "",
+          citations,
+          authors,
+          countries,
+          institutions: institutionNames,
+          searchText
+        };
+      }).sort((a, b) => collator.compare(a.title, b.title));
+
+      const authors = [...authorMap.values()].map((author) => ({
+        ...author,
+        institutionNames: uniqueSorted([...author.institutions].map((id) => institutionDirectory[id]?.canonical_name || id)),
+        countryNames: uniqueSorted([...author.countries]),
+        portfolioNames: uniqueSorted([...author.portfolio])
+      })).sort((a, b) => collator.compare(a.name, b.name));
+
+      const institutions = [...institutionMap.values()].map((institution) => ({
+        ...institution,
+        countryNames: uniqueSorted([...institution.countries]),
+        portfolioNames: uniqueSorted([...institution.portfolio])
+      })).sort((a, b) => b.works.size - a.works.size || collator.compare(a.name, b.name));
+
+      const institutionNameMappings = Object.entries(institutionNameMap).map(([sourceName, institutionIds]) => ({
+        sourceName,
+        canonicalNames: uniqueSorted(institutionIds.map((id) => institutionDirectory[id]?.canonical_name || id)),
+        countryNames: uniqueSorted(institutionIds.flatMap((id) => institutionDirectory[id]?.countries || []))
+      })).sort((a, b) => collator.compare(a.sourceName, b.sourceName));
+
+      const citationLinks = works.reduce((sum, work) => sum + work.citations.length, 0);
+      const portfolio = [...portfolioCounts.entries()].sort((a, b) => b[1] - a[1] || collator.compare(a[0], b[0]));
+      const countries = [...countryWorks.entries()].sort((a, b) => b[1].size - a[1].size || collator.compare(a[0], b[0]));
+      const continents = uniqueSorted(countries.map(([country]) => payload.country_continents?.[country]));
+
+      const setText = (id, value) => { document.getElementById(id).textContent = value; };
+      setText("stat-works", numberFormat.format(works.length));
+      setText("stat-links", numberFormat.format(citationLinks));
+      setText("stat-authors", numberFormat.format(authors.length));
+      setText("stat-institutions", numberFormat.format(institutions.length));
+      setText("stat-countries", numberFormat.format(countries.length));
+      setText("stat-continents", numberFormat.format(continents.length));
+      setText("dataset-note", `${firstAuthorOnly ? "First-author portfolio" : "Complete portfolio"} · ${numberFormat.format(source.metadata?.source_row_count || 0)} source rows · schema version ${source.schema_version || "—"}`);
+      setText("footer-source", `Data fingerprint ${String(source.metadata?.content_sha256 || "unavailable").slice(0, 12)}`);
+
+      const renderBars = (targetId, entries, maxItems, getLabel, getValue) => {
+        const target = document.getElementById(targetId);
+        const shown = entries.slice(0, maxItems);
+        const maximum = Math.max(...shown.map(getValue), 1);
+        target.innerHTML = shown.map((entry) => {
+          const value = getValue(entry);
+          return `<div class="bar-row"><div class="bar-label" title="${escapeHtml(getLabel(entry))}">${escapeHtml(getLabel(entry))}</div>` +
+            `<div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:${Math.max(2, value / maximum * 100).toFixed(2)}%"></div></div>` +
+            `<div class="bar-value">${numberFormat.format(value)}</div></div>`;
+        }).join("");
+      };
+
+      renderBars("portfolio-bars", portfolio, portfolio.length, ([label]) => label, ([, value]) => value);
+      renderBars("country-bars", countries, 12, ([label]) => label, ([, workSet]) => workSet.size);
+
+      const mostCited = portfolio[0] || ["—", 0];
+      const topCountry = countries[0] || ["—", new Set()];
+      setText("overview-note", `${mostCited[0]} has the broadest documented reach, appearing in ${numberFormat.format(mostCited[1])} citing works.`);
+      document.getElementById("overview-facts").innerHTML = [
+        ["Largest country cluster", `${topCountry[0]} · ${topCountry[1].size} works`],
+        ["Average authors per work", (works.reduce((sum, work) => sum + work.authors.length, 0) / Math.max(works.length, 1)).toFixed(1)],
+        ["Works with multiple portfolio links", works.filter((work) => work.citations.length > 1).length],
+        ["Recorded affiliations", works.reduce((sum, work) => sum + work.authors.reduce((count, author) => count + author.affiliations.length, 0), 0)]
+      ].map(([label, value]) => `<li><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></li>`).join("");
+
+      document.getElementById("top-institutions").innerHTML = institutions.slice(0, 12).map((institution) =>
+        `<tr><td><div class="cell-main">${escapeHtml(institution.name)}</div><div class="cell-sub">${escapeHtml(institution.countryNames.join("; ") || "Country not recorded")}</div></td>` +
+        `<td class="number">${institution.works.size}</td><td class="number">${institution.authors.size}</td></tr>`
+      ).join("");
+
+      const citationFilter = document.getElementById("work-citation-filter");
+      portfolio.map(([code]) => code).sort(collator.compare).forEach((code) => citationFilter.add(new Option(code, code)));
+      const countryFilter = document.getElementById("work-country-filter");
+      countries.map(([country]) => country).sort(collator.compare).forEach((country) => countryFilter.add(new Option(country, country)));
+
+      const renderBadges = (items, neutral = false) => items.map((item) => `<span class="badge${neutral ? " neutral" : ""}">${escapeHtml(item)}</span>`).join("");
+      const state = { workLimit: 30, researcherLimit: 75, institutionLimit: 75, nameMapLimit: 75 };
+
+      const workCard = (work) => {
+        const authorMarkup = work.authors.map((author) => {
+          const affiliations = author.affiliations.length ? author.affiliations.map((affiliation) => {
+            const fallback = [affiliation.institutions.join("; "), affiliation.countries.join("; ")].filter(Boolean).join(" · ");
+            return `<div class="affiliation">${escapeHtml(affiliation.label || fallback || "Affiliation not recorded")}</div>`;
+          }).join("") : '<div class="affiliation">Affiliation not recorded</div>';
+          return `<div class="author"><div class="author-name">${escapeHtml(author.name)}</div>${affiliations}</div>`;
+        }).join("");
+        const citationMarkup = work.citations.map(({ code, url }) =>
+          `<div class="citation-link"><strong>${escapeHtml(code)}</strong><a class="link-button" href="${safeUrl(url)}" target="_blank" rel="noopener noreferrer">Scholar record</a></div>`
+        ).join("");
+        const evidence = work.evidenceUrl ? `<div class="evidence-link"><a class="link-button" href="${safeUrl(work.evidenceUrl)}" target="_blank" rel="noopener noreferrer">Open affiliation evidence</a></div>` : "";
+        return `<details class="work-card"><summary><span class="work-title">${escapeHtml(work.title)}</span><span class="badges">${renderBadges(work.citations.map(({ code }) => code))}${renderBadges(work.countries, true)}</span></summary>` +
+          `<div class="work-detail"><div class="detail-grid"><section><h3 class="detail-title">Researchers and affiliations</h3><div class="author-list">${authorMarkup}</div></section>` +
+          `<aside><h3 class="detail-title">Portfolio works cited</h3><div class="citation-links">${citationMarkup}</div>${evidence}</aside></div></div></details>`;
+      };
+
+      const filteredWorks = () => {
+        const query = document.getElementById("work-search").value.trim().toLocaleLowerCase();
+        const citation = citationFilter.value;
+        const country = countryFilter.value;
+        return works.filter((work) => (!query || work.searchText.includes(query)) &&
+          (!citation || work.citations.some((item) => item.code === citation)) &&
+          (!country || work.countries.includes(country)));
+      };
+
+      const renderWorks = () => {
+        const filtered = filteredWorks();
+        const visible = filtered.slice(0, state.workLimit);
+        setText("work-result-count", `${numberFormat.format(filtered.length)} citing ${filtered.length === 1 ? "work" : "works"}`);
+        document.getElementById("work-list").innerHTML = visible.length ? visible.map(workCard).join("") : '<div class="empty">No citing works match these filters.</div>';
+        const more = document.getElementById("work-more");
+        more.hidden = visible.length >= filtered.length;
+        more.textContent = `Show more citing works (${numberFormat.format(filtered.length - visible.length)} remaining)`;
+      };
+
+      const renderResearchers = () => {
+        const query = document.getElementById("researcher-search").value.trim().toLocaleLowerCase();
+        const filtered = authors.filter((author) => [author.name, ...author.aliases, ...author.institutionNames, ...author.countryNames, ...author.portfolioNames].join(" ").toLocaleLowerCase().includes(query));
+        const visible = filtered.slice(0, state.researcherLimit);
+        setText("researcher-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "researcher" : "researchers"}`);
+        document.getElementById("researcher-table").innerHTML = visible.map((author) =>
+          `<tr><td><div class="cell-main">${escapeHtml(author.name)}</div>${author.aliases.length ? `<div class="cell-sub">Also recorded as ${escapeHtml(author.aliases.join("; "))}</div>` : ""}</td>` +
+          `<td>${escapeHtml(author.institutionNames.join("; ") || "Not recorded")}<div class="cell-sub">${escapeHtml(author.countryNames.join("; ") || "Country not recorded")}</div></td>` +
+          `<td><div class="badges">${renderBadges(author.portfolioNames)}</div></td><td class="number">${author.works.size}</td></tr>`
+        ).join("");
+        const more = document.getElementById("researcher-more");
+        more.hidden = visible.length >= filtered.length;
+        more.textContent = `Show more researchers (${numberFormat.format(filtered.length - visible.length)} remaining)`;
+      };
+
+      const renderInstitutions = () => {
+        const query = document.getElementById("institution-search").value.trim().toLocaleLowerCase();
+        const filtered = institutions.filter((institution) => [institution.name, ...institution.countryNames, ...institution.portfolioNames].join(" ").toLocaleLowerCase().includes(query));
+        const visible = filtered.slice(0, state.institutionLimit);
+        setText("institution-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "institution" : "institutions"}`);
+        document.getElementById("institution-table").innerHTML = visible.map((institution) =>
+          `<tr><td><div class="cell-main">${escapeHtml(institution.name)}</div></td><td>${escapeHtml(institution.countryNames.join("; ") || "Not recorded")}</td>` +
+          `<td><div class="badges">${renderBadges(institution.portfolioNames)}</div></td><td class="number">${institution.authors.size}</td><td class="number">${institution.works.size}</td></tr>`
+        ).join("");
+        const more = document.getElementById("institution-more");
+        more.hidden = visible.length >= filtered.length;
+        more.textContent = `Show more institutions (${numberFormat.format(filtered.length - visible.length)} remaining)`;
+      };
+
+      const renderNameMap = () => {
+        const query = document.getElementById("name-map-search").value.trim().toLocaleLowerCase();
+        const filtered = institutionNameMappings.filter((mapping) => [mapping.sourceName, ...mapping.canonicalNames, ...mapping.countryNames].join(" ").toLocaleLowerCase().includes(query));
+        const visible = filtered.slice(0, state.nameMapLimit);
+        setText("name-map-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "mapping" : "mappings"}`);
+        document.getElementById("name-map-table").innerHTML = visible.map((mapping) =>
+          `<tr><td><div class="cell-main">${escapeHtml(mapping.sourceName)}</div></td>` +
+          `<td>${escapeHtml(mapping.canonicalNames.join("; ") || "Not recorded")}</td><td>${escapeHtml(mapping.countryNames.join("; ") || "Not recorded")}</td></tr>`
+        ).join("");
+        const more = document.getElementById("name-map-more");
+        more.hidden = visible.length >= filtered.length;
+        more.textContent = `Show more mappings (${numberFormat.format(filtered.length - visible.length)} remaining)`;
+      };
+
+      const resetAndRender = (kind) => {
+        if (kind === "works") { state.workLimit = 30; renderWorks(); }
+        if (kind === "researchers") { state.researcherLimit = 75; renderResearchers(); }
+        if (kind === "institutions") { state.institutionLimit = 75; renderInstitutions(); }
+        if (kind === "name-map") { state.nameMapLimit = 75; renderNameMap(); }
+      };
+
+      ["work-search", "work-citation-filter", "work-country-filter"].forEach((id) => document.getElementById(id).addEventListener(id === "work-search" ? "input" : "change", () => resetAndRender("works")));
+      document.getElementById("researcher-search").addEventListener("input", () => resetAndRender("researchers"));
+      document.getElementById("institution-search").addEventListener("input", () => resetAndRender("institutions"));
+      document.getElementById("name-map-search").addEventListener("input", () => resetAndRender("name-map"));
+      document.getElementById("work-more").addEventListener("click", () => { state.workLimit += 30; renderWorks(); });
+      document.getElementById("researcher-more").addEventListener("click", () => { state.researcherLimit += 75; renderResearchers(); });
+      document.getElementById("institution-more").addEventListener("click", () => { state.institutionLimit += 75; renderInstitutions(); });
+      document.getElementById("name-map-more").addEventListener("click", () => { state.nameMapLimit += 75; renderNameMap(); });
+
+      const tabs = [...document.querySelectorAll("[role=tab]")];
+      const activateTab = (tab) => {
+        tabs.forEach((candidate) => {
+          const active = candidate === tab;
+          candidate.setAttribute("aria-selected", active);
+          candidate.tabIndex = active ? 0 : -1;
+          const panel = document.getElementById(candidate.getAttribute("aria-controls"));
+          panel.hidden = !active;
+          panel.classList.toggle("active", active);
+        });
+      };
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => activateTab(tab));
+        tab.addEventListener("keydown", (event) => {
+          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+          event.preventDefault();
+          let targetIndex = index;
+          if (event.key === "ArrowLeft") targetIndex = (index - 1 + tabs.length) % tabs.length;
+          if (event.key === "ArrowRight") targetIndex = (index + 1) % tabs.length;
+          if (event.key === "Home") targetIndex = 0;
+          if (event.key === "End") targetIndex = tabs.length - 1;
+          activateTab(tabs[targetIndex]);
+          tabs[targetIndex].focus();
+        });
+      });
+
+      renderWorks();
+      renderResearchers();
+      renderInstitutions();
+      renderNameMap();
+    })();
+  </script>
+</body>
+</html>

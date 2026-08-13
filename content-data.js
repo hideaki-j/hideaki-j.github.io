@@ -472,6 +472,7 @@ window.siteContent = {
                 },
                 publications: [
                     {
+                        citationCode: "LAPS",
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
@@ -484,6 +485,7 @@ window.siteContent = {
                         downloadsUrl: "https://dl.acm.org/doi/10.1145/3626772.3657815"
                     },
                     {
+                        citationCode: "ConEL",
                         title: "Conversational entity linking: problem definition and datasets",
                         authors: "H Joko, F Hasibi, K Balog, AP de Vries",
                         venue: "SIGIR '21",
@@ -495,6 +497,7 @@ window.siteContent = {
                         downloadsUrl: "https://dl.acm.org/doi/abs/10.1145/3404835.3463258"
                     },
                     {
+                        citationCode: "CREL",
                         title: "Personal entity, concept, and named entity linking in conversations",
                         authors: "H Joko, F Hasibi",
                         venue: "CIKM '22",
@@ -505,6 +508,7 @@ window.siteContent = {
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7872023178425784537"
                     },
                     {
+                        citationCode: "CRSArena",
                         title: "CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems",
                         authors: "N Bernard, H Joko, F Hasibi, K Balog",
                         venue: "WSDM '25",
@@ -515,6 +519,7 @@ window.siteContent = {
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=7343923940986836477"
                     },
                     {
+                        citationCode: "LanguagePatent",
                         title: "Language Processing Device, Language Processing System and Language Processing Method",
                         authors: "H Joko",
                         venue: "US Patent",
@@ -525,6 +530,7 @@ window.siteContent = {
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=3295116525722928383",
                     },
                     {
+                        citationCode: "SpatialEmbeddings",
                         title: "Learning Word Embeddings Using Spatial Information",
                         authors: "H Joko, R Oka, H Uchide, H Itsui, T Otsuka",
                         venue: "IEEE SMC '19",
@@ -532,6 +538,7 @@ window.siteContent = {
                         year: 2019
                     },
                     {
+                        citationCode: "FACE",
                         title: "FACE: A Fine-grained Reference Free Evaluator for Conversational Recommender Systems",
                         authors: "H Joko, F Hasibi",
                         venue: "SIGIR '26",
@@ -542,6 +549,7 @@ window.siteContent = {
                         year: 2026
                     },
                     {
+                        citationCode: "TRECCAsT",
                         title: "Radboud University at TREC CAsT 2021",
                         authors: "H Joko, EJ Gerritse, F Hasibi, AP de Vries",
                         venue: "NIST Special Publication",
@@ -549,6 +557,7 @@ window.siteContent = {
                         year: 2022
                     },
                     {
+                        citationCode: "IntentTransfer",
                         title: "Intention Understanding in Small Training Data Sets by Using Transfer Learning",
                         authors: "H Joko, Y Koji, H Ucihde, T Otsuka",
                         venue: "2018 Eleventh International Conference on Mobile Computing and Ubiquitous …",
@@ -556,6 +565,7 @@ window.siteContent = {
                         year: 2018
                     },
                     {
+                        citationCode: "JPIntentTransfer",
                         title: "転移学習による小規模教師データを用いた意図理解",
                         authors: "H Joko, H Uchide, Y Koji, T Otsuka",
                         venue: "IEICE Conferences Archives",
@@ -563,6 +573,7 @@ window.siteContent = {
                         year: 2018
                     },
                     {
+                        citationCode: "Skipgram",
                         title: "文脈限定 Skip-gram による同義語獲得",
                         authors: "H Joko, Y Matsuda, K Yamaguchi",
                         venue: "Journal of Natural Language Processing",
@@ -571,6 +582,7 @@ window.siteContent = {
                         type: "journal"
                     },
                     {
+                        citationCode: "WordSenseEval",
                         title: "同義語判定問題を用いた語義ベクトルの評価の検討—Skip-gram モデルで獲得した語義ベクトルを例として—",
                         authors: "H Joko, Y Matsuda, K Yamaguchi",
                         venue: "The Japanese Society for Artificial Intelligence SIG-AM Workshop",
@@ -578,6 +590,7 @@ window.siteContent = {
                         year: 2015
                     },
                     {
+                        citationCode: "WildClaims",
                         title: "WildClaims: Information Access Conversations in the Wild (Chat)",
                         authors: "H Joko, S Amirshahi, CLA Clarke, F Hasibi",
                         venue: "ECIR '26",
@@ -595,6 +608,7 @@ window.siteContent = {
                         year: 2026
                     },
                     {
+                        citationCode: "InfoPatent",
                         title: "Information processing apparatus, non-transitory computer-readable storage medium, and information processing method",
                         authors: "H Joko",
                         venue: "JP/CN/KR/TW Patent",

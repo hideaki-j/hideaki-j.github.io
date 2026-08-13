@@ -52,6 +52,18 @@ assert.ok(Array.isArray(scholarProfile.publications), 'scholarProfile.publicatio
 const { profile, publications } = scholarProfile;
 const citations = profile?.citations || {};
 const byYear = citations.byYear || {};
+const citedPublications = publications.filter((publication) => numericCitationCount(publication) > 0);
+const citationCodes = citedPublications.map((publication) => publication.citationCode);
+
+assert.ok(
+  citationCodes.every(Boolean),
+  'every cited publication must define citationCode for the citation map'
+);
+assert.equal(
+  new Set(citationCodes).size,
+  citationCodes.length,
+  'publication citationCode values must be unique'
+);
 
 const publicationCitationTotal = publications.reduce(
   (total, publication) => total + numericCitationCount(publication),
