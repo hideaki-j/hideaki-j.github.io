@@ -129,4 +129,37 @@ assert.equal(
   `citations.since2020.citations must equal citation counts since ${sinceYear}`
 );
 
-console.log('Citation aggregate checks passed.');
+// Check the generated citation archive too: the profile and database can have
+// equal overall totals while disagreeing on individual publications.
+const archiveContext = { window: {} };
+vm.createContext(archiveContext);
+vm.runInContext(fs.readFileSync(path.join(rootDir, 'data/citation_map_viewer/data.js'), 'utf8'), archiveContext);
+const archive = JSON.parse(require('node:zlib').gunzipSync(Buffer.from(archiveContext.window._D, 'base64')));
+const archivedCounts = {};
+const authorIds = new Set();
+const institutionIds = new Set();
+for (const work of Object.values(archive.citation.works)) {
+  for (const code of Object.keys(work.citations)) archivedCounts[code] = (archivedCounts[code] || 0) + 1;
+  for (const authorship of work.authorships) {
+    assert.ok(archive.citation.authors[authorship.author_id], 'authorship must reference a known author');
+    authorIds.add(authorship.author_id);
+    for (const affiliation of authorship.affiliations) {
+      const ids = affiliation.institution_ids;
+      const sourceName = affiliation.label || (ids.length === 1 ? archive.citation.institutions[ids[0]]?.canonical_name : '');
+      for (const id of archive.institutions.name_map[sourceName] || ids) {
+        assert.ok(archive.institutions.institutions[id], 'affiliation must reference a registered institution');
+        institutionIds.add(id);
+      }
+    }
+  }
+}
+for (const publication of citedPublications) {
+  assert.equal(archivedCounts[publication.citationCode], publication.cited_by, `${publication.citationCode} must match the citation archive`);
+}
+const expectedReach = `${authorIds.size} researchers across ${institutionIds.size} institutions worldwide`;
+assert.ok(fs.readFileSync(contentDataPath, 'utf8').includes(expectedReach), 'biography reach must match the citation archive');
+const sortedCounts = citedPublications.map(numericCitationCount).sort((a, b) => b - a);
+assert.equal(citations.all.hIndex, sortedCounts.filter((count, index) => count >= index + 1).length);
+assert.equal(citations.all.i10Index, sortedCounts.filter((count) => count >= 10).length);
+
+console.log('Citation aggregate and archive consistency checks passed.');

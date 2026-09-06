@@ -31,7 +31,7 @@ window.siteContent = {
                 titleHTML: '<i class="fas fa-user"></i> Biography',
                 paragraphsHTML: [
                     '<p>Hideaki Joko is a researcher and engineer specializing in information retrieval (IR) and NLP, <span class="highlight-yellow">passionate about translating academic research into real-world impact</span>, with a strong background in both academia and industry with 10 years of experience combined.</p>',
-                    '<p><b>Research</b>: He has published 10+ first-author papers including top venues such as SIGIR and CIKM, and received 7 awards and 3 patents on IR/NLP research and development. He has delivered 10+ talks at internationally renowned institutes, and his research has been used by <span class="highlight-yellow">500 researchers across 180 institutions worldwide</span>, including notable organizations such as Google DeepMind and Stanford.</p>',
+                    '<p><b>Research</b>: He has published 10+ first-author papers including top venues such as SIGIR and CIKM, and received 7 awards and 3 patents on IR/NLP research and development. He has delivered 10+ talks at internationally renowned institutes, and his research has been used by <span class="highlight-yellow">498 researchers across 180 institutions worldwide</span>, including notable organizations such as Google DeepMind and Stanford.</p>',
                     '<p><b>Experience</b>: He is currently an <span class="highlight-yellow">Applied Scientist at Thomson Reuters Labs</span>, where he applies research in IR/NLP/LLM to develop legal research products which support about half of all lawyers in North America. Before, he was a Visiting Scholar at University of Waterloo, PhD candidate at Radboud University, and a Research Engineer at Mitsubishi Electric.</p>',
                 ]
             }
@@ -130,8 +130,8 @@ window.siteContent = {
                     iconClass: 'fas fa-file-alt',
                     title: 'Publications',
                     number: '10+',
-                    second_number: '120+',
-                    descriptionHTML: 'Published 10+ first-author papers including A+ venues like SIGIR/CIKM, with his research work used by 500 researchers across 180 institutions worldwide.',
+                    second_number: '162 citations',
+                    descriptionHTML: 'Published 10+ first-author papers including A+ venues like SIGIR/CIKM, with his research work used by 498 researchers across 180 institutions worldwide.',
                     href: 'publications.html'
                 },
                 {
@@ -364,7 +364,7 @@ window.siteContent = {
             titleHTML: '<i class="fas fa-graduation-cap"></i> Scholar Profile',
             intro: '',
             scholarProfile: {
-                lastUpdated: '2026-06-21',
+                lastUpdated: '2026-09-06',
                 profile: {
                     name: "Hideaki Joko",
                     affiliation: "Applied Scientist at Thomson Reuters Labs",
@@ -388,23 +388,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 148
+                            citations: 151
                         },
                         all: {
-                            citations: 160,
-                            hIndex: 5,
+                            citations: 162,
+                            hIndex: 6,
                             i10Index: 4
                         },
                         since2020: {
-                            citations: 157,
-                            hIndex: 5,
+                            citations: 159,
+                            hIndex: 6,
                             i10Index: 4
                         },
                         byYear: {
                             years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [2, 0, 1, 1, 14, 18, 25, 58, 41],
-                            firstAuthor: [2, 0, 1, 1, 14, 18, 25, 50, 37],
-                            all: [2, 0, 1, 1, 14, 18, 25, 58, 41]
+                            counts: [2, 0, 1, 1, 14, 18, 20, 55, 51],
+                            firstAuthor: [2, 0, 1, 1, 14, 18, 20, 49, 46],
+                            all: [2, 0, 1, 1, 14, 18, 20, 55, 51]
                         }
                     },
                     coauthors: [
@@ -476,7 +476,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 71,
+                        cited_by: 73,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
@@ -501,7 +501,7 @@ window.siteContent = {
                         title: "Personal entity, concept, and named entity linking in conversations",
                         authors: "H Joko, F Hasibi",
                         venue: "CIKM '22",
-                        cited_by: 14,
+                        cited_by: 15,
                         year: 2022,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/10.1145/3511808.3557667",
@@ -512,7 +512,7 @@ window.siteContent = {
                         title: "CRS Arena: Crowdsourced Benchmarking of Conversational Recommender Systems",
                         authors: "N Bernard, H Joko, F Hasibi, K Balog",
                         venue: "WSDM '25",
-                        cited_by: 12,
+                        cited_by: 11,
                         year: 2025,
                         ranking: "A",
                         url: "https://dl.acm.org/doi/abs/10.1145/3701551.3704120",
@@ -545,7 +545,7 @@ window.siteContent = {
                         ranking: "A*",
                         cited_by: 8,
                         url: "https://arxiv.org/abs/2506.00314",
-                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227,8657043087002599898,13242180718810573332",
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227,5591957624390925942,13242180718810573332",
                         year: 2026
                     },
                     {
