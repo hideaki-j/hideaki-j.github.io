@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-"""Convert repository citation sources into the browser-readable data.js."""
+"""Serve the citation viewer directly from the repository's trusted pickle files."""
 
 from __future__ import annotations
 
-import base64
-import gzip
+import argparse
 import json
-import os
 import pickle
-import subprocess
-import tempfile
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.parse import urlsplit
 
 
 VIEWER_DIR = Path(__file__).resolve().parent
@@ -18,7 +16,6 @@ ROOT_DIR = VIEWER_DIR.parent.parent
 CITATION_PATH = VIEWER_DIR.parent / "citation_info.pkl"
 INSTITUTION_PATH = VIEWER_DIR.parent / "institutions.pkl"
 CONTENT_DATA_PATH = ROOT_DIR / "content-data.js"
-OUTPUT_PATH = VIEWER_DIR / "data.js"
 
 COUNTRY_CONTINENTS = {
     "Australia": "Oceania",
@@ -62,32 +59,7 @@ def load_pickle(path: Path) -> dict:
     return value
 
 
-def load_portfolio_authorships() -> dict[str, bool]:
-    script = r"""
-const fs = require("fs");
-const vm = require("vm");
-const context = { window: {} };
-vm.createContext(context);
-vm.runInContext(fs.readFileSync(process.argv[1], "utf8"), context);
-const publications = context.window.siteContent.pages.publications.scholarProfile.publications;
-const result = {};
-for (const publication of publications) {
-  if (!publication.citationCode) continue;
-  const authors = String(publication.authors || "").trim();
-  result[publication.citationCode] = /^(H Joko|H JOKO|城光英彰)/.test(authors);
-}
-process.stdout.write(JSON.stringify(result));
-"""
-    completed = subprocess.run(
-        ["node", "-e", script, str(CONTENT_DATA_PATH)],
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    return json.loads(completed.stdout)
-
-
-def validate(citation: dict, registry: dict, portfolio_authorships: dict[str, bool]) -> None:
+def validate(citation: dict, registry: dict) -> None:
     required_citation_keys = {"schema_version", "metadata", "authors", "institutions", "works"}
     required_registry_keys = {"schema_version", "metadata", "institutions", "name_map"}
     if not required_citation_keys.issubset(citation):
@@ -107,15 +79,6 @@ def validate(citation: dict, registry: dict, portfolio_authorships: dict[str, bo
     if unknown_ids:
         raise ValueError(f"name_map references unknown institution IDs: {sorted(unknown_ids)}")
 
-    citation_codes = {
-        code
-        for work in citation["works"].values()
-        for code in work.get("citations", {})
-    }
-    missing_codes = citation_codes - set(portfolio_authorships)
-    if missing_codes:
-        raise ValueError(f"content-data.js is missing citationCode values: {sorted(missing_codes)}")
-
     registered_countries = {
         country
         for institution in registry["institutions"].values()
@@ -126,47 +89,61 @@ def validate(citation: dict, registry: dict, portfolio_authorships: dict[str, bo
         raise ValueError(f"countries are missing continent mappings: {sorted(missing_countries)}")
 
 
-def convert() -> None:
+def load_payload() -> dict:
+    # Reload on every request so refreshing the viewer picks up saved edits.
     citation = load_pickle(CITATION_PATH)
     institutions = load_pickle(INSTITUTION_PATH)
-    portfolio_authorships = load_portfolio_authorships()
-    validate(citation, institutions, portfolio_authorships)
-
-    payload = {
+    validate(citation, institutions)
+    return {
         "citation": citation,
         "institutions": institutions,
         "country_continents": COUNTRY_CONTINENTS,
-        "first_author_codes": sorted(
-            code for code, is_first_author in portfolio_authorships.items() if is_first_author
-        ),
     }
-    json_bytes = json.dumps(
-        payload,
-        ensure_ascii=False,
-        separators=(",", ":"),
-    ).encode("utf-8")
-    encoded = base64.b64encode(gzip.compress(json_bytes, compresslevel=9, mtime=0)).decode("ascii")
-    output = f'window._D="{encoded}";\n'
 
-    file_descriptor, temporary_name = tempfile.mkstemp(
-        dir=VIEWER_DIR,
-        prefix=".data-",
-        suffix=".js",
-    )
-    try:
-        with os.fdopen(file_descriptor, "w", encoding="ascii", newline="\n") as handle:
-            handle.write(output)
-        os.replace(temporary_name, OUTPUT_PATH)
-    except BaseException:
-        Path(temporary_name).unlink(missing_ok=True)
-        raise
 
-    print(
-        f"Wrote {OUTPUT_PATH.name}: {len(citation['works'])} works, "
-        f"{len(institutions['institutions'])} institutions, "
-        f"{len(payload['first_author_codes'])} first-author portfolio works"
-    )
+class ViewerHandler(BaseHTTPRequestHandler):
+    def do_GET(self) -> None:
+        path = urlsplit(self.path).path
+        try:
+            if path == "/api/data":
+                body = json.dumps(load_payload(), ensure_ascii=False).encode("utf-8")
+                content_type = "application/json; charset=utf-8"
+            elif path in ("/", "/index.html"):
+                body = (VIEWER_DIR / "index.html").read_bytes()
+                content_type = "text/html; charset=utf-8"
+            elif path == "/content-data.js":
+                body = CONTENT_DATA_PATH.read_bytes()
+                content_type = "text/javascript; charset=utf-8"
+            else:
+                self.send_error(404)
+                return
+        except Exception as error:
+            self.log_error("Unable to load viewer data: %s", error)
+            body = json.dumps({"error": str(error)}).encode("utf-8")
+            self.respond(500, body, "application/json; charset=utf-8")
+            return
+        self.respond(200, body, content_type)
+
+    def respond(self, status: int, body: bytes, content_type: str) -> None:
+        self.send_response(status)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        self.wfile.write(body)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--port", type=int, default=8000)
+    args = parser.parse_args()
+    with ThreadingHTTPServer(("127.0.0.1", args.port), ViewerHandler) as server:
+        print(f"Citation viewer: http://127.0.0.1:{server.server_port}", flush=True)
+        try:
+            server.serve_forever()
+        except KeyboardInterrupt:
+            pass
 
 
 if __name__ == "__main__":
-    convert()
+    main()

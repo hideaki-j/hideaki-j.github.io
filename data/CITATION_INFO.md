@@ -23,10 +23,10 @@ Authoritative institution registry:
 
 Countries are registered per institution, preventing countries from unrelated co-affiliations from being assigned to each other. IDs are `institution_` plus the first 12 hexadecimal characters of the canonical name's SHA-256 hash.
 
-## Convert for the viewer
+## Run the viewer locally
 
 ```sh
-python3 data/citation_map_viewer/convert.py
+python3 data/citation_map_viewer/server.py
 ```
 
-This reads both pickle files plus publication authorship metadata from `content-data.js`, adds country-to-continent classifications, then writes only `data.js`. The output contains gzip-compressed binary data encoded as Base64, with no readable records. `index.html` is fixed and loads `data.js`; all displayed totals are calculated in the browser.
+Open http://127.0.0.1:8000. Refresh to reload the pickle files; Ctrl+C to stop.

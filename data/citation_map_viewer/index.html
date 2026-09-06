@@ -643,7 +643,7 @@
     </footer>
   </main>
 
-  <script src="data.js"></script>
+  <script src="/content-data.js"></script>
   <script>
     (async () => {
       "use strict";
@@ -660,17 +660,23 @@
         } catch (_) { return "#"; }
       };
       const uniqueSorted = (values) => [...new Set(values.filter(Boolean))].sort(collator.compare);
-      const decodeData = async (encoded) => {
-        if (!encoded) throw new Error("Citation map data is missing. Run convert.py first.");
-        const bytes = Uint8Array.from(atob(encoded), (character) => character.charCodeAt(0));
-        const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
-        return JSON.parse(await new Response(stream).text());
-      };
-
-      const payload = await decodeData(window._D);
+      const response = await fetch("/api/data", { cache: "no-store" });
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || `Unable to load citation data (${response.status}).`);
+      }
+      const payload = await response.json();
       const source = payload.citation;
       const institutionRegistry = payload.institutions;
-      const firstAuthorCodes = new Set(payload.first_author_codes || []);
+      const publications = window.siteContent?.pages?.publications?.scholarProfile?.publications;
+      if (!publications) throw new Error("Publication authorship metadata could not be loaded.");
+      const knownCodes = new Set(publications.map((publication) => publication.citationCode).filter(Boolean));
+      const missingCodes = uniqueSorted(Object.values(source.works).flatMap((work) =>
+        Object.keys(work.citations || {}).filter((code) => !knownCodes.has(code))));
+      if (missingCodes.length) throw new Error(`Publication metadata is missing citation codes: ${missingCodes.join(", ")}`);
+      const firstAuthorCodes = new Set(publications
+        .filter((publication) => /^(H Joko|H JOKO|城光英彰)/.test(String(publication.authors || "").trim()))
+        .map((publication) => publication.citationCode).filter(Boolean));
       const firstAuthorOnly = new URLSearchParams(window.location.search).get("firstAuthor") === "1";
       const firstAuthorToggle = document.getElementById("first-author-toggle");
       firstAuthorToggle.checked = firstAuthorOnly;
@@ -978,7 +984,13 @@
       renderResearchers();
       renderInstitutions();
       renderNameMap();
-    })();
+    })().catch((error) => {
+      const note = document.getElementById("dataset-note");
+      note.setAttribute("role", "alert");
+      note.textContent = `Unable to load citation viewer: ${error.message} Start python3 data/citation_map_viewer/server.py and open http://127.0.0.1:8000.`;
+      document.getElementById("first-author-toggle").disabled = true;
+      console.error(error);
+    });
   </script>
 </body>
 </html>
