@@ -515,7 +515,7 @@
     <header class="hero">
       <label class="scope-toggle" for="first-author-toggle">
         <span>First-author works only</span>
-        <input id="first-author-toggle" type="checkbox" role="switch">
+        <input id="first-author-toggle" type="checkbox" role="switch" disabled>
       </label>
       <p class="eyebrow">Research influence archive</p>
       <h1>Citation Impact Map</h1>
@@ -684,306 +684,322 @@
         const url = new URL(window.location.href);
         if (firstAuthorToggle.checked) url.searchParams.set("firstAuthor", "1");
         else url.searchParams.delete("firstAuthor");
-        window.location.href = url.href;
+        renderPortfolio(firstAuthorToggle.checked);
+        window.history.replaceState(null, "", url.href);
       });
-      const authorDirectory = source.authors || {};
-      const citationInstitutionDirectory = source.institutions || {};
-      const institutionDirectory = institutionRegistry.institutions || source.institutions || {};
-      const institutionNameMap = institutionRegistry.name_map || {};
-      const authorMap = new Map();
-      const institutionMap = new Map();
-      const countryWorks = new Map();
-      const portfolioCounts = new Map();
+      let renderEvents;
+      function renderPortfolio(firstAuthorOnly) {
+        // Replace handlers from the previous scope so repeated toggles stay independent.
+        renderEvents?.abort();
+        renderEvents = new AbortController();
+        const listen = (element, type, handler) => element.addEventListener(type, handler, { signal: renderEvents.signal });
+        const authorDirectory = source.authors || {};
+        const citationInstitutionDirectory = source.institutions || {};
+        const institutionDirectory = institutionRegistry.institutions || source.institutions || {};
+        const institutionNameMap = institutionRegistry.name_map || {};
+        const authorMap = new Map();
+        const institutionMap = new Map();
+        const countryWorks = new Map();
+        const portfolioCounts = new Map();
 
-      const works = Object.entries(source.works || {})
-        .filter(([, work]) => Object.keys(work.citations || {}).some((code) => !firstAuthorOnly || firstAuthorCodes.has(code)))
-        .map(([scholarId, work]) => {
-        const citations = Object.entries(work.citations || {})
-          .filter(([code]) => !firstAuthorOnly || firstAuthorCodes.has(code))
-          .map(([code, url]) => ({ code, url }));
-        citations.forEach(({ code }) => portfolioCounts.set(code, (portfolioCounts.get(code) || 0) + 1));
-        const workCountries = new Set();
-        const workInstitutions = new Set();
+        const works = Object.entries(source.works || {})
+          .filter(([, work]) => Object.keys(work.citations || {}).some((code) => !firstAuthorOnly || firstAuthorCodes.has(code)))
+          .map(([scholarId, work]) => {
+          const citations = Object.entries(work.citations || {})
+            .filter(([code]) => !firstAuthorOnly || firstAuthorCodes.has(code))
+            .map(([code, url]) => ({ code, url }));
+          citations.forEach(({ code }) => portfolioCounts.set(code, (portfolioCounts.get(code) || 0) + 1));
+          const workCountries = new Set();
+          const workInstitutions = new Set();
 
-        const authors = (work.authorships || []).map((authorship) => {
-          const authorRecord = authorDirectory[authorship.author_id] || {};
-          const name = authorship.display_name || authorRecord.canonical_name || authorship.author_id;
-          const affiliations = (authorship.affiliations || []).map((affiliation) => {
-            const sourceInstitutionIds = affiliation.institution_ids || [];
-            const sourceName = affiliation.label || (sourceInstitutionIds.length === 1 ? citationInstitutionDirectory[sourceInstitutionIds[0]]?.canonical_name || "" : "");
-            const institutionIds = institutionNameMap[sourceName] || sourceInstitutionIds;
-            const institutions = institutionIds.map((id) => institutionDirectory[id]?.canonical_name || id);
-            const registeredCountries = institutionIds.flatMap((id) => institutionDirectory[id]?.countries || []);
-            const countries = uniqueSorted(registeredCountries.length ? registeredCountries : affiliation.countries || []);
-            countries.forEach((country) => workCountries.add(country));
-            institutionIds.forEach((id) => workInstitutions.add(id));
-            return { label: affiliation.label || "", countries, institutionIds, institutions };
-          });
-
-          if (!authorMap.has(authorship.author_id)) {
-            authorMap.set(authorship.author_id, {
-              id: authorship.author_id,
-              name: authorRecord.canonical_name || name,
-              aliases: authorRecord.aliases || [],
-              works: new Set(),
-              institutions: new Set(),
-              countries: new Set(),
-              portfolio: new Set()
+          const authors = (work.authorships || []).map((authorship) => {
+            const authorRecord = authorDirectory[authorship.author_id] || {};
+            const name = authorship.display_name || authorRecord.canonical_name || authorship.author_id;
+            const affiliations = (authorship.affiliations || []).map((affiliation) => {
+              const sourceInstitutionIds = affiliation.institution_ids || [];
+              const sourceName = affiliation.label || (sourceInstitutionIds.length === 1 ? citationInstitutionDirectory[sourceInstitutionIds[0]]?.canonical_name || "" : "");
+              const institutionIds = institutionNameMap[sourceName] || sourceInstitutionIds;
+              const institutions = institutionIds.map((id) => institutionDirectory[id]?.canonical_name || id);
+              const registeredCountries = institutionIds.flatMap((id) => institutionDirectory[id]?.countries || []);
+              const countries = uniqueSorted(registeredCountries.length ? registeredCountries : affiliation.countries || []);
+              countries.forEach((country) => workCountries.add(country));
+              institutionIds.forEach((id) => workInstitutions.add(id));
+              return { label: affiliation.label || "", countries, institutionIds, institutions };
             });
-          }
-          const aggregate = authorMap.get(authorship.author_id);
-          aggregate.works.add(scholarId);
-          citations.forEach(({ code }) => aggregate.portfolio.add(code));
-          affiliations.forEach((affiliation) => {
-            affiliation.institutionIds.forEach((id) => aggregate.institutions.add(id));
-            affiliation.countries.forEach((country) => aggregate.countries.add(country));
-          });
-          return { id: authorship.author_id, name, affiliations };
-        });
 
-        [...workCountries].forEach((country) => {
-          if (!countryWorks.has(country)) countryWorks.set(country, new Set());
-          countryWorks.get(country).add(scholarId);
-        });
-
-        [...workInstitutions].forEach((institutionId) => {
-          if (!institutionMap.has(institutionId)) {
-            institutionMap.set(institutionId, {
-              id: institutionId,
-              name: institutionDirectory[institutionId]?.canonical_name || institutionId,
-              works: new Set(),
-              authors: new Set(),
-              countries: new Set(institutionDirectory[institutionId]?.countries || []),
-              portfolio: new Set()
-            });
-          }
-          const aggregate = institutionMap.get(institutionId);
-          aggregate.works.add(scholarId);
-          citations.forEach(({ code }) => aggregate.portfolio.add(code));
-          authors.forEach((author) => author.affiliations.forEach((affiliation) => {
-            if (affiliation.institutionIds.includes(institutionId)) {
-              aggregate.authors.add(author.id);
-              if (!(institutionDirectory[institutionId]?.countries || []).length && affiliation.institutionIds.length === 1) {
-                affiliation.countries.forEach((country) => aggregate.countries.add(country));
-              }
+            if (!authorMap.has(authorship.author_id)) {
+              authorMap.set(authorship.author_id, {
+                id: authorship.author_id,
+                name: authorRecord.canonical_name || name,
+                aliases: authorRecord.aliases || [],
+                works: new Set(),
+                institutions: new Set(),
+                countries: new Set(),
+                portfolio: new Set()
+              });
             }
-          }));
-        });
+            const aggregate = authorMap.get(authorship.author_id);
+            aggregate.works.add(scholarId);
+            citations.forEach(({ code }) => aggregate.portfolio.add(code));
+            affiliations.forEach((affiliation) => {
+              affiliation.institutionIds.forEach((id) => aggregate.institutions.add(id));
+              affiliation.countries.forEach((country) => aggregate.countries.add(country));
+            });
+            return { id: authorship.author_id, name, affiliations };
+          });
 
-        const countries = uniqueSorted([...workCountries]);
-        const institutionNames = uniqueSorted([...workInstitutions].map((id) => institutionDirectory[id]?.canonical_name || id));
-        const searchText = [work.title, ...citations.map(({ code }) => code), ...countries, ...institutionNames,
-          ...authors.map((author) => author.name)].join(" ").toLocaleLowerCase();
+          [...workCountries].forEach((country) => {
+            if (!countryWorks.has(country)) countryWorks.set(country, new Set());
+            countryWorks.get(country).add(scholarId);
+          });
 
-        return {
-          scholarId,
-          title: work.title,
-          evidenceUrl: work.evidence_url || "",
-          citations,
-          authors,
-          countries,
-          institutions: institutionNames,
-          searchText
+          [...workInstitutions].forEach((institutionId) => {
+            if (!institutionMap.has(institutionId)) {
+              institutionMap.set(institutionId, {
+                id: institutionId,
+                name: institutionDirectory[institutionId]?.canonical_name || institutionId,
+                works: new Set(),
+                authors: new Set(),
+                countries: new Set(institutionDirectory[institutionId]?.countries || []),
+                portfolio: new Set()
+              });
+            }
+            const aggregate = institutionMap.get(institutionId);
+            aggregate.works.add(scholarId);
+            citations.forEach(({ code }) => aggregate.portfolio.add(code));
+            authors.forEach((author) => author.affiliations.forEach((affiliation) => {
+              if (affiliation.institutionIds.includes(institutionId)) {
+                aggregate.authors.add(author.id);
+                if (!(institutionDirectory[institutionId]?.countries || []).length && affiliation.institutionIds.length === 1) {
+                  affiliation.countries.forEach((country) => aggregate.countries.add(country));
+                }
+              }
+            }));
+          });
+
+          const countries = uniqueSorted([...workCountries]);
+          const institutionNames = uniqueSorted([...workInstitutions].map((id) => institutionDirectory[id]?.canonical_name || id));
+          const searchText = [work.title, ...citations.map(({ code }) => code), ...countries, ...institutionNames,
+            ...authors.map((author) => author.name)].join(" ").toLocaleLowerCase();
+
+          return {
+            scholarId,
+            title: work.title,
+            evidenceUrl: work.evidence_url || "",
+            citations,
+            authors,
+            countries,
+            institutions: institutionNames,
+            searchText
+          };
+        }).sort((a, b) => collator.compare(a.title, b.title));
+
+        const authors = [...authorMap.values()].map((author) => ({
+          ...author,
+          institutionNames: uniqueSorted([...author.institutions].map((id) => institutionDirectory[id]?.canonical_name || id)),
+          countryNames: uniqueSorted([...author.countries]),
+          portfolioNames: uniqueSorted([...author.portfolio])
+        })).sort((a, b) => collator.compare(a.name, b.name));
+
+        const institutions = [...institutionMap.values()].map((institution) => ({
+          ...institution,
+          countryNames: uniqueSorted([...institution.countries]),
+          portfolioNames: uniqueSorted([...institution.portfolio])
+        })).sort((a, b) => b.works.size - a.works.size || collator.compare(a.name, b.name));
+
+        const institutionNameMappings = Object.entries(institutionNameMap).map(([sourceName, institutionIds]) => ({
+          sourceName,
+          canonicalNames: uniqueSorted(institutionIds.map((id) => institutionDirectory[id]?.canonical_name || id)),
+          countryNames: uniqueSorted(institutionIds.flatMap((id) => institutionDirectory[id]?.countries || []))
+        })).sort((a, b) => collator.compare(a.sourceName, b.sourceName));
+
+        const citationLinks = works.reduce((sum, work) => sum + work.citations.length, 0);
+        const portfolio = [...portfolioCounts.entries()].sort((a, b) => b[1] - a[1] || collator.compare(a[0], b[0]));
+        const countries = [...countryWorks.entries()].sort((a, b) => b[1].size - a[1].size || collator.compare(a[0], b[0]));
+        const continents = uniqueSorted(countries.map(([country]) => payload.country_continents?.[country]));
+
+        const setText = (id, value) => { document.getElementById(id).textContent = value; };
+        setText("stat-works", numberFormat.format(works.length));
+        setText("stat-links", numberFormat.format(citationLinks));
+        setText("stat-authors", numberFormat.format(authors.length));
+        setText("stat-institutions", numberFormat.format(institutions.length));
+        setText("stat-countries", numberFormat.format(countries.length));
+        setText("stat-continents", numberFormat.format(continents.length));
+        setText("dataset-note", `${firstAuthorOnly ? "First-author portfolio" : "Complete portfolio"} · ${numberFormat.format(source.metadata?.source_row_count || 0)} source rows · schema version ${source.schema_version || "—"}`);
+        setText("footer-source", `Data fingerprint ${String(source.metadata?.content_sha256 || "unavailable").slice(0, 12)}`);
+
+        const renderBars = (targetId, entries, maxItems, getLabel, getValue) => {
+          const target = document.getElementById(targetId);
+          const shown = entries.slice(0, maxItems);
+          const maximum = Math.max(...shown.map(getValue), 1);
+          target.innerHTML = shown.map((entry) => {
+            const value = getValue(entry);
+            return `<div class="bar-row"><div class="bar-label" title="${escapeHtml(getLabel(entry))}">${escapeHtml(getLabel(entry))}</div>` +
+              `<div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:${Math.max(2, value / maximum * 100).toFixed(2)}%"></div></div>` +
+              `<div class="bar-value">${numberFormat.format(value)}</div></div>`;
+          }).join("");
         };
-      }).sort((a, b) => collator.compare(a.title, b.title));
 
-      const authors = [...authorMap.values()].map((author) => ({
-        ...author,
-        institutionNames: uniqueSorted([...author.institutions].map((id) => institutionDirectory[id]?.canonical_name || id)),
-        countryNames: uniqueSorted([...author.countries]),
-        portfolioNames: uniqueSorted([...author.portfolio])
-      })).sort((a, b) => collator.compare(a.name, b.name));
+        renderBars("portfolio-bars", portfolio, portfolio.length, ([label]) => label, ([, value]) => value);
+        renderBars("country-bars", countries, 12, ([label]) => label, ([, workSet]) => workSet.size);
 
-      const institutions = [...institutionMap.values()].map((institution) => ({
-        ...institution,
-        countryNames: uniqueSorted([...institution.countries]),
-        portfolioNames: uniqueSorted([...institution.portfolio])
-      })).sort((a, b) => b.works.size - a.works.size || collator.compare(a.name, b.name));
+        const mostCited = portfolio[0] || ["—", 0];
+        const topCountry = countries[0] || ["—", new Set()];
+        setText("overview-note", `${mostCited[0]} has the broadest documented reach, appearing in ${numberFormat.format(mostCited[1])} citing works.`);
+        document.getElementById("overview-facts").innerHTML = [
+          ["Largest country cluster", `${topCountry[0]} · ${topCountry[1].size} works`],
+          ["Average authors per work", (works.reduce((sum, work) => sum + work.authors.length, 0) / Math.max(works.length, 1)).toFixed(1)],
+          ["Works with multiple portfolio links", works.filter((work) => work.citations.length > 1).length],
+          ["Recorded affiliations", works.reduce((sum, work) => sum + work.authors.reduce((count, author) => count + author.affiliations.length, 0), 0)]
+        ].map(([label, value]) => `<li><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></li>`).join("");
 
-      const institutionNameMappings = Object.entries(institutionNameMap).map(([sourceName, institutionIds]) => ({
-        sourceName,
-        canonicalNames: uniqueSorted(institutionIds.map((id) => institutionDirectory[id]?.canonical_name || id)),
-        countryNames: uniqueSorted(institutionIds.flatMap((id) => institutionDirectory[id]?.countries || []))
-      })).sort((a, b) => collator.compare(a.sourceName, b.sourceName));
-
-      const citationLinks = works.reduce((sum, work) => sum + work.citations.length, 0);
-      const portfolio = [...portfolioCounts.entries()].sort((a, b) => b[1] - a[1] || collator.compare(a[0], b[0]));
-      const countries = [...countryWorks.entries()].sort((a, b) => b[1].size - a[1].size || collator.compare(a[0], b[0]));
-      const continents = uniqueSorted(countries.map(([country]) => payload.country_continents?.[country]));
-
-      const setText = (id, value) => { document.getElementById(id).textContent = value; };
-      setText("stat-works", numberFormat.format(works.length));
-      setText("stat-links", numberFormat.format(citationLinks));
-      setText("stat-authors", numberFormat.format(authors.length));
-      setText("stat-institutions", numberFormat.format(institutions.length));
-      setText("stat-countries", numberFormat.format(countries.length));
-      setText("stat-continents", numberFormat.format(continents.length));
-      setText("dataset-note", `${firstAuthorOnly ? "First-author portfolio" : "Complete portfolio"} · ${numberFormat.format(source.metadata?.source_row_count || 0)} source rows · schema version ${source.schema_version || "—"}`);
-      setText("footer-source", `Data fingerprint ${String(source.metadata?.content_sha256 || "unavailable").slice(0, 12)}`);
-
-      const renderBars = (targetId, entries, maxItems, getLabel, getValue) => {
-        const target = document.getElementById(targetId);
-        const shown = entries.slice(0, maxItems);
-        const maximum = Math.max(...shown.map(getValue), 1);
-        target.innerHTML = shown.map((entry) => {
-          const value = getValue(entry);
-          return `<div class="bar-row"><div class="bar-label" title="${escapeHtml(getLabel(entry))}">${escapeHtml(getLabel(entry))}</div>` +
-            `<div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:${Math.max(2, value / maximum * 100).toFixed(2)}%"></div></div>` +
-            `<div class="bar-value">${numberFormat.format(value)}</div></div>`;
-        }).join("");
-      };
-
-      renderBars("portfolio-bars", portfolio, portfolio.length, ([label]) => label, ([, value]) => value);
-      renderBars("country-bars", countries, 12, ([label]) => label, ([, workSet]) => workSet.size);
-
-      const mostCited = portfolio[0] || ["—", 0];
-      const topCountry = countries[0] || ["—", new Set()];
-      setText("overview-note", `${mostCited[0]} has the broadest documented reach, appearing in ${numberFormat.format(mostCited[1])} citing works.`);
-      document.getElementById("overview-facts").innerHTML = [
-        ["Largest country cluster", `${topCountry[0]} · ${topCountry[1].size} works`],
-        ["Average authors per work", (works.reduce((sum, work) => sum + work.authors.length, 0) / Math.max(works.length, 1)).toFixed(1)],
-        ["Works with multiple portfolio links", works.filter((work) => work.citations.length > 1).length],
-        ["Recorded affiliations", works.reduce((sum, work) => sum + work.authors.reduce((count, author) => count + author.affiliations.length, 0), 0)]
-      ].map(([label, value]) => `<li><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></li>`).join("");
-
-      document.getElementById("top-institutions").innerHTML = institutions.slice(0, 12).map((institution) =>
-        `<tr><td><div class="cell-main">${escapeHtml(institution.name)}</div><div class="cell-sub">${escapeHtml(institution.countryNames.join("; ") || "Country not recorded")}</div></td>` +
-        `<td class="number">${institution.works.size}</td><td class="number">${institution.authors.size}</td></tr>`
-      ).join("");
-
-      const citationFilter = document.getElementById("work-citation-filter");
-      portfolio.map(([code]) => code).sort(collator.compare).forEach((code) => citationFilter.add(new Option(code, code)));
-      const countryFilter = document.getElementById("work-country-filter");
-      countries.map(([country]) => country).sort(collator.compare).forEach((country) => countryFilter.add(new Option(country, country)));
-
-      const renderBadges = (items, neutral = false) => items.map((item) => `<span class="badge${neutral ? " neutral" : ""}">${escapeHtml(item)}</span>`).join("");
-      const state = { workLimit: 30, researcherLimit: 75, institutionLimit: 75, nameMapLimit: 75 };
-
-      const workCard = (work) => {
-        const authorMarkup = work.authors.map((author) => {
-          const affiliations = author.affiliations.length ? author.affiliations.map((affiliation) => {
-            const fallback = [affiliation.institutions.join("; "), affiliation.countries.join("; ")].filter(Boolean).join(" · ");
-            return `<div class="affiliation">${escapeHtml(affiliation.label || fallback || "Affiliation not recorded")}</div>`;
-          }).join("") : '<div class="affiliation">Affiliation not recorded</div>';
-          return `<div class="author"><div class="author-name">${escapeHtml(author.name)}</div>${affiliations}</div>`;
-        }).join("");
-        const citationMarkup = work.citations.map(({ code, url }) =>
-          `<div class="citation-link"><strong>${escapeHtml(code)}</strong><a class="link-button" href="${safeUrl(url)}" target="_blank" rel="noopener noreferrer">Scholar record</a></div>`
+        document.getElementById("top-institutions").innerHTML = institutions.slice(0, 12).map((institution) =>
+          `<tr><td><div class="cell-main">${escapeHtml(institution.name)}</div><div class="cell-sub">${escapeHtml(institution.countryNames.join("; ") || "Country not recorded")}</div></td>` +
+          `<td class="number">${institution.works.size}</td><td class="number">${institution.authors.size}</td></tr>`
         ).join("");
-        const evidence = work.evidenceUrl ? `<div class="evidence-link"><a class="link-button" href="${safeUrl(work.evidenceUrl)}" target="_blank" rel="noopener noreferrer">Open affiliation evidence</a></div>` : "";
-        return `<details class="work-card"><summary><span class="work-title">${escapeHtml(work.title)}</span><span class="badges">${renderBadges(work.citations.map(({ code }) => code))}${renderBadges(work.countries, true)}</span></summary>` +
-          `<div class="work-detail"><div class="detail-grid"><section><h3 class="detail-title">Researchers and affiliations</h3><div class="author-list">${authorMarkup}</div></section>` +
-          `<aside><h3 class="detail-title">Portfolio works cited</h3><div class="citation-links">${citationMarkup}</div>${evidence}</aside></div></div></details>`;
-      };
 
-      const filteredWorks = () => {
-        const query = document.getElementById("work-search").value.trim().toLocaleLowerCase();
-        const citation = citationFilter.value;
-        const country = countryFilter.value;
-        return works.filter((work) => (!query || work.searchText.includes(query)) &&
-          (!citation || work.citations.some((item) => item.code === citation)) &&
-          (!country || work.countries.includes(country)));
-      };
+        const citationFilter = document.getElementById("work-citation-filter");
+        const previousCitation = citationFilter.value;
+        citationFilter.replaceChildren(new Option("All works", ""));
+        portfolio.map(([code]) => code).sort(collator.compare).forEach((code) => citationFilter.add(new Option(code, code)));
+        citationFilter.value = portfolioCounts.has(previousCitation) ? previousCitation : "";
+        const countryFilter = document.getElementById("work-country-filter");
+        const previousCountry = countryFilter.value;
+        countryFilter.replaceChildren(new Option("All countries", ""));
+        countries.map(([country]) => country).sort(collator.compare).forEach((country) => countryFilter.add(new Option(country, country)));
+        countryFilter.value = countryWorks.has(previousCountry) ? previousCountry : "";
 
-      const renderWorks = () => {
-        const filtered = filteredWorks();
-        const visible = filtered.slice(0, state.workLimit);
-        setText("work-result-count", `${numberFormat.format(filtered.length)} citing ${filtered.length === 1 ? "work" : "works"}`);
-        document.getElementById("work-list").innerHTML = visible.length ? visible.map(workCard).join("") : '<div class="empty">No citing works match these filters.</div>';
-        const more = document.getElementById("work-more");
-        more.hidden = visible.length >= filtered.length;
-        more.textContent = `Show more citing works (${numberFormat.format(filtered.length - visible.length)} remaining)`;
-      };
+        const renderBadges = (items, neutral = false) => items.map((item) => `<span class="badge${neutral ? " neutral" : ""}">${escapeHtml(item)}</span>`).join("");
+        const state = { workLimit: 30, researcherLimit: 75, institutionLimit: 75, nameMapLimit: 75 };
 
-      const renderResearchers = () => {
-        const query = document.getElementById("researcher-search").value.trim().toLocaleLowerCase();
-        const filtered = authors.filter((author) => [author.name, ...author.aliases, ...author.institutionNames, ...author.countryNames, ...author.portfolioNames].join(" ").toLocaleLowerCase().includes(query));
-        const visible = filtered.slice(0, state.researcherLimit);
-        setText("researcher-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "researcher" : "researchers"}`);
-        document.getElementById("researcher-table").innerHTML = visible.map((author) =>
-          `<tr><td><div class="cell-main">${escapeHtml(author.name)}</div>${author.aliases.length ? `<div class="cell-sub">Also recorded as ${escapeHtml(author.aliases.join("; "))}</div>` : ""}</td>` +
-          `<td>${escapeHtml(author.institutionNames.join("; ") || "Not recorded")}<div class="cell-sub">${escapeHtml(author.countryNames.join("; ") || "Country not recorded")}</div></td>` +
-          `<td><div class="badges">${renderBadges(author.portfolioNames)}</div></td><td class="number">${author.works.size}</td></tr>`
-        ).join("");
-        const more = document.getElementById("researcher-more");
-        more.hidden = visible.length >= filtered.length;
-        more.textContent = `Show more researchers (${numberFormat.format(filtered.length - visible.length)} remaining)`;
-      };
+        const workCard = (work) => {
+          const authorMarkup = work.authors.map((author) => {
+            const affiliations = author.affiliations.length ? author.affiliations.map((affiliation) => {
+              const fallback = [affiliation.institutions.join("; "), affiliation.countries.join("; ")].filter(Boolean).join(" · ");
+              return `<div class="affiliation">${escapeHtml(affiliation.label || fallback || "Affiliation not recorded")}</div>`;
+            }).join("") : '<div class="affiliation">Affiliation not recorded</div>';
+            return `<div class="author"><div class="author-name">${escapeHtml(author.name)}</div>${affiliations}</div>`;
+          }).join("");
+          const citationMarkup = work.citations.map(({ code, url }) =>
+            `<div class="citation-link"><strong>${escapeHtml(code)}</strong><a class="link-button" href="${safeUrl(url)}" target="_blank" rel="noopener noreferrer">Scholar record</a></div>`
+          ).join("");
+          const evidence = work.evidenceUrl ? `<div class="evidence-link"><a class="link-button" href="${safeUrl(work.evidenceUrl)}" target="_blank" rel="noopener noreferrer">Open affiliation evidence</a></div>` : "";
+          return `<details class="work-card"><summary><span class="work-title">${escapeHtml(work.title)}</span><span class="badges">${renderBadges(work.citations.map(({ code }) => code))}${renderBadges(work.countries, true)}</span></summary>` +
+            `<div class="work-detail"><div class="detail-grid"><section><h3 class="detail-title">Researchers and affiliations</h3><div class="author-list">${authorMarkup}</div></section>` +
+            `<aside><h3 class="detail-title">Portfolio works cited</h3><div class="citation-links">${citationMarkup}</div>${evidence}</aside></div></div></details>`;
+        };
 
-      const renderInstitutions = () => {
-        const query = document.getElementById("institution-search").value.trim().toLocaleLowerCase();
-        const filtered = institutions.filter((institution) => [institution.name, ...institution.countryNames, ...institution.portfolioNames].join(" ").toLocaleLowerCase().includes(query));
-        const visible = filtered.slice(0, state.institutionLimit);
-        setText("institution-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "institution" : "institutions"}`);
-        document.getElementById("institution-table").innerHTML = visible.map((institution) =>
-          `<tr><td><div class="cell-main">${escapeHtml(institution.name)}</div></td><td>${escapeHtml(institution.countryNames.join("; ") || "Not recorded")}</td>` +
-          `<td><div class="badges">${renderBadges(institution.portfolioNames)}</div></td><td class="number">${institution.authors.size}</td><td class="number">${institution.works.size}</td></tr>`
-        ).join("");
-        const more = document.getElementById("institution-more");
-        more.hidden = visible.length >= filtered.length;
-        more.textContent = `Show more institutions (${numberFormat.format(filtered.length - visible.length)} remaining)`;
-      };
+        const filteredWorks = () => {
+          const query = document.getElementById("work-search").value.trim().toLocaleLowerCase();
+          const citation = citationFilter.value;
+          const country = countryFilter.value;
+          return works.filter((work) => (!query || work.searchText.includes(query)) &&
+            (!citation || work.citations.some((item) => item.code === citation)) &&
+            (!country || work.countries.includes(country)));
+        };
 
-      const renderNameMap = () => {
-        const query = document.getElementById("name-map-search").value.trim().toLocaleLowerCase();
-        const filtered = institutionNameMappings.filter((mapping) => [mapping.sourceName, ...mapping.canonicalNames, ...mapping.countryNames].join(" ").toLocaleLowerCase().includes(query));
-        const visible = filtered.slice(0, state.nameMapLimit);
-        setText("name-map-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "mapping" : "mappings"}`);
-        document.getElementById("name-map-table").innerHTML = visible.map((mapping) =>
-          `<tr><td><div class="cell-main">${escapeHtml(mapping.sourceName)}</div></td>` +
-          `<td>${escapeHtml(mapping.canonicalNames.join("; ") || "Not recorded")}</td><td>${escapeHtml(mapping.countryNames.join("; ") || "Not recorded")}</td></tr>`
-        ).join("");
-        const more = document.getElementById("name-map-more");
-        more.hidden = visible.length >= filtered.length;
-        more.textContent = `Show more mappings (${numberFormat.format(filtered.length - visible.length)} remaining)`;
-      };
+        const renderWorks = () => {
+          const filtered = filteredWorks();
+          const visible = filtered.slice(0, state.workLimit);
+          setText("work-result-count", `${numberFormat.format(filtered.length)} citing ${filtered.length === 1 ? "work" : "works"}`);
+          document.getElementById("work-list").innerHTML = visible.length ? visible.map(workCard).join("") : '<div class="empty">No citing works match these filters.</div>';
+          const more = document.getElementById("work-more");
+          more.hidden = visible.length >= filtered.length;
+          more.textContent = `Show more citing works (${numberFormat.format(filtered.length - visible.length)} remaining)`;
+        };
 
-      const resetAndRender = (kind) => {
-        if (kind === "works") { state.workLimit = 30; renderWorks(); }
-        if (kind === "researchers") { state.researcherLimit = 75; renderResearchers(); }
-        if (kind === "institutions") { state.institutionLimit = 75; renderInstitutions(); }
-        if (kind === "name-map") { state.nameMapLimit = 75; renderNameMap(); }
-      };
+        const renderResearchers = () => {
+          const query = document.getElementById("researcher-search").value.trim().toLocaleLowerCase();
+          const filtered = authors.filter((author) => [author.name, ...author.aliases, ...author.institutionNames, ...author.countryNames, ...author.portfolioNames].join(" ").toLocaleLowerCase().includes(query));
+          const visible = filtered.slice(0, state.researcherLimit);
+          setText("researcher-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "researcher" : "researchers"}`);
+          document.getElementById("researcher-table").innerHTML = visible.map((author) =>
+            `<tr><td><div class="cell-main">${escapeHtml(author.name)}</div>${author.aliases.length ? `<div class="cell-sub">Also recorded as ${escapeHtml(author.aliases.join("; "))}</div>` : ""}</td>` +
+            `<td>${escapeHtml(author.institutionNames.join("; ") || "Not recorded")}<div class="cell-sub">${escapeHtml(author.countryNames.join("; ") || "Country not recorded")}</div></td>` +
+            `<td><div class="badges">${renderBadges(author.portfolioNames)}</div></td><td class="number">${author.works.size}</td></tr>`
+          ).join("");
+          const more = document.getElementById("researcher-more");
+          more.hidden = visible.length >= filtered.length;
+          more.textContent = `Show more researchers (${numberFormat.format(filtered.length - visible.length)} remaining)`;
+        };
 
-      ["work-search", "work-citation-filter", "work-country-filter"].forEach((id) => document.getElementById(id).addEventListener(id === "work-search" ? "input" : "change", () => resetAndRender("works")));
-      document.getElementById("researcher-search").addEventListener("input", () => resetAndRender("researchers"));
-      document.getElementById("institution-search").addEventListener("input", () => resetAndRender("institutions"));
-      document.getElementById("name-map-search").addEventListener("input", () => resetAndRender("name-map"));
-      document.getElementById("work-more").addEventListener("click", () => { state.workLimit += 30; renderWorks(); });
-      document.getElementById("researcher-more").addEventListener("click", () => { state.researcherLimit += 75; renderResearchers(); });
-      document.getElementById("institution-more").addEventListener("click", () => { state.institutionLimit += 75; renderInstitutions(); });
-      document.getElementById("name-map-more").addEventListener("click", () => { state.nameMapLimit += 75; renderNameMap(); });
+        const renderInstitutions = () => {
+          const query = document.getElementById("institution-search").value.trim().toLocaleLowerCase();
+          const filtered = institutions.filter((institution) => [institution.name, ...institution.countryNames, ...institution.portfolioNames].join(" ").toLocaleLowerCase().includes(query));
+          const visible = filtered.slice(0, state.institutionLimit);
+          setText("institution-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "institution" : "institutions"}`);
+          document.getElementById("institution-table").innerHTML = visible.map((institution) =>
+            `<tr><td><div class="cell-main">${escapeHtml(institution.name)}</div></td><td>${escapeHtml(institution.countryNames.join("; ") || "Not recorded")}</td>` +
+            `<td><div class="badges">${renderBadges(institution.portfolioNames)}</div></td><td class="number">${institution.authors.size}</td><td class="number">${institution.works.size}</td></tr>`
+          ).join("");
+          const more = document.getElementById("institution-more");
+          more.hidden = visible.length >= filtered.length;
+          more.textContent = `Show more institutions (${numberFormat.format(filtered.length - visible.length)} remaining)`;
+        };
 
-      const tabs = [...document.querySelectorAll("[role=tab]")];
-      const activateTab = (tab) => {
-        tabs.forEach((candidate) => {
-          const active = candidate === tab;
-          candidate.setAttribute("aria-selected", active);
-          candidate.tabIndex = active ? 0 : -1;
-          const panel = document.getElementById(candidate.getAttribute("aria-controls"));
-          panel.hidden = !active;
-          panel.classList.toggle("active", active);
+        const renderNameMap = () => {
+          const query = document.getElementById("name-map-search").value.trim().toLocaleLowerCase();
+          const filtered = institutionNameMappings.filter((mapping) => [mapping.sourceName, ...mapping.canonicalNames, ...mapping.countryNames].join(" ").toLocaleLowerCase().includes(query));
+          const visible = filtered.slice(0, state.nameMapLimit);
+          setText("name-map-result-count", `${numberFormat.format(filtered.length)} ${filtered.length === 1 ? "mapping" : "mappings"}`);
+          document.getElementById("name-map-table").innerHTML = visible.map((mapping) =>
+            `<tr><td><div class="cell-main">${escapeHtml(mapping.sourceName)}</div></td>` +
+            `<td>${escapeHtml(mapping.canonicalNames.join("; ") || "Not recorded")}</td><td>${escapeHtml(mapping.countryNames.join("; ") || "Not recorded")}</td></tr>`
+          ).join("");
+          const more = document.getElementById("name-map-more");
+          more.hidden = visible.length >= filtered.length;
+          more.textContent = `Show more mappings (${numberFormat.format(filtered.length - visible.length)} remaining)`;
+        };
+
+        const resetAndRender = (kind) => {
+          if (kind === "works") { state.workLimit = 30; renderWorks(); }
+          if (kind === "researchers") { state.researcherLimit = 75; renderResearchers(); }
+          if (kind === "institutions") { state.institutionLimit = 75; renderInstitutions(); }
+          if (kind === "name-map") { state.nameMapLimit = 75; renderNameMap(); }
+        };
+
+        ["work-search", "work-citation-filter", "work-country-filter"].forEach((id) => listen(document.getElementById(id), id === "work-search" ? "input" : "change", () => resetAndRender("works")));
+        listen(document.getElementById("researcher-search"), "input", () => resetAndRender("researchers"));
+        listen(document.getElementById("institution-search"), "input", () => resetAndRender("institutions"));
+        listen(document.getElementById("name-map-search"), "input", () => resetAndRender("name-map"));
+        listen(document.getElementById("work-more"), "click", () => { state.workLimit += 30; renderWorks(); });
+        listen(document.getElementById("researcher-more"), "click", () => { state.researcherLimit += 75; renderResearchers(); });
+        listen(document.getElementById("institution-more"), "click", () => { state.institutionLimit += 75; renderInstitutions(); });
+        listen(document.getElementById("name-map-more"), "click", () => { state.nameMapLimit += 75; renderNameMap(); });
+
+        const tabs = [...document.querySelectorAll("[role=tab]")];
+        const activateTab = (tab) => {
+          tabs.forEach((candidate) => {
+            const active = candidate === tab;
+            candidate.setAttribute("aria-selected", active);
+            candidate.tabIndex = active ? 0 : -1;
+            const panel = document.getElementById(candidate.getAttribute("aria-controls"));
+            panel.hidden = !active;
+            panel.classList.toggle("active", active);
+          });
+        };
+        tabs.forEach((tab, index) => {
+          listen(tab, "click", () => activateTab(tab));
+          listen(tab, "keydown", (event) => {
+            if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+            event.preventDefault();
+            let targetIndex = index;
+            if (event.key === "ArrowLeft") targetIndex = (index - 1 + tabs.length) % tabs.length;
+            if (event.key === "ArrowRight") targetIndex = (index + 1) % tabs.length;
+            if (event.key === "Home") targetIndex = 0;
+            if (event.key === "End") targetIndex = tabs.length - 1;
+            activateTab(tabs[targetIndex]);
+            tabs[targetIndex].focus();
+          });
         });
-      };
-      tabs.forEach((tab, index) => {
-        tab.addEventListener("click", () => activateTab(tab));
-        tab.addEventListener("keydown", (event) => {
-          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
-          event.preventDefault();
-          let targetIndex = index;
-          if (event.key === "ArrowLeft") targetIndex = (index - 1 + tabs.length) % tabs.length;
-          if (event.key === "ArrowRight") targetIndex = (index + 1) % tabs.length;
-          if (event.key === "Home") targetIndex = 0;
-          if (event.key === "End") targetIndex = tabs.length - 1;
-          activateTab(tabs[targetIndex]);
-          tabs[targetIndex].focus();
-        });
-      });
 
-      renderWorks();
-      renderResearchers();
-      renderInstitutions();
-      renderNameMap();
+        renderWorks();
+        renderResearchers();
+        renderInstitutions();
+        renderNameMap();
+      }
+      renderPortfolio(firstAuthorOnly);
+      firstAuthorToggle.disabled = false;
     })().catch((error) => {
       const note = document.getElementById("dataset-note");
       note.setAttribute("role", "alert");
