@@ -1359,20 +1359,22 @@ function drawScholarCitationGraph(profile, modeOverride) {
         return;
     }
 
-    const ctx = canvas.getContext('2d');
-    if (!ctx) {
-        return;
-    }
-
     const mode = modeOverride || window.__scholarChartMode || 'all';
     window.__scholarChartMode = mode;
     window.__scholarChartProfile = profile;
 
-    const rect = canvas.getBoundingClientRect();
-    const cssWidth = rect.width || canvas.clientWidth || canvas.width;
-    const cssHeight = rect.height || canvas.clientHeight || canvas.height;
+    // A hidden canvas has no CSS size. Its width/height attributes are backing
+    // pixels, so using them as a fallback would multiply them by DPR on every
+    // resize and eventually exhaust graphics memory on high-density displays.
+    if (!isScholarChartPanelVisible(canvas)) {
+        return;
+    }
 
-    if (!cssWidth || !cssHeight) {
+    const rect = canvas.getBoundingClientRect();
+    const cssWidth = rect.width;
+    const cssHeight = rect.height;
+
+    if (!Number.isFinite(cssWidth) || !Number.isFinite(cssHeight) || cssWidth <= 0 || cssHeight <= 0) {
         if (isScholarChartPanelVisible(canvas)) {
             const retryCount = (canvas.__scholarRenderRetries || 0) + 1;
             if (retryCount <= 5) {
@@ -1387,9 +1389,21 @@ function drawScholarCitationGraph(profile, modeOverride) {
 
     canvas.__scholarRenderRetries = 0;
 
+    const ctx = canvas.getContext('2d');
+    if (!ctx) {
+        return;
+    }
+
     const dpr = window.devicePixelRatio || 1;
-    canvas.width = cssWidth * dpr;
-    canvas.height = cssHeight * dpr;
+    const pixelWidth = Math.round(cssWidth * dpr);
+    const pixelHeight = Math.round(cssHeight * dpr);
+    // Reuse the bitmap when switching tabs or redrawing at the same size.
+    if (canvas.width !== pixelWidth) {
+        canvas.width = pixelWidth;
+    }
+    if (canvas.height !== pixelHeight) {
+        canvas.height = pixelHeight;
+    }
 
     if (typeof ctx.setTransform === 'function') {
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
