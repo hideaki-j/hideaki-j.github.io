@@ -388,23 +388,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 154
+                            citations: 157
                         },
                         all: {
-                            citations: 165,
+                            citations: 168,
                             hIndex: 6,
                             i10Index: 4
                         },
                         since2020: {
-                            citations: 162,
+                            citations: 163,
                             hIndex: 6,
                             i10Index: 4
                         },
                         byYear: {
-                            years: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [2, 0, 1, 1, 14, 18, 20, 52, 57],
-                            firstAuthor: [2, 0, 1, 1, 14, 18, 20, 47, 51],
-                            all: [2, 0, 1, 1, 14, 18, 20, 52, 57]
+                            years: ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
+                            counts: [1, 2, 1, 1, 1, 14, 19, 20, 52, 57],
+                            firstAuthor: [1, 2, 1, 1, 1, 14, 19, 20, 47, 51],
+                            all: [1, 2, 1, 1, 1, 14, 19, 20, 52, 57]
                         }
                     },
                     coauthors: [
@@ -574,10 +574,11 @@ window.siteContent = {
                     },
                     {
                         citationCode: "Skipgram",
-                        title: "文脈限定 Skip-gram による同義語獲得",
+                        title: "Automatic Synonym Acquisition Using a Context-Restricted Skip-gram Model",
                         authors: "H Joko, Y Matsuda, K Yamaguchi",
                         venue: "Journal of Natural Language Processing",
-                        cited_by: 1,
+                        cited_by: 3,
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10780247849724164461,213920213056860757",
                         year: 2017,
                         type: "journal"
                     },
@@ -586,7 +587,8 @@ window.siteContent = {
                         title: "同義語判定問題を用いた語義ベクトルの評価の検討—Skip-gram モデルで獲得した語義ベクトルを例として—",
                         authors: "H Joko, Y Matsuda, K Yamaguchi",
                         venue: "The Japanese Society for Artificial Intelligence SIG-AM Workshop",
-                        cited_by: 1,
+                        cited_by: 2,
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16162825426406427637,13564765657227879109",
                         year: 2015
                     },
                     {
