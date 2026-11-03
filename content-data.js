@@ -364,7 +364,7 @@ window.siteContent = {
             titleHTML: '<i class="fas fa-graduation-cap"></i> Scholar Profile',
             intro: '',
             scholarProfile: {
-                lastUpdated: '2026-10-13',
+                lastUpdated: '2026-11-02',
                 profile: {
                     name: "Hideaki Joko",
                     affiliation: "Applied Scientist at Thomson Reuters Labs",
@@ -388,23 +388,23 @@ window.siteContent = {
                     },
                     citations: {
                         firstAuthor: {
-                            citations: 160
+                            citations: 162
                         },
                         all: {
-                            citations: 171,
+                            citations: 173,
                             hIndex: 6,
                             i10Index: 4
                         },
                         since2020: {
-                            citations: 166,
+                            citations: 168,
                             hIndex: 6,
                             i10Index: 4
                         },
                         byYear: {
                             years: ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
-                            counts: [1, 2, 1, 1, 1, 14, 19, 20, 52, 60],
-                            firstAuthor: [1, 2, 1, 1, 1, 14, 19, 20, 47, 54],
-                            all: [1, 2, 1, 1, 1, 14, 19, 20, 52, 60]
+                            counts: [1, 2, 1, 1, 1, 14, 19, 20, 52, 62],
+                            firstAuthor: [1, 2, 1, 1, 1, 14, 19, 20, 47, 56],
+                            all: [1, 2, 1, 1, 1, 14, 19, 20, 52, 62]
                         }
                     },
                     coauthors: [
@@ -476,7 +476,7 @@ window.siteContent = {
                         title: "Doing personal laps: Llm-augmented dialogue construction for personalized multi-session conversational search",
                         authors: "H Joko, S Chatterjee, A Ramsay, AP De Vries, J Dalton, F Hasibi",
                         venue: "SIGIR '24",
-                        cited_by: 75,
+                        cited_by: 77,
                         year: 2024,
                         ranking: "A*",
                         url: "https://dl.acm.org/doi/abs/10.1145/3626772.3657815",
@@ -535,18 +535,33 @@ window.siteContent = {
                         authors: "H Joko, R Oka, H Uchide, H Itsui, T Otsuka",
                         venue: "IEEE SMC '19",
                         cited_by: 2,
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14648032618851338011",
                         year: 2019
                     },
                     {
                         citationCode: "FACE",
-                        title: "FACE: A Fine-grained Reference Free Evaluator for Conversational Recommender Systems",
+                        title: "FACE: A Fine-Grained Reference-Free Evaluator for Conversational Information Access",
                         authors: "H Joko, F Hasibi",
                         venue: "SIGIR '26",
                         ranking: "A*",
                         cited_by: 8,
-                        url: "https://arxiv.org/abs/2506.00314",
+                        url: "https://dl.acm.org/doi/10.1145/3805712.3809558",
                         citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=15394240736585899227,5591957624390925942,13242180718810573332",
                         year: 2026
+                    },
+                    {
+                        citationCode: "EdAlpha",
+                        title: "Ed-Alpha: An Open Benchmark for Predicting Investment-Relevant Corporate Events from Open Data",
+                        authors: "S Bundo, Y Kawashima, H Joko, T Shimano",
+                        venue: "CIKM '26",
+                        ranking: "A",
+                        cited_by: 0,
+                        year: 2026,
+                        publicationDate: "2026-11-06",
+                        pages: "9077-9081",
+                        publisher: "Association for Computing Machinery",
+                        doi: "10.1145/3799682.3840245",
+                        url: "https://dl.acm.org/doi/10.1145/3799682.3840245"
                     },
                     {
                         citationCode: "TRECCAsT",
@@ -554,6 +569,7 @@ window.siteContent = {
                         authors: "H Joko, EJ Gerritse, F Hasibi, AP de Vries",
                         venue: "NIST Special Publication",
                         cited_by: 1,
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16457579446934421673",
                         year: 2022
                     },
                     {
@@ -562,6 +578,7 @@ window.siteContent = {
                         authors: "H Joko, Y Koji, H Ucihde, T Otsuka",
                         venue: "2018 Eleventh International Conference on Mobile Computing and Ubiquitous …",
                         cited_by: 1,
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12047754234760638851",
                         year: 2018
                     },
                     {
@@ -570,6 +587,7 @@ window.siteContent = {
                         authors: "H Joko, H Uchide, Y Koji, T Otsuka",
                         venue: "IEICE Conferences Archives",
                         cited_by: 1,
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15642013674692360151",
                         year: 2018
                     },
                     {
@@ -615,6 +633,7 @@ window.siteContent = {
                         authors: "H Joko",
                         venue: "JP/CN/KR/TW Patent",
                         cited_by: 2,
+                        citations_url: "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3565139109879989387",
                         year: 2022,
                         type: "patent"
                     },
